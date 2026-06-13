@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pantautech-id.vercel.app/sitemap.xml
