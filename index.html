@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pantau Tech – Cari Laptop Tanpa Zonk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">
+          <img src="./Gambar/LOGO PANTAU TECH BULAT.png" width="50px" height="50px" alt="Pantau Tech">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">PANTAU TECH</span>
+          <span class="brand-platform">
+            <svg class="tiktok-icon" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+            TikTok
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h1 class="hero-title">CARI LAPTOP<br>TANPA ZONK</h1>
+    <p class="hero-sub">Rekomendasi Laptop Sesuai Budget dan Kebutuhan</p>
+  </section>
+
+  <!-- ===== FILTER BAR ===== -->
+  <section class="filter-section">
+    <div class="filter-bar">
+      <!-- Category Tabs -->
+      <div class="category-tabs" id="categoryTabs">
+        <button class="tab active" data-cat="semua">Semua</button>
+        <button class="tab" data-cat="global">Global</button>
+        <button class="tab" data-cat="bekas">Bekas</button>
+        <button class="tab" data-cat="odm">ODM</button>
+      </div>
+
+      <!-- Search & Price Row -->
+      <div class="search-price-row">
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="searchInput" placeholder="Cari produk..." class="search-input" />
+        </div>
+
+        <!-- Price Dropdown -->
+        <div class="price-dropdown-wrap">
+          <button class="price-btn" id="priceBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span id="priceBtnLabel">Harga</span>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <ul class="price-menu" id="priceMenu">
+            <li><button data-price="0" class="price-option active">Semua Harga</button></li>
+            <li><button data-price="3" class="price-option">Rp 3 Juta</button></li>
+            <li><button data-price="4" class="price-option">Rp 4 Juta</button></li>
+            <li><button data-price="5" class="price-option">Rp 5 Juta</button></li>
+            <li><button data-price="6" class="price-option">Rp 6 Juta</button></li>
+            <li><button data-price="7" class="price-option">Rp 7 Juta</button></li>
+            <li><button data-price="8" class="price-option">Rp 8 Juta</button></li>
+            <li><button data-price="9" class="price-option">Rp 9 Juta</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT GRID ===== -->
+  <section class="products-section">
+    <div class="products-grid" id="productsGrid">
+      <!-- Cards are rendered by JS -->
+    </div>
+    <p class="empty-state" id="emptyState" style="display:none;">
+      😅 Tidak ada laptop yang cocok dengan filter kamu. Coba ubah pencarian atau filter!
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 Pantau Tech · Konten edukasi teknologi</p>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
