@@ -336,7 +336,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/5Aq3JZCit2",
-    image:    "./LAPTOP 6 JUTA/ThinkPad MX.webp"
+    image:    "./LAPTOP 6 JUTA/Thinkpad MX.webp"
   },
 
        {
