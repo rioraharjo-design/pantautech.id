@@ -40,7 +40,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7646777812036160786?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/4VaMFYVGrc",
-    image:    "./LAPTOP 3 JUTA/ThinkPad T480s.jpg"
+    image:    "./LAPTOP 3 JUTA/ThinkPad T480s.webp"
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7646777812036160786?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/6feqpe6eVd",
-    image:    "./LAPTOP 3 JUTA/Dell Latitude 7400.jpg"
+    image:    "./LAPTOP 3 JUTA/Dell Latitude 7400.webp"
   },
   {
     id: 3,
@@ -70,7 +70,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7646777812036160786?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/8pjLPwLjVy",
-    image:    "./LAPTOP 3 JUTA/HP Elitebook 840 G5.jpg"
+    image:    "./LAPTOP 3 JUTA/HP Elitebook 840 G5.webp"
   },
   {
     id: 80,
@@ -85,7 +85,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7650113386813885704?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/8pjLP4DVKs",
-    image:    "./LAPTOP 3 JUTA/ThinkPad P50s.jpg"
+    image:    "./LAPTOP 3 JUTA/ThinkPad P50s.webp"
   },
 
   // ── SEKITAR 4 JUTA ──────────────────────────────────────
@@ -102,7 +102,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/4qDCekqJ86",
-    image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.jpg"
+    image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
   },
     {
     id: 10,
@@ -117,7 +117,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/4VaMGJPLaF",
-    image:    "./LAPTOP 4 JUTA/Dell Latitude 7410.jpg"
+    image:    "./LAPTOP 4 JUTA/Dell Latitude 7410.webp"
   },
     {
     id: 11,
@@ -132,7 +132,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/20t1Hq2YNT",
-    image:    "./LAPTOP 4 JUTA/HP Elitebook 845 G8.jpg"
+    image:    "./LAPTOP 4 JUTA/HP Elitebook 845 G8.webp"
   },
 
       {
@@ -148,7 +148,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7650113386813885704?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/70HhDMopNv",
-    image:    "./LAPTOP 4 JUTA/ThinkPad P51.jpg"
+    image:    "./LAPTOP 4 JUTA/ThinkPad P51.webp"
   },
 
   // ── SEKITAR 5 JUTA ──────────────────────────────────────
@@ -165,7 +165,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7650113386813885704?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/2g8i3Dn0t2",
-    image:    "./LAPTOP 5 JUTA/ThinkPad P52.jpg"
+    image:    "./LAPTOP 5 JUTA/ThinkPad P52.webp"
   },
 
     {
@@ -181,7 +181,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/902ls9xklu",
-    image:    "./LAPTOP 5 JUTA/ThinkPad T14 G2.jpg"
+    image:    "./LAPTOP 5 JUTA/ThinkPad T14 G2.webp"
   },
 
       {
@@ -197,7 +197,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/4VaMVbGAtR",
-    image:    "./LAPTOP 5 JUTA/Axioo Hype 3.jpg"
+    image:    "./LAPTOP 5 JUTA/Axioo Hype 3.webp"
   },
 
         {
@@ -213,7 +213,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/20t1X5kdKE",
-    image:    "./LAPTOP 5 JUTA/Advan Workmate.jpg"
+    image:    "./LAPTOP 5 JUTA/Advan Workmate.webp"
   },
 
           {
@@ -229,7 +229,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/4LGwJSZjMn",
-    image:    "./LAPTOP 5 JUTA/Advan 360.jpg"
+    image:    "./LAPTOP 5 JUTA/Advan 360.webp"
   },
 
   // ── SEKITAR 6 JUTA ──────────────────────────────────────
@@ -246,7 +246,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/LknGcmWQR",
-    image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.png"
+    image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
   },
     {
     id: 14,
@@ -261,7 +261,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/6feqo1rqPr",
-    image:    "./LAPTOP 6 JUTA/Zyrex D-Tech Pro V2.png"
+    image:    "./LAPTOP 6 JUTA/Zyrex D-Tech Pro V2.webp"
   },
       {
     id: 15,
@@ -276,7 +276,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/1BJuGE3wFq",
-    image:    "./LAPTOP 6 JUTA/Infinix XBOOK 15.avif"
+    image:    "./LAPTOP 6 JUTA/Infinix XBOOK 15.webp"
   },
       {
     id: 16,
@@ -291,7 +291,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/7Ab7PK1H1d",
-    image:    "./LAPTOP 6 JUTA/Acer N150.png"
+    image:    "./LAPTOP 6 JUTA/Acer N150.webp"
   },
       {
     id: 17,
@@ -306,7 +306,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/9fISO18EoJ",
-    image:    "./LAPTOP 6 JUTA/HP Elitebook 835 G8.jpg"
+    image:    "./LAPTOP 6 JUTA/HP Elitebook 835 G8.webp"
   },
       {
     id: 18,
@@ -336,7 +336,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/5Aq3JZCit2",
-    image:    "./LAPTOP 6 JUTA/ThinkPad MX.jpg"
+    image:    "./LAPTOP 6 JUTA/ThinkPad MX.webp"
   },
 
        {
@@ -352,7 +352,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7650113386813885704?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/70HhDYNm9J",
-    image:    "./LAPTOP 6 JUTA/ThinkPad T15 G2.jpg"
+    image:    "./LAPTOP 6 JUTA/ThinkPad T15 G2.webp"
   },
 
   // ── SEKITAR 7 JUTA ──────────────────────────────────────
@@ -369,7 +369,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/W4Dl99kBh",
-    image:    "./LAPTOP 7 JUTA/Advan Workplus Heritage.png"
+    image:    "./LAPTOP 7 JUTA/Advan Workplus Heritage.webp"
   },
     {
     id: 20,
@@ -399,7 +399,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/6fer6naovA",
-    image:    "./LAPTOP 7 JUTA/Axioo Hype 5 X6 AMD.jpg"
+    image:    "./LAPTOP 7 JUTA/Axioo Hype 5 X6 AMD.webp"
   },
     {
     id: 22,
@@ -414,7 +414,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/3qKfjkUIbu",
-    image:    "./LAPTOP 7 JUTA/Asus Vivobook 14.png"
+    image:    "./LAPTOP 7 JUTA/Asus Vivobook 14.webp"
   },
 
       {
@@ -430,7 +430,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/1LdKlvIdib",
-    image:    "./LAPTOP 7 JUTA/Dell Latitude 7430.jpg"
+    image:    "./LAPTOP 7 JUTA/Dell Latitude 7430.webp"
   },
 
       {
@@ -446,7 +446,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/4qDCwZDkDZ",
-    image:    "./LAPTOP 8 JUTA/Advan Workmate Ultra.jpg"
+    image:    "./LAPTOP 8 JUTA/Advan Workmate Ultra.webp"
   },
 
 
@@ -464,7 +464,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/4qDCwU20zh",
-    image:    "./LAPTOP 8 JUTA/Axioo Hype Ai 5.png"
+    image:    "./LAPTOP 8 JUTA/Axioo Hype Ai 5.webp"
   },
     {
     id: 23,
@@ -479,7 +479,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/20t1Ybq2aG",
-    image:    "./LAPTOP 7 JUTA/Acer Aspire Lite AL15.jpg"
+    image:    "./LAPTOP 7 JUTA/Acer Aspire Lite AL15.webp"
   },
 
     {
@@ -495,7 +495,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/gNdz6m422",
-    image:    "./LAPTOP 8 JUTA/Infinix Xbook B14.jpg"
+    image:    "./LAPTOP 8 JUTA/Infinix Xbook B14.webp"
   },
     {
     id: 28,
@@ -525,7 +525,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/LknbWZiWC",
-    image:    "./LAPTOP 8 JUTA/Asus Expertbook.png"
+    image:    "./LAPTOP 8 JUTA/Asus Expertbook.webp"
   },
       {
     id: 30,
@@ -540,7 +540,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/7Ab7kGzYvQ",
-    image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.jpg"
+    image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
   },
         {
     id: 100,
@@ -555,7 +555,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7650475605644905735?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/902mDBFWzY",
-    image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.jpg"
+    image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
   },
   
 
@@ -573,7 +573,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/9KfcKRn15V",
-    image:    "./LAPTOP 9 JUTA/Advan Pixwar.jpg"
+    image:    "./LAPTOP 9 JUTA/Advan Pixwar.webp"
   },
     {
     id: 31,
@@ -603,7 +603,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/gNe0m4CIa",
-    image:    "./LAPTOP 9 JUTA/Lenovo Ideapad Slim 3.png"
+    image:    "./LAPTOP 9 JUTA/Lenovo Ideapad Slim 3.webp"
   },
       {
     id: 33,
@@ -618,7 +618,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/3VhpO64fzT",
-    image:    "./LAPTOP 9 JUTA/Acer Aspire Lite 15.png"
+    image:    "./LAPTOP 9 JUTA/Acer Aspire Lite 15.webp"
   },
       {
     id: 34,
@@ -633,7 +633,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/80AEkX5MoZ",
-    image:    "./LAPTOP 9 JUTA/Asus Expertbook.png"
+    image:    "./LAPTOP 9 JUTA/Asus Expertbook.webp"
   },
       {
     id: 36,
@@ -648,7 +648,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/9Uz2XaZlPp",
-    image:    "./LAPTOP 9 JUTA/ThinkPad P71.jpg"
+    image:    "./LAPTOP 9 JUTA/ThinkPad P71.webp"
   },
 
 ];
