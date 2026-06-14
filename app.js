@@ -21,16 +21,26 @@ const CATEGORY_META = {
 };
 
 // ── Rentang harga untuk dropdown ─────────────────────────────
-// min inklusif, max eksklusif (misal 7jt = 7.000.000 s/d 7.999.999)
 const PRICE_RANGES = [
-  { label: "Semua Harga", min: 0,         max: Infinity  },
-  { label: "Rp 3 Juta",  min: 3_000_000, max: 3_999_999 },
-  { label: "Rp 4 Juta",  min: 4_000_000, max: 4_999_999 },
-  { label: "Rp 5 Juta",  min: 5_000_000, max: 5_999_999 },
-  { label: "Rp 6 Juta",  min: 6_000_000, max: 6_999_999 },
-  { label: "Rp 7 Juta",  min: 7_000_000, max: 7_999_999 },
-  { label: "Rp 8 Juta",  min: 8_000_000, max: 8_999_999 },
-  { label: "Rp 9 Juta",  min: 9_000_000, max: 9_999_999 },
+  { label: "Semua Harga", min: 0,          max: Infinity   },
+  { label: "Rp 3 Juta",  min: 3_000_000,  max: 3_999_999  },
+  { label: "Rp 4 Juta",  min: 4_000_000,  max: 4_999_999  },
+  { label: "Rp 5 Juta",  min: 5_000_000,  max: 5_999_999  },
+  { label: "Rp 6 Juta",  min: 6_000_000,  max: 6_999_999  },
+  { label: "Rp 7 Juta",  min: 7_000_000,  max: 7_999_999  },
+  { label: "Rp 8 Juta",  min: 8_000_000,  max: 8_999_999  },
+  { label: "Rp 9 Juta",  min: 9_000_000,  max: 9_999_999  },
+  { label: "Rp 10 Juta", min: 10_000_000, max: 10_999_999 },
+  { label: "Rp 11 Juta", min: 11_000_000, max: 11_999_999 },
+  { label: "Rp 12 Juta", min: 12_000_000, max: 12_999_999 },
+  { label: "Rp 13 Juta", min: 13_000_000, max: 13_999_999 },
+  { label: "Rp 14 Juta", min: 14_000_000, max: 14_999_999 },
+  { label: "Rp 15 Juta", min: 15_000_000, max: 15_999_999 },
+  { label: "Rp 16 Juta", min: 16_000_000, max: 16_999_999 },
+  { label: "Rp 17 Juta", min: 17_000_000, max: 17_999_999 },
+  { label: "Rp 18 Juta", min: 18_000_000, max: 18_999_999 },
+  { label: "Rp 19 Juta", min: 19_000_000, max: 19_999_999 },
+  { label: "Rp 20 Juta", min: 20_000_000, max: 20_999_999 },
 ];
 
 // ── Build dropdown dari PRICE_RANGES ─────────────────────────

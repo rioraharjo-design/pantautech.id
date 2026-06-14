@@ -651,4 +651,131 @@ const PRODUCTS = [
     image:    "./LAPTOP 9 JUTA/ThinkPad P71.webp"
   },
 
+// ── 10 JUTA ─────────────────────────────────────────────
+  {
+    id: 110,
+    name: "HP 14",
+    category: "global",
+    price: 10182000,
+    specs: [
+     "Intel Ultra 5 125H",
+     "Intel Arc",
+     "RAM 16GB",
+     "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/3g1IzrVKWu",
+    image:    "./LAPTOP 10 JUTA/.webp"
+  },
+
+    {
+    id: 120,
+    name: "Acer Swift Go 14 AI",
+    category: "global",
+    price: 10463000,
+    specs: [
+     "Snapdragon X Plus",
+     "Qualcomm Adreno",
+     "RAM 16GB",
+     "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/1LdODPWdOg",
+    image:    "./LAPTOP 10 JUTA/.webp"
+  },
+
+    {
+    id: 130,
+    name: "Lenovo V14 Gen 4",
+    category: "global",
+    price: 10224000,
+    specs: [
+     "Intel Core i7-13620H",
+     "Intel UHD Graphic 13th gen",
+     "RAM 16GB",
+     "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/2VpLdAh8e9",
+    image:    "./LAPTOP 10 JUTA/.webp"
+  },
+  {
+    id: 140,
+    name: "Apple Macbook Neo",
+    category: "global",
+    price: 10284000,
+    specs: [
+     "Apple A18 Pro",
+     "GPU Apple A18 Pro",
+     "RAM 8GB",
+     "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/7fXRngXlhb",
+    image:    "./LAPTOP 10 JUTA/.webp"
+  },
+
+    {
+    id: 150,
+    name: "Tecno Megabook T1 14",
+    category: "odm",
+    price: 10224000,
+    specs: [
+     "Intel Core i9-13900HK",
+     "Intel Iris Xe",
+     "RAM 16GB",
+     "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/7KubNr7ej6",
+    image:    "./LAPTOP 10 JUTA/.webp"
+  },
+
+    {
+    id: 160,
+    name: "Axioo Hype 7 AMD X9",
+    category: "odm",
+    price: 10128000,
+    specs: [
+     "AMD Ryzen 7 8745HS",
+     "Radeon 780M",
+     "RAM 32GB",
+     "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/20t53TtreC",
+    image:    "./LAPTOP 10 JUTA/.webp"
+  },
+
+    {
+    id: 170,
+    name: "ThinkPad P1 Gen 2",
+    category: "bekas",
+    price: 10464000,
+    specs: [
+     "Intel Core i9-9880H",
+     "Nvidia Quadro T2000",
+     "RAM 16GB",
+     "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/9fIW9ZnCUF",
+    image:    "./LAPTOP 10 JUTA/.webp"
+  },
+
+    {
+    id: 110,
+    name: "Lenovo Legion 5 15ARH05H",
+    category: "bekas",
+    price: 10224000,
+    specs: [
+     "AMD Ryzen 5 4600H",
+     "RTX 2060 6GB",
+     "RAM 16GB",
+     "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/2g8lyOhZji",
+    image:    "./LAPTOP 10 JUTA/.webp"
+  },
 ];
