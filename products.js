@@ -663,7 +663,7 @@ const PRODUCTS = [
      "RAM 16GB",
      "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/3g1IzrVKWu",
     image:    "./LAPTOP 10 JUTA/.webp"
   },
@@ -679,7 +679,7 @@ const PRODUCTS = [
      "RAM 16GB",
      "SSD 1TB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/1LdODPWdOg",
     image:    "./LAPTOP 10 JUTA/.webp"
   },
@@ -695,7 +695,7 @@ const PRODUCTS = [
      "RAM 16GB",
      "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/2VpLdAh8e9",
     image:    "./LAPTOP 10 JUTA/.webp"
   },
@@ -710,7 +710,7 @@ const PRODUCTS = [
      "RAM 8GB",
      "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/7fXRngXlhb",
     image:    "./LAPTOP 10 JUTA/.webp"
   },
@@ -726,7 +726,7 @@ const PRODUCTS = [
      "RAM 16GB",
      "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/7KubNr7ej6",
     image:    "./LAPTOP 10 JUTA/.webp"
   },
@@ -742,7 +742,7 @@ const PRODUCTS = [
      "RAM 32GB",
      "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/20t53TtreC",
     image:    "./LAPTOP 10 JUTA/.webp"
   },
@@ -758,7 +758,7 @@ const PRODUCTS = [
      "RAM 16GB",
      "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/9fIW9ZnCUF",
     image:    "./LAPTOP 10 JUTA/.webp"
   },
@@ -774,7 +774,7 @@ const PRODUCTS = [
      "RAM 16GB",
      "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/2g8lyOhZji",
     image:    "./LAPTOP 10 JUTA/.webp"
   },
