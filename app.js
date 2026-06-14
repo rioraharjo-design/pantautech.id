@@ -71,11 +71,13 @@ function renderCard(p) {
         <ul class="card-specs">${specs}</ul>
         <p class="card-price">${formatRupiah(p.price)}</p>
         <div class="card-actions">
-          <a href="${p.videoUrl}" target="_blank" rel="noopener" class="btn btn-video">
+          <a href="${p.videoUrl}" target="_blank" rel="noopener" class="btn btn-video"
+            onclick="trackClick('video', '${p.name}', '${p.category}', ${p.price})">
             <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
             Video
           </a>
-          <a href="${p.shopUrl}" target="_blank" rel="noopener" class="btn btn-shop">Shopee</a>
+          <a href="${p.shopUrl}" target="_blank" rel="noopener" class="btn btn-shop"
+            onclick="trackClick('shopee', '${p.name}', '${p.category}', ${p.price})">Shopee</a>
         </div>
       </div>
     </article>
@@ -157,6 +159,19 @@ document.getElementById("searchInput").addEventListener("input", e => {
   searchQuery = e.target.value;
   applyFilters();
 });
+
+// ── GA4 Event Tracking ───────────────────────────────────────
+// Dipanggil setiap kali tombol Video atau Shopee diklik.
+// Data akan muncul di GA4 → Reports → Events → "klik_produk"
+function trackClick(tombol, namaLaptop, kategori, harga) {
+  if (typeof gtag !== "function") return; // GA belum load, skip
+  gtag("event", "klik_produk", {
+    tombol:      tombol,      // "video" atau "shopee"
+    nama_laptop: namaLaptop,  // contoh: "Lenovo ThinkPad T480"
+    kategori:    kategori,    // "global" / "bekas" / "odm"
+    harga:       harga        // angka, contoh: 7698000
+  });
+}
 
 // ── Init ─────────────────────────────────────────────────────
 buildPriceMenu();
