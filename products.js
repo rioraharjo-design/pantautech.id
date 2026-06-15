@@ -665,7 +665,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/3g1IzrVKWu",
-    image:    "./LAPTOP 10 JUTA/.webp"
+    image:    "./LAPTOP 10 JUTA/HP 14.webp"
   },
 
     {
@@ -681,7 +681,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/1LdODPWdOg",
-    image:    "./LAPTOP 10 JUTA/.webp"
+    image:    "./LAPTOP 10 JUTA/Acer Swift Go 14 AI.webp"
   },
 
     {
@@ -697,7 +697,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/2VpLdAh8e9",
-    image:    "./LAPTOP 10 JUTA/.webp"
+    image:    "./LAPTOP 10 JUTA/Lenovo V14.webp"
   },
   {
     id: 140,
@@ -712,7 +712,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/7fXRngXlhb",
-    image:    "./LAPTOP 10 JUTA/.webp"
+    image:    "./LAPTOP 10 JUTA/Apple Macbook Neo.webp"
   },
 
     {
@@ -728,7 +728,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/7KubNr7ej6",
-    image:    "./LAPTOP 10 JUTA/.webp"
+    image:    "./LAPTOP 10 JUTA/Tecno Megabook T1.webp"
   },
 
     {
@@ -744,7 +744,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/20t53TtreC",
-    image:    "./LAPTOP 10 JUTA/.webp"
+    image:    "./LAPTOP 10 JUTA/Axioo Hype 7 AMD X9.webp"
   },
 
     {
@@ -760,11 +760,11 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/9fIW9ZnCUF",
-    image:    "./LAPTOP 10 JUTA/.webp"
+    image:    "./LAPTOP 10 JUTA/ThinkPad P1 G2.webp"
   },
 
     {
-    id: 110,
+    id: 180,
     name: "Lenovo Legion 5 15ARH05H",
     category: "bekas",
     price: 10224000,
@@ -776,6 +776,119 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/2g8lyOhZji",
-    image:    "./LAPTOP 10 JUTA/.webp"
+    image:    "./LAPTOP 10 JUTA/Lenovo Legion 5.webp"
+  },
+
+   // ── 11 JUTA ─────────────────────────────────────────────
+  {
+    id: 190,
+    name: "Lenovo Ideapad 5 2in1",
+    category: "global",
+    price: 11138000,
+    specs: [
+      "Ryzen AI 7 350/Ryzen 7 8845HS",
+      "Radeon 860M/Radeon 780M",
+      "RAM 16GB",
+      "SSD 512GB/1TB"
+        ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/60PF8WUgGm",
+    image:    "./LAPTOP 11 JUTA/Lenovo 5.webp"
+  },
+
+    {
+    id: 200,
+    name: "Asus Expertbook P1403CVA",
+    category: "global",
+    price: 11553000,
+    specs: [
+      "Intel Core i7-13620H",
+      "Intel UHD Graphics 13th Gen",
+      "RAM 16GB",
+      "SSD 512GB"
+        ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/7KucmGly4N",
+    image:    "./LAPTOP 11 JUTA/Asus P1.webp"
+  },
+
+      {
+    id: 201,
+    name: "HP Omnibook 3 Next Gen Ai 14",
+    category: "global",
+    price: 10880000,
+    specs: [
+      "AMD Ryzen AI 5 340",
+      "Radeon 840M",
+      "RAM 16GB",
+      "SSD 512GB"
+        ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/3B53omfidq",
+    image:    "./LAPTOP 11 JUTA/HP Omnibook.webp"
+  },
+
+        {
+    id: 202,
+    name: "MSI Thin 15 B12UC-3298",
+    category: "global",
+    price: 11399000,
+    specs: [
+      "Intel Core i7-12650H",
+      "Nvidia GeForce RTX 3050 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+        ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/7pqtKeUycC",
+    image:    "./LAPTOP 11 JUTA/MSI Thin.webp"
+  },
+
+        {
+    id: 203,
+    name: "Lenovo LOQ Essential 15ARP10E",
+    category: "global",
+    price: 12042000,
+    specs: [
+      "AMD Ryzen 7 7735HS",
+      "Nvidia GeForce RTX 3050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+        ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/AKYEJh6uy8",
+    image:    "./LAPTOP 11 JUTA/Lenovo LOQ.webp"
+  },
+
+        {
+    id: 204,
+    name: "ThinkPad P53",
+    category: "bekas",
+    price: 11564000,
+    specs: [
+      "Intel Core i7-9750H",
+      "Nvidia Quadro RTX 5000 16GB",
+      "RAM 16GB",
+      "SSD 256GB"
+        ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/6fevxeEiE2",
+    image:    "./LAPTOP 11 JUTA/ThinkPad P53.webp"
+  },
+
+        {
+    id: 205,
+    name: "HP Victus 16",
+    category: "bekas",
+    price: 11956000,
+    specs: [
+      "Intel Core i7-12700H",
+      "Nvidia GeForce RTX 3060 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+        ],
+    videoUrl: "https://www.tiktok.com/@pantautech",
+    shopUrl:  "https://s.shopee.co.id/50WhzlInBZ",
+    image:    "./LAPTOP 11 JUTA/HP Victus.webp"
   },
 ];
