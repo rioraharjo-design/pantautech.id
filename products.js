@@ -730,7 +730,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/60PF8WUgGm",
     image:    "./LAPTOP 11 JUTA/Lenovo 5.webp"
   },
@@ -745,7 +745,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/7KucmGly4N",
     image:    "./LAPTOP 11 JUTA/Asus P1.webp"
   },
@@ -760,7 +760,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/3B53omfidq",
     image:    "./LAPTOP 10 JUTA/HP Omnibook.webp"
   },
@@ -775,7 +775,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/7pqtKeUycC",
     image:    "./LAPTOP 11 JUTA/MSI Thin.webp"
   },
@@ -790,7 +790,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/AKYEJh6uy8",
     image:    "./LAPTOP 12 JUTA/Lenovo LOQ.webp"
   },
@@ -805,7 +805,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/6fevxeEiE2",
     image:    "./LAPTOP 11 JUTA/ThinkPad P53.webp"
   },
@@ -820,7 +820,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/50WhzlInBZ",
     image:    "./LAPTOP 11 JUTA/HP Victus.webp"
   },
