@@ -824,4 +824,64 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/50WhzlInBZ",
     image:    "./LAPTOP 11 JUTA/HP Victus.webp"
   },
+  {
+    id: 206,
+    name: "Acer Swift Lite 14",
+    category: "global",
+    price: 12369000,
+    specs: [
+      "AMD Ryzen 7 260",
+      "Radeon 780M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/LkuHe7M31",
+    image:    "./LAPTOP 12 JUTA/Acer Swift.webp"
+  },
+  {
+    id: 207,
+    name: "Acer Aspire 7 Pro",
+    category: "global",
+    price: 12316000,
+    specs: [
+      "Intel Core i5-13420H",
+      "Nvidia GeForce RTX 3050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7pqvDaEpiY",
+    image:    "./LAPTOP 12 JUTA/Acer 7.webp"
+  },
+  {
+    id: 208,
+    name: "Acer Aspire Go 14 Ai",
+    category: "global",
+    price: 11763000,
+    specs: [
+      "Intel Ultra 7 115H",
+      "Intel Arc",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/5fmQdwRw3n",
+    image:    "./LAPTOP 11 JUTA/Acer Go.webp"
+  },
+  {
+    id: 209,
+    name: "Axioo Pongo 750",
+    category: "bekas",
+    price: 12054000,
+    specs: [
+      "Intel Core i7-13620H",
+      "Nvidia GeForce RTX 4050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4qDJeZD73c",
+    image:    "./LAPTOP 12 JUTA/Axioo Pongo.webp"
+  },
 ];
