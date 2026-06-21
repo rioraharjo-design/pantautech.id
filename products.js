@@ -835,7 +835,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
     shopUrl:  "https://s.shopee.co.id/LkuHe7M31",
     image:    "./LAPTOP 12 JUTA/Acer Swift.webp"
   },
@@ -850,7 +850,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
     shopUrl:  "https://s.shopee.co.id/7pqvDaEpiY",
     image:    "./LAPTOP 12 JUTA/Acer 7.webp"
   },
@@ -865,7 +865,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
     shopUrl:  "https://s.shopee.co.id/5fmQdwRw3n",
     image:    "./LAPTOP 11 JUTA/Acer Go.webp"
   },
@@ -880,8 +880,53 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
     shopUrl:  "https://s.shopee.co.id/4qDJeZD73c",
     image:    "./LAPTOP 12 JUTA/Axioo Pongo.webp"
+  },
+  {
+    id: 210,
+    name: "Dell Latitude 7390",
+    category: "bekas",
+    price: 2850000,
+    specs: [
+      "Intel Core i5 Gen 7",
+      "Intel UHD Graphics 620",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4LH6HHflF4",
+    image:    "./LAPTOP 2 JUTA/Dell.webp"
+  },
+  {
+    id: 211,
+    name: "ThinkPad A485",
+    category: "bekas",
+    price: 2900000,
+    specs: [
+      "AMD Ryzen 5 Pro 2500U",
+      "Radeon Vega 8",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4Axg4ZK2vS",
+    image:    "./LAPTOP 2 JUTA/ThinkPad A.webp"
+  },
+  {
+    id: 212,
+    name: "ThinkPad X280",
+    category: "bekas",
+    price: 2700000,
+    specs: [
+      "Intel Core i3-8",
+      "Intel UHD Graphics 620",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8pjVczxSba",
+    image:    "./LAPTOP 2 JUTA/ThinkPad X.webp"
   },
 ];

@@ -23,6 +23,8 @@ const CATEGORY_META = {
 // ── Rentang harga untuk dropdown ─────────────────────────────
 const PRICE_RANGES = [
   { label: "Semua Harga", min: 0,          max: Infinity   },
+  { label: "Rp 1 Juta",  min: 1_000_000,  max: 1_999_999  },
+  { label: "Rp 2 Juta",  min: 2_000_000,  max: 2_999_999  },
   { label: "Rp 3 Juta",  min: 3_000_000,  max: 3_999_999  },
   { label: "Rp 4 Juta",  min: 4_000_000,  max: 4_999_999  },
   { label: "Rp 5 Juta",  min: 5_000_000,  max: 5_999_999  },
