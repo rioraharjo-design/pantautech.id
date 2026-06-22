@@ -895,7 +895,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7653819332434070802",
     shopUrl:  "https://s.shopee.co.id/4LH6HHflF4",
     image:    "./LAPTOP 2 JUTA/Dell.webp"
   },
@@ -910,7 +910,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 128GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7653819332434070802",
     shopUrl:  "https://s.shopee.co.id/4Axg4ZK2vS",
     image:    "./LAPTOP 2 JUTA/ThinkPad A.webp"
   },
@@ -920,13 +920,58 @@ const PRODUCTS = [
     category: "bekas",
     price: 2700000,
     specs: [
-      "Intel Core i3-8",
+      "Intel Core i3 Gen 8",
+      "Intel UHD Graphics 620",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7653819332434070802",
+    shopUrl:  "https://s.shopee.co.id/8pjVczxSba",
+    image:    "./LAPTOP 2 JUTA/ThinkPad X.webp"
+  },
+  {
+    id: 213,
+    name: "Dell Latitude 7280",
+    category: "bekas",
+    price: 1911000,
+    specs: [
+      "Intel Core i3 Gen 7",
       "Intel UHD Graphics 620",
       "RAM 8GB",
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/8pjVczxSba",
-    image:    "./LAPTOP 2 JUTA/ThinkPad X.webp"
+    shopUrl:  "https://s.shopee.co.id/Ll3prHAYI",
+    image:    "./LAPTOP 1 JUTA/Dell.webp"
+  },
+  {
+    id: 214,
+    name: "HP Probook 430 G3",
+    category: "bekas",
+    price: 1860000,
+    specs: [
+      "Intel Core i5 Gen 6",
+      "Intel HD Graphics 520",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/5fmaCNUmww",
+    image:    "./LAPTOP 1 JUTA/HP.webp"
+  },
+  {
+    id: 215,
+    name: "ThinkPad T470",
+    category: "bekas",
+    price: 1875000,
+    specs: [
+      "Intel Core i5 Gen 7",
+      "Intel UHD Graphics 620",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9AMSPFvWZ5",
+    image:    "./LAPTOP 1 JUTA/ThinkPad T.webp"
   },
 ];
