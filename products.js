@@ -974,4 +974,49 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/9AMSPFvWZ5",
     image:    "./LAPTOP 1 JUTA/ThinkPad T.webp"
   },
+  {
+    id: 216,
+    name: "Asus Vivobook S14",
+    category: "global",
+    price: 13014000,
+    specs: [
+      "Intel Ultra 5 225H",
+      "Intel Arc 130T",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7AbP7wO4xV",
+    image:    "./LAPTOP 13 JUTA/Asus.webp"
+  },
+  {
+    id: 217,
+    name: "Acer Nitro Lite 16",
+    category: "global",
+    price: 12926000,
+    specs: [
+      "Intel Core i5 210H",
+      "Nvidia GeForce RTX 3050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7fXfiy6u9e",
+    image:    "./LAPTOP 12 JUTA/Acer.webp"
+  },
+  {
+    id: 218,
+    name: "HP Pavilion Plus 14",
+    category: "global",
+    price: 13994000,
+    specs: [
+      "AMD Ryzen 7-7840U",
+      "Radeon 780M",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4VadxYRDTU",
+    image:    "./LAPTOP 13 JUTA/HP.webp"
+  },
 ];
