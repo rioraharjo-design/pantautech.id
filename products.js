@@ -940,7 +940,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654187844063333639",
     shopUrl:  "https://s.shopee.co.id/Ll3prHAYI",
     image:    "./LAPTOP 1 JUTA/Dell.webp"
   },
@@ -955,7 +955,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 128GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654187844063333639",
     shopUrl:  "https://s.shopee.co.id/5fmaCNUmww",
     image:    "./LAPTOP 1 JUTA/HP.webp"
   },
@@ -970,7 +970,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 128GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654187844063333639",
     shopUrl:  "https://s.shopee.co.id/9AMSPFvWZ5",
     image:    "./LAPTOP 1 JUTA/ThinkPad T.webp"
   },
@@ -985,7 +985,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 1TB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654537785574984978",
     shopUrl:  "https://s.shopee.co.id/7AbP7wO4xV",
     image:    "./LAPTOP 13 JUTA/Asus.webp"
   },
@@ -1000,7 +1000,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654537785574984978",
     shopUrl:  "https://s.shopee.co.id/7fXfiy6u9e",
     image:    "./LAPTOP 12 JUTA/Acer.webp"
   },
@@ -1015,8 +1015,83 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 1TB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654537785574984978",
     shopUrl:  "https://s.shopee.co.id/4VadxYRDTU",
     image:    "./LAPTOP 13 JUTA/HP.webp"
+  },
+  {
+    id: 219,
+    name: "MSI Thin 15 B13VE-3415",
+    category: "global",
+    price: 13994000,
+    specs: [
+      "Intel Core i5-13420H",
+      "Nvidia GeForce RTX 4050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1gGZItsz7U",
+    image:    "./LAPTOP 13 JUTA/MSIT.webp"
+  },
+  {
+    id: 220,
+    name: "Acer Nitro Lite 16 NL16",
+    category: "global",
+    price: 14149000,
+    specs: [
+      "Intel Core i5-13420H",
+      "Nvidia GeForce RTX 4050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/60PYT4kR6g",
+    image:    "./LAPTOP 14 JUTA/Acer.webp"
+  },
+  {
+    id: 221,
+    name: "HP Omnibook 3 Ai 14",
+    category: "global",
+    price: 14494000,
+    specs: [
+      "Intel Ultra 5 325",
+      "Intel Xe3",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/70I5f17yL5",
+    image:    "./LAPTOP 14 JUTA/HP Omni.webp"
+  },
+  {
+    id: 222,
+    name: "MSI Modern 15 C2RMG",
+    category: "global",
+    price: 14446000,
+    specs: [
+      "Intel Core 9 270H",
+      "Intel Iris Xe G7 96EU",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9zvhEbMMhY",
+    image:    "./LAPTOP 14 JUTA/MSIM.webp"
+  },
+  {
+    id: 223,
+    name: "Asus Zenbook 14 OLED",
+    category: "global",
+    price: 14274000,
+    specs: [
+      "AMD Ryzen 7 8840HS",
+      "Radeon 780M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/2LWG6YWjzk",
+    image:    "./LAPTOP 14 JUTA/Asus.webp"
   },
 ];
