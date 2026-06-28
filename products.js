@@ -511,7 +511,7 @@ const PRODUCTS = [
   },
   {
     id: 9,
-    name: "Advan Pixwar (GAMING)",
+    name: "Advan Pixwar",
     category: "odm",
     price: 9599000,
     specs: [
@@ -706,7 +706,7 @@ const PRODUCTS = [
   },
   {
     id: 180,
-    name: "Lenovo Legion 5 15ARH05H",
+    name: "Lenovo Legion 5 15ARH05H (GAMING)",
     category: "bekas",
     price: 10224000,
     specs: [
@@ -766,7 +766,7 @@ const PRODUCTS = [
   },
   {
     id: 202,
-    name: "MSI Thin 15 B12UC-3298",
+    name: "MSI Thin 15 B12UC-3298 (GAMING)",
     category: "global",
     price: 11399000,
     specs: [
@@ -781,7 +781,7 @@ const PRODUCTS = [
   },
   {
     id: 203,
-    name: "Lenovo LOQ Essential 15ARP10E",
+    name: "Lenovo LOQ Essential 15ARP10E (GAMING)",
     category: "global",
     price: 12042000,
     specs: [
@@ -811,7 +811,7 @@ const PRODUCTS = [
   },
   {
     id: 205,
-    name: "HP Victus 16",
+    name: "HP Victus 16 (GAMING)",
     category: "bekas",
     price: 11956000,
     specs: [
@@ -841,7 +841,7 @@ const PRODUCTS = [
   },
   {
     id: 207,
-    name: "Acer Aspire 7 Pro",
+    name: "Acer Aspire 7 Pro (GAMING)",
     category: "global",
     price: 12316000,
     specs: [
@@ -871,7 +871,7 @@ const PRODUCTS = [
   },
   {
     id: 209,
-    name: "Axioo Pongo 750",
+    name: "Axioo Pongo 750 (GAMING)",
     category: "bekas",
     price: 12054000,
     specs: [
@@ -991,7 +991,7 @@ const PRODUCTS = [
   },
   {
     id: 217,
-    name: "Acer Nitro Lite 16",
+    name: "Acer Nitro Lite 16 (GAMING)",
     category: "global",
     price: 12926000,
     specs: [
@@ -1021,7 +1021,7 @@ const PRODUCTS = [
   },
   {
     id: 219,
-    name: "MSI Thin 15 B13VE-3415",
+    name: "MSI Thin 15 B13VE-3415 (GAMING)",
     category: "global",
     price: 13994000,
     specs: [
@@ -1036,7 +1036,7 @@ const PRODUCTS = [
   },
   {
     id: 220,
-    name: "Acer Nitro Lite 16 NL16",
+    name: "Acer Nitro Lite 16 NL16 (GAMING)",
     category: "global",
     price: 14149000,
     specs: [
@@ -1138,5 +1138,80 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/4AxvbMQSix",
     image:    "./LAPTOP 3 JUTA/thinkpad x.webp"
+  },
+  {
+    id: 227,
+    name: "Asus TUF FX504GE (GAMING)",
+    category: "bekas",
+    price: 5712000,
+    specs: [
+      "Intel Core i7-8750H",
+      "Nvidia GeForce GTX 1050Ti 4GB",
+      "RAM 8GB",
+      "SSD SSD 256GB,HDD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7AbXWXHtnA",
+    image:    "./LAPTOP 5 JUTA/tuf 1.webp"
+  },
+  {
+    id: 228,
+    name: "Asus TUF FX505GT (GAMING)",
+    category: "bekas",
+    price: 6672000,
+    specs: [
+      "Intel Core i5-9300H",
+      "Nvidia GeForce GTX 1650 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8fQLJUKXYW",
+    image:    "./LAPTOP 6 JUTA/tuf 2.webp"
+  },
+  {
+    id: 229,
+    name: "MSI GF63 Thin 9SCSR (GAMING)",
+    category: "bekas",
+    price: 7152000,
+    specs: [
+      "Intel Core i7-9750H",
+      "Nvidia GeForce GTX 1650Ti 4GB",
+      "RAM 16GB",
+      "SSD SSD 512GB,HDD 500GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/5q69wSojoS",
+    image:    "./LAPTOP 7 JUTA/msi.webp"
+  },
+  {
+    id: 230,
+    name: "Lenovo Ideapad Gaming 3 2050 (GAMING)",
+    category: "bekas",
+    price: 8448000,
+    specs: [
+      "AMD Ryzen 5 5500H",
+      "Nvidia GeForce RTX 2050 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6L2QXXGXaG",
+    image:    "./LAPTOP 8 JUTA/lenovoig1.webp"
+  },
+  {
+    id: 231,
+    name: "Lenovo Ideapad Gaming 3 3060 (GAMING)",
+    category: "bekas",
+    price: 9552000,
+    specs: [
+      "AMD Ryzen 5 5600H",
+      "Nvidia GeForce RTX 3060 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7VENvvWMxk",
+    image:    "./LAPTOP 9 JUTA/lenovoig2.webp"
   },
 ];
