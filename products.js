@@ -91,9 +91,9 @@ const PRODUCTS = [
   },
   {
     id: 11,
-    name: "HP Elitebook 845 G8",
+    name: "HP Elitebook 845 G8 (TERLARIS)",
     category: "bekas",
-    price: 4991000,
+    price: 5509000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -102,7 +102,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/20t1Hq2YNT",
-    image:    "./LAPTOP 4 JUTA/HP Elitebook 845 G8.webp"
+    image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
     id: 81,
@@ -271,7 +271,7 @@ const PRODUCTS = [
   },
   {
     id: 18,
-    name: "ThinkPad T14 Gen 2 AMD",
+    name: "ThinkPad T14 Gen 2 Ryzen 7",
     category: "bekas",
     price: 6240000,
     specs: [
@@ -1030,7 +1030,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656043970857913618",
     shopUrl:  "https://s.shopee.co.id/1gGZItsz7U",
     image:    "./LAPTOP 13 JUTA/MSIT.webp"
   },
@@ -1045,7 +1045,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656043970857913618",
     shopUrl:  "https://s.shopee.co.id/60PYT4kR6g",
     image:    "./LAPTOP 14 JUTA/Acer.webp"
   },
@@ -1060,7 +1060,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656043970857913618",
     shopUrl:  "https://s.shopee.co.id/70I5f17yL5",
     image:    "./LAPTOP 14 JUTA/HP Omni.webp"
   },
@@ -1075,7 +1075,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 1TB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656043970857913618",
     shopUrl:  "https://s.shopee.co.id/9zvhEbMMhY",
     image:    "./LAPTOP 14 JUTA/MSIM.webp"
   },
@@ -1090,8 +1090,53 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656043970857913618",
     shopUrl:  "https://s.shopee.co.id/2LWG6YWjzk",
     image:    "./LAPTOP 14 JUTA/Asus.webp"
+  },
+  {
+    id: 224,
+    name: "Dell Latitude 5400 (TERLARIS)",
+    category: "bekas",
+    price: 3634000,
+    specs: [
+      "Intel Core i5 Gen 8",
+      "Intel UHD Graphics 620",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9fIsAZatzM",
+    image:    "./LAPTOP 3 JUTA/dell 5400.webp"
+  },
+  {
+    id: 225,
+    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
+    category: "bekas",
+    price: 5520000,
+    specs: [
+      "AMD Ryzen 5 Pro 5650U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7VENaYDr4J",
+    image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
+  },
+  {
+    id: 226,
+    name: "ThinkPad X390 (TERLARIS)",
+    category: "bekas",
+    price: 3634000,
+    specs: [
+      "Intel Core i5 Gen 8",
+      "Intel UHD Graphics 620",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4AxvbMQSix",
+    image:    "./LAPTOP 3 JUTA/thinkpad x.webp"
   },
 ];
