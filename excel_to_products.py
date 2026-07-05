@@ -12,7 +12,7 @@ def price_to_folder(price):
     try:
         p = int(price)
         juta = p // 1000000
-        return str(max(3, min(juta, 20)))
+        return str(max(1, min(juta, 20)))
     except:
         return "9"
 
