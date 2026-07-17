@@ -93,12 +93,12 @@ const PRODUCTS = [
     id: 11,
     name: "(HARGA NAIK) HP Elitebook 845 G8 (TERLARIS)",
     category: "bekas",
-    price: 5700000,
+    price: 5039000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
       "RAM 16GB",
-      "SSD 512GB"
+      "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/2g9b9rX8re",
