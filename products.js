@@ -105,6 +105,21 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
+    id: 232,
+    name: "HP Elitebook 845 G7",
+    category: "bekas",
+    price: 4679000,
+    specs: [
+      "AMD Ryzen 5 Pro 4650U",
+      "Radeon Vega 6",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/",
+    shopUrl:  "https://s.shopee.co.id/6AjTIUmld0",
+    image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
+  },
+  {
     id: 81,
     name: "ThinkPad P51 (TEKNIK)",
     category: "bekas",
