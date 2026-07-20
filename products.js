@@ -44,6 +44,21 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/8pjLPwLjVy",
     image:    "./LAPTOP 3 JUTA/HP Elitebook 840 G5.webp"
   },
+   {
+    id: 3,
+    name: "HP Elitebook 745 G6",
+    category: "bekas",
+    price: 3910000,
+    specs: [
+      "AMD Ryzen 5 3500U",
+      "Radeon Vega 8",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/AAFefpopkL",
+    image:    "./LAPTOP 3 JUTA/HP Elitebook 745 G6.webp"
+  },
   {
     id: 80,
     name: "ThinkPad P50s (TEKNIK)",
