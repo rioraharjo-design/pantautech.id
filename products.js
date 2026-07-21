@@ -1244,4 +1244,19 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/7VENvvWMxk",
     image:    "./LAPTOP 9 JUTA/lenovoig2.webp"
   },
+  {
+    id: 232,
+    name: "Dell Precision 7730 (TEKNIK)",
+    category: "bekas",
+    price: 6080000,
+    specs: [
+      "Intel Core i7-8850H",
+      "Nvidia Quadro P3200 6GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/111UtB08HV",
+    image:    "./LAPTOP 6 JUTA/Dell 7730.webp"
+  },
 ];
