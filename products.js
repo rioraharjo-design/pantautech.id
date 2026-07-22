@@ -45,7 +45,7 @@ const PRODUCTS = [
     image:    "./LAPTOP 3 JUTA/HP Elitebook 840 G5.webp"
   },
    {
-    id: 3,
+    id: 39999,
     name: "(HABIS) HP Elitebook 745 G6",
     category: "bekas",
     price: 3910000,
@@ -120,7 +120,7 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
-    id: 232,
+    id: 233333,
     name: "HP Elitebook 845 G7",
     category: "bekas",
     price: 4679000,
@@ -1258,5 +1258,20 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/111UtB08HV",
     image:    "./LAPTOP 6 JUTA/Dell 7730.webp"
+  },
+    {
+    id: 233,
+    name: "Macbook Pro Retina 15 (2015)",
+    category: "bekas",
+    price: 5347000,
+    specs: [
+      "Intel i7 2.2Ghz",
+      "Intel Iris Pro 6100",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3LPPh8aOrB",
+    image:    "./LAPTOP 5 JUTA/Macbook.webp"
   },
 ];
