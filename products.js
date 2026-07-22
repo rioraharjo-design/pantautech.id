@@ -46,17 +46,17 @@ const PRODUCTS = [
   },
    {
     id: 3,
-    name: "HP Elitebook 745 G6",
+    name: "(HARGA NAIK) HP Elitebook 745 G6",
     category: "bekas",
-    price: 3910000,
+    price: 3870000,
     specs: [
       "AMD Ryzen 5 3500U",
       "Radeon Vega 8",
-      "RAM 16GB",
+      "RAM 8GB",
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/AAFefpopkL",
+    shopUrl:  "https://s.shopee.co.id/80BGXOcPZH",
     image:    "./LAPTOP 3 JUTA/HP Elitebook 745 G6.webp"
   },
   {
