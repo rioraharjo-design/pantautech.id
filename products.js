@@ -116,7 +116,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/6AjTIUmld0",
+    shopUrl:  "https://s.shopee.co.id/2BDYso3ZoQ",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
