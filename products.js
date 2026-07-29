@@ -6,7 +6,7 @@ const PRODUCTS = [
     price: 3952000,
     specs: [
       "Intel Core i5-8250U",
-      "Intel Graphics UHD 620",
+      "Intel UHD Graphics 620",
       "RAM 16GB",
       "SSD 256GB"
     ],
@@ -46,17 +46,17 @@ const PRODUCTS = [
   },
    {
     id: 39999,
-    name: "(HABIS) HP Elitebook 745 G6",
+    name: "(HARGA NAIK) HP Elitebook 745 G6",
     category: "bekas",
-    price: 3910000,
+    price: 4436000,
     specs: [
       "AMD Ryzen 5 3500U",
       "Radeon Vega 8",
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/80BGXOcPZH",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7664581349801528584",
+    shopUrl:  "https://s.shopee.co.id/8AUsBakgm0",
     image:    "./LAPTOP 3 JUTA/HP Elitebook 745 G6.webp"
   },
   {
@@ -130,7 +130,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7663495067117686034",
     shopUrl:  "https://s.shopee.co.id/6AjTIUmld0",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
@@ -1135,7 +1135,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
     shopUrl:  "https://s.shopee.co.id/9fIsAZatzM",
     image:    "./LAPTOP 3 JUTA/dell 5400.webp"
   },
@@ -1150,7 +1150,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
     shopUrl:  "https://s.shopee.co.id/20u6pc4Jtu",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
@@ -1165,7 +1165,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
     shopUrl:  "https://s.shopee.co.id/4AxvbMQSix",
     image:    "./LAPTOP 3 JUTA/thinkpad x.webp"
   },
@@ -1180,7 +1180,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD SSD 256GB,HDD 1TB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
     shopUrl:  "https://s.shopee.co.id/7AbXWXHtnA",
     image:    "./LAPTOP 5 JUTA/tuf 1.webp"
   },
@@ -1195,7 +1195,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
     shopUrl:  "https://s.shopee.co.id/8fQLJUKXYW",
     image:    "./LAPTOP 6 JUTA/tuf 2.webp"
   },
@@ -1210,7 +1210,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD SSD 512GB,HDD 500GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
     shopUrl:  "https://s.shopee.co.id/5q69wSojoS",
     image:    "./LAPTOP 7 JUTA/msi.webp"
   },
@@ -1225,7 +1225,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
     shopUrl:  "https://s.shopee.co.id/6L2QXXGXaG",
     image:    "./LAPTOP 8 JUTA/lenovoig1.webp"
   },
@@ -1240,7 +1240,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
     shopUrl:  "https://s.shopee.co.id/7VENvvWMxk",
     image:    "./LAPTOP 9 JUTA/lenovoig2.webp"
   },
@@ -1255,7 +1255,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7664957995209542919",
     shopUrl:  "https://s.shopee.co.id/111UtB08HV",
     image:    "./LAPTOP 6 JUTA/Dell 7730.webp"
   },
@@ -1270,8 +1270,24 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7665252964768042248",
     shopUrl:  "https://s.shopee.co.id/3LPPh8aOrB",
     image:    "./LAPTOP 5 JUTA/Macbook.webp"
   },
+    {
+    id: 234,
+    name: "Axioo Hype 1 (WAJIB NONTON VIDEO)",
+    category: "odm",
+    price: 3495000,
+    specs: [
+      "Intel Celeron N4020",
+      "Intel UHD Graphics 600",
+      "RAM 4GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7667920615688523015",
+    shopUrl:  "https://s.shopee.co.id/3qLt2ifM0r",
+    image:    "./LAPTOP 3 JUTA/Axioo Hype 1.webp"
+  },
+
 ];
