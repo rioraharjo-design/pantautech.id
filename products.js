@@ -166,17 +166,17 @@ const PRODUCTS = [
   },
   {
     id: 13,
-    name: "ThinkPad T14s Gen 2",
+    name: "ThinkPad T14 Gen 2 (INTEL)",
     category: "bekas",
-    price: 5664000,
+    price: 5225000,
     specs: [
       "Intel Core i5-1135G7",
       "Intel Iris Xe",
       "RAM 16GB",
-      "SSD 512GB"
+      "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/902ls9xklu",
+    shopUrl:  "https://s.shopee.co.id/60QFanNvAP",
     image:    "./LAPTOP 5 JUTA/ThinkPad T14 G2.webp"
   },
   {
