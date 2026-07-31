@@ -1289,5 +1289,20 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/3qLt2ifM0r",
     image:    "./LAPTOP 3 JUTA/Axioo Hype 1.webp"
   },
+      {
+    id: 23564,
+    name: "HP Zbook 15U G5 (TEKNIK)",
+    category: "bekas",
+    price: 5784000,
+    specs: [
+      "Intel Core i7-8565U",
+      "Radeon Pro WX3200",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7667920615688523015",
+    shopUrl:  "https://s.shopee.co.id/9ANSf5XKTG",
+    image:    "./LAPTOP 5 JUTA/Zbook.webp"
+  },
 
 ];
