@@ -1302,7 +1302,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7667920615688523015",
     shopUrl:  "https://s.shopee.co.id/9ANSf5XKTG",
-    image:    "./LAPTOP 5 JUTA/Zbook.webp"
+    image:    "./LAPTOP 5 JUTA/zbook.webp"
   },
 
 ];
