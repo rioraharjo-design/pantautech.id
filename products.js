@@ -1128,12 +1128,12 @@ const PRODUCTS = [
     id: 224,
     name: "Dell Latitude 5400 (TERLARIS)",
     category: "bekas",
-    price: 3634000,
+    price: 3542000,
     specs: [
       "Intel Core i5 Gen 8",
       "Intel UHD Graphics 620",
       "RAM 16GB",
-      "SSD 512GB"
+      "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
     shopUrl:  "https://s.shopee.co.id/9fIsAZatzM",
