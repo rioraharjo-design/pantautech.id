@@ -1140,6 +1140,21 @@ const PRODUCTS = [
     image:    "./LAPTOP 3 JUTA/dell 5400.webp"
   },
   {
+    id: 224454,
+    name: "ThinkPad T495 (TERKENCANG)",
+    category: "bekas",
+    price: 3956000,
+    specs: [
+      "AMD Ryzen 5 3500U",
+      "Radeon Vega 8",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
+    shopUrl:  "https://s.shopee.co.id/9fIsAZatzM",
+    image:    "./LAPTOP 3 JUTA/ThinkPad T495.webp"
+  },
+  {
     id: 225,
     name: "(HARGA NAIK) ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
     category: "bekas",
