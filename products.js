@@ -1150,8 +1150,8 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
-    shopUrl:  "https://s.shopee.co.id/9fIsAZatzM",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7673058681805720852",
+    shopUrl:  "https://s.shopee.co.id/Lm0pC30FX",
     image:    "./LAPTOP 3 JUTA/ThinkPad T495.webp"
   },
   {
@@ -1168,6 +1168,21 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
     shopUrl:  "https://s.shopee.co.id/20u6pc4Jtu",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
+  },
+  {
+    id: 224245,
+    name: "ThinkPad L14 Gen 2",
+    category: "bekas",
+    price: 5600000,
+    specs: [
+      "AMD Ryzen 7 5850U",
+      "Radeon Vega 8",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
+    shopUrl:  "https://s.shopee.co.id/6L3euSMF4y",
+    image:    "./LAPTOP 5 JUTA/thinkpad l.webp"
   },
   {
     id: 226,
