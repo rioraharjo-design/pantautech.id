@@ -6,6 +6,7 @@
 let activeCategory = "semua";
 let activePriceMin = 0;
 let activePriceMax = Infinity;
+let activeTier     = "semua";
 let searchQuery    = "";
 
 // ── Format harga Rupiah (angka penuh) ────────────────────────
@@ -57,10 +58,21 @@ function buildPriceMenu() {
   `).join("");
 }
 
+// ── Tier config ───────────────────────────────────────────────
+const TIER_META = {
+  "S":  { label: "Tier S",  cls: "tier-s"     },
+  "A+": { label: "Tier A+", cls: "tier-aplus"  },
+  "A":  { label: "Tier A",  cls: "tier-a"     },
+  "B+": { label: "Tier B+", cls: "tier-bplus"  },
+  "B":  { label: "Tier B",  cls: "tier-b"     },
+  "C":  { label: "Tier C",  cls: "tier-c"     },
+};
+
 // ── Render kartu ─────────────────────────────────────────────
 function renderCard(p) {
   const meta  = CATEGORY_META[p.category];
   const specs = p.specs.map(s => `<li>${s}</li>`).join("");
+  const tier  = p.tier && TIER_META[p.tier] ? TIER_META[p.tier] : null;
 
   return `
     <article class="card">
@@ -69,13 +81,16 @@ function renderCard(p) {
         <span class="badge ${meta.cls}">${meta.label}</span>
       </div>
       <div class="card-body">
-        <h3 class="card-title">${p.name}</h3>
+        <div class="card-title-row">
+          <h3 class="card-title">${p.name}</h3>
+          ${tier ? `<span class="tier-badge ${tier.cls}">${tier.label}</span>` : ""}
+        </div>
         <ul class="card-specs">${specs}</ul>
         <p class="card-price">${formatRupiah(p.price)}</p>
         <div class="card-actions">
           <a href="${p.videoUrl}" target="_blank" rel="noopener" class="btn btn-video"
             onclick="trackClick('video', '${p.name}', '${p.category}', ${p.price})">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
             Video
           </a>
           <a href="${p.shopUrl}" target="_blank" rel="noopener" class="btn btn-shop"
@@ -93,12 +108,13 @@ function applyFilters() {
   const filtered = PRODUCTS.filter(p => {
     const matchCat    = activeCategory === "semua" || p.category === activeCategory;
     const matchPrice  = p.price >= activePriceMin && p.price <= activePriceMax;
+    const matchTier   = activeTier === "semua" || p.tier === activeTier;
     const matchSearch =
       q === "" ||
       p.name.toLowerCase().includes(q) ||
       p.specs.some(s => s.toLowerCase().includes(q));
 
-    return matchCat && matchPrice && matchSearch;
+    return matchCat && matchPrice && matchTier && matchSearch;
   });
 
   const grid  = document.getElementById("productsGrid");
@@ -132,18 +148,22 @@ priceBtn.addEventListener("click", e => {
   e.stopPropagation();
   priceMenu.classList.toggle("open");
   priceBtn.classList.toggle("open");
+  tierMenu.classList.remove("open");
+  tierBtn.classList.remove("open");
 });
 
 document.addEventListener("click", () => {
   priceMenu.classList.remove("open");
   priceBtn.classList.remove("open");
+  tierMenu.classList.remove("open");
+  tierBtn.classList.remove("open");
 });
 
 priceMenu.addEventListener("click", e => {
   const opt = e.target.closest(".price-option");
   if (!opt) return;
 
-  document.querySelectorAll(".price-option").forEach(o => o.classList.remove("active"));
+  document.querySelectorAll("#priceMenu .price-option").forEach(o => o.classList.remove("active"));
   opt.classList.add("active");
 
   const range    = PRICE_RANGES[parseInt(opt.dataset.index, 10)];
@@ -153,6 +173,34 @@ priceMenu.addEventListener("click", e => {
 
   priceMenu.classList.remove("open");
   priceBtn.classList.remove("open");
+  applyFilters();
+});
+
+// ── Tier dropdown ────────────────────────────────────────────
+const tierBtn  = document.getElementById("tierBtn");
+const tierMenu = document.getElementById("tierMenu");
+const tierLbl  = document.getElementById("tierBtnLabel");
+
+tierBtn.addEventListener("click", e => {
+  e.stopPropagation();
+  tierMenu.classList.toggle("open");
+  tierBtn.classList.toggle("open");
+  priceMenu.classList.remove("open");
+  priceBtn.classList.remove("open");
+});
+
+tierMenu.addEventListener("click", e => {
+  const opt = e.target.closest(".price-option");
+  if (!opt) return;
+
+  document.querySelectorAll("#tierMenu .price-option").forEach(o => o.classList.remove("active"));
+  opt.classList.add("active");
+
+  activeTier = opt.dataset.tier;
+  tierLbl.textContent = activeTier === "semua" ? "Tier" : "Tier " + activeTier;
+
+  tierMenu.classList.remove("open");
+  tierBtn.classList.remove("open");
   applyFilters();
 });
 
