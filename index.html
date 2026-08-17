@@ -85,6 +85,7 @@
         <button class="tab" data-cat="global">Global</button>
         <button class="tab" data-cat="bekas">Bekas</button>
         <button class="tab" data-cat="odm">ODM</button>
+        <button class="tab tab-habis" data-cat="habis">Habis</button>
       </div>
 
       <!-- Search & Price Row -->
@@ -113,20 +114,33 @@
           </ul>
         </div>
 
+        <!-- Sort Dropdown -->
+        <div class="price-dropdown-wrap">
+          <button class="price-btn price-btn-ghost" id="sortBtn">
+            <span id="sortBtnLabel">Urutkan</span>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <ul class="price-menu" id="sortMenu">
+            <li><button data-sort="default" class="price-option active">Normal</button></li>
+            <li><button data-sort="asc"     class="price-option">Termurah</button></li>
+            <li><button data-sort="desc"    class="price-option">Termahal</button></li>
+          </ul>
+        </div>
+
         <!-- Tier Dropdown -->
         <div class="price-dropdown-wrap">
-          <button class="price-btn" id="tierBtn">
+          <button class="price-btn price-btn-ghost" id="tierBtn">
             <span id="tierBtnLabel">Tier</span>
             <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <ul class="price-menu" id="tierMenu">
             <li><button data-tier="semua" class="price-option active">Semua</button></li>
-            <li><button data-tier="S"  class="price-option tier-opt tier-s">S</button></li>
-            <li><button data-tier="A+" class="price-option tier-opt tier-aplus">A+</button></li>
-            <li><button data-tier="A"  class="price-option tier-opt tier-a">A</button></li>
-            <li><button data-tier="B+" class="price-option tier-opt tier-bplus">B+</button></li>
-            <li><button data-tier="B"  class="price-option tier-opt tier-b">B</button></li>
-            <li><button data-tier="C"  class="price-option tier-opt tier-c">C</button></li>
+            <li><button data-tier="S"     class="price-option tier-opt tier-s">S</button></li>
+            <li><button data-tier="A+"    class="price-option tier-opt tier-aplus">A+</button></li>
+            <li><button data-tier="A"     class="price-option tier-opt tier-a">A</button></li>
+            <li><button data-tier="B+"    class="price-option tier-opt tier-bplus">B+</button></li>
+            <li><button data-tier="B"     class="price-option tier-opt tier-b">B</button></li>
+            <li><button data-tier="C"     class="price-option tier-opt tier-c">C</button></li>
           </ul>
         </div>
       </div>
