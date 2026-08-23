@@ -6,7 +6,7 @@ const PRODUCTS = [
     tier: "A",
     price: 1932000,
     specs: [
-      "Intel Core i3 Gen 6",
+      "Intel Core i3-6100U",
       "Intel HD Graphics 520",
       "RAM 8GB",
       "SSD 128GB"
@@ -73,7 +73,7 @@ const PRODUCTS = [
     tier: "A",
     price: 2975000,
     specs: [
-      "Intel Core i5 Gen 7",
+      "Intel Core i5-7300U",
       "Intel UHD Graphics 620",
       "RAM 8GB",
       "SSD 256GB"
@@ -122,7 +122,7 @@ const PRODUCTS = [
     tier: "A+",
     price: 3542000,
     specs: [
-      "Intel Core i5 Gen 8",
+      "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
       "RAM 16GB",
       "SSD 256GB"
@@ -138,7 +138,7 @@ const PRODUCTS = [
     tier: "S",
     price: 3634000,
     specs: [
-      "Intel Core i5 Gen 8",
+      "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
       "RAM 16GB",
       "SSD 512GB"
@@ -165,11 +165,10 @@ const PRODUCTS = [
   },
   {
     id: 224454,
-    name: "ThinkPad T495 (TERKENCANG)",
+    name: "ThinkPad T495",
     category: "bekas",
-    tier: "S",
-    sold_out: true,
-    price: 3956000,
+    tier: "A+",
+    price: 4038000,
     specs: [
       "AMD Ryzen 5 3500U",
       "Radeon Vega 8",
@@ -177,7 +176,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7673058681805720852",
-    shopUrl:  "https://s.shopee.co.id/Lm0pC30FX",
+    shopUrl:  "https://s.shopee.co.id/80C5tj9wDD",
     image:    "./LAPTOP 3 JUTA/ThinkPad T495.webp"
   },
   {
@@ -361,11 +360,10 @@ const PRODUCTS = [
   },
   {
     id: 225,
-    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
+    name: "ThinkPad T14/T14S Gen 2 Ryzen 5 (TERLARIS)",
     category: "bekas",
     tier: "S",
-    sold_out: true,
-    price: 5510000,
+    price: 5382000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -373,7 +371,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
-    shopUrl:  "https://s.shopee.co.id/20u6pc4Jtu",
+    shopUrl:  "https://s.shopee.co.id/904d5RVuYM",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
   {
