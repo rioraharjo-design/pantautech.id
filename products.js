@@ -753,13 +753,12 @@ const PRODUCTS = [
     id: 28,
     name: "Acer TravelMate P40",
     category: "global",
-    tier: "A+",
-    sold_out: true,
-    price: 8062000,
+    tier: "S",
+    price: 8992000,
     specs: [
       "Intel Core i5-1335U",
       "Intel Iris Xe",
-      "RAM 8GB",
+      "RAM 16GB",
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
@@ -1015,8 +1014,8 @@ const PRODUCTS = [
     id: 110,
     name: "HP 14",
     category: "global",
-    tier: "A+",
-    price: 10870000,
+    tier: "S",
+    price: 10100000,
     specs: [
       "Intel Ultra 5 125H",
       "Intel Arc",
@@ -1024,7 +1023,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/3g1IzrVKWu",
+    shopUrl:  "https://s.shopee.co.id/19sePQ4YU",
     image:    "./LAPTOP 10 JUTA/HP 14.webp"
   },
   {
