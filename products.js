@@ -717,6 +717,22 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/6fer6naovA",
     image:    "./LAPTOP 7 JUTA/Axioo Hype 5 X6 AMD.webp"
   },
+    {
+    id: 2232411,
+    name: "Acer Aspire Lite 14",
+    category: "global",
+    tier: "A",
+    price: 7543000,
+    specs: [
+      "AMD Ryzen 3 5400U",
+      "Radeon Vega 6",
+      "RAM 8GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1gI6dHNGiu",
+    image:    "./LAPTOP 7 JUTA/Acer14.webp"
+  },
   {
     id: 26,
     name: "Advan Workmate Ultra",
@@ -754,15 +770,15 @@ const PRODUCTS = [
     name: "Acer TravelMate P40",
     category: "global",
     tier: "S",
-    price: 8992000,
+    price: 8987000,
     specs: [
       "Intel Core i5-1335U",
       "Intel Iris Xe",
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/qh4CJjqQS",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/qizxt1cLE",
     image:    "./LAPTOP 8 JUTA/Acer TravelMate P40.webp"
   },
   {
@@ -896,6 +912,22 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/80AEkX5MoZ",
     image:    "./LAPTOP 9 JUTA/Asus Expertbook.webp"
   },
+    {
+    id: 3878074,
+    name: "Axioo Hype 7 AMD X8-1",
+    category: "odm",
+    tier: "S",
+    price: 9163000,
+    specs: [
+      "AMD Ryzen 7 6800H",
+      "Radeon 680M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9pdoOODyne",
+    image:    "./LAPTOP 9 JUTA/axioohype7.webp"
+  },
   {
     id: 33,
     name: "Acer Aspire Lite 15",
@@ -981,16 +1013,16 @@ const PRODUCTS = [
     id: 31,
     name: "Advan Workplus Ai",
     category: "odm",
-    tier: "S",
-    price: 9950000,
+    tier: "A+",
+    price: 8817000,
     specs: [
       "AMD Ryzen 7 255",
       "Radeon 780M",
-      "RAM 16GB",
-      "SSD 256GB"
+      "RAM 8GB",
+      "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/40e5ykDHdM",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/2VrDegH68c",
     image:    "./LAPTOP 9 JUTA/Advan Workplus Ai.webp"
   },
   {
