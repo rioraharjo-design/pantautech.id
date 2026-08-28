@@ -1,5 +1,101 @@
 const PRODUCTS = [
   {
+    id: 21324234,
+    name: "Asus ROG Strix GL553VD (GAMING)",
+    category: "bekas",
+    tier: "A",
+    price: 5520000,
+    specs: [
+      "Intel Core i7-7700HQ",
+      "Nvidia GTX 1050 2GB",
+      "RAM 8GB",
+      "HDD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    shopUrl:  "https://s.shopee.co.id/AUtYnZCcC3",
+    image:    "./LAPTOP 5 JUTA/rog strix.webp"
+  },
+    {
+    id: 2132423532234,
+    name: "HP Pavilion 15-CB505TX (GAMING)",
+    category: "bekas",
+    tier: "A+",
+    price: 6250000,
+    specs: [
+      "Intel Core i7-7700HQ",
+      "Nvidia GTX 1050 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    shopUrl:  "https://s.shopee.co.id/20v0g5AKlE",
+    image:    "./LAPTOP 6 JUTA/pavilion.webp"
+  },
+    {
+    id: 2253251324234,
+    name: "Acer Nitro 5 AN515-52 (GAMING)",
+    category: "bekas",
+    tier: "A+",
+    price: 7200000,
+    specs: [
+      "Intel Core i7-8750H",
+      "Nvidia GTX 1060 6GB",
+      "RAM 8GB",
+      "SSD 256GB, HDD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    shopUrl:  "https://s.shopee.co.id/2gAhTOFoUC",
+    image:    "./LAPTOP 7 JUTA/nitro 5.webp"
+  },
+    {
+    id: 21235235324234,
+    name: "Axioo Pongo 725 (GAMING)",
+    category: "bekas",
+    tier: "S",
+    price: 8640000,
+    specs: [
+      "Intel Core i7-12650H",
+      "Nvidia RTX 2050 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    shopUrl:  "https://s.shopee.co.id/gPd6CAHFk",
+    image:    "./LAPTOP 8 JUTA/pongo 725.webp"
+  },
+    {
+    id: 2132423235234,
+    name: "Acer Nitro 5 AN515-58 (GAMING)",
+    category: "bekas",
+    tier: "S",
+    price: 9216000,
+    specs: [
+      "Intel Core i5-12500H",
+      "Nvidia RTX 3050 4GB",
+      "RAM 8GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    shopUrl:  "https://s.shopee.co.id/7fZNTHBXTV",
+    image:    "./LAPTOP 9 JUTA/nitro 58.webp"
+  },
+  {
+    id: 213242323435234,
+    name: "Asus ROG Zephyrus M16 GU603HM (GAMING)",
+    category: "bekas",
+    tier: "S",
+    price: 9888000,
+    specs: [
+      "Intel Core i7-11800H",
+      "Nvidia RTX 3050 Ti 4GB",
+      "RAM 12GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    shopUrl:  "https://s.shopee.co.id/3VjoVi3OK1",
+    image:    "./LAPTOP 10 JUTA/m16.webp"
+  },
+  {
     id: 214,
     name: "HP Probook 430 G3",
     category: "bekas",
