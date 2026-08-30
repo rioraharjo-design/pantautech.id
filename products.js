@@ -11,7 +11,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "HDD 1TB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7679067640475979016",
     shopUrl:  "https://s.shopee.co.id/AUtYnZCcC3",
     image:    "./LAPTOP 5 JUTA/rog strix.webp"
   },
@@ -27,7 +27,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7679067640475979016",
     shopUrl:  "https://s.shopee.co.id/20v0g5AKlE",
     image:    "./LAPTOP 6 JUTA/pavilion.webp"
   },
@@ -43,7 +43,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 256GB, HDD 1TB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7679067640475979016",
     shopUrl:  "https://s.shopee.co.id/2gAhTOFoUC",
     image:    "./LAPTOP 7 JUTA/nitro 5.webp"
   },
@@ -59,7 +59,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7679067640475979016",
     shopUrl:  "https://s.shopee.co.id/gPd6CAHFk",
     image:    "./LAPTOP 8 JUTA/pongo 725.webp"
   },
@@ -75,7 +75,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7679067640475979016",
     shopUrl:  "https://s.shopee.co.id/7fZNTHBXTV",
     image:    "./LAPTOP 9 JUTA/nitro 58.webp"
   },
@@ -91,7 +91,7 @@ const PRODUCTS = [
       "RAM 12GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7679067640475979016",
     shopUrl:  "https://s.shopee.co.id/3VjoVi3OK1",
     image:    "./LAPTOP 10 JUTA/m16.webp"
   },
@@ -411,7 +411,7 @@ const PRODUCTS = [
     name: "HP Elitebook 845 G8 (TERLARIS)",
     category: "bekas",
     tier: "S",
-    price: 5142000,
+    price: 5418000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -419,7 +419,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/9ANap1NnaH",
+    shopUrl:  "https://s.shopee.co.id/AKZYEdnLlf",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
