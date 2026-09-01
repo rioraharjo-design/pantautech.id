@@ -1208,8 +1208,8 @@ const PRODUCTS = [
     id: 140,
     name: "Apple Macbook Neo",
     category: "global",
-    tier: "A",
-    price: 11796000,
+    tier: "A+",
+    price: 12206000,
     specs: [
       "Apple A18 Pro",
       "GPU Apple A18 Pro",
@@ -1344,7 +1344,7 @@ const PRODUCTS = [
     name: "Acer Aspire Go 14 Ai",
     category: "global",
     tier: "A+",
-    price: 12740000,
+    price: 13774000,
     specs: [
       "Intel Ultra 7 115H",
       "Intel Arc",
@@ -1377,7 +1377,7 @@ const PRODUCTS = [
     name: "Lenovo LOQ Essential 15ARP10E (GAMING)",
     category: "global",
     tier: "A",
-    price: 14584000,
+    price: 15560000,
     specs: [
       "AMD Ryzen 7 7735HS",
       "Nvidia GeForce RTX 3050 6GB",
@@ -1409,8 +1409,8 @@ const PRODUCTS = [
     id: 207,
     name: "Acer Aspire 7 Pro (GAMING)",
     category: "global",
-    tier: "A+",
-    price: 12554000,
+    tier: "S",
+    price: 13299000,
     specs: [
       "Intel Core i5-13420H",
       "Nvidia GeForce RTX 3050 6GB",
@@ -1425,8 +1425,8 @@ const PRODUCTS = [
     id: 206,
     name: "Acer Swift Lite 14",
     category: "global",
-    tier: "A+",
-    price: 11717000,
+    tier: "A",
+    price: 12159000,
     specs: [
       "AMD Ryzen 7 260",
       "Radeon 780M",
@@ -1441,8 +1441,8 @@ const PRODUCTS = [
     id: 217,
     name: "Acer Nitro Lite 16 (GAMING)",
     category: "global",
-    tier: "S",
-    price: 13501000,
+    tier: "A+",
+    price: 14499000,
     specs: [
       "Intel Core i5 210H",
       "Nvidia GeForce RTX 3050 6GB",
@@ -1491,8 +1491,8 @@ const PRODUCTS = [
     id: 219,
     name: "MSI Thin 15 B13VE-3415 (GAMING)",
     category: "global",
-    tier: "A+",
-    price: 14179000,
+    tier: "S",
+    price: 14439000,
     specs: [
       "Intel Core i5-13420H",
       "Nvidia GeForce RTX 4050 6GB",
@@ -1559,7 +1559,7 @@ const PRODUCTS = [
     name: "HP Omnibook 3 Ai 14",
     category: "global",
     tier: "S",
-    price: 14499000,
+    price: 14724000,
     specs: [
       "Intel Ultra 5 325",
       "Intel Xe3",
