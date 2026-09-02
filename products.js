@@ -49,7 +49,7 @@ const PRODUCTS = [
   },
     {
     id: 21235235324234,
-    name: "Axioo Pongo 725 (GAMING)",
+    name: "Axioo Pongo 725 (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "S",
     price: 8640000,
@@ -81,7 +81,7 @@ const PRODUCTS = [
   },
   {
     id: 213242323435234,
-    name: "Asus ROG Zephyrus M16 GU603HM (GAMING)",
+    name: "Asus ROG Zephyrus M16 GU603HM (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "S",
     price: 9888000,
@@ -197,19 +197,35 @@ const PRODUCTS = [
   },
   {
     id: 80,
-    name: "ThinkPad P50s (TEKNIK)",
+    name: "ThinkPad P50 (TEKNIK)",
     category: "bekas",
-    tier: "B+",
-    price: 3125000,
+    tier: "A+",
+    price: 4803000,
     specs: [
-      "Intel Core i5-6300U",
-      "Nvidia Quadro M500M",
-      "RAM 8GB",
+      "Intel Core i7-6820HQ",
+      "Nvidia Quadro M1000M 2GB",
+      "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7650113386813885704?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/8pjLP4DVKs",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/904r38ahfg",
     image:    "./LAPTOP 3 JUTA/ThinkPad P50s.webp"
+  },
+    {
+    id: 8234320,
+    name: "ThinkPad W541 (TEKNIK)",
+    category: "bekas",
+    tier: "A",
+    price: 3446000,
+    specs: [
+      "Intel Core i7-4810MQ",
+      "Nvidia Quadro K1100M 2GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/gPj7dWvih",
+    image:    "./LAPTOP 3 JUTA/thinkpad w.webp"
   },
   {
     id: 224,
@@ -395,6 +411,7 @@ const PRODUCTS = [
     name: "ThinkPad P51 (TEKNIK)",
     category: "bekas",
     tier: "B+",
+    sold_out: true,
     price: 4726000,
     specs: [
       "i7-7700HQ",
@@ -719,21 +736,20 @@ const PRODUCTS = [
     name: "ThinkPad P53 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    sold_out: true,
-    price: 6993000,
+    price: 6935000,
     specs: [
       "i7-9850H",
       "Nvidia Quadro T1000 4GB",
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7650113386813885704?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/70HhDYNm9J",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4qFI6qVhjQ",
     image:    "./LAPTOP 6 JUTA/ThinkPad T15 G2.webp"
   },
   {
     id: 229,
-    name: "MSI GF63 Thin 9SCSR (GAMING)",
+    name: "MSI GF63 Thin 9SCSR (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -944,7 +960,7 @@ const PRODUCTS = [
   },
   {
     id: 230,
-    name: "Lenovo Ideapad Gaming 3 2050 (GAMING)",
+    name: "Lenovo Ideapad Gaming 3 2050 (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1060,21 +1076,21 @@ const PRODUCTS = [
     id: 36,
     name: "ThinkPad P71 (TEKNIK)",
     category: "bekas",
-    tier: "A+",
-    price: 9021000,
+    tier: "S",
+    price: 7800000,
     specs: [
-      "Intel Xeon E-1535M",
-      "Nvidia Quadro P4000",
-      "RAM 32GB",
+      "Intel Xeon E3-1535M",
+      "Nvidia Quadro P4000 8GB",
+      "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/9Uz2XaZlPp",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/2qUDjaXQBj",
     image:    "./LAPTOP 9 JUTA/ThinkPad P71.webp"
   },
   {
     id: 231,
-    name: "Lenovo Ideapad Gaming 3 3060 (GAMING)",
+    name: "Lenovo Ideapad Gaming 3 3060 (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1189,7 +1205,7 @@ const PRODUCTS = [
   },
   {
     id: 180,
-    name: "Lenovo Legion 5 15ARH05H (GAMING)",
+    name: "Lenovo Legion 5 15ARH05H (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "A",
     sold_out: true,
@@ -1241,17 +1257,16 @@ const PRODUCTS = [
     id: 170,
     name: "ThinkPad P1 Gen 2 (TEKNIK)",
     category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    price: 10464000,
+    tier: "S",
+    price: 9000000,
     specs: [
-      "Intel Core i9-9880H",
-      "Nvidia Quadro T2000",
+      "Intel Core i7-9850H",
+      "Nvidia Quadro T2000 4GB",
       "RAM 16GB",
-      "SSD 256GB"
+      "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/9fIW9ZnCUF",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8fS0gSl2Sn",
     image:    "./LAPTOP 10 JUTA/ThinkPad P1 G2.webp"
   },
   {
@@ -1290,7 +1305,7 @@ const PRODUCTS = [
   },
   {
     id: 202,
-    name: "MSI Thin 15 B12UC-3298 (GAMING)",
+    name: "MSI Thin 15 B12UC-3298 (GAMING) (TEKNIK)",
     category: "global",
     tier: "A",
     sold_out: true,
@@ -1357,7 +1372,7 @@ const PRODUCTS = [
   },
   {
     id: 205,
-    name: "HP Victus 16 (GAMING)",
+    name: "HP Victus 16 (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1374,7 +1389,7 @@ const PRODUCTS = [
   },
   {
     id: 203,
-    name: "Lenovo LOQ Essential 15ARP10E (GAMING)",
+    name: "Lenovo LOQ Essential 15ARP10E (GAMING) (TEKNIK)",
     category: "global",
     tier: "A",
     price: 15560000,
@@ -1390,7 +1405,7 @@ const PRODUCTS = [
   },
   {
     id: 209,
-    name: "Axioo Pongo 750 (GAMING)",
+    name: "Axioo Pongo 750 (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1407,7 +1422,7 @@ const PRODUCTS = [
   },
   {
     id: 207,
-    name: "Acer Aspire 7 Pro (GAMING)",
+    name: "Acer Aspire 7 Pro (GAMING) (TEKNIK)",
     category: "global",
     tier: "S",
     price: 13299000,
@@ -1439,7 +1454,7 @@ const PRODUCTS = [
   },
   {
     id: 217,
-    name: "Acer Nitro Lite 16 (GAMING)",
+    name: "Acer Nitro Lite 16 (GAMING) (TEKNIK)",
     category: "global",
     tier: "A+",
     price: 14499000,
@@ -1489,7 +1504,7 @@ const PRODUCTS = [
   },
   {
     id: 219,
-    name: "MSI Thin 15 B13VE-3415 (GAMING)",
+    name: "MSI Thin 15 B13VE-3415 (GAMING) (TEKNIK)",
     category: "global",
     tier: "S",
     price: 14439000,
@@ -1505,7 +1520,7 @@ const PRODUCTS = [
   },
   {
     id: 220,
-    name: "Acer Nitro Lite 16 NL16 (GAMING)",
+    name: "Acer Nitro Lite 16 NL16 (GAMING) (TEKNIK)",
     category: "global",
     tier: "A+",
     sold_out: true,
@@ -1575,16 +1590,15 @@ const PRODUCTS = [
     name: "ThinkPad P52 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    sold_out: true,
-    price: 5424000,
+    price: 5390000,
     specs: [
-      "Intel Core i7-8565H",
-      "Nvidia Quadro P1000",
+      "Intel Core i7-8750H",
+      "Nvidia Quadro P1000 4GB",
       "RAM 16GB",
-      "SSD 512GB"
+      "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7650113386813885704?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/2g8i3Dn0t2",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1gIGK5QyL9",
     image:    "./LAPTOP 5 JUTA/ThinkPad P52.webp"
   },
 ];
