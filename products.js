@@ -52,6 +52,7 @@ const PRODUCTS = [
     name: "Axioo Pongo 725 (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 8640000,
     specs: [
       "Intel Core i7-12650H",
