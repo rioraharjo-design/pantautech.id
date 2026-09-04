@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Laptop Bekas Terpercaya | Pantau Tech</title>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="description" content="Rekomendasi toko laptop bekas terpercaya pilihan Pantau Tech. Sudah dicek dan diverifikasi langsung.">
+  <meta property="og:title" content="Toko Laptop Bekas Terpercaya | Pantau Tech">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pantautech-id.vercel.app/toko.html">
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BEHQXMHST"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3BEHQXMHST');
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="toko.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">
+          <img src="./Gambar/LOGO PANTAU TECH BULAT.png" width="50px" height="50px" alt="Pantau Tech">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">PANTAU TECH</span>
+          <span class="brand-platform">
+            <svg class="tiktok-icon" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+            TikTok
+          </span>
+        </div>
+      </div>
+      <!-- Nav link balik ke katalog -->
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">Katalog Laptop</a>
+        <a href="toko.html" class="nav-link nav-link-active">Toko Terpercaya</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h1 class="hero-title">TOKO LAPTOP<br>TERPERCAYA</h1>
+    <p class="hero-sub">Rekomendasi Toko Laptop Bekas Terpercaya</p>
+  </section>
+
+  <!-- ===== TOKO LIST ===== -->
+  <main class="toko-section">
+    <div class="toko-container" id="tokoContainer">
+      <!-- Dirender oleh toko.js -->
+    </div>
+  </main>
+
+  <!-- ===== MODAL CATATAN ===== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span class="modal-title" id="modalTitle">Catatan Toko</span>
+        <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Pantau Tech &middot; Konten Seputar Laptop</p>
+  </footer>
+
+  <script src="toko.js"></script>
+</body>
+</html>
