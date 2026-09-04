@@ -485,7 +485,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
-    shopUrl:  "https://s.shopee.co.id/904d5RVuYM",
+    shopUrl:  "https://s.shopee.co.id/904vz7UA89",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
   {
