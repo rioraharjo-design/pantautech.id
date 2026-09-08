@@ -100,8 +100,53 @@ const TOKO = [
     laptop workstation`
   },
 
+  {
+    id: 7,
+    nama: "REOG KOMPUTER (GAMING)",
+    logo: "./Toko/Logo REOG KOMPUTER.webp",
+    rating: 4.8,
+    ulasan: "466",
+    pengikut: "2,9rb",
+    shopUrl: "https://s.shopee.co.id/7fZNTHBXTV",
+    top5: false,
+    catatan: `(STOK LAPTOP GAMING SANGAT TERBATAS) REOG KOMPUTER Toko laptop gaming lengkap dari berbagai harga bahkan yang murah juga ada`
+  },  
 
+  {
+    id: 8,
+    nama: "Dr.com komputer (GAMING)",
+    logo: "./Toko/Logo Dr.com komputer.webp",
+    rating: 4.8,
+    ulasan: "602",
+    pengikut: "2,5rb",
+    shopUrl: "https://s.shopee.co.id/3g3QhfljRQ",
+    top5: false,
+    catatan: `Alternatif REOG KOMPUTER, harganya sering lebih tinggi dibanding REOG`
+  },  
 
+  {
+    id: 9,
+    nama: "Story Laptop Bandung (GAMING)",
+    logo: "./Toko/Logo Story Laptop Bandung.webp",
+    rating: 4.9,
+    ulasan: "78",
+    pengikut: "1,5rb",
+    shopUrl: "https://s.shopee.co.id/2LY379Um7e",
+    top5: false,
+    catatan: `Alternatif REOG KOMPUTER, harganya sering lebih tinggi dibanding REOG`
+  },  
+
+  {
+    id: 10,
+    nama: "Dissant'sStore (GAMING)",
+    logo: "./Toko/Logo Dissant'sStore.webp",
+    rating: 4.9,
+    ulasan: "795",
+    pengikut: "2,2rb",
+    shopUrl: "https://s.shopee.co.id/7AdIrwOprV",
+    top5: false,
+    catatan: `Alternatif REOG KOMPUTER, harganya sering lebih tinggi dibanding REOG`
+  },  
 
 ];
 
