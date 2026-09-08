@@ -109,7 +109,7 @@ const TOKO = [
     pengikut: "2,9rb",
     shopUrl: "https://s.shopee.co.id/7fZNTHBXTV",
     top5: false,
-    catatan: `(STOK LAPTOP GAMING SANGAT TERBATAS) REOG KOMPUTER Toko laptop gaming lengkap dari berbagai harga bahkan yang murah juga ada`
+    catatan: `pilihan dari berbagai harga cukup lengkap, bahkan seringkali ngasih harga murah dibanding toko lain`
   },  
 
   {
@@ -121,7 +121,7 @@ const TOKO = [
     pengikut: "2,5rb",
     shopUrl: "https://s.shopee.co.id/3g3QhfljRQ",
     top5: false,
-    catatan: `Alternatif REOG KOMPUTER, harganya sering lebih tinggi dibanding REOG`
+    catatan: `Ngejual laptop gaming di banyak pilihan harga tapi seringkali harganya lebih tinggi dibanding yang lain`
   },  
 
   {
@@ -133,7 +133,7 @@ const TOKO = [
     pengikut: "1,5rb",
     shopUrl: "https://s.shopee.co.id/2LY379Um7e",
     top5: false,
-    catatan: `Alternatif REOG KOMPUTER, harganya sering lebih tinggi dibanding REOG`
+    catatan: `Kenapa jadi peringkat 1?, Pilihan laptop gaming sangat banyak diberbagai harga, kalau ragu beli online ada store offlinenya dibandung`
   },  
 
   {
@@ -145,7 +145,21 @@ const TOKO = [
     pengikut: "2,2rb",
     shopUrl: "https://s.shopee.co.id/7AdIrwOprV",
     top5: false,
-    catatan: `Alternatif REOG KOMPUTER, harganya sering lebih tinggi dibanding REOG`
+    catatan: `Rating dan ulasan terbaik, pilihan laptop gaming diharga tinggi cukup banyak tapi sangat disayangkan dibudget 10 juta kebawah pilihannya sedikit`
+  },  
+
+    {
+    id: 11,
+    nama: "RELOAD COMS 4 (GAMING)",
+    logo: "./Toko/Logo RELOAD COMS 4.webp",
+    rating: 5,
+    ulasan: "2",
+    pengikut: "44",
+    shopUrl: "https://s.shopee.co.id/50YtuB8j0f",
+    top5: false,
+    catatan: `pengikut dan ulasan dikit kenapa direkomendasiin?, toko ini ngejual laptop gaming bekas yang sangat berkualitas bahkan berani ngasih review yang transparan di channel youtubenya, minusnya pilihan produknya masih sangat sedikit, tapi bisa jadi pilihan terbaik kalau budget kalian mumpuni
+
+YT : Reload COMS | IG : @r3loadcoms`
   },  
 
 ];
