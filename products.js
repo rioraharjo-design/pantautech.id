@@ -1,5 +1,141 @@
 const PRODUCTS = [
   {
+    id: 21324243434,
+    name: "Acer Aspire 7 Pro 3050 4GB (GAMING) (TEKNIK)",
+    category: "global",
+    tier: "A+",
+    price: 12499000,
+    specs: [
+      "Intel Core 5-210H",
+      "Nvidia RTX 3050 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/qjMSLXYSD",
+    image:    "./LAPTOP 12 JUTA/acer4gb.webp"
+  },
+
+    {
+    id: 212322,
+    name: "Asus Expertbook PM1403CDA",
+    category: "global",
+    tier: "S",
+    price: 12000000,
+    specs: [
+      "AMD Ryzen 7 170",
+      "Radeon 780M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3g3XpQYFWT",
+    image:    "./LAPTOP 12 JUTA/asuspm1.webp"
+  },
+
+    {
+    id: 207,
+    name: "Acer Aspire 7 Pro 3050 6GB (GAMING) (TEKNIK)",
+    category: "global",
+    tier: "S",
+    price: 13299000,
+    specs: [
+      "Intel Core i5-13420H",
+      "Nvidia GeForce RTX 3050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
+    shopUrl:  "https://s.shopee.co.id/7pqvDaEpiY",
+    image:    "./LAPTOP 12 JUTA/Acer 7.webp"
+  },
+
+  {
+    id: 140,
+    name: "Apple Macbook Neo",
+    category: "global",
+    tier: "A+",
+    price: 13619000,
+    specs: [
+      "Apple A18 Pro",
+      "GPU Apple A18 Pro",
+      "RAM 8GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
+    shopUrl:  "https://s.shopee.co.id/7fXRngXlhb",
+    image:    "./LAPTOP 10 JUTA/Apple Macbook Neo.webp"
+  },
+
+  {
+    id: 25364,
+    name: "Acer Nitro V15 (GAMING) (TEKNIK)",
+    category: "global",
+    tier: "S",
+    price: 14000000,
+    specs: [
+      "Intel Core 5-210H",
+      "Nvidia RTX 3050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9zxbJePJOB",
+    image:    "./LAPTOP 14 JUTA/acernitro.webp"
+  },
+
+  {
+    id: 22211,
+    name: "Asus Expertbook P3 G1",
+    category: "global",
+    tier: "S",
+    price: 14590000,
+    specs: [
+      "Intel Ultra 7 225H",
+      "Intel Arc 140T",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3LQhROnEMZ",
+    image:    "./LAPTOP 14 JUTA/asusp3.webp"
+  },
+
+  {
+    id: 213242434343,
+    name: "Acer Nitro Lite 16 (GAMING) (TEKNIK)",
+    category: "global",
+    tier: "S",
+    price: 15694000,
+    specs: [
+      "Intel Core 5-210H",
+      "Nvidia RTX 4050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4LJEcPpeoE",
+    image:    "./LAPTOP 15 JUTA/acernitrolite.webp"
+  },
+
+  {
+    id: 2132422243434,
+    name: "HP Omnibook 3 14-HV0036AU",
+    category: "global",
+    tier: "S",
+    price: 15007000,
+    specs: [
+      "AMD Ryzen AI 7 445",
+      "Radeon 840M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6q0ZcU4Umq",
+    image:    "./LAPTOP 15 JUTA/hpomni.webp"
+  },
+
+  {
     id: 21324234,
     name: "Asus ROG Strix GL553VD (GAMING)",
     category: "bekas",
@@ -1221,22 +1357,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/2g8lyOhZji",
     image:    "./LAPTOP 10 JUTA/Lenovo Legion 5.webp"
   },
-  {
-    id: 140,
-    name: "Apple Macbook Neo",
-    category: "global",
-    tier: "A+",
-    price: 12206000,
-    specs: [
-      "Apple A18 Pro",
-      "GPU Apple A18 Pro",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/7fXRngXlhb",
-    image:    "./LAPTOP 10 JUTA/Apple Macbook Neo.webp"
-  },
+
   {
     id: 120,
     name: "Acer Swift Go 14 AI",
@@ -1421,22 +1542,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/4qDJeZD73c",
     image:    "./LAPTOP 12 JUTA/Axioo Pongo.webp"
   },
-  {
-    id: 207,
-    name: "Acer Aspire 7 Pro (GAMING) (TEKNIK)",
-    category: "global",
-    tier: "S",
-    price: 13299000,
-    specs: [
-      "Intel Core i5-13420H",
-      "Nvidia GeForce RTX 3050 6GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
-    shopUrl:  "https://s.shopee.co.id/7pqvDaEpiY",
-    image:    "./LAPTOP 12 JUTA/Acer 7.webp"
-  },
+
   {
     id: 206,
     name: "Acer Swift Lite 14",
