@@ -1,4 +1,176 @@
 const PRODUCTS = [
+
+{
+  id: 160000001,
+  name: "Acer Nitro V15 52-51TE (GAMING) (TEKNIK)",
+  category: "global",
+  tier: "S",
+  price: 16624000,
+  specs: [
+    "Intel Core 5-210H",
+    "Nvidia RTX 4050 6GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 16 JUTA/acer210h.webp"
+},
+
+{
+  id: 160000002,
+  name: "HP OmniBook 7 Aero",
+  category: "global",
+  tier: "A+",
+  price: 16339000,
+  specs: [
+    "AMD Ryzen AI 7 350",
+    "Radeon 860M",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 16 JUTA/hpaero.webp"
+},
+
+{
+  id: 170000001,
+  name: "Asus TUF A16 FA607NUG (GAMING) (TEKNIK)",
+  category: "global",
+  tier: "S",
+  price: 17574000,
+  specs: [
+    "AMD Ryzen 7 7445HS",
+    "Nvidia RTX 4050 6GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 17 JUTA/asustuf.webp"
+},
+
+{
+  id: 170000002,
+  name: "Asus Expertbook P5405CSA",
+  category: "global",
+  tier: "S",
+  price: 17004000,
+  specs: [
+    "Intel Ultra 5 226V",
+    "Intel Arc 130V",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 17 JUTA/asus17jt.webp"
+},
+
+{
+  id: 180000001,
+  name: "Acer Nitro V15 52-50FX (GAMING) (TEKNIK)",
+  category: "global",
+  tier: "S",
+  price: 18619000,
+  specs: [
+    "Intel Core 5-210H",
+    "Nvidia RTX 5050 8GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 18 JUTA/acer18jt.webp"
+},
+
+{
+  id: 180000002,
+  name: "Asus Expertbook P5406CCA",
+  category: "global",
+  tier: "S",
+  price: 18049000,
+  specs: [
+    "Intel Ultra 7 225H",
+    "Intel Arc 140T",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 18 JUTA/asus18jt.webp"
+},
+
+{
+  id: 190000001,
+  name: "Acer Nitro V15 52-777R (GAMING) (TEKNIK)",
+  category: "global",
+  tier: "S",
+  price: 19324000,
+  specs: [
+    "Intel Core 7-240H",
+    "Nvidia RTX 5050 8GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 19 JUTA/acer19jt.webp"
+},
+
+{
+  id: 190000002,
+  name: "Lenovo Slim 7 Aura Edition",
+  category: "global",
+  tier: "S",
+  price: 19300000,
+  specs: [
+    "Intel Ultra 7 258V",
+    "Intel Arc 140V",
+    "RAM 32GB",
+    "SSD 1TB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 19 JUTA/slim7.webp"
+},
+
+{
+  id: 200000001,
+  name: "HP Omen 15 GB0555AX (GAMING) (TEKNIK)",
+  category: "global",
+  tier: "S",
+  price: 20139000,
+  specs: [
+    "AMD Ryzen 5 240",
+    "Nvidia RTX 5050 8GB",
+    "RAM 16GB",
+    "SSD 1TB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 20 JUTA/omen.webp"
+},
+
+{
+  id: 200000002,
+  name: "Asus Expertbook P5405CSA",
+  category: "global",
+  tier: "S",
+  price: 20399000,
+  specs: [
+    "Intel Core Ultra 7 258V",
+    "Intel Arc 140V",
+    "RAM 32GB",
+    "SSD 1TB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "",
+  image: "./LAPTOP 20 JUTA/asus20jt.webp"
+},
+
+
   {
     id: 21324243434,
     name: "Acer Aspire 7 Pro 3050 4GB (GAMING) (TEKNIK)",
