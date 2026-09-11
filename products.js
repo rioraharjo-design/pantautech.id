@@ -13,7 +13,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/60RVCfB6wL",
   image: "./LAPTOP 16 JUTA/acer210h.webp"
 },
 
@@ -30,7 +30,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/30nu82fKlR",
   image: "./LAPTOP 16 JUTA/hpaero.webp"
 },
 
@@ -47,7 +47,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/Ln8TcUnPO",
   image: "./LAPTOP 17 JUTA/asustuf.webp"
 },
 
@@ -64,7 +64,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/3qN0eGbj0Q",
   image: "./LAPTOP 17 JUTA/asus17jt.webp"
 },
 
@@ -81,7 +81,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/3LQkWS5ace",
   image: "./LAPTOP 18 JUTA/acer18jt.webp"
 },
 
@@ -98,7 +98,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/5fofIe0VPk",
   image: "./LAPTOP 18 JUTA/asus18jt.webp"
 },
 
@@ -115,7 +115,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/8plhBVYvZT",
   image: "./LAPTOP 19 JUTA/acer19jt.webp"
 },
 
@@ -132,7 +132,7 @@ const PRODUCTS = [
     "SSD 1TB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/1AI6e8SeP",
   image: "./LAPTOP 19 JUTA/slim7.webp"
 },
 
@@ -149,7 +149,7 @@ const PRODUCTS = [
     "SSD 1TB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/6AkvtRddz8",
   image: "./LAPTOP 20 JUTA/omen.webp"
 },
 
@@ -166,7 +166,7 @@ const PRODUCTS = [
     "SSD 1TB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
-  shopUrl: "",
+  shopUrl: "https://s.shopee.co.id/9zxe1yTfDt",
   image: "./LAPTOP 20 JUTA/asus20jt.webp"
 },
 
