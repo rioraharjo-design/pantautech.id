@@ -1013,6 +1013,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 MX450 (GAMING)",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 6696000,
     specs: [
       "Intel Core i7-1165G7",
@@ -1126,7 +1127,7 @@ const PRODUCTS = [
     id: 21,
     name: "Axioo Hype 5 X6 AMD",
     category: "odm",
-    tier: "A",
+    tier: "A+",
     price: 7439000,
     specs: [
       "AMD Ryzen 5 6600H",
