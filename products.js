@@ -393,6 +393,7 @@ const PRODUCTS = [
     name: "Asus ROG Zephyrus M16 GU603HM (GAMING) (TEKNIK)",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 9888000,
     specs: [
       "Intel Core i7-11800H",
@@ -737,7 +738,7 @@ const PRODUCTS = [
     name: "HP Elitebook 845 G8 (TERLARIS)",
     category: "bekas",
     tier: "S",
-    price: 5100000,
+    price: 5115000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -745,7 +746,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/6L4IlwxJyJ",
+    shopUrl:  "https://s.shopee.co.id/W6fiTbzBJ",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
@@ -1870,6 +1871,7 @@ const PRODUCTS = [
     name: "ThinkPad P52 (TEKNIK)",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 5390000,
     specs: [
       "Intel Core i7-8750H",
