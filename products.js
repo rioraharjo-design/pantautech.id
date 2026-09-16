@@ -1687,16 +1687,16 @@ const PRODUCTS = [
     id: 203,
     name: "Lenovo LOQ Essential 15ARP10E (GAMING) (TEKNIK)",
     category: "global",
-    tier: "A",
-    price: 15560000,
+    tier: "S",
+    price: 15574000,
     specs: [
-      "AMD Ryzen 7 7735HS",
+      "AMD Ryzen 7 170",
       "Nvidia GeForce RTX 3050 6GB",
       "RAM 16GB",
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/AKYEJh6uy8",
+    shopUrl:  "https://s.shopee.co.id/6q0kTUdUGk",
     image:    "./LAPTOP 12 JUTA/Lenovo LOQ.webp"
   },
   {
