@@ -1685,7 +1685,7 @@ const PRODUCTS = [
   },
   {
     id: 203,
-    name: "Lenovo LOQ Essential 15ARP10E (GAMING) (TEKNIK)",
+    name: "Lenovo LOQ 15ARP10E (GAMING) (TEKNIK)",
     category: "global",
     tier: "S",
     price: 15574000,
