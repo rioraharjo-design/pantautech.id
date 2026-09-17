@@ -312,6 +312,7 @@ const PRODUCTS = [
     name: "Asus ROG Strix GL553VD (GAMING)",
     category: "bekas",
     tier: "A",
+    sold_out: true,
     price: 5520000,
     specs: [
       "Intel Core i7-7700HQ",
@@ -328,6 +329,7 @@ const PRODUCTS = [
     name: "HP Pavilion 15-CB505TX (GAMING)",
     category: "bekas",
     tier: "A+",
+    sold_out: true,
     price: 6250000,
     specs: [
       "Intel Core i7-7700HQ",
@@ -344,6 +346,7 @@ const PRODUCTS = [
     name: "Acer Nitro 5 AN515-52 (GAMING)",
     category: "bekas",
     tier: "A+",
+    sold_out: true,
     price: 7200000,
     specs: [
       "Intel Core i7-8750H",
@@ -410,6 +413,7 @@ const PRODUCTS = [
     name: "HP Probook 430 G3",
     category: "bekas",
     tier: "A",
+    sold_out: true,
     price: 1932000,
     specs: [
       "Intel Core i3-6100U",
@@ -686,10 +690,10 @@ const PRODUCTS = [
   },
   {
     id: 4,
-    name: "ThinkPad T14 Gen 1 AMD",
+    name: "ThinkPad T14 Gen 1 Ryzen 5",
     category: "bekas",
     tier: "S",
-    price: 4784000,
+    price: 4650000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -697,7 +701,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
+    shopUrl:  "https://s.shopee.co.id/5q8EvegM0X",
     image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
   },
   {
@@ -705,7 +709,7 @@ const PRODUCTS = [
     name: "HP Elitebook 845 G7",
     category: "bekas",
     tier: "S",
-    price: 4866000,
+    price: 4836000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -713,7 +717,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7663495067117686034",
-    shopUrl:  "https://s.shopee.co.id/9pdHdqpjaO",
+    shopUrl:  "https://s.shopee.co.id/W6fiTbzBJ",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
@@ -783,10 +787,10 @@ const PRODUCTS = [
   },
   {
     id: 225,
-    name: "ThinkPad T14/T14S Gen 2 Ryzen 5 (TERLARIS)",
+    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
     category: "bekas",
     tier: "S",
-    price: 5382000,
+    price: 5115000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -794,7 +798,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
-    shopUrl:  "https://s.shopee.co.id/904vz7UA89",
+    shopUrl:  "https://s.shopee.co.id/5q8EvegM0X",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
   {
