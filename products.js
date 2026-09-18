@@ -545,8 +545,8 @@ const PRODUCTS = [
     id: 224,
     name: "Dell Latitude 5400 (TERLARIS)",
     category: "bekas",
-    tier: "A+",
-    price: 3542000,
+    tier: "S",
+    price: 3580000,
     specs: [
       "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
@@ -561,8 +561,8 @@ const PRODUCTS = [
     id: 226,
     name: "ThinkPad X390 (TERLARIS)",
     category: "bekas",
-    tier: "S",
-    price: 3634000,
+    tier: "A+",
+    price: 3999000,
     specs: [
       "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
@@ -578,7 +578,7 @@ const PRODUCTS = [
     name: "Lenovo ThinkPad T480",
     category: "bekas",
     tier: "A+",
-    price: 3618000,
+    price: 3859000,
     specs: [
       "Intel Core i5-8250U",
       "Intel UHD Graphics 620",
@@ -627,6 +627,7 @@ const PRODUCTS = [
     name: "HP Elitebook 840 G5",
     category: "bekas",
     tier: "A",
+    sold_out: true,
     price: 3910000,
     specs: [
       "Intel Core i5-8250U",
