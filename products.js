@@ -593,7 +593,7 @@ const PRODUCTS = [
     id: 224454,
     name: "ThinkPad T495",
     category: "bekas",
-    tier: "A+",
+    tier: "S",
     price: 4038000,
     specs: [
       "AMD Ryzen 5 3500U",
