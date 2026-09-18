@@ -567,7 +567,7 @@ const PRODUCTS = [
       "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
       "RAM 16GB",
-      "SSD 512GB"
+      "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
     shopUrl:  "https://s.shopee.co.id/4AxvbMQSix",
