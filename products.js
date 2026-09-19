@@ -1,6 +1,103 @@
 const PRODUCTS = [
 
 {
+  id: 2132423235235,
+  name: "Asus TUF Dash F15 FX516PE (GAMING) (TEKNIK)",
+  category: "bekas",
+  tier: "S",
+  price: 10260000,
+  specs: [
+    "Intel Core i7-11370H",
+    "Nvidia RTX 3050 Ti 4GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "https://s.shopee.co.id/9zxqx6Auf4",
+  image: "./LAPTOP 10 JUTA/tuf10jt.webp"
+},
+{
+  id: 2132423235236,
+  name: "MSI Thin GF63 12UC (GAMING) (TEKNIK)",
+  category: "bekas",
+  tier: "S",
+  price: 9400000,
+  specs: [
+    "Intel Core i5-12450H",
+    "Nvidia RTX 3050 4GB",
+    "RAM 8GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "https://s.shopee.co.id/3LQx1sF79q",
+  image: "./LAPTOP 9 JUTA/thin9jt.webp"
+},
+{
+  id: 2132423235237,
+  name: "MSI Thin GF63 11UC (GAMING) (TEKNIK)",
+  category: "bekas",
+  tier: "S",
+  price: 8700000,
+  specs: [
+    "Intel Core i5-11400H",
+    "Nvidia RTX 3050 4GB",
+    "RAM 8GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "https://s.shopee.co.id/9AOjzzxypZ",
+  image: "./LAPTOP 8 JUTA/thin8jt.webp"
+},
+{
+  id: 2132423235238,
+  name: "Acer Nitro 5 AN515-45 (GAMING) (TEKNIK)",
+  category: "bekas",
+  tier: "S",
+  price: 7252000,
+  specs: [
+    "AMD Ryzen 5 5600H",
+    "Nvidia GTX 1650 4GB",
+    "RAM 16GB",
+    "SSD 512GB, HDD 500GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "https://s.shopee.co.id/4LJUFlZQ7O",
+  image: "./LAPTOP 7 JUTA/nitro7jt.webp"
+},
+{
+  id: 2132423235239,
+  name: "Asus TUF FX504GD (GAMING) (TEKNIK)",
+  category: "bekas",
+  tier: "A+",
+  price: 6324000,
+  specs: [
+    "Intel Core i7-8750H",
+    "Nvidia GTX 1050 4GB",
+    "RAM 8GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "https://s.shopee.co.id/20vZTALSGP",
+  image: "./LAPTOP 6 JUTA/asus6jt.webp"
+},
+{
+  id: 2132423235240,
+  name: "Asus TUF FX505DY (GAMING) (TEKNIK)",
+  category: "bekas",
+  tier: "A+",
+  price: 5580000,
+  specs: [
+    "AMD Ryzen 5 3550H",
+    "AMD Radeon RX 560X 4GB",
+    "RAM 8GB",
+    "SSD 256GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "https://s.shopee.co.id/6VNypxQ2rm",
+  image: "./LAPTOP 5 JUTA/tuf5jt.webp"
+},
+
+{
   id: 160000001,
   name: "Acer Nitro V15 52-51TE (GAMING) (TEKNIK)",
   category: "global",
