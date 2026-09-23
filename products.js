@@ -282,7 +282,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/qjMSLXYSD",
+    shopUrl:  "https://s.shopee.co.id/50ZHlqsUkq",
     image:    "./LAPTOP 12 JUTA/acer4gb.webp"
   },
 
