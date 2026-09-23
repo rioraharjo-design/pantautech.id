@@ -53,6 +53,7 @@ const PRODUCTS = [
   name: "Acer Nitro 5 AN515-45 (GAMING) (TEKNIK)",
   category: "bekas",
   tier: "S",
+  sold_out: true,
   price: 7252000,
   specs: [
     "AMD Ryzen 5 5600H",
@@ -799,7 +800,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/30o3dRg6SE",
+    shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
     image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
   },
   {
@@ -885,10 +886,10 @@ const PRODUCTS = [
   },
   {
     id: 225,
-    name: "(HARGA NAIK) ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
+    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
     category: "bekas",
     tier: "S",
-    price: 5945000,
+    price: 5428000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -896,7 +897,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
-    shopUrl:  "https://s.shopee.co.id/4VcrQmGpeA",
+    shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
   {
@@ -1033,7 +1034,7 @@ const PRODUCTS = [
     id: 18,
     name: "ThinkPad T14 Gen 2 Ryzen 7",
     category: "bekas",
-    tier: "S",
+    tier: "A+",
     price: 6300000,
     specs: [
       "AMD Ryzen 7 Pro 5850U",
