@@ -1974,7 +1974,6 @@ const PRODUCTS = [
     name: "ThinkPad P52 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    sold_out: true,
     price: 5390000,
     specs: [
       "Intel Core i7-8750H",
