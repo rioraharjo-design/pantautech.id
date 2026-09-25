@@ -12,7 +12,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
   shopUrl: "https://s.shopee.co.id/9zxqx6Auf4",
   image: "./LAPTOP 10 JUTA/tuf10jt.webp"
 },
@@ -28,7 +28,7 @@ const PRODUCTS = [
     "RAM 8GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
   shopUrl: "https://s.shopee.co.id/3LQx1sF79q",
   image: "./LAPTOP 9 JUTA/thin9jt.webp"
 },
@@ -44,7 +44,7 @@ const PRODUCTS = [
     "RAM 8GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
   shopUrl: "https://s.shopee.co.id/9AOjzzxypZ",
   image: "./LAPTOP 8 JUTA/thin8jt.webp"
 },
@@ -61,7 +61,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB, HDD 500GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
   shopUrl: "https://s.shopee.co.id/4LJUFlZQ7O",
   image: "./LAPTOP 7 JUTA/nitro7jt.webp"
 },
@@ -77,7 +77,7 @@ const PRODUCTS = [
     "RAM 8GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
   shopUrl: "https://s.shopee.co.id/20vZTALSGP",
   image: "./LAPTOP 6 JUTA/asus6jt.webp"
 },
@@ -93,7 +93,7 @@ const PRODUCTS = [
     "RAM 8GB",
     "SSD 256GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
   shopUrl: "https://s.shopee.co.id/6VNypxQ2rm",
   image: "./LAPTOP 5 JUTA/tuf5jt.webp"
 },
@@ -110,7 +110,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/60RVCfB6wL",
   image: "./LAPTOP 16 JUTA/acer210h.webp"
 },
@@ -127,7 +127,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/30nu82fKlR",
   image: "./LAPTOP 16 JUTA/hpaero.webp"
 },
@@ -144,7 +144,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/Ln8TcUnPO",
   image: "./LAPTOP 17 JUTA/asustuf.webp"
 },
@@ -161,7 +161,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/3qN0eGbj0Q",
   image: "./LAPTOP 17 JUTA/asus17jt.webp"
 },
@@ -178,7 +178,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/3LQkWS5ace",
   image: "./LAPTOP 18 JUTA/acer18jt.webp"
 },
@@ -195,7 +195,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/5fofIe0VPk",
   image: "./LAPTOP 18 JUTA/asus18jt.webp"
 },
@@ -212,7 +212,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/8plhBVYvZT",
   image: "./LAPTOP 19 JUTA/acer19jt.webp"
 },
@@ -229,7 +229,7 @@ const PRODUCTS = [
     "RAM 32GB",
     "SSD 1TB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/1AI6e8SeP",
   image: "./LAPTOP 19 JUTA/slim7.webp"
 },
@@ -246,7 +246,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 1TB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/6AkvtRddz8",
   image: "./LAPTOP 20 JUTA/omen.webp"
 },
@@ -263,7 +263,7 @@ const PRODUCTS = [
     "RAM 32GB",
     "SSD 1TB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
   shopUrl: "https://s.shopee.co.id/9zxe1yTfDt",
   image: "./LAPTOP 20 JUTA/asus20jt.webp"
 },
@@ -281,7 +281,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
     shopUrl:  "https://s.shopee.co.id/50ZHlqsUkq",
     image:    "./LAPTOP 12 JUTA/acer4gb.webp"
   },
@@ -298,7 +298,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
     shopUrl:  "https://s.shopee.co.id/3g3XpQYFWT",
     image:    "./LAPTOP 12 JUTA/asuspm1.webp"
   },
@@ -315,7 +315,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
     shopUrl:  "https://s.shopee.co.id/7pqvDaEpiY",
     image:    "./LAPTOP 12 JUTA/Acer 7.webp"
   },
@@ -332,7 +332,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
     shopUrl:  "https://s.shopee.co.id/7fXRngXlhb",
     image:    "./LAPTOP 10 JUTA/Apple Macbook Neo.webp"
   },
@@ -349,7 +349,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
     shopUrl:  "https://s.shopee.co.id/9zxbJePJOB",
     image:    "./LAPTOP 14 JUTA/acernitro.webp"
   },
@@ -366,7 +366,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
     shopUrl:  "https://s.shopee.co.id/3LQhROnEMZ",
     image:    "./LAPTOP 14 JUTA/asusp3.webp"
   },
@@ -383,7 +383,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
     shopUrl:  "https://s.shopee.co.id/4LJEcPpeoE",
     image:    "./LAPTOP 15 JUTA/acernitrolite.webp"
   },
@@ -400,7 +400,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
     shopUrl:  "https://s.shopee.co.id/6q0ZcU4Umq",
     image:    "./LAPTOP 15 JUTA/hpomni.webp"
   },
@@ -619,7 +619,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
     shopUrl:  "https://s.shopee.co.id/904r38ahfg",
     image:    "./LAPTOP 3 JUTA/ThinkPad P50s.webp"
   },
@@ -635,7 +635,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
     shopUrl:  "https://s.shopee.co.id/gPj7dWvih",
     image:    "./LAPTOP 3 JUTA/thinkpad w.webp"
   },
@@ -896,7 +896,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
     shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
@@ -912,7 +912,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
     shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
     image:    "./LAPTOP 5 JUTA/thinkpadr7.webp"
   },
@@ -1058,7 +1058,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
     shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
     image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
   },
@@ -1173,7 +1173,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
     shopUrl:  "https://s.shopee.co.id/4qFI6qVhjQ",
     image:    "./LAPTOP 6 JUTA/ThinkPad T15 G2.webp"
   },
@@ -1271,7 +1271,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7678246023713656072",
     shopUrl:  "https://s.shopee.co.id/1gI6dHNGiu",
     image:    "./LAPTOP 7 JUTA/Acer14.webp"
   },
@@ -1319,7 +1319,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7678246023713656072",
     shopUrl:  "https://s.shopee.co.id/qizxt1cLE",
     image:    "./LAPTOP 8 JUTA/Acer TravelMate P40.webp"
   },
@@ -1466,7 +1466,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7678246023713656072",
     shopUrl:  "https://s.shopee.co.id/9pdoOODyne",
     image:    "./LAPTOP 9 JUTA/axioohype7.webp"
   },
@@ -1514,7 +1514,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
     shopUrl:  "https://s.shopee.co.id/2qUDjaXQBj",
     image:    "./LAPTOP 9 JUTA/ThinkPad P71.webp"
   },
@@ -1563,7 +1563,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7678246023713656072",
     shopUrl:  "https://s.shopee.co.id/2VrDegH68c",
     image:    "./LAPTOP 9 JUTA/Advan Workplus Ai.webp"
   },
@@ -1680,7 +1680,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
     shopUrl:  "https://s.shopee.co.id/8fS0gSl2Sn",
     image:    "./LAPTOP 10 JUTA/ThinkPad P1 G2.webp"
   },
@@ -1997,7 +1997,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
     shopUrl:  "https://s.shopee.co.id/1gIGK5QyL9",
     image:    "./LAPTOP 5 JUTA/ThinkPad P52.webp"
   },
