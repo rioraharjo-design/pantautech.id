@@ -889,7 +889,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
     category: "bekas",
     tier: "S",
-    price: 5428000,
+    price: 5300000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -899,6 +899,22 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
     shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
+  },
+    {
+    id: 2223235,
+    name: "ThinkPad T14 Gen 1 Ryzen 7",
+    category: "bekas",
+    tier: "S",
+    price: 5300000,
+    specs: [
+      "AMD Ryzen 7 Pro 4750U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
+    image:    "./LAPTOP 5 JUTA/thinkpadr7.webp"
   },
   {
     id: 224245,
