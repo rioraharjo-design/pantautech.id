@@ -808,7 +808,7 @@ const PRODUCTS = [
     name: "HP Elitebook 845 G7",
     category: "bekas",
     tier: "S",
-    price: 4836000,
+    price: 4866000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -816,7 +816,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7663495067117686034",
-    shopUrl:  "https://s.shopee.co.id/W6fiTbzBJ",
+    shopUrl:  "https://s.shopee.co.id/AUuJ6tBRIa",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
@@ -841,7 +841,7 @@ const PRODUCTS = [
     name: "HP Elitebook 845 G8 (TERLARIS)",
     category: "bekas",
     tier: "S",
-    price: 5115000,
+    price: 5418000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -849,7 +849,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/W6fiTbzBJ",
+    shopUrl:  "https://s.shopee.co.id/8fSevPKLw9",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
