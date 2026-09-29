@@ -1,5 +1,69 @@
 const PRODUCTS = [
 
+    {
+    id: 30,
+    name: "ThinkPad T14 Gen 3 Ryzen 7",
+    category: "bekas",
+    tier: "S",
+    price: 9500000,
+    specs: [
+      "Ryzen 7 Pro 6850U",
+      "Radeon 680M",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
+    shopUrl:  "https://s.shopee.co.id/5q8XsW3reZ",
+    image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
+  },
+  {
+  id: 13249,
+  name: "ThinkPad T14 Gen 3 Ryzen 5",
+  category: "bekas",
+  tier: "S",
+  price: 8000000,
+  specs: [
+    "AMD Ryzen 5 Pro 6650U",
+    "Radeon 660M",
+    "RAM 16GB",
+    "SSD 256GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl:  "https://s.shopee.co.id/BUB7rYvvq",
+  image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
+},
+{
+  id: 2234320,
+  name: "Axioo Hype 5 AMD X6-11",
+  category: "odm",
+  tier: "S",
+  price: 8199000,
+  specs: [
+    "AMD Ryzen 5 6600H",
+    "Radeon 660M",
+    "RAM 16GB",
+    "SSD 256GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl:  "https://s.shopee.co.id/7KxLjlM6u5",
+  image:    "./LAPTOP 8 JUTA/axioo8jt.webp"
+},
+{
+  id: 2234231,
+  name: "Dell Latitude 5430",
+  category: "bekas",
+  tier: "S",
+  price: 6290000,
+  specs: [
+    "Intel Core i7-1255U",
+    "Intel Iris Xe Graphics 96EU",
+    "RAM 16GB",
+    "SSD 256GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl:  "https://s.shopee.co.id/20vpKnOFBH",
+  image:    "./LAPTOP 6 JUTA/dell6jt.webp"
+},
 {
   id: 2132423235235,
   name: "Asus TUF Dash F15 FX516PE (GAMING) (TEKNIK)",
@@ -21,6 +85,7 @@ const PRODUCTS = [
   name: "MSI Thin GF63 12UC (GAMING) (TEKNIK)",
   category: "bekas",
   tier: "S",
+  sold_out: true,
   price: 9400000,
   specs: [
     "Intel Core i5-12450H",
@@ -37,6 +102,7 @@ const PRODUCTS = [
   name: "MSI Thin GF63 11UC (GAMING) (TEKNIK)",
   category: "bekas",
   tier: "S",
+  sold_out: true,
   price: 8700000,
   specs: [
     "Intel Core i5-11400H",
@@ -103,7 +169,7 @@ const PRODUCTS = [
   name: "Acer Nitro V15 52-51TE (GAMING) (TEKNIK)",
   category: "global",
   tier: "S",
-  price: 16624000,
+  price: 16752000,
   specs: [
     "Intel Core 5-210H",
     "Nvidia RTX 4050 6GB",
@@ -137,7 +203,7 @@ const PRODUCTS = [
   name: "Asus TUF A16 FA607NUG (GAMING) (TEKNIK)",
   category: "global",
   tier: "S",
-  price: 17574000,
+  price: 18074000,
   specs: [
     "AMD Ryzen 7 7445HS",
     "Nvidia RTX 4050 6GB",
@@ -171,6 +237,7 @@ const PRODUCTS = [
   name: "Acer Nitro V15 52-50FX (GAMING) (TEKNIK)",
   category: "global",
   tier: "S",
+  sold_out: true,
   price: 18619000,
   specs: [
     "Intel Core 5-210H",
@@ -205,7 +272,7 @@ const PRODUCTS = [
   name: "Acer Nitro V15 52-777R (GAMING) (TEKNIK)",
   category: "global",
   tier: "S",
-  price: 19324000,
+  price: 19559000,
   specs: [
     "Intel Core 7-240H",
     "Nvidia RTX 5050 8GB",
@@ -222,6 +289,7 @@ const PRODUCTS = [
   name: "Lenovo Slim 7 Aura Edition",
   category: "global",
   tier: "S",
+  sold_out: true,
   price: 19300000,
   specs: [
     "Intel Ultra 7 258V",
@@ -239,6 +307,7 @@ const PRODUCTS = [
   name: "HP Omen 15 GB0555AX (GAMING) (TEKNIK)",
   category: "global",
   tier: "S",
+  sold_out: true,
   price: 20139000,
   specs: [
     "AMD Ryzen 5 240",
@@ -256,6 +325,7 @@ const PRODUCTS = [
   name: "Asus Expertbook P5405CSA",
   category: "global",
   tier: "S",
+  sold_out: true,
   price: 20399000,
   specs: [
     "Intel Core Ultra 7 258V",
@@ -274,6 +344,7 @@ const PRODUCTS = [
     name: "Acer Aspire 7 Pro 3050 4GB (GAMING) (TEKNIK)",
     category: "global",
     tier: "A+",
+    sold_out: true,
     price: 12499000,
     specs: [
       "Intel Core 5-210H",
@@ -291,6 +362,7 @@ const PRODUCTS = [
     name: "Asus Expertbook PM1403CDA",
     category: "global",
     tier: "S",
+    sold_out: true,
     price: 12000000,
     specs: [
       "AMD Ryzen 7 170",
@@ -308,7 +380,7 @@ const PRODUCTS = [
     name: "Acer Aspire 7 Pro 3050 6GB (GAMING) (TEKNIK)",
     category: "global",
     tier: "S",
-    price: 13299000,
+    price: 14249000,
     specs: [
       "Intel Core i5-13420H",
       "Nvidia GeForce RTX 3050 6GB",
@@ -325,7 +397,7 @@ const PRODUCTS = [
     name: "Apple Macbook Neo",
     category: "global",
     tier: "A+",
-    price: 13619000,
+    price: 14101000,
     specs: [
       "Apple A18 Pro",
       "GPU Apple A18 Pro",
@@ -342,6 +414,7 @@ const PRODUCTS = [
     name: "Acer Nitro V15 (GAMING) (TEKNIK)",
     category: "global",
     tier: "S",
+    sold_out: true,
     price: 14000000,
     specs: [
       "Intel Core 5-210H",
@@ -359,7 +432,7 @@ const PRODUCTS = [
     name: "Asus Expertbook P3 G1",
     category: "global",
     tier: "S",
-    price: 14590000,
+    price: 16842000,
     specs: [
       "Intel Ultra 7 225H",
       "Intel Arc 140T",
@@ -376,7 +449,7 @@ const PRODUCTS = [
     name: "Acer Nitro Lite 16 (GAMING) (TEKNIK)",
     category: "global",
     tier: "S",
-    price: 15694000,
+    price: 16562000,
     specs: [
       "Intel Core 5-210H",
       "Nvidia RTX 4050 6GB",
@@ -393,7 +466,7 @@ const PRODUCTS = [
     name: "HP Omnibook 3 14-HV0036AU",
     category: "global",
     tier: "S",
-    price: 15007000,
+    price: 15569000,
     specs: [
       "AMD Ryzen AI 7 445",
       "Radeon 840M",
@@ -576,10 +649,10 @@ const PRODUCTS = [
   },
   {
     id: 210,
-    name: "Dell Latitude 7390",
+    name: "Dell Latitude 7290",
     category: "bekas",
     tier: "A",
-    price: 2975000,
+    price: 2900000,
     specs: [
       "Intel Core i5-7300U",
       "Intel UHD Graphics 620",
@@ -612,7 +685,7 @@ const PRODUCTS = [
     name: "ThinkPad P50 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 4803000,
+    price: 4526000,
     specs: [
       "Intel Core i7-6820HQ",
       "Nvidia Quadro M1000M 2GB",
@@ -628,6 +701,7 @@ const PRODUCTS = [
     name: "ThinkPad W541 (TEKNIK)",
     category: "bekas",
     tier: "A",
+    sold_out: true,
     price: 3446000,
     specs: [
       "Intel Core i7-4810MQ",
@@ -660,7 +734,7 @@ const PRODUCTS = [
     name: "ThinkPad X390 (TERLARIS)",
     category: "bekas",
     tier: "A+",
-    price: 3999000,
+    price: 3956000,
     specs: [
       "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
@@ -692,7 +766,7 @@ const PRODUCTS = [
     name: "ThinkPad T495",
     category: "bekas",
     tier: "S",
-    price: 4038000,
+    price: 4220000,
     specs: [
       "AMD Ryzen 5 3500U",
       "Radeon Vega 8",
@@ -776,15 +850,15 @@ const PRODUCTS = [
     name: "ThinkPad X13 Gen 1 AMD",
     category: "bekas",
     tier: "S",
-    price: 4235000,
+    price: 4751000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
-      "RAM 16GB",
+      "RAM 32GB",
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id",
-    shopUrl:  "https://s.shopee.co.id/9ANv8UE4zn",
+    shopUrl:  "https://s.shopee.co.id/LnbUZAzgA",
     image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
   },
   {
@@ -792,7 +866,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 1 Ryzen 5",
     category: "bekas",
     tier: "S",
-    price: 4900000,
+    price: 5152000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -857,7 +931,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 (INTEL)",
     category: "bekas",
     tier: "S",
-    price: 5244000,
+    price: 5520000,
     specs: [
       "Intel Core i5-1135G7",
       "Intel Iris Xe",
@@ -889,7 +963,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
     category: "bekas",
     tier: "S",
-    price: 5300000,
+    price: 5800000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -905,7 +979,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 1 Ryzen 7",
     category: "bekas",
     tier: "S",
-    price: 5300000,
+    price: 5800000,
     specs: [
       "AMD Ryzen 7 Pro 4750U",
       "Radeon Vega 7",
@@ -969,8 +1043,8 @@ const PRODUCTS = [
     id: 90,
     name: "Axioo Hype 3 G11",
     category: "odm",
-    tier: "A",
-    price: 5998000,
+    tier: "B+",
+    price: 6299000,
     specs: [
       "Intel Core i3-1125G4",
       "Intel UHD Graphics 11th Gen",
@@ -1019,7 +1093,7 @@ const PRODUCTS = [
     name: "Axioo Hype 1 (WAJIB NONTON VIDEO)",
     category: "odm",
     tier: "C",
-    price: 3495000,
+    price: 3945000,
     specs: [
       "Intel Celeron N4020",
       "Intel UHD Graphics 600",
@@ -1109,7 +1183,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/LknGcmWQR",
+    shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
     image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
   },
   {
@@ -1264,7 +1338,7 @@ const PRODUCTS = [
     name: "Acer Aspire Lite 14",
     category: "global",
     tier: "A",
-    price: 7543000,
+    price: 7694000,
     specs: [
       "AMD Ryzen 3 5400U",
       "Radeon Vega 6",
@@ -1272,7 +1346,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7678246023713656072",
-    shopUrl:  "https://s.shopee.co.id/1gI6dHNGiu",
+    shopUrl:  "https://s.shopee.co.id/4qG0m86hfM",
     image:    "./LAPTOP 7 JUTA/Acer14.webp"
   },
   {
@@ -1404,22 +1478,6 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
     shopUrl:  "https://s.shopee.co.id/6L2QXXGXaG",
     image:    "./LAPTOP 8 JUTA/lenovoig1.webp"
-  },
-  {
-    id: 30,
-    name: "ThinkPad T14 Gen 3 AMD",
-    category: "bekas",
-    tier: "A+",
-    price: 10137000,
-    specs: [
-      "Ryzen 7 Pro 6850U",
-      "Radeon 680M",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/7Ab7kGzYvQ",
-    image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
   },
   {
     id: 100,
