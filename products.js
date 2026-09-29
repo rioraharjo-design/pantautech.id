@@ -12,7 +12,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/5q8XsW3reZ",
     image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
   },
@@ -28,7 +28,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 256GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
   shopUrl:  "https://s.shopee.co.id/BUB7rYvvq",
   image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
 },
@@ -44,7 +44,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 256GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
   shopUrl:  "https://s.shopee.co.id/7KxLjlM6u5",
   image:    "./LAPTOP 8 JUTA/axioo8jt.webp"
 },
@@ -60,7 +60,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 256GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
   shopUrl:  "https://s.shopee.co.id/20vpKnOFBH",
   image:    "./LAPTOP 6 JUTA/dell6jt.webp"
 },
@@ -725,7 +725,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/9fIsAZatzM",
     image:    "./LAPTOP 3 JUTA/dell 5400.webp"
   },
@@ -857,7 +857,7 @@ const PRODUCTS = [
       "RAM 32GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/LnbUZAzgA",
     image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
   },
@@ -873,7 +873,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
     image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
   },
@@ -889,7 +889,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7663495067117686034",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/AUuJ6tBRIa",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
@@ -922,7 +922,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/8fSevPKLw9",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
@@ -1182,7 +1182,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
     image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
   },
@@ -1345,7 +1345,7 @@ const PRODUCTS = [
       "RAM 8GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7678246023713656072",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/4qG0m86hfM",
     image:    "./LAPTOP 7 JUTA/Acer14.webp"
   },
@@ -1524,7 +1524,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7678246023713656072",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/9pdoOODyne",
     image:    "./LAPTOP 9 JUTA/axioohype7.webp"
   },
@@ -1595,17 +1595,17 @@ const PRODUCTS = [
   },
   {
     id: 9,
-    name: "Advan Pixwar",
+    name: "Advan Pixwar T",
     category: "odm",
     tier: "S",
-    price: 10694000,
+    price: 10824000,
     specs: [
       "AMD Ryzen 7 8745HS",
       "Radeon 780M",
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/9KfcKRn15V",
     image:    "./LAPTOP 9 JUTA/Advan Pixwar.webp"
   },
@@ -1654,7 +1654,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/19sePQ4YU",
     image:    "./LAPTOP 10 JUTA/HP 14.webp"
   },
