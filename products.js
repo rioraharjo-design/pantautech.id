@@ -850,7 +850,7 @@ const PRODUCTS = [
     name: "ThinkPad X13 Gen 1 AMD",
     category: "bekas",
     tier: "S",
-    price: 4751000,
+    price: 4324000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -858,7 +858,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/LnbUZAzgA",
+    shopUrl:  "https://s.shopee.co.id/9ANv8UE4zn",
     image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
   },
   {
@@ -874,7 +874,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
+    shopUrl:  "https://s.shopee.co.id/Lne9eDYzy",
     image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
   },
   {
@@ -923,7 +923,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/8fSevPKLw9",
+    shopUrl:  "https://s.shopee.co.id/7Adxb0Gbx3",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
   {
@@ -963,7 +963,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
     category: "bekas",
     tier: "S",
-    price: 5800000,
+    price: 5900000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -971,7 +971,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
-    shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
+    shopUrl:  "https://s.shopee.co.id/1qcRwUhqkz",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
     {
