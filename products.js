@@ -1,5 +1,21 @@
 const PRODUCTS = [
 
+      {
+    id: 30,
+    name: "Asus ROG Strix G16 (Laptop Spiderman)",
+    category: "global",
+    tier: "S",
+    price: 59293000,
+    specs: [
+      "Ryzen 9 8940HX",
+      "Nvidia RTX 5080 16GB",
+      "RAM 32GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/3B7sdZxTs0",
+    image:    "./spiderman.webp"
+  },
     {
     id: 30,
     name: "ThinkPad T14 Gen 3 Ryzen 7",
