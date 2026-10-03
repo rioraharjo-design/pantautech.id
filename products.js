@@ -69,15 +69,15 @@ const PRODUCTS = [
   name: "Dell Latitude 5430",
   category: "bekas",
   tier: "S",
-  price: 6290000,
+  price: 6590000,
   specs: [
     "Intel Core i7-1255U",
     "Intel Iris Xe Graphics 96EU",
-    "RAM 16GB",
+    "RAM 32GB",
     "SSD 256GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-  shopUrl:  "https://s.shopee.co.id/20vpKnOFBH",
+  shopUrl:  "https://s.shopee.co.id/8KpzFtiSdr",
   image:    "./LAPTOP 6 JUTA/dell6jt.webp"
 },
 {
