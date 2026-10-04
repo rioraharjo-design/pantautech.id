@@ -1,7 +1,58 @@
 const PRODUCTS = [
 
       {
-    id: 30,
+    id: 30324234,
+    name: "Dell Latitude 5430 i5 (JUARA 5 JUTA)",
+    category: "bekas",
+    tier: "S",
+    price: 5336000,
+    specs: [
+      "Intel Core i5-1245U",
+      "Intel Iris Xe 80EU",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6VOIjl2Lft",
+    image:    "./LAPTOP 5 JUTA/dell5430.webp"
+  },
+
+    {
+    id: 11,
+    name: "HP Elitebook 845 G8 (TERLARIS)",
+    category: "bekas",
+    tier: "S",
+    price: 5612000,
+    specs: [
+      "AMD Ryzen 5 Pro 5650U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/9zyEyoKkNx",
+    image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
+  },
+
+    {
+    id: 225,
+    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
+    category: "bekas",
+    tier: "S",
+    price: 5900000,
+    specs: [
+      "AMD Ryzen 5 Pro 5650U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
+    shopUrl:  "https://s.shopee.co.id/1qcRwUhqkz",
+    image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
+  },
+
+      {
+    id: 3342420,
     name: "Asus ROG Strix G16 (Laptop Spiderman)",
     category: "global",
     tier: "S",
@@ -17,7 +68,7 @@ const PRODUCTS = [
     image:    "./spiderman.webp"
   },
     {
-    id: 30,
+    id: 34322420,
     name: "ThinkPad T14 Gen 3 Ryzen 7",
     category: "bekas",
     tier: "S",
@@ -66,7 +117,7 @@ const PRODUCTS = [
 },
 {
   id: 2234231,
-  name: "Dell Latitude 5430",
+  name: "Dell Latitude 5430 i7",
   category: "bekas",
   tier: "S",
   price: 6590000,
@@ -926,22 +977,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/70HhDMopNv",
     image:    "./LAPTOP 4 JUTA/ThinkPad P51.webp"
   },
-  {
-    id: 11,
-    name: "HP Elitebook 845 G8 (TERLARIS)",
-    category: "bekas",
-    tier: "S",
-    price: 5418000,
-    specs: [
-      "AMD Ryzen 5 Pro 5650U",
-      "Radeon Vega 7",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/7Adxb0Gbx3",
-    image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
-  },
+
   {
     id: 13,
     name: "ThinkPad T14 Gen 2 (INTEL)",
@@ -974,22 +1010,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/4LGwJSZjMn",
     image:    "./LAPTOP 5 JUTA/Advan 360.webp"
   },
-  {
-    id: 225,
-    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
-    category: "bekas",
-    tier: "S",
-    price: 5900000,
-    specs: [
-      "AMD Ryzen 5 Pro 5650U",
-      "Radeon Vega 7",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
-    shopUrl:  "https://s.shopee.co.id/1qcRwUhqkz",
-    image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
-  },
+
     {
     id: 2223235,
     name: "ThinkPad T14 Gen 1 Ryzen 7",
