@@ -1,5 +1,338 @@
 const PRODUCTS = [
 
+{
+  id: 222352529,
+  name: "Acer Nitro V15",
+  category: "global",
+  tier: "S",
+  sold_out: false,
+  price: 15489000,
+  specs: [
+    "Intel Core i5-210H",
+    "Nvidia GeForce RTX 3050 6GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/3qNgHJ69zs",
+  image: "./LAPTOP 14 JUTA/acernitro.webp"
+},
+
+    {
+    id: 207,
+    name: "Acer Aspire 7 Pro 3050 6GB",
+    category: "global",
+    tier: "S",
+    price: 14249000,
+    specs: [
+      "Intel Core i5-13420H",
+      "Nvidia GeForce RTX 3050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
+    shopUrl:  "https://s.shopee.co.id/7pqvDaEpiY",
+    image:    "./LAPTOP 12 JUTA/Acer 7.webp"
+  },
+
+
+{
+  id: 23235250,
+  name: "Acer Aspire 7 Pro 3050 4GB",
+  category: "global",
+  tier: "A+",
+  sold_out: false,
+  price: 13877000,
+  specs: [
+    "Intel Core i5-210H",
+    "Nvidia GeForce RTX 3050 4GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/8pmMDxZRH9",
+  image: "./LAPTOP 12 JUTA/acer4gb.webp"
+},
+
+{
+  id: 232352351,
+  name: "Asus ROG Flow X13 ",
+  category: "bekas",
+  tier: "S",
+  sold_out: false,
+  price: 13632000,
+  specs: [
+    "AMD Ryzen 7 6800HS",
+    "Nvidia GeForce RTX 3050 Ti 4GB",
+    "RAM 16GB",
+    "SSD 1TB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/AAHl7pyTiq",
+  image: "./LAPTOP 13 JUTA/rog13jt.webp"
+},
+
+{
+  id: 232532532,
+  name: "Lenovo LOQ 15IAX9 ",
+  category: "bekas",
+  tier: "S",
+  sold_out: false,
+  price: 12445000,
+  specs: [
+    "Intel Core i5-12450HX",
+    "Nvidia GeForce RTX 3050 6GB",
+    "RAM 12GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/5LCTzdSpnc",
+  image: "./LAPTOP 12 JUTA/loq12jt.webp"
+},
+
+{
+  id: 2323523,
+  name: "Axioo Pongo 725 V2 ",
+  category: "odm",
+  tier: "S",
+  sold_out: false,
+  price: 12499000,
+  specs: [
+    "Intel Core i7-13620H",
+    "Nvidia GeForce RTX 2050 4GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/113UuLKVnu",
+  image: "./LAPTOP 8 JUTA/pongo 725.webp"
+},
+
+{
+  id: 25235234,
+  name: "MSI Cyborg 15 A12U",
+  category: "bekas",
+  tier: "S",
+  sold_out: false,
+  price: 11020000,
+  specs: [
+    "Intel Core i5-12450H",
+    "Nvidia GeForce RTX 3050 6GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/1BMv2MY6ly",
+  image: "./LAPTOP 11 JUTA/cyborg11jt.webp"
+},
+
+  {
+    id: 110,
+    name: "HP 14",
+    category: "global",
+    tier: "S",
+    price: 11589000,
+    specs: [
+      "Intel Ultra 5 125H",
+      "Intel Arc",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/19sePQ4YU",
+    image:    "./LAPTOP 10 JUTA/HP 14.webp"
+  },
+
+  {
+    id: 9,
+    name: "Advan Pixwar T",
+    category: "odm",
+    tier: "S",
+    price: 10824000,
+    specs: [
+      "AMD Ryzen 7 8745HS",
+      "Radeon 780M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/9KfcKRn15V",
+    image:    "./LAPTOP 9 JUTA/Advan Pixwar.webp"
+  },
+
+{
+  id: 2323423425,
+  name: "MSI Thin 15 B12UCX",
+  category: "bekas",
+  tier: "S",
+  sold_out: false,
+  price: 10224000,
+  specs: [
+    "Intel Core i7-12650H",
+    "Nvidia GeForce RTX 2050 4GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/1LgMbqhzPw",
+  image: "./LAPTOP 11 JUTA/MSI Thin.webp"
+},
+
+{
+  id: 23253536,
+  name: "Lenovo IdeaPad Gaming 3",
+  category: "bekas",
+  tier: "S",
+  sold_out: false,
+  price: 9600000,
+  specs: [
+    "AMD Ryzen 5 5500H",
+    "Nvidia GeForce RTX 2050 4GB",
+    "RAM 16GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/50ZeySAN0r",
+  image: "./LAPTOP 8 JUTA/lenovoig1.webp"
+},
+
+{
+  id: 2234320,
+  name: "Axioo Hype 5 AMD X6-11",
+  category: "odm",
+  tier: "S",
+  price: 8199000,
+  specs: [
+    "AMD Ryzen 5 6600H",
+    "Radeon 660M",
+    "RAM 16GB",
+    "SSD 256GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+  shopUrl:  "https://s.shopee.co.id/7KxLjlM6u5",
+  image:    "./LAPTOP 8 JUTA/axioo8jt.webp"
+},
+
+{
+  id: 2325323527,
+  name: "HP Pavilion Gaming 15-ec1076AX",
+  category: "bekas",
+  tier: "S",
+  sold_out: false,
+  price: 8800000,
+  specs: [
+    "AMD Ryzen 7 4800H",
+    "Nvidia GeForce GTX 1660 Ti 6GB",
+    "RAM 8GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/8fSw4fiojZ",
+  image: "./LAPTOP 8 JUTA/pavilion8jt.webp"
+},
+
+{
+  id: 23252338,
+  name: "Acer Nitro 5 AN515-55",
+  category: "bekas",
+  tier: "A+",
+  sold_out: false,
+  price: 7400000,
+  specs: [
+    "Intel Core i5-10300H",
+    "Nvidia GeForce GTX 1650 Ti 4GB",
+    "RAM 8GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  shopUrl: "https://s.shopee.co.id/6L51CjaD7n",
+  image: "./LAPTOP 7 JUTA/nitro7jt.webp"
+},
+
+    {
+    id: 3878074,
+    name: "Axioo Hype 7 AMD X8-1",
+    category: "odm",
+    tier: "S",
+    price: 9163000,
+    specs: [
+      "AMD Ryzen 7 6800H",
+      "Radeon 680M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/9pdoOODyne",
+    image:    "./LAPTOP 9 JUTA/axioohype7.webp"
+  },
+
+  {
+    id: 6,
+    name: "Axioo Hype 5 AMD X5-2",
+    category: "odm",
+    tier: "A+",
+    price: 6474000,
+    specs: [
+      "AMD Ryzen 5 7430U",
+      "Radeon Vega 7",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
+    image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
+  },
+
+{
+  id: 2132423235239,
+  name: "Asus TUF FX504GD ",
+  category: "bekas",
+  tier: "A+",
+  price: 6324000,
+  specs: [
+    "Intel Core i7-8750H",
+    "Nvidia GTX 1050 4GB",
+    "RAM 8GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
+  shopUrl: "https://s.shopee.co.id/20vZTALSGP",
+  image: "./LAPTOP 6 JUTA/asus6jt.webp"
+},
+{
+  id: 2132423235240,
+  name: "Asus TUF FX505DY ",
+  category: "bekas",
+  tier: "A+",
+  price: 5580000,
+  specs: [
+    "AMD Ryzen 5 3550H",
+    "AMD Radeon RX 560X 4GB",
+    "RAM 8GB",
+    "SSD 256GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
+  shopUrl: "https://s.shopee.co.id/6VNypxQ2rm",
+  image: "./LAPTOP 5 JUTA/tuf5jt.webp"
+},
+
+  {
+    id: 4,
+    name: "ThinkPad T14 Gen 1 Ryzen 5",
+    category: "bekas",
+    tier: "S",
+    price: 4738000,
+    specs: [
+      "AMD Ryzen 5 Pro 4650U",
+      "Radeon Vega 6",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/7KxYPerWvD",
+    image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
+  },
+
       {
     id: 30324234,
     name: "Dell Latitude 5430 i5 (JUARA 5 JUTA)",
@@ -63,7 +396,7 @@ const PRODUCTS = [
       "RAM 32GB",
       "SSD 1TB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7692188578423655688",
     shopUrl:  "https://s.shopee.co.id/3B7sdZxTs0",
     image:    "./spiderman.webp"
   },
@@ -99,22 +432,7 @@ const PRODUCTS = [
   shopUrl:  "https://s.shopee.co.id/BUB7rYvvq",
   image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
 },
-{
-  id: 2234320,
-  name: "Axioo Hype 5 AMD X6-11",
-  category: "odm",
-  tier: "S",
-  price: 8199000,
-  specs: [
-    "AMD Ryzen 5 6600H",
-    "Radeon 660M",
-    "RAM 16GB",
-    "SSD 256GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-  shopUrl:  "https://s.shopee.co.id/7KxLjlM6u5",
-  image:    "./LAPTOP 8 JUTA/axioo8jt.webp"
-},
+
 {
   id: 2234231,
   name: "Dell Latitude 5430 i7",
@@ -133,7 +451,7 @@ const PRODUCTS = [
 },
 {
   id: 2132423235235,
-  name: "Asus TUF Dash F15 FX516PE (GAMING) (TEKNIK)",
+  name: "Asus TUF Dash F15 FX516PE",
   category: "bekas",
   tier: "S",
   price: 10260000,
@@ -149,7 +467,7 @@ const PRODUCTS = [
 },
 {
   id: 2132423235236,
-  name: "MSI Thin GF63 12UC (GAMING) (TEKNIK)",
+  name: "MSI Thin GF63 12UC",
   category: "bekas",
   tier: "S",
   sold_out: true,
@@ -166,7 +484,7 @@ const PRODUCTS = [
 },
 {
   id: 2132423235237,
-  name: "MSI Thin GF63 11UC (GAMING) (TEKNIK)",
+  name: "MSI Thin GF63 11UC ",
   category: "bekas",
   tier: "S",
   sold_out: true,
@@ -183,7 +501,7 @@ const PRODUCTS = [
 },
 {
   id: 2132423235238,
-  name: "Acer Nitro 5 AN515-45 (GAMING) (TEKNIK)",
+  name: "Acer Nitro 5 AN515-45 ",
   category: "bekas",
   tier: "S",
   sold_out: true,
@@ -198,42 +516,11 @@ const PRODUCTS = [
   shopUrl: "https://s.shopee.co.id/4LJUFlZQ7O",
   image: "./LAPTOP 7 JUTA/nitro7jt.webp"
 },
-{
-  id: 2132423235239,
-  name: "Asus TUF FX504GD (GAMING) (TEKNIK)",
-  category: "bekas",
-  tier: "A+",
-  price: 6324000,
-  specs: [
-    "Intel Core i7-8750H",
-    "Nvidia GTX 1050 4GB",
-    "RAM 8GB",
-    "SSD 512GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
-  shopUrl: "https://s.shopee.co.id/20vZTALSGP",
-  image: "./LAPTOP 6 JUTA/asus6jt.webp"
-},
-{
-  id: 2132423235240,
-  name: "Asus TUF FX505DY (GAMING) (TEKNIK)",
-  category: "bekas",
-  tier: "A+",
-  price: 5580000,
-  specs: [
-    "AMD Ryzen 5 3550H",
-    "AMD Radeon RX 560X 4GB",
-    "RAM 8GB",
-    "SSD 256GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
-  shopUrl: "https://s.shopee.co.id/6VNypxQ2rm",
-  image: "./LAPTOP 5 JUTA/tuf5jt.webp"
-},
+
 
 {
   id: 160000001,
-  name: "Acer Nitro V15 52-51TE (GAMING) (TEKNIK)",
+  name: "Acer Nitro V15 52-51TE ",
   category: "global",
   tier: "S",
   price: 16752000,
@@ -267,7 +554,7 @@ const PRODUCTS = [
 
 {
   id: 170000001,
-  name: "Asus TUF A16 FA607NUG (GAMING) (TEKNIK)",
+  name: "Asus TUF A16 FA607NUG ",
   category: "global",
   tier: "S",
   price: 18074000,
@@ -301,7 +588,7 @@ const PRODUCTS = [
 
 {
   id: 180000001,
-  name: "Acer Nitro V15 52-50FX (GAMING) (TEKNIK)",
+  name: "Acer Nitro V15 52-50FX",
   category: "global",
   tier: "S",
   sold_out: true,
@@ -336,7 +623,7 @@ const PRODUCTS = [
 
 {
   id: 190000001,
-  name: "Acer Nitro V15 52-777R (GAMING) (TEKNIK)",
+  name: "Acer Nitro V15 52-777R ",
   category: "global",
   tier: "S",
   price: 19559000,
@@ -371,7 +658,7 @@ const PRODUCTS = [
 
 {
   id: 200000001,
-  name: "HP Omen 15 GB0555AX (GAMING) (TEKNIK)",
+  name: "HP Omen 15 GB0555AX ",
   category: "global",
   tier: "S",
   sold_out: true,
@@ -408,7 +695,7 @@ const PRODUCTS = [
 
   {
     id: 21324243434,
-    name: "Acer Aspire 7 Pro 3050 4GB (GAMING) (TEKNIK)",
+    name: "Acer Aspire 7 Pro 3050 4GB",
     category: "global",
     tier: "A+",
     sold_out: true,
@@ -442,22 +729,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 12 JUTA/asuspm1.webp"
   },
 
-    {
-    id: 207,
-    name: "Acer Aspire 7 Pro 3050 6GB (GAMING) (TEKNIK)",
-    category: "global",
-    tier: "S",
-    price: 14249000,
-    specs: [
-      "Intel Core i5-13420H",
-      "Nvidia GeForce RTX 3050 6GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
-    shopUrl:  "https://s.shopee.co.id/7pqvDaEpiY",
-    image:    "./LAPTOP 12 JUTA/Acer 7.webp"
-  },
 
   {
     id: 140,
@@ -478,7 +749,7 @@ const PRODUCTS = [
 
   {
     id: 25364,
-    name: "Acer Nitro V15 (GAMING) (TEKNIK)",
+    name: "Acer Nitro V15 ",
     category: "global",
     tier: "S",
     sold_out: true,
@@ -513,7 +784,7 @@ const PRODUCTS = [
 
   {
     id: 213242434343,
-    name: "Acer Nitro Lite 16 (GAMING) (TEKNIK)",
+    name: "Acer Nitro Lite 16 ",
     category: "global",
     tier: "S",
     price: 16562000,
@@ -547,7 +818,7 @@ const PRODUCTS = [
 
   {
     id: 21324234,
-    name: "Asus ROG Strix GL553VD (GAMING)",
+    name: "Asus ROG Strix GL553VD ",
     category: "bekas",
     tier: "A",
     sold_out: true,
@@ -564,7 +835,7 @@ const PRODUCTS = [
   },
     {
     id: 2132423532234,
-    name: "HP Pavilion 15-CB505TX (GAMING)",
+    name: "HP Pavilion 15-CB505TX",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -581,7 +852,7 @@ const PRODUCTS = [
   },
     {
     id: 2253251324234,
-    name: "Acer Nitro 5 AN515-52 (GAMING)",
+    name: "Acer Nitro 5 AN515-52 ",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -598,7 +869,7 @@ const PRODUCTS = [
   },
     {
     id: 21235235324234,
-    name: "Axioo Pongo 725 (GAMING) (TEKNIK)",
+    name: "Axioo Pongo 725 ",
     category: "bekas",
     tier: "S",
     sold_out: true,
@@ -615,7 +886,7 @@ const PRODUCTS = [
   },
     {
     id: 2132423235234,
-    name: "Acer Nitro 5 AN515-58 (GAMING)",
+    name: "Acer Nitro 5 AN515-58 ",
     category: "bekas",
     tier: "S",
     price: 9216000,
@@ -631,7 +902,7 @@ const PRODUCTS = [
   },
   {
     id: 213242323435234,
-    name: "Asus ROG Zephyrus M16 GU603HM (GAMING) (TEKNIK)",
+    name: "Asus ROG Zephyrus M16 GU603HM",
     category: "bekas",
     tier: "S",
     sold_out: true,
@@ -917,23 +1188,7 @@ const PRODUCTS = [
     name: "ThinkPad X13 Gen 1 AMD",
     category: "bekas",
     tier: "S",
-    price: 4324000,
-    specs: [
-      "AMD Ryzen 5 Pro 4650U",
-      "Radeon Vega 6",
-      "RAM 32GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9ANv8UE4zn",
-    image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
-  },
-  {
-    id: 4,
-    name: "ThinkPad T14 Gen 1 Ryzen 5",
-    category: "bekas",
-    tier: "S",
-    price: 5152000,
+    price: 4524000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -941,9 +1196,10 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/Lne9eDYzy",
-    image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
+    shopUrl:  "https://s.shopee.co.id/9ANv8UE4zn",
+    image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
   },
+
   {
     id: 233333,
     name: "HP Elitebook 845 G7",
@@ -1045,7 +1301,7 @@ const PRODUCTS = [
   },
   {
     id: 227,
-    name: "Asus TUF FX504GE (GAMING)",
+    name: "Asus TUF FX504GE",
     category: "bekas",
     tier: "B+",
     sold_out: true,
@@ -1192,7 +1448,7 @@ const PRODUCTS = [
   },
   {
     id: 228,
-    name: "Asus TUF FX505GT (GAMING)",
+    name: "Asus TUF FX505GT",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1207,22 +1463,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/8fQLJUKXYW",
     image:    "./LAPTOP 6 JUTA/tuf 2.webp"
   },
-  {
-    id: 6,
-    name: "Axioo Hype 5 AMD X5-2",
-    category: "odm",
-    tier: "A+",
-    price: 6474000,
-    specs: [
-      "AMD Ryzen 5 7430U",
-      "Radeon Vega 7",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
-    image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
-  },
+
   {
     id: 15,
     name: "Infinix XBOOK 15",
@@ -1241,7 +1482,7 @@ const PRODUCTS = [
   },
   {
     id: 19,
-    name: "ThinkPad T14 Gen 2 MX450 (GAMING)",
+    name: "ThinkPad T14 Gen 2 MX450",
     category: "bekas",
     tier: "S",
     sold_out: true,
@@ -1290,7 +1531,7 @@ const PRODUCTS = [
   },
   {
     id: 229,
-    name: "MSI GF63 Thin 9SCSR (GAMING) (TEKNIK)",
+    name: "MSI GF63 Thin 9SCSR",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1501,7 +1742,7 @@ const PRODUCTS = [
   },
   {
     id: 230,
-    name: "Lenovo Ideapad Gaming 3 2050 (GAMING) (TEKNIK)",
+    name: "Lenovo Ideapad Gaming 3 2050",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1549,22 +1790,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/80AEkX5MoZ",
     image:    "./LAPTOP 9 JUTA/Asus Expertbook.webp"
   },
-    {
-    id: 3878074,
-    name: "Axioo Hype 7 AMD X8-1",
-    category: "odm",
-    tier: "S",
-    price: 9163000,
-    specs: [
-      "AMD Ryzen 7 6800H",
-      "Radeon 680M",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9pdoOODyne",
-    image:    "./LAPTOP 9 JUTA/axioohype7.webp"
-  },
+
   {
     id: 33,
     name: "Acer Aspire Lite 15",
@@ -1615,7 +1841,7 @@ const PRODUCTS = [
   },
   {
     id: 231,
-    name: "Lenovo Ideapad Gaming 3 3060 (GAMING) (TEKNIK)",
+    name: "Lenovo Ideapad Gaming 3 3060",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1630,22 +1856,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/7VENvvWMxk",
     image:    "./LAPTOP 9 JUTA/lenovoig2.webp"
   },
-  {
-    id: 9,
-    name: "Advan Pixwar T",
-    category: "odm",
-    tier: "S",
-    price: 10824000,
-    specs: [
-      "AMD Ryzen 7 8745HS",
-      "Radeon 780M",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9KfcKRn15V",
-    image:    "./LAPTOP 9 JUTA/Advan Pixwar.webp"
-  },
+
   {
     id: 31,
     name: "Advan Workplus Ai",
@@ -1679,22 +1890,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/20t53TtreC",
     image:    "./LAPTOP 10 JUTA/Axioo Hype 7 AMD X9.webp"
   },
-  {
-    id: 110,
-    name: "HP 14",
-    category: "global",
-    tier: "S",
-    price: 10100000,
-    specs: [
-      "Intel Ultra 5 125H",
-      "Intel Arc",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/19sePQ4YU",
-    image:    "./LAPTOP 10 JUTA/HP 14.webp"
-  },
+
   {
     id: 130,
     name: "Lenovo V14 Gen 4",
@@ -1730,7 +1926,7 @@ const PRODUCTS = [
   },
   {
     id: 180,
-    name: "Lenovo Legion 5 15ARH05H (GAMING) (TEKNIK)",
+    name: "Lenovo Legion 5 15ARH05H ",
     category: "bekas",
     tier: "A",
     sold_out: true,
@@ -1815,7 +2011,7 @@ const PRODUCTS = [
   },
   {
     id: 202,
-    name: "MSI Thin 15 B12UC-3298 (GAMING) (TEKNIK)",
+    name: "MSI Thin 15 B12UC-3298 ",
     category: "global",
     tier: "A",
     sold_out: true,
@@ -1882,7 +2078,7 @@ const PRODUCTS = [
   },
   {
     id: 205,
-    name: "HP Victus 16 (GAMING) (TEKNIK)",
+    name: "HP Victus 16 ",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1899,7 +2095,7 @@ const PRODUCTS = [
   },
   {
     id: 203,
-    name: "Lenovo LOQ 15ARP10E (GAMING) (TEKNIK)",
+    name: "Lenovo LOQ 15ARP10E ",
     category: "global",
     tier: "S",
     price: 15574000,
@@ -1915,7 +2111,7 @@ const PRODUCTS = [
   },
   {
     id: 209,
-    name: "Axioo Pongo 750 (GAMING) (TEKNIK)",
+    name: "Axioo Pongo 750 ",
     category: "bekas",
     tier: "A+",
     sold_out: true,
@@ -1949,7 +2145,7 @@ const PRODUCTS = [
   },
   {
     id: 217,
-    name: "Acer Nitro Lite 16 (GAMING) (TEKNIK)",
+    name: "Acer Nitro Lite 16",
     category: "global",
     tier: "A+",
     price: 14499000,
@@ -1999,7 +2195,7 @@ const PRODUCTS = [
   },
   {
     id: 219,
-    name: "MSI Thin 15 B13VE-3415 (GAMING) (TEKNIK)",
+    name: "MSI Thin 15 B13VE-3415 ",
     category: "global",
     tier: "S",
     price: 14439000,
@@ -2015,7 +2211,7 @@ const PRODUCTS = [
   },
   {
     id: 220,
-    name: "Acer Nitro Lite 16 NL16 (GAMING) (TEKNIK)",
+    name: "Acer Nitro Lite 16 NL16 ",
     category: "global",
     tier: "A+",
     sold_out: true,
