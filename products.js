@@ -1412,7 +1412,7 @@ const PRODUCTS = [
     name: "Advan Workmate",
     category: "odm",
     tier: "A",
-    price: 5899000,
+    price: 5785000,
     specs: [
       "AMD Ryzen 5 3500U",
       "Radeon Vega 8",
@@ -1420,7 +1420,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/20t1X5kdKE",
+    shopUrl:  "https://s.shopee.co.id/9pezKO367F",
     image:    "./LAPTOP 5 JUTA/Advan Workmate.webp"
   },
   {
