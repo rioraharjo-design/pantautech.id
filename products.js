@@ -180,7 +180,22 @@ const PRODUCTS = [
   image: "./LAPTOP 7 JUTA/nitro7jt.webp"
 },
 
-
+  {
+    id: 91,
+    name: "Advan Workmate",
+    category: "odm",
+    tier: "A",
+    price: 5785000,
+    specs: [
+      "AMD Ryzen 5 3500U",
+      "Radeon Vega 8",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
+    shopUrl:  "https://s.shopee.co.id/9pezKO367F",
+    image:    "./LAPTOP 5 JUTA/Advan Workmate.webp"
+  },
 
 {
   id: 2132423235239,
@@ -1407,22 +1422,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/7AbXWXHtnA",
     image:    "./LAPTOP 5 JUTA/tuf 1.webp"
   },
-  {
-    id: 91,
-    name: "Advan Workmate",
-    category: "odm",
-    tier: "A",
-    price: 5785000,
-    specs: [
-      "AMD Ryzen 5 3500U",
-      "Radeon Vega 8",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/9pezKO367F",
-    image:    "./LAPTOP 5 JUTA/Advan Workmate.webp"
-  },
+
   {
     id: 90,
     name: "Axioo Hype 3 G11",
