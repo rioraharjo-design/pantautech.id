@@ -1,21 +1,96 @@
 const PRODUCTS = [
 
-      {
-    id: 2232411,
-    name: "Acer Aspire Lite 14",
-    category: "global",
-    tier: "A",
-    price: 7694000,
+  
+
+        {
+    id: 11,
+    name: "HP Elitebook 845 G8 (TERLARIS)",
+    category: "bekas",
+    tier: "S",
+    price: 6000000,
     specs: [
-      "AMD Ryzen 3 5400U",
-      "Radeon Vega 6",
-      "RAM 8GB",
-      "SSD 512GB"
+      "AMD Ryzen 5 Pro 5650U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/4qG0m86hfM",
-    image:    "./LAPTOP 7 JUTA/Acer14.webp"
+    shopUrl:  "https://s.shopee.co.id/BURbWiu1o",
+    image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
+
+
+
+    {
+    id: 233333,
+    name: "HP Elitebook 845 G7",
+    category: "bekas",
+    tier: "S",
+    price: 5152000,
+    specs: [
+      "AMD Ryzen 5 Pro 4650U",
+      "Radeon Vega 6",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/9zyEyoKkNx",
+    image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
+  },
+
+        {
+    id: 225,
+    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
+    category: "bekas",
+    tier: "S",
+    price: 5900000,
+    specs: [
+      "AMD Ryzen 5 Pro 5650U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
+    shopUrl:  "https://s.shopee.co.id/1qcRwUhqkz",
+    image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
+  },
+
+
+    {
+    id: 4,
+    name: "ThinkPad T14 Gen 1 Ryzen 5",
+    category: "bekas",
+    tier: "S",
+    price: 4738000,
+    specs: [
+      "AMD Ryzen 5 Pro 4650U",
+      "Radeon Vega 6",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/7KxYPerWvD",
+    image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
+  },
+
+    {
+    id: 6,
+    name: "Axioo Hype 5 AMD X5-2",
+    category: "odm",
+    tier: "A+",
+    price: 6474000,
+    specs: [
+      "AMD Ryzen 5 7430U",
+      "Radeon Vega 7",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
+    image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
+  },
+
+  
 
     {
     id: 623523523532,
@@ -33,6 +108,59 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
     image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
   },
+
+
+  {
+    id: 18,
+    name: "ThinkPad T14 Gen 2 Ryzen 7",
+    category: "bekas",
+    tier: "S",
+    price: 6500000,
+    specs: [
+      "AMD Ryzen 7 Pro 5850U",
+      "Radeon Vega 8",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
+    shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
+    image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
+  },
+
+      {
+    id: 2232411,
+    name: "Acer Aspire Lite 14",
+    category: "global",
+    tier: "A",
+    price: 7694000,
+    specs: [
+      "AMD Ryzen 3 5400U",
+      "Radeon Vega 6",
+      "RAM 8GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/4qG0m86hfM",
+    image:    "./LAPTOP 7 JUTA/Acer14.webp"
+  },
+
+        {
+    id: 223223123411,
+    name: "Acer Aspire Lite 14-36P",
+    category: "global",
+    tier: "C",
+    price: 6749000,
+    specs: [
+      "Intel Celeron N4500",
+      "Intel UHD 16Eu",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3Vkuxkf5GG",
+    image:    "./LAPTOP 6 JUTA/al146jt.webp"
+  },
+
 
 {
   id: 23252338,
@@ -52,22 +180,24 @@ const PRODUCTS = [
   image: "./LAPTOP 7 JUTA/nitro7jt.webp"
 },
 
-  {
-    id: 18,
-    name: "ThinkPad T14 Gen 2 Ryzen 7",
-    category: "bekas",
-    tier: "S",
-    price: 6500000,
-    specs: [
-      "AMD Ryzen 7 Pro 5850U",
-      "Radeon Vega 8",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
-    shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
-    image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
-  },
+
+
+{
+  id: 2132423235239,
+  name: "Asus TUF FX504GD ",
+  category: "bekas",
+  tier: "A+",
+  price: 6324000,
+  specs: [
+    "Intel Core i7-8750H",
+    "Nvidia GTX 1050 4GB",
+    "RAM 8GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
+  shopUrl: "https://s.shopee.co.id/20vZTALSGP",
+  image: "./LAPTOP 6 JUTA/asus6jt.webp"
+},
 
 {
   id: 222352529,
@@ -319,39 +449,8 @@ const PRODUCTS = [
     image:    "./LAPTOP 9 JUTA/axioohype7.webp"
   },
 
-  {
-    id: 6,
-    name: "Axioo Hype 5 AMD X5-2",
-    category: "odm",
-    tier: "A+",
-    price: 6474000,
-    specs: [
-      "AMD Ryzen 5 7430U",
-      "Radeon Vega 7",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
-    image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
-  },
 
-{
-  id: 2132423235239,
-  name: "Asus TUF FX504GD ",
-  category: "bekas",
-  tier: "A+",
-  price: 6324000,
-  specs: [
-    "Intel Core i7-8750H",
-    "Nvidia GTX 1050 4GB",
-    "RAM 8GB",
-    "SSD 512GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-  shopUrl: "https://s.shopee.co.id/20vZTALSGP",
-  image: "./LAPTOP 6 JUTA/asus6jt.webp"
-},
+
 {
   id: 2132423235240,
   name: "Asus TUF FX505DY ",
@@ -369,22 +468,7 @@ const PRODUCTS = [
   image: "./LAPTOP 5 JUTA/tuf5jt.webp"
 },
 
-  {
-    id: 4,
-    name: "ThinkPad T14 Gen 1 Ryzen 5",
-    category: "bekas",
-    tier: "S",
-    price: 4738000,
-    specs: [
-      "AMD Ryzen 5 Pro 4650U",
-      "Radeon Vega 6",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/7KxYPerWvD",
-    image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
-  },
+
 
       {
     id: 30324234,
@@ -403,39 +487,8 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/dell5430.webp"
   },
 
-    {
-    id: 11,
-    name: "HP Elitebook 845 G8 (TERLARIS)",
-    category: "bekas",
-    tier: "S",
-    price: 5900000,
-    specs: [
-      "AMD Ryzen 5 Pro 5650U",
-      "Radeon Vega 7",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/BURbWiu1o",
-    image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
-  },
 
-    {
-    id: 225,
-    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
-    category: "bekas",
-    tier: "S",
-    price: 5900000,
-    specs: [
-      "AMD Ryzen 5 Pro 5650U",
-      "Radeon Vega 7",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
-    shopUrl:  "https://s.shopee.co.id/1qcRwUhqkz",
-    image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
-  },
+
 
       {
     id: 3342420,
@@ -1253,22 +1306,7 @@ const PRODUCTS = [
     image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
   },
 
-  {
-    id: 233333,
-    name: "HP Elitebook 845 G7",
-    category: "bekas",
-    tier: "S",
-    price: 5152000,
-    specs: [
-      "AMD Ryzen 5 Pro 4650U",
-      "Radeon Vega 6",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9zyEyoKkNx",
-    image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
-  },
+
   {
     id: 81,
     name: "ThinkPad P51 (TEKNIK)",
