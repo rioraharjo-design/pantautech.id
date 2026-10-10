@@ -1,5 +1,74 @@
 const PRODUCTS = [
 
+      {
+    id: 2232411,
+    name: "Acer Aspire Lite 14",
+    category: "global",
+    tier: "A",
+    price: 7694000,
+    specs: [
+      "AMD Ryzen 3 5400U",
+      "Radeon Vega 6",
+      "RAM 8GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/4qG0m86hfM",
+    image:    "./LAPTOP 7 JUTA/Acer14.webp"
+  },
+
+    {
+    id: 623523523532,
+    name: "Axioo Hype 5 AMD X5-2 RAM 16GB",
+    category: "odm",
+    tier: "S",
+    price: 7671000,
+    specs: [
+      "AMD Ryzen 5 7430U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
+    image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
+  },
+
+{
+  id: 23252338,
+  name: "Acer Nitro 5 AN515-55",
+  category: "bekas",
+  tier: "A+",
+  sold_out: false,
+  price: 7400000,
+  specs: [
+    "Intel Core i5-10300H",
+    "Nvidia GeForce GTX 1650 Ti 4GB",
+    "RAM 8GB",
+    "SSD 512GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
+  shopUrl: "https://s.shopee.co.id/6L51CjaD7n",
+  image: "./LAPTOP 7 JUTA/nitro7jt.webp"
+},
+
+  {
+    id: 18,
+    name: "ThinkPad T14 Gen 2 Ryzen 7",
+    category: "bekas",
+    tier: "S",
+    price: 6500000,
+    specs: [
+      "AMD Ryzen 7 Pro 5850U",
+      "Radeon Vega 8",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
+    shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
+    image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
+  },
+
 {
   id: 222352529,
   name: "Acer Nitro V15",
@@ -13,7 +82,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/3qNgHJ69zs",
   image: "./LAPTOP 14 JUTA/acernitro.webp"
 },
@@ -30,7 +99,7 @@ const PRODUCTS = [
       "RAM 16GB",
       "SSD 512GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
     shopUrl:  "https://s.shopee.co.id/7pqvDaEpiY",
     image:    "./LAPTOP 12 JUTA/Acer 7.webp"
   },
@@ -49,7 +118,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/8pmMDxZRH9",
   image: "./LAPTOP 12 JUTA/acer4gb.webp"
 },
@@ -67,7 +136,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 1TB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/AAHl7pyTiq",
   image: "./LAPTOP 13 JUTA/rog13jt.webp"
 },
@@ -85,7 +154,7 @@ const PRODUCTS = [
     "RAM 12GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/5LCTzdSpnc",
   image: "./LAPTOP 12 JUTA/loq12jt.webp"
 },
@@ -103,7 +172,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/113UuLKVnu",
   image: "./LAPTOP 8 JUTA/pongo 725.webp"
 },
@@ -121,7 +190,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/1BMv2MY6ly",
   image: "./LAPTOP 11 JUTA/cyborg11jt.webp"
 },
@@ -173,7 +242,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/1LgMbqhzPw",
   image: "./LAPTOP 11 JUTA/MSI Thin.webp"
 },
@@ -191,7 +260,7 @@ const PRODUCTS = [
     "RAM 16GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/50ZeySAN0r",
   image: "./LAPTOP 8 JUTA/lenovoig1.webp"
 },
@@ -226,28 +295,12 @@ const PRODUCTS = [
     "RAM 8GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/8fSw4fiojZ",
   image: "./LAPTOP 8 JUTA/pavilion8jt.webp"
 },
 
-{
-  id: 23252338,
-  name: "Acer Nitro 5 AN515-55",
-  category: "bekas",
-  tier: "A+",
-  sold_out: false,
-  price: 7400000,
-  specs: [
-    "Intel Core i5-10300H",
-    "Nvidia GeForce GTX 1650 Ti 4GB",
-    "RAM 8GB",
-    "SSD 512GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id",
-  shopUrl: "https://s.shopee.co.id/6L51CjaD7n",
-  image: "./LAPTOP 7 JUTA/nitro7jt.webp"
-},
+
 
     {
     id: 3878074,
@@ -295,7 +348,7 @@ const PRODUCTS = [
     "RAM 8GB",
     "SSD 512GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/20vZTALSGP",
   image: "./LAPTOP 6 JUTA/asus6jt.webp"
 },
@@ -311,7 +364,7 @@ const PRODUCTS = [
     "RAM 8GB",
     "SSD 256GB"
   ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/6VNypxQ2rm",
   image: "./LAPTOP 5 JUTA/tuf5jt.webp"
 },
@@ -1413,22 +1466,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/9ANSf5XKTG",
     image:    "./LAPTOP 5 JUTA/zbook.webp"
   },
-  {
-    id: 18,
-    name: "ThinkPad T14 Gen 2 Ryzen 7",
-    category: "bekas",
-    tier: "A+",
-    price: 6300000,
-    specs: [
-      "AMD Ryzen 7 Pro 5850U",
-      "Radeon Vega 8",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
-    shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
-    image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
-  },
+
   {
     id: 14,
     name: "Zyrex D-Tech Pro V2",
@@ -1611,22 +1649,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/6fer6naovA",
     image:    "./LAPTOP 7 JUTA/Axioo Hype 5 X6 AMD.webp"
   },
-    {
-    id: 2232411,
-    name: "Acer Aspire Lite 14",
-    category: "global",
-    tier: "A",
-    price: 7694000,
-    specs: [
-      "AMD Ryzen 3 5400U",
-      "Radeon Vega 6",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/4qG0m86hfM",
-    image:    "./LAPTOP 7 JUTA/Acer14.webp"
-  },
+
   {
     id: 26,
     name: "Advan Workmate Ultra",
