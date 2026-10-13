@@ -19,7 +19,22 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
-
+  {
+    id: 91,
+    name: "Advan Workmate",
+    category: "odm",
+    tier: "A",
+    price: 5785000,
+    specs: [
+      "AMD Ryzen 5 3500U",
+      "Radeon Vega 8",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
+    shopUrl:  "https://s.shopee.co.id/9pezKO367F",
+    image:    "./LAPTOP 5 JUTA/Advan Workmate.webp"
+  },
 
     {
     id: 233333,
@@ -37,6 +52,25 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/9zyEyoKkNx",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
+
+
+  {
+  id: 2132423235240,
+  name: "Asus TUF FX505DY ",
+  category: "bekas",
+  tier: "A+",
+  price: 5580000,
+  specs: [
+    "AMD Ryzen 5 3550H",
+    "AMD Radeon RX 560X 4GB",
+    "RAM 8GB",
+    "SSD 256GB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
+  shopUrl: "https://s.shopee.co.id/6VNypxQ2rm",
+  image: "./LAPTOP 5 JUTA/tuf5jt.webp"
+},
+
 
         {
     id: 225,
@@ -180,22 +214,7 @@ const PRODUCTS = [
   image: "./LAPTOP 7 JUTA/nitro7jt.webp"
 },
 
-  {
-    id: 91,
-    name: "Advan Workmate",
-    category: "odm",
-    tier: "A",
-    price: 5785000,
-    specs: [
-      "AMD Ryzen 5 3500U",
-      "Radeon Vega 8",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/9pezKO367F",
-    image:    "./LAPTOP 5 JUTA/Advan Workmate.webp"
-  },
+
 
 {
   id: 2132423235239,
@@ -463,26 +482,6 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/9pdoOODyne",
     image:    "./LAPTOP 9 JUTA/axioohype7.webp"
   },
-
-
-
-{
-  id: 2132423235240,
-  name: "Asus TUF FX505DY ",
-  category: "bekas",
-  tier: "A+",
-  price: 5580000,
-  specs: [
-    "AMD Ryzen 5 3550H",
-    "AMD Radeon RX 560X 4GB",
-    "RAM 8GB",
-    "SSD 256GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-  shopUrl: "https://s.shopee.co.id/6VNypxQ2rm",
-  image: "./LAPTOP 5 JUTA/tuf5jt.webp"
-},
-
 
 
       {
