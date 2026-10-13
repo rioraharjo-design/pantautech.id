@@ -1,6 +1,38 @@
 const PRODUCTS = [
 
-  
+    {
+    id: 10123232,
+    name: "ThinkPad X13 Gen 1",
+    category: "bekas",
+    tier: "S",
+    price: 4416000,
+    specs: [
+      "AMD Ryzen 5 Pro 4650U",
+      "Radeon Vega 6",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
+    shopUrl:  "https://s.shopee.co.id/2gBsIej9rn",
+    image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
+  },
+
+          {
+    id: 225,
+    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
+    category: "bekas",
+    tier: "S",
+    price: 5900000,
+    specs: [
+      "AMD Ryzen 5 Pro 5650U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
+    shopUrl:  "https://s.shopee.co.id/1qcRwUhqkz",
+    image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
+  },
 
         {
     id: 11,
@@ -19,8 +51,26 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
+    {
+  id: 2132423235123123240,
+  name: "Asus Baby ROG X550VXK",
+  category: "bekas",
+  tier: "A",
+  price: 4692000,
+  specs: [
+    "Intel Core i7-6700HQ",
+    "GTX 950M 2GB",
+    "RAM 8GB",
+    "HDD 1TB"
+  ],
+  videoUrl: "https://www.tiktok.com/@pantautech.id/",
+  shopUrl: "https://s.shopee.co.id/Lnu8Y9okb",
+  image: "./LAPTOP 4 JUTA/asusbaby.webp"
+},
+
+
   {
-    id: 91,
+    id: 912312311,
     name: "Advan Workmate",
     category: "odm",
     tier: "A",
@@ -37,7 +87,7 @@ const PRODUCTS = [
   },
 
     {
-    id: 233333,
+    id: 233213333,
     name: "HP Elitebook 845 G7",
     category: "bekas",
     tier: "S",
@@ -55,7 +105,7 @@ const PRODUCTS = [
 
 
   {
-  id: 2132423235240,
+  id: 213242321235240,
   name: "Asus TUF FX505DY ",
   category: "bekas",
   tier: "A+",
@@ -71,23 +121,25 @@ const PRODUCTS = [
   image: "./LAPTOP 5 JUTA/tuf5jt.webp"
 },
 
-
-        {
-    id: 225,
-    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
-    category: "bekas",
-    tier: "S",
-    price: 5900000,
+  {
+    id: 9232231,
+    name: "Advan Soulmate X2",
+    category: "odm",
+    tier: "B",
+    price: 4323000,
     specs: [
-      "AMD Ryzen 5 Pro 5650U",
-      "Radeon Vega 7",
-      "RAM 16GB",
-      "SSD 256GB"
+      "AMD Athlon 3020e",
+      "Radeon Vega 3",
+      "RAM 8GB",
+      "SSD 128GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
-    shopUrl:  "https://s.shopee.co.id/1qcRwUhqkz",
-    image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/5q8u5LRrEY",
+    image:    "./LAPTOP 4 JUTA/soulmate.webp"
   },
+
+
+
 
 
     {
@@ -112,7 +164,7 @@ const PRODUCTS = [
     name: "Axioo Hype 5 AMD X5-2",
     category: "odm",
     tier: "A+",
-    price: 6474000,
+    price: 6699000,
     specs: [
       "AMD Ryzen 5 7430U",
       "Radeon Vega 7",
@@ -120,7 +172,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
+    shopUrl:  "https://s.shopee.co.id/2VsSXvZtml",
     image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
   },
 
@@ -131,15 +183,15 @@ const PRODUCTS = [
     name: "Axioo Hype 5 AMD X5-2 RAM 16GB",
     category: "odm",
     tier: "S",
-    price: 7671000,
+    price: 7848000,
     specs: [
       "AMD Ryzen 5 7430U",
       "Radeon Vega 7",
       "RAM 16GB",
       "SSD 256GB"
     ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9zy6uONIJH",
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694951056178040082",
+    shopUrl:  "https://s.shopee.co.id/2VsSXvZtml",
     image:    "./LAPTOP 6 JUTA/Axioo Hype 5 AMD X5-2.webp"
   },
 
@@ -1302,22 +1354,6 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647551966968646919?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/4VaMGJPLaF",
     image:    "./LAPTOP 4 JUTA/Dell Latitude 7410.webp"
-  },
-  {
-    id: 10232,
-    name: "ThinkPad X13 Gen 1 AMD",
-    category: "bekas",
-    tier: "S",
-    price: 4524000,
-    specs: [
-      "AMD Ryzen 5 Pro 4650U",
-      "Radeon Vega 6",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9ANv8UE4zn",
-    image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
   },
 
 
