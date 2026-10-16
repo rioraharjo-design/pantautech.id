@@ -74,7 +74,7 @@ const PRODUCTS = [
     name: "Advan Workmate",
     category: "odm",
     tier: "A",
-    price: 5785000,
+    price: 5877000,
     specs: [
       "AMD Ryzen 5 3500U",
       "Radeon Vega 8",
@@ -99,7 +99,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9zyEyoKkNx",
+    shopUrl:  "https://s.shopee.co.id/BURbWiu1o",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
@@ -109,7 +109,7 @@ const PRODUCTS = [
   name: "Asus TUF FX505DY ",
   category: "bekas",
   tier: "A+",
-  price: 5580000,
+  price: 5520000,
   specs: [
     "AMD Ryzen 5 3550H",
     "AMD Radeon RX 560X 4GB",
@@ -164,7 +164,7 @@ const PRODUCTS = [
     name: "Axioo Hype 5 AMD X5-2",
     category: "odm",
     tier: "A+",
-    price: 6699000,
+    price: 6623000,
     specs: [
       "AMD Ryzen 5 7430U",
       "Radeon Vega 7",
@@ -183,7 +183,7 @@ const PRODUCTS = [
     name: "Axioo Hype 5 AMD X5-2 RAM 16GB",
     category: "odm",
     tier: "S",
-    price: 7848000,
+    price: 7681000,
     specs: [
       "AMD Ryzen 5 7430U",
       "Radeon Vega 7",
@@ -201,7 +201,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 Ryzen 7",
     category: "bekas",
     tier: "S",
-    price: 6500000,
+    price: 6532000,
     specs: [
       "AMD Ryzen 7 Pro 5850U",
       "Radeon Vega 8",
@@ -291,7 +291,7 @@ const PRODUCTS = [
   category: "global",
   tier: "S",
   sold_out: false,
-  price: 15489000,
+  price: 15789000,
   specs: [
     "Intel Core i5-210H",
     "Nvidia GeForce RTX 3050 6GB",
@@ -299,7 +299,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-  shopUrl: "https://s.shopee.co.id/3qNgHJ69zs",
+  shopUrl: "https://s.shopee.co.id/7VHCk1IxzE",
   image: "./LAPTOP 14 JUTA/acernitro.webp"
 },
 
@@ -308,7 +308,7 @@ const PRODUCTS = [
     name: "Acer Aspire 7 Pro 3050 6GB",
     category: "global",
     tier: "S",
-    price: 14249000,
+    price: 14589000,
     specs: [
       "Intel Core i5-13420H",
       "Nvidia GeForce RTX 3050 6GB",
@@ -316,7 +316,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-    shopUrl:  "https://s.shopee.co.id/7pqvDaEpiY",
+    shopUrl:  "https://s.shopee.co.id/7KxmXsB1aF",
     image:    "./LAPTOP 12 JUTA/Acer 7.webp"
   },
 
@@ -327,7 +327,7 @@ const PRODUCTS = [
   category: "global",
   tier: "A+",
   sold_out: false,
-  price: 13877000,
+  price: 14171000,
   specs: [
     "Intel Core i5-210H",
     "Nvidia GeForce RTX 3050 4GB",
@@ -335,7 +335,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-  shopUrl: "https://s.shopee.co.id/8pmMDxZRH9",
+  shopUrl: "https://s.shopee.co.id/9APQjMnL62",
   image: "./LAPTOP 12 JUTA/acer4gb.webp"
 },
 
@@ -399,7 +399,7 @@ const PRODUCTS = [
   category: "bekas",
   tier: "S",
   sold_out: false,
-  price: 11020000,
+  price: 10672000,
   specs: [
     "Intel Core i5-12450H",
     "Nvidia GeForce RTX 3050 6GB",
@@ -424,7 +424,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/19sePQ4YU",
+    shopUrl:  "https://s.shopee.co.id/6fi5kzioYC",
     image:    "./LAPTOP 10 JUTA/HP 14.webp"
   },
 
@@ -433,7 +433,7 @@ const PRODUCTS = [
     name: "Advan Pixwar T",
     category: "odm",
     tier: "S",
-    price: 10824000,
+    price: 10211000,
     specs: [
       "AMD Ryzen 7 8745HS",
       "Radeon 780M",
@@ -441,7 +441,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/9KfcKRn15V",
+    shopUrl:  "https://s.shopee.co.id/1Vzzbaj9G8",
     image:    "./LAPTOP 9 JUTA/Advan Pixwar.webp"
   },
 
@@ -486,7 +486,7 @@ const PRODUCTS = [
   name: "Axioo Hype 5 AMD X6-11",
   category: "odm",
   tier: "S",
-  price: 8199000,
+  price: 8509000,
   specs: [
     "AMD Ryzen 5 6600H",
     "Radeon 660M",
@@ -504,7 +504,7 @@ const PRODUCTS = [
   category: "bekas",
   tier: "S",
   sold_out: false,
-  price: 8800000,
+  price: 8600000,
   specs: [
     "AMD Ryzen 7 4800H",
     "Nvidia GeForce GTX 1660 Ti 6GB",
@@ -523,7 +523,7 @@ const PRODUCTS = [
     name: "Axioo Hype 7 AMD X8-1",
     category: "odm",
     tier: "S",
-    price: 9163000,
+    price: 9663000,
     specs: [
       "AMD Ryzen 7 6800H",
       "Radeon 680M",
@@ -577,7 +577,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 3 Ryzen 7",
     category: "bekas",
     tier: "S",
-    price: 9500000,
+    price: 9200000,
     specs: [
       "Ryzen 7 Pro 6850U",
       "Radeon 680M",
@@ -720,7 +720,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
-  shopUrl: "https://s.shopee.co.id/30nu82fKlR",
+  shopUrl: "https://s.shopee.co.id/4qGRaB7tA1",
   image: "./LAPTOP 16 JUTA/hpaero.webp"
 },
 
@@ -737,7 +737,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
-  shopUrl: "https://s.shopee.co.id/Ln8TcUnPO",
+  shopUrl: "https://s.shopee.co.id/7VHCl94v8W",
   image: "./LAPTOP 17 JUTA/asustuf.webp"
 },
 
@@ -781,7 +781,7 @@ const PRODUCTS = [
   name: "Asus Expertbook P5406CCA",
   category: "global",
   tier: "S",
-  price: 18049000,
+  price: 20444000,
   specs: [
     "Intel Ultra 7 225H",
     "Intel Arc 140T",
@@ -798,7 +798,7 @@ const PRODUCTS = [
   name: "Acer Nitro V15 52-777R ",
   category: "global",
   tier: "S",
-  price: 19559000,
+  price: 20011000,
   specs: [
     "Intel Core 7-240H",
     "Nvidia RTX 5050 8GB",
@@ -806,7 +806,7 @@ const PRODUCTS = [
     "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
-  shopUrl: "https://s.shopee.co.id/8plhBVYvZT",
+  shopUrl: "https://s.shopee.co.id/qkIp9EUHq",
   image: "./LAPTOP 19 JUTA/acer19jt.webp"
 },
 
@@ -942,7 +942,7 @@ const PRODUCTS = [
     name: "Asus Expertbook P3 G1",
     category: "global",
     tier: "S",
-    price: 16842000,
+    price: 17614000,
     specs: [
       "Intel Ultra 7 225H",
       "Intel Arc 140T",
@@ -1061,6 +1061,7 @@ const PRODUCTS = [
     name: "Acer Nitro 5 AN515-58 ",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 9216000,
     specs: [
       "Intel Core i5-12500H",
@@ -1259,8 +1260,8 @@ const PRODUCTS = [
     id: 1,
     name: "Lenovo ThinkPad T480",
     category: "bekas",
-    tier: "A+",
-    price: 3859000,
+    tier: "A",
+    price: 4140000,
     specs: [
       "Intel Core i5-8250U",
       "Intel UHD Graphics 620",
@@ -1613,6 +1614,7 @@ const PRODUCTS = [
     name: "HP Elitebook 835 G8",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 6887000,
     specs: [
       "AMD Ryzen 7 Pro 5850U",
@@ -1629,6 +1631,7 @@ const PRODUCTS = [
     name: "ThinkPad P53 (TEKNIK)",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 6935000,
     specs: [
       "i7-9850H",
@@ -1662,7 +1665,7 @@ const PRODUCTS = [
     name: "Advan Workplus Heritage",
     category: "odm",
     tier: "A+",
-    price: 7206000,
+    price: 7726000,
     specs: [
       "AMD Ryzen 5 7535HS",
       "Radeon 660M",
@@ -1678,7 +1681,7 @@ const PRODUCTS = [
     name: "Infinix Xbook B14",
     category: "odm",
     tier: "A",
-    price: 7713000,
+    price: 8274000,
     specs: [
       "AMD Ryzen 5 7535HS",
       "Radeon 660M",
@@ -1710,8 +1713,8 @@ const PRODUCTS = [
     id: 21,
     name: "Axioo Hype 5 X6 AMD",
     category: "odm",
-    tier: "A+",
-    price: 7439000,
+    tier: "A",
+    price: 8095000,
     specs: [
       "AMD Ryzen 5 6600H",
       "Radeon 660M",
@@ -1728,7 +1731,7 @@ const PRODUCTS = [
     name: "Advan Workmate Ultra",
     category: "odm",
     tier: "A",
-    price: 7625000,
+    price: 7635000,
     specs: [
       "Intel Ultra 5 115U",
       "Intel Arc",
@@ -1736,7 +1739,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/4qDCwZDkDZ",
+    shopUrl:  "https://s.shopee.co.id/3B8DcZTVSk",
     image:    "./LAPTOP 7 JUTA/Advan Workmate Ultra.webp"
   },
   {
@@ -1744,12 +1747,12 @@ const PRODUCTS = [
     name: "Asus Vivobook 14 A1404VA",
     category: "global",
     tier: "A",
-    price: 8838000,
+    price: 8785000,
     specs: [
       "Intel Core i3-1315U",
       "Intel UHD Graphics 13th Gen",
       "RAM 8GB",
-      "SSD 256GB"
+      "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/3qKfjkUIbu",
@@ -1759,8 +1762,8 @@ const PRODUCTS = [
     id: 28,
     name: "Acer TravelMate P40",
     category: "global",
-    tier: "S",
-    price: 8987000,
+    tier: "A",
+    price: 10211000,
     specs: [
       "Intel Core i5-1335U",
       "Intel Iris Xe",
@@ -1768,7 +1771,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7678246023713656072",
-    shopUrl:  "https://s.shopee.co.id/qizxt1cLE",
+    shopUrl:  "https://s.shopee.co.id/3qNuPvemll",
     image:    "./LAPTOP 8 JUTA/Acer TravelMate P40.webp"
   },
   {
@@ -1792,7 +1795,7 @@ const PRODUCTS = [
     name: "Acer Aspire Lite AL15",
     category: "global",
     tier: "A+",
-    price: 9010000,
+    price: 8810000,
     specs: [
       "AMD Ryzen 5 7430U",
       "Radeon Vega 7",
@@ -1800,7 +1803,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/20t1Ybq2aG",
+    shopUrl:  "https://s.shopee.co.id/AUuoMHZFw7",
     image:    "./LAPTOP 8 JUTA/Acer Aspire Lite AL15.webp"
   },
   {
@@ -1825,11 +1828,11 @@ const PRODUCTS = [
     name: "Infinix Xbook B14 R7",
     category: "odm",
     tier: "A+",
-    price: 8554000,
+    price: 10303000,
     specs: [
       "Ryzen 7 7735HS",
       "Radeon 680M",
-      "RAM 8GB",
+      "RAM 16GB",
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
@@ -1875,6 +1878,7 @@ const PRODUCTS = [
     name: "Asus Expertbook P1PM1403",
     category: "global",
     tier: "A+",
+    sold_out: true,
     price: 9438000,
     specs: [
       "Ryzen 5 150",
@@ -1891,8 +1895,8 @@ const PRODUCTS = [
     id: 33,
     name: "Acer Aspire Lite 15",
     category: "global",
-    tier: "A+",
-    price: 9568000,
+    tier: "A",
+    price: 10201000,
     specs: [
       "Ryzen 5 8640HS",
       "Radeon 760M",
@@ -2008,8 +2012,8 @@ const PRODUCTS = [
     id: 150,
     name: "Tecno Megabook T1 14",
     category: "odm",
-    tier: "A",
-    price: 11158000,
+    tier: "A+",
+    price: 11058000,
     specs: [
       "Intel Core i9-13900HK",
       "Intel Iris Xe",
@@ -2161,7 +2165,7 @@ const PRODUCTS = [
     name: "Acer Aspire Go 14 Ai",
     category: "global",
     tier: "A+",
-    price: 13774000,
+    price: 14089000,
     specs: [
       "Intel Ultra 7 115H",
       "Intel Arc",
@@ -2193,8 +2197,8 @@ const PRODUCTS = [
     id: 203,
     name: "Lenovo LOQ 15ARP10E ",
     category: "global",
-    tier: "S",
-    price: 15574000,
+    tier: "A+",
+    price: 16574000,
     specs: [
       "AMD Ryzen 7 170",
       "Nvidia GeForce RTX 3050 6GB",
@@ -2244,7 +2248,7 @@ const PRODUCTS = [
     name: "Acer Nitro Lite 16",
     category: "global",
     tier: "A+",
-    price: 14499000,
+    price: 14999000,
     specs: [
       "Intel Core i5 210H",
       "Nvidia GeForce RTX 3050 6GB",
@@ -2252,7 +2256,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654537785574984978",
-    shopUrl:  "https://s.shopee.co.id/7fXfiy6u9e",
+    shopUrl:  "https://s.shopee.co.id/2LZ6dhBr30",
     image:    "./LAPTOP 12 JUTA/Acer.webp"
   },
   {
@@ -2294,6 +2298,7 @@ const PRODUCTS = [
     name: "MSI Thin 15 B13VE-3415 ",
     category: "global",
     tier: "S",
+    sold_out: true,
     price: 14439000,
     specs: [
       "Intel Core i5-13420H",
