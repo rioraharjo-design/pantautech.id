@@ -254,90 +254,112 @@ YT : Reload COMS | IG : @r3loadcoms`
 
 // ============================================================
 // RENDER — tidak perlu diubah
+// Nama toko yang mengandung "(GAMING)" otomatis dapat label Gaming.
 // ============================================================
 
+function parseToko(t) {
+  const isGaming = /\(GAMING\)/i.test(t.nama);
+  const nama = t.nama.replace(/\(GAMING\)/ig, "").replace(/\s{2,}/g, " ").trim();
+  return { nama, isGaming };
+}
+
+function inisial(nama) {
+  return nama.replace(/[^A-Za-z0-9 ]/g, "").trim().substring(0, 2).toUpperCase();
+}
+
 function renderTokoCard(t, rank) {
-  const isTop5 = t.top5;
+  const isTop = t.top5;
+  const info  = parseToko(t);
+  const safe  = t.nama.replace(/'/g, "\\'");
 
   return `
-    <div class="toko-card${isTop5 ? ' toko-card-top' : ''}">
-      ${isTop5 ? `<div class="toko-rank">#${rank}</div>` : ""}
+    <article class="toko-card${isTop ? " toko-card-top" : ""}">
+      ${isTop ? `<span class="toko-rank" aria-label="Peringkat ${rank}">${rank}</span>` : ""}
       <div class="toko-logo-wrap">
-        <img src="${t.logo}" alt="${t.nama}" class="toko-logo"
+        <img src="${t.logo}" alt="" class="toko-logo" loading="lazy"
           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-        <div class="toko-logo-fallback" style="display:none">${t.nama.substring(0,2).toUpperCase()}</div>
+        <div class="toko-logo-fallback" style="display:none">${inisial(info.nama)}</div>
       </div>
       <div class="toko-info">
-        <h3 class="toko-nama">${t.nama}</h3>
+        <h3 class="toko-nama">${info.nama}</h3>
         <div class="toko-meta">
           <span class="toko-rating">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="color:#facc15"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             ${t.rating}
           </span>
-          <span class="toko-dot">·</span>
           <span class="toko-ulasan">${t.ulasan} ulasan</span>
-          <span class="toko-dot">·</span>
           <span class="toko-pengikut">${t.pengikut} pengikut</span>
         </div>
+        ${info.isGaming ? `<span class="toko-tag">Gaming</span>` : ""}
       </div>
       <div class="toko-actions">
-        <button class="toko-btn toko-btn-note" onclick="openModal('${t.nama.replace(/'/g,"\\'")}', ${t.id})">
-          Catatan
-        </button>
+        <button class="toko-btn toko-btn-note" type="button" onclick="openModal('${safe}', ${t.id})">Catatan</button>
         <a href="${t.shopUrl}" target="_blank" rel="noopener"
           class="toko-btn toko-btn-shopee"
-          onclick="trackTokoClick('${t.nama.replace(/'/g,"\\'")}')">
-          Shopee
-        </a>
+          onclick="trackTokoClick('${safe}')">Shopee</a>
       </div>
-    </div>
+    </article>
   `;
 }
 
 function render() {
   const container = document.getElementById("tokoContainer");
-  const top5  = TOKO.filter(t => t.top5);
-  const lain  = TOKO.filter(t => !t.top5);
+  const top  = TOKO.filter(t => t.top5);
+  const lain = TOKO.filter(t => !t.top5);
 
   let html = "";
 
-  // Top 5
-  if (top5.length > 0) {
-    html += `<div class="toko-section-label">
-      <span class="toko-section-title">Top ${top5.length}</span>
-      <span class="toko-section-sub">Pilihan terbaik mimin</span>
-    </div>`;
-    html += `<div class="toko-list toko-list-top">`;
-    top5.forEach((t, i) => { html += renderTokoCard(t, i + 1); });
-    html += `</div>`;
+  if (top.length > 0) {
+    html += `
+      <section class="toko-group">
+        <div class="toko-section-label">
+          <h2 class="toko-section-title">Top ${top.length}</h2>
+          <span class="toko-section-sub">Pilihan terbaik mimin</span>
+        </div>
+        <div class="toko-list toko-list-top">
+          ${top.map((t, i) => renderTokoCard(t, i + 1)).join("")}
+        </div>
+      </section>`;
   }
 
-  // Toko Lainnya
   if (lain.length > 0) {
-    html += `<div class="toko-section-label" style="margin-top:32px;">
-      <span class="toko-section-title">Toko Lainnya</span>
-      <span class="toko-section-sub">Sudah dicek, layak dijadikan pilihan</span>
-    </div>`;
-    html += `<div class="toko-list">`;
-    lain.forEach(t => { html += renderTokoCard(t, null); });
-    html += `</div>`;
+    html += `
+      <section class="toko-group">
+        <div class="toko-section-label">
+          <h2 class="toko-section-title">Toko Lainnya</h2>
+          <span class="toko-section-sub">Sudah dicek, layak dijadikan pilihan</span>
+        </div>
+        <div class="toko-list">
+          ${lain.map(t => renderTokoCard(t, null)).join("")}
+        </div>
+      </section>`;
   }
 
   container.innerHTML = html;
 }
 
 // ── Modal catatan ────────────────────────────────────────────
+// Satu Enter = lanjut kalimat, dua Enter = paragraf baru,
+// baris diawali "-" tetap jadi baris sendiri.
+function formatCatatan(teks) {
+  return teks.trim().split(/\n\s*\n/).map(par => {
+    const lines = par.split("\n").map(s => s.trim()).filter(Boolean);
+    let out = "";
+    lines.forEach((line, i) => {
+      if (i === 0) out = line;
+      else if (/^[-•*]|^\d+[.)]/.test(line)) out += "<br>" + line;
+      else out += " " + line;
+    });
+    return `<p>${out}</p>`;
+  }).join("");
+}
+
 function openModal(nama, id) {
   const toko = TOKO.find(t => t.id === id);
   if (!toko) return;
 
-  document.getElementById("modalTitle").textContent = toko.nama;
-  // Convert newlines to <br> and wrap paragraphs
-  const formatted = toko.catatan
-    .split("\n\n")
-    .map(p => `<p>${p.replace(/\n/g, "<br>")}</p>`)
-    .join("");
-  document.getElementById("modalBody").innerHTML = formatted;
+  document.getElementById("modalTitle").textContent = parseToko(toko).nama;
+  document.getElementById("modalBody").innerHTML = formatCatatan(toko.catatan);
   document.getElementById("modalOverlay").classList.add("open");
   document.body.style.overflow = "hidden";
 }

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
   <title>Toko Laptop Bekas Terpercaya | Pantau Tech</title>
 
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -25,6 +26,11 @@
     gtag('config', 'G-3BEHQXMHST');
   </script>
 
+  <!-- Font: Archivo (satu keluarga, lebar normal untuk teks & lebar ekstra untuk judul) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="toko.css" />
 </head>
@@ -34,29 +40,33 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="brand">
-        <div class="brand-icon">
-          <img src="./Gambar/LOGO PANTAU TECH BULAT.png" width="50px" height="50px" alt="Pantau Tech">
-        </div>
+        <a href="index.html" class="brand-home" aria-label="Pantau Tech, ke halaman utama">
+          <img class="brand-logo" src="./Gambar/LOGO PANTAU TECH BULAT.png" width="36" height="36" alt="">
+        </a>
         <div class="brand-text">
-          <span class="brand-name">PANTAU TECH</span>
-          <span class="brand-platform">
-            <svg class="tiktok-icon" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+          <a href="index.html" class="brand-name">Pantau Tech</a>
+          <a href="https://www.tiktok.com/@pantautech.id" target="_blank" rel="noopener" class="brand-tiktok"
+            onclick="typeof gtag==='function'&&gtag('event','klik_tiktok',{posisi:'header'})">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="11" height="11" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
             TikTok
-          </span>
+          </a>
         </div>
       </div>
-      <!-- Nav link balik ke katalog -->
-      <nav class="header-nav">
-        <a href="index.html" class="nav-link">Katalog Laptop</a>
-        <a href="toko.html" class="nav-link nav-link-active">Toko Terpercaya</a>
+      <nav class="header-nav" aria-label="Halaman">
+        <a href="index.html" class="nav-link">Katalog<span class="nav-extra"> Laptop</span></a>
+        <a href="toko.html" class="nav-link nav-link-active" aria-current="page">Toko<span class="nav-extra-sm"> Terpercaya</span></a>
       </nav>
     </div>
   </header>
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <h1 class="hero-title">TOKO LAPTOP<br>TERPERCAYA</h1>
-    <p class="hero-sub">Rekomendasi Toko Laptop Bekas Terpercaya</p>
+    <h1 class="hero-title">
+      <span class="hero-line hero-line-top">Toko Laptop</span>
+      <span class="hero-line hero-line-big">Terpercaya</span>
+    </h1>
+    <div class="hero-band"><span>Anti Zonk</span></div>
+    <p class="hero-sub">Rekomendasi toko laptop bekas terpercaya</p>
   </section>
 
   <!-- ===== TOKO LIST ===== -->
@@ -68,17 +78,25 @@
 
   <!-- ===== MODAL CATATAN ===== -->
   <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
-    <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="event.stopPropagation()">
       <div class="modal-header">
         <span class="modal-title" id="modalTitle">Catatan Toko</span>
-        <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+        <button class="modal-close" type="button" onclick="closeModal()" aria-label="Tutup">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="18" height="18" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
       </div>
       <div class="modal-body" id="modalBody"></div>
     </div>
   </div>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Pantau Tech &middot; Konten Seputar Laptop</p>
+    <img class="footer-logo" src="./Gambar/LOGO PANTAU TECH BULAT.png" width="28" height="28" alt="">
+    <p>&copy; 2026 Pantau Tech. Konten seputar laptop.</p>
+    <a class="footer-tiktok" href="https://www.tiktok.com/@pantautech.id" target="_blank" rel="noopener"
+    onclick="typeof gtag==='function'&&gtag('event','klik_tiktok',{posisi:'footer'})">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+      @pantautech.id
+    </a>
   </footer>
 
   <script src="toko.js"></script>
