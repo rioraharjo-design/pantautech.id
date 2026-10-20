@@ -1,0 +1,11 @@
+# Format: nama laptop | harga website
+# Harga boleh: 11239000 / 11.239.000 / Rp11.239.000 / 11 juta. Baris diawali # diabaikan.
+Advan Pixwar | 11.239.000
+Acer Swift Lite 14 | 11.894.000
+Acer Aspire Go 14 AI | 14.299.000
+Axioo Pongo 735 | 14.471.000
+Lenovo IdeaPad Slim 5 OLED 14 | 16.294.000
+HP Victus 15 | 16.149.000
+Axioo Pongo 750 | 16.099.000
+Acer Nitro V15 ANV15-42 | 17.099.000
+Acer Nitro V15 ANV15-52 | 17.969.000

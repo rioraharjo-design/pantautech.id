@@ -51,6 +51,159 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
+  {
+    id: 2026102001,
+    name: "Advan Pixwar",
+    category: "odm",
+    tier: "A+",
+    price: 11239000,
+    specs: [
+      "AMD Ryzen 7 6800H",
+      "Radeon 680M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8fTHLUPV9n",
+    image:    "./LAPTOP 11 JUTA/Advan Pixwar 11 Juta.webp"
+  },
+
+  {
+    id: 2026102002,
+    name: "Acer Swift Lite 14",
+    category: "global",
+    tier: "A+",
+    price: 11894000,
+    specs: [
+      "AMD Ryzen 5 240",          
+      "Radeon 760M",              
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8fTHLV7yqL",
+    image:    "./LAPTOP 11 JUTA/Acer Swift Lite 14 11 Juta.webp"
+  },
+
+  {
+    id: 2026102003,
+    name: "Acer Aspire Go 14 AI",
+    category: "global",
+    tier: "A",
+    price: 14299000,
+    specs: [
+      "Intel Ultra 7 155H",
+      "Intel Arc",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7VHJxUHzOo",
+    image:    "./LAPTOP 14 JUTA/Acer Aspire Go 14 AI 14 Juta.webp"
+  },
+
+  {
+    id: 2026102004,
+    name: "Axioo Pongo 735",
+    category: "odm",
+    tier: "S",
+    price: 14471000,
+    specs: [
+      "Intel Core i7-13620H",
+      "Nvidia GeForce RTX 3050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1gJX0mzipm",
+    image:    "./LAPTOP 14 JUTA/Axioo Pongo 735 14 Juta.webp"
+  },
+
+  {
+    id: 2026102005,
+    name: "Lenovo IdeaPad Slim 5 OLED 14",
+    category: "global",
+    tier: "A+",
+    price: 16294000,
+    specs: [
+      "Intel Ultra 5 135H",
+      "Intel Arc",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6fiCxzuaCK",
+    image:    "./LAPTOP 16 JUTA/Lenovo IdeaPad Slim 5 OLED 14 16 Juta.webp"
+  },
+
+  {
+    id: 2026102006,
+    name: "HP Victus 15",
+    category: "global",
+    tier: "A",
+    price: 16149000,
+    specs: [
+      "Intel Core i5-13420H",
+      "Nvidia GeForce RTX 3050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/5fpfmAodWC",
+    image:    "./LAPTOP 16 JUTA/HP Victus 15 16 Juta.webp"
+  },
+
+  {
+    id: 2026102007,
+    name: "Axioo Pongo 750",
+    category: "odm",
+    tier: "S",
+    price: 16099000,
+    specs: [
+      "Intel Core i7-13620H",
+      "Nvidia GeForce RTX 4050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9APXwcsAB7",
+    image:    "./LAPTOP 16 JUTA/Axioo Pongo 750 16 Juta.webp"
+  },
+
+  {
+    id: 2026102008,
+    name: "Acer Nitro V15 ANV15-42",
+    category: "global",
+    tier: "S",
+    price: 17099000,
+    specs: [
+      "AMD Ryzen 7 7445HS",
+      "Nvidia GeForce RTX 4050 6GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8V9r9Pu1R8",
+    image:    "./LAPTOP 17 JUTA/Acer Nitro V15 ANV15-42 17 Juta.webp"
+  },
+
+  {
+    id: 2026102009,
+    name: "Acer Nitro V15 52-50FX",
+    category: "global",
+    tier: "S",
+    price: 19013000, // PERKIRAAN (Windows Rp19.999.000 - selisih + 200rb). Cek harga varian RTX 5050 "Normal" di HP lalu +200rb
+    specs: [
+      "Intel Core 5-210H",
+      "Nvidia GeForce RTX 5050 8GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7fak9vRBVx",
+    image:    "./LAPTOP 19 JUTA/Acer Nitro V15 52-50FX 19 Juta.webp"
+  },
+
     {
   id: 2132423235123123240,
   name: "Asus Baby ROG X550VXK",
@@ -433,7 +586,7 @@ const PRODUCTS = [
     name: "Advan Pixwar T",
     category: "odm",
     tier: "S",
-    price: 10211000,
+    price: 11652000,
     specs: [
       "AMD Ryzen 7 8745HS",
       "Radeon 780M",
@@ -441,7 +594,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/1Vzzbaj9G8",
+    shopUrl:  "https://s.shopee.co.id/4fx8Tud1Fw",
     image:    "./LAPTOP 9 JUTA/Advan Pixwar.webp"
   },
 
