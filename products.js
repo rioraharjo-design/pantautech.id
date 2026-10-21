@@ -366,6 +366,315 @@ const PRODUCTS = [
     image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
   },
 
+  // =====================================================================
+// LAPTOP BARU 20-30 JUTA (riset Shopee Mall, 21 Okt 2026)
+// price = harga varian di Shopee - Rp800.000
+// shopUrl = link affiliate (sudah dicek, semua mengarah ke produk yang benar)
+// =====================================================================
+
+  {
+    id: 2026102101,
+    name: "Asus Zenbook 14 OLED UM3406KA",
+    category: "global",
+    tier: "A+",
+    price: 19699000,
+    specs: [
+      "AMD Ryzen AI 7 350",
+      "Radeon 860M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3VlCUp1yHJ",
+    image:    "./LAPTOP 19 JUTA/Asus Zenbook 14 OLED UM3406KA 19 Juta.webp"
+  },
+
+
+  {
+    id: 2026102103,
+    name: "Axioo Pongo 765",
+    category: "odm",
+    tier: "S",
+    price: 20999000,
+    specs: [
+      "AMD Ryzen 7 255",
+      "Nvidia GeForce RTX 5060 8GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3g4chDGEDp",
+    image:    "./LAPTOP 20 JUTA/Axioo Pongo 765 20 Juta.webp"
+  },
+
+  {
+    id: 2026102104,
+    name: "Asus Vivobook S14 OLED S3407CA",
+    category: "global",
+    tier: "A+",
+    price: 21349000,
+    specs: [
+      "Intel Ultra 7 255H",
+      "Intel Arc 140T",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8AX23V3qiN",
+    image:    "./LAPTOP 21-30 JUTA/Asus Vivobook S14 OLED S3407CA 21 Juta.webp"
+  },
+
+  {
+    id: 2026102105,
+    name: "MSI Cyborg 15 B2RWFKG",
+    category: "global",
+    tier: "A+",
+    price: 21549000,
+    specs: [
+      "Intel Core 5-210H",
+      "Nvidia GeForce RTX 5060 8GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/60SXTX3AYs",
+    image:    "./LAPTOP 21-30 JUTA/MSI Cyborg 15 B2RWFKG 21 Juta.webp"
+  },
+
+  {
+    id: 2026102106,
+    name: "Lenovo Yoga 7i 2in1 OLED",
+    category: "global",
+    tier: "A+",
+    price: 22399000,
+    specs: [
+      "Intel Ultra 7 256V",
+      "Intel Arc 140V",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/70L4fOfa3j",
+    image:    "./LAPTOP 21-30 JUTA/Lenovo Yoga 7i 2in1 OLED 22 Juta.webp"
+  },
+
+  {
+    id: 2026102107,
+    name: "Asus Gaming V16 V3607VM",
+    category: "global",
+    tier: "A+",
+    price: 22449000,
+    specs: [
+      "Intel Core 7-240H",
+      "Nvidia GeForce RTX 5060 8GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9APZFS1tDe",
+    image:    "./LAPTOP 21-30 JUTA/Asus Gaming V16 V3607VM 22 Juta.webp"
+  },
+
+  {
+    id: 2026102108,
+    name: "HP OmniBook 7 OLED 14",
+    category: "global",
+    tier: "S",
+    price: 23489000,
+    specs: [
+      "Intel Core 9 270H",
+      "Intel Arc 140T",
+      "RAM 32GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3g4chMCSIV",
+    image:    "./LAPTOP 21-30 JUTA/HP OmniBook 7 OLED 14 23 Juta.webp"
+  },
+
+  {
+    id: 2026102109,
+    name: "Acer Nitro V16S ANV16S-41",
+    category: "global",
+    tier: "S",
+    price: 23799000,
+    specs: [
+      "AMD Ryzen 7 260",
+      "Nvidia GeForce RTX 5060 8GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/40hT5zB3cq",
+    image:    "./LAPTOP 21-30 JUTA/Acer Nitro V16S ANV16S-41 23 Juta.webp"
+  },
+
+  {
+    id: 2026102110,
+    name: "Axioo Pongo 775",
+    category: "odm",
+    tier: "S",
+    price: 24899000,
+    specs: [
+      "Intel Core i7-13620H",
+      "Nvidia GeForce RTX 5070 8GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6fiEGu0E7Q",
+    image:    "./LAPTOP 21-30 JUTA/Axioo Pongo 775 24 Juta.webp"
+  },
+
+  {
+    id: 2026102111,
+    name: "Acer Swift Go 14 AI OLED",
+    category: "global",
+    tier: "A+",
+    price: 25399000,
+    specs: [
+      "Intel Ultra X7 358H",
+      "Intel Arc B390",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/30ovuC0SBF",
+    image:    "./LAPTOP 21-30 JUTA/Acer Swift Go 14 AI OLED 25 Juta.webp"
+  },
+
+  {
+    id: 2026102112,
+    name: "MSI Crosshair 16 HX",
+    category: "global",
+    tier: "A+",
+    price: 27999000,
+    specs: [
+      "Intel Core i7-14650HX",
+      "Nvidia GeForce RTX 5060 8GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4B0tILzWho",
+    image:    "./LAPTOP 21-30 JUTA/MSI Crosshair 16 HX 27 Juta.webp"
+  },
+
+  {
+    id: 2026102113,
+    name: "Lenovo Legion 5A OLED",
+    category: "global",
+    tier: "A+",
+    price: 28349000,
+    specs: [
+      "AMD Ryzen AI 7 250",
+      "Nvidia GeForce RTX 5050 8GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/5VWGspGBQ0",
+    image:    "./LAPTOP 21-30 JUTA/Lenovo Legion 5A OLED 28 Juta.webp"
+  },
+
+// ---- tambahan harga 29-30 juta ----
+  {
+    id: 2026102114,
+    name: "Asus Zenbook 14 OLED UX3405CA Ultra 9",
+    category: "global",
+    tier: "S",
+    price: 29099000,
+    specs: [
+      "Intel Ultra 9 285H",
+      "Intel Arc 140T",
+      "RAM 32GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9APZFZtulN",
+    image:    "./LAPTOP 21-30 JUTA/Asus Zenbook 14 OLED UX3405CA Ultra 9 29 Juta.webp"
+  },
+  {
+    id: 2026102115,
+    name: "Lenovo Legion 5i 15IRX10 OLED",
+    category: "global",
+    tier: "A+",
+    price: 29099000,
+    specs: [
+      "Intel Core i7-13650HX",
+      "Nvidia GeForce RTX 5050 8GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6Alxg4mVWE",
+    image:    "./LAPTOP 21-30 JUTA/Lenovo Legion 5i 15IRX10 OLED 29 Juta.webp"
+  },
+  {
+    id: 2026102116,
+    name: "Asus TUF F16 FX608JMR",
+    category: "global",
+    tier: "A+",
+    price: 29399000,
+    specs: [
+      "Intel Core i7-14650HX",
+      "Nvidia GeForce RTX 5060 8GB",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/70L4fcVWeC",
+    image:    "./LAPTOP 21-30 JUTA/Asus TUF F16 FX608JMR 29 Juta.webp"
+  },
+  {
+    id: 2026102117,
+    name: "Acer Predator Helios Neo 16S AI OLED",
+    category: "global",
+    tier: "S",
+    price: 29499000,
+    specs: [
+      "Intel Ultra 7 255HX",
+      "Nvidia GeForce RTX 5060 8GB",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6q1eTKJ2Qb",
+    image:    "./LAPTOP 21-30 JUTA/Acer Predator Helios Neo 16S AI OLED 29 Juta.webp"
+  },
+  {
+    id: 2026102118,
+    name: "Asus TUF A16 FA608UP",
+    category: "global",
+    tier: "S",
+    price: 29499000,
+    specs: [
+      "AMD Ryzen 7 260",
+      "Nvidia GeForce RTX 5070 8GB",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/2VsfJPkYnA",
+    image:    "./LAPTOP 21-30 JUTA/Asus TUF A16 FA608UP 29 Juta.webp"
+  },
+  {
+    id: 2026102119,
+    name: "Apple MacBook Air 13 M5",
+    category: "global",
+    tier: "S",
+    price: 29799000,
+    specs: [
+      "Apple M5 10-core",
+      "GPU Apple M5 10-core",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/5VWGst5d80",
+    image:    "./LAPTOP 21-30 JUTA/Apple MacBook Air 13 M5 29 Juta.webp"
+  },
+
       {
     id: 2232411,
     name: "Acer Aspire Lite 14",
