@@ -886,7 +886,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/6fi5kzioYC",
+    shopUrl:  "https://s.shopee.co.id/3B8PR7Z4FM",
     image:    "./LAPTOP 10 JUTA/HP 14.webp"
   },
 
@@ -1351,7 +1351,7 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
-    price: 12000000,
+    price: 13300000,
     specs: [
       "AMD Ryzen 7 170",
       "Radeon 780M",
@@ -1359,7 +1359,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
-    shopUrl:  "https://s.shopee.co.id/3g3XpQYFWT",
+    shopUrl:  "https://s.shopee.co.id/1LglGIJrBy",
     image:    "./LAPTOP 12 JUTA/asuspm1.webp"
   },
 
@@ -1387,7 +1387,7 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
-    price: 14000000,
+    price: 14800000,
     specs: [
       "Intel Core 5-210H",
       "Nvidia RTX 3050 6GB",
@@ -1395,7 +1395,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
-    shopUrl:  "https://s.shopee.co.id/9zxbJePJOB",
+    shopUrl:  "https://s.shopee.co.id/30ozF51bz0",
     image:    "./LAPTOP 14 JUTA/acernitro.webp"
   },
 
@@ -1731,7 +1731,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7646777812036160786?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/AKZoFO9wWH",
+    shopUrl:  "https://s.shopee.co.id/6L5RFqAnWq",
     image:    "./LAPTOP 3 JUTA/ThinkPad T480s.webp"
   },
   {
@@ -2621,22 +2621,6 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/6fevxeEiE2",
     image:    "./LAPTOP 11 JUTA/ThinkPad P53.webp"
-  },
-  {
-    id: 208,
-    name: "Acer Aspire Go 14 Ai",
-    category: "global",
-    tier: "A+",
-    price: 14089000,
-    specs: [
-      "Intel Ultra 7 115H",
-      "Intel Arc",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
-    shopUrl:  "https://s.shopee.co.id/5fmQdwRw3n",
-    image:    "./LAPTOP 11 JUTA/Acer Go.webp"
   },
   {
     id: 205,
