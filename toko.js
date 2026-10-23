@@ -128,7 +128,7 @@ const TOKO = [
     rating: 4.8,
     ulasan: "5rb",
     pengikut: "11,3rb",
-    shopUrl: "https://s.shopee.co.id/Lmractxyh",
+    shopUrl: "https://s.shopee.co.id/1W0BjO271O",
     top5: true,
     catatan: `tiap produk dikasih varian spesifikasi yang sangat lengkap, bisa tanpa SSD, SSD 128GB, SSD SATA maupun SSD NVME, dan juga RAM dari 4GB sampai 32GB, jadi bisa lebih menyesuaikan dengan kebutuhan
 
@@ -154,7 +154,7 @@ tersedia toko offline di Mangga Dua Jakarta`
     rating: 4.9,
     ulasan: "1,9",
     pengikut: "5,6rb",
-    shopUrl: "https://s.shopee.co.id/7ptf5AMkHQ",
+    shopUrl: "https://s.shopee.co.id/AAIA3MuElM",
     top5: true,
     catatan: `tokonya bisa ngejaga harga biar sesuai sama standar pasar, gak kemahalan gak kemurahan`
   },
@@ -166,7 +166,7 @@ tersedia toko offline di Mangga Dua Jakarta`
     rating: 4.9,
     ulasan: "845",
     pengikut: "3,3rb",
-    shopUrl: "https://s.shopee.co.id/1qcRwUhqkz",
+    shopUrl: "https://s.shopee.co.id/8KqVs2jVNx",
     top5: true,
     catatan: `ada toko offline di Mangga dua jakarta yang udah berdiri sejak 2006 sampai sekarang, tapi harga laptopnya beberapa sedikit lebih tinggi dibanding yang lain`
   },
@@ -195,7 +195,7 @@ tersedia toko offline di Mangga Dua Jakarta`
     rating: 4.8,
     ulasan: "466",
     pengikut: "2,9rb",
-    shopUrl: "https://s.shopee.co.id/7fZNTHBXTV",
+    shopUrl: "https://s.shopee.co.id/1qd27uPGWl",
     top5: false,
     catatan: `pilihan dari berbagai harga cukup lengkap, bahkan seringkali ngasih harga murah dibanding toko lain`
   },  
