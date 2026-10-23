@@ -154,6 +154,265 @@ const PRODUCTS = [
     image:    "./LAPTOP 16 JUTA/Lenovo IdeaPad Slim 5 OLED 14 16 Juta.webp"
   },
 
+  // =====================================================================
+// LAPTOP BEKAS BARU (dari koleksi affiliate, 23 Okt 2026)
+// - price = harga di HP
+// - image = belum ada, cari pakai cari_gambar.py (daftar_bekas.txt)
+// - videoUrl masih link profil TikTok
+// =====================================================================
+
+  // Tier A+: Ryzen 7 5800U kenceng di 5,5 jutaan, tapi kelas ProBook (bodi & keyboard) di bawah ThinkPad L14 Gen 2 Ryzen 7 yang harganya hampir sama (5,61jt, Tier S)
+  {
+    id: 2026102301,
+    name: "HP ProBook 445 G8",
+    category: "bekas",
+    tier: "A+",
+    price: 5566000,
+    specs: [
+      "AMD Ryzen 7 5800U",
+      "Radeon Vega 8",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/gR4oJm83z",
+    image:    "./LAPTOP 5 JUTA/HP ProBook 445 G8 5 Juta.webp"
+  },
+
+  // Tier A+: Bodi premium seri 7, tapi prosesornya sama kayak Latitude 5430 i5 (5,34jt). Nanggung: nambah 90 ribu udah dapet Latitude 7330 i7
+  {
+    id: 2026102302,
+    name: "Dell Latitude 7430",
+    category: "bekas",
+    tier: "A+",
+    price: 6100000,
+    specs: [
+      "Intel Core i5-1235U/1245U",
+      "Intel Iris Xe 80EU",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1BO11ZiQM",
+    image:    "./LAPTOP 6 JUTA/Dell Latitude 7430 6 Juta.webp"
+  },
+
+  // Tier S: Prosesor gen 11 + Iris Xe, layar 16:10 touchscreen, 830 ribu lebih murah dari ThinkPad T14 Gen 2 Intel (5,52jt, Tier S)
+  {
+    id: 2026102303,
+    name: "ThinkPad X13 Gen 2",
+    category: "bekas",
+    tier: "S",
+    price: 4692000,
+    specs: [
+      "Intel Core i5-1145G7",
+      "Intel Iris Xe 80EU",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/906CjUgj5l",
+    image:    "./LAPTOP 4 JUTA/ThinkPad X13 Gen 2 4 Juta.webp"
+  },
+
+  // Tier S: Prosesor sama kayak ThinkPad T495 (4,22jt, Tier S) tapi 450 ribu lebih murah, bonus layar sentuh. Dulu 4,44jt dapet A+
+  {
+    id: 2026102304,
+    name: "HP Elitebook 745 G6",
+    category: "bekas",
+    tier: "S",
+    price: 3772000,
+    specs: [
+      "AMD Ryzen 5 3500U",
+      "Radeon Vega 8",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6L5RYXMT0r",
+    image:    "./LAPTOP 3 JUTA/HP Elitebook 745 G6 3 Juta.webp"
+  },
+
+  // Tier A+: Bodi premium seri 7 di bawah 4 juta, tapi gen 10 cuma beda tipis sama gen 8, dan Latitude 5400 (3,58jt, Tier S) lebih murah. Dulu 4,24jt dapet A
+  {
+    id: 2026102305,
+    name: "Dell Latitude 7410",
+    category: "bekas",
+    tier: "A+",
+    price: 3910000,
+    specs: [
+      "Intel Core i5-10210U",
+      "Intel UHD Graphics 620",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1BO0rtqCr",
+    image:    "./LAPTOP 3 JUTA/Dell Latitude 7410 3 Juta.webp"
+  },
+
+  // Tier S: Prosesor sama persis kayak ThinkPad T14 Gen 1 Ryzen 7 (5,80jt, Tier S) tapi 740 ribu lebih murah
+  {
+    id: 2026102307,
+    name: "ThinkPad L14 Gen 1 Ryzen 7",
+    category: "bekas",
+    tier: "S",
+    price: 5060000,
+    specs: [
+      "AMD Ryzen 7 Pro 4750U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4fxDZHCUAL",
+    image:    "./LAPTOP 5 JUTA/ThinkPad L14 Gen 1 Ryzen 7 5 Juta.webp"
+  },
+
+  // Tier A: Jauh lebih murah dari entri MacBook Pro 2015 yang lama (5,51jt, B+), tapi umurnya udah 10 tahun dan macOS-nya udah gak dapet update
+  {
+    id: 2026102308,
+    name: "Macbook Pro Retina 15 (2015)",
+    category: "bekas",
+    tier: "A",
+    price: 3818000,
+    specs: [
+      "Intel Core i7-4770HQ",
+      "Intel Iris Pro 5200",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/qkV0A1P17",
+    image:    "./LAPTOP 3 JUTA/Macbook Pro Retina 15 (2015) 3 Juta.webp"
+  },
+
+  // Tier A: Nanggung: nambah 94 ribu udah dapet Latitude 5400 (3,58jt, Tier S) yang prosesornya gen 8 quad core
+  {
+    id: 2026102310,
+    name: "ThinkPad T470",
+    category: "bekas",
+    tier: "A",
+    price: 3486000,
+    specs: [
+      "Intel Core i5-7300U",
+      "Intel HD Graphics 620",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/30oza0K1ek",
+    image:    "./LAPTOP 3 JUTA/ThinkPad T470 3 Juta.webp"
+  },
+
+  // Tier S: Udah i7 gen 8 tapi masih lebih murah dari Latitude 5400 i5 (3,58jt, Tier S)
+  {
+    id: 2026102311,
+    name: "Dell Latitude 5490 i7",
+    category: "bekas",
+    tier: "S",
+    price: 3394000,
+    specs: [
+      "Intel Core i7-8650U",
+      "Intel UHD Graphics 620",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4qGdlCpelc",
+    image:    "./LAPTOP 3 JUTA/Dell Latitude 5490 i7 3 Juta.webp"
+  },
+
+  // Tier S: Prosesor sama kayak Latitude 5430 i5 (5,34jt, Tier S), 100 ribu lebih murah, lebih ringkas 13 inci dan layar sentuh
+  {
+    id: 2026102312,
+    name: "Dell Latitude 5330",
+    category: "bekas",
+    tier: "S",
+    price: 5234800,
+    specs: [
+      "Intel Core i5-1245U",
+      "Intel Iris Xe 80EU",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/gR4nVEhlN",
+    image:    "./LAPTOP 5 JUTA/Dell Latitude 5330 5 Juta.webp"
+  },
+
+  // Tier A+: Upgrade dari ZBook 15U G5 (5,61jt, A+): SSD 512GB cuma nambah 83 ribu. Tetap A+ karena ThinkPad P52 (5,39jt, S) GPU dan CPU-nya lebih kencang
+  {
+    id: 2026102313,
+    name: "HP Zbook 15U G6 (TEKNIK)",
+    category: "bekas",
+    tier: "A+",
+    price: 5694000,
+    specs: [
+      "Intel Core i7-8665U",
+      "Radeon Pro WX3200 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/906CimcZPM",
+    image:    "./LAPTOP 5 JUTA/HP Zbook 15U G6 (TEKNIK) 5 Juta.webp"
+  },
+
+  // Tier A: Kemahalan: prosesor sama kayak Latitude 5430 i5 yang 2,25 juta lebih murah, dan T14 Gen 3 Ryzen 5 (8jt, S) iGPU-nya jauh lebih kencang
+  {
+    id: 2026102314,
+    name: "ThinkPad T14 Gen 3 (INTEL)",
+    category: "bekas",
+    tier: "A",
+    price: 7590000,
+    specs: [
+      "Intel Core i5-1245U",
+      "Intel Iris Xe 80EU",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9fLtVye0DH",
+    image:    "./LAPTOP 7 JUTA/ThinkPad T14 Gen 3 (INTEL) 7 Juta.webp"
+  },
+
+  // Tier S: i7 gen 12 + bodi premium seri 7, 400 ribu lebih murah dari Latitude 5430 i7 (6,59jt, S) walau RAM-nya 16GB bukan 32GB
+  {
+    id: 2026102315,
+    name: "Dell Latitude 7330 i7",
+    category: "bekas",
+    tier: "S",
+    price: 6190000,
+    specs: [
+      "Intel Core i7-1265U",
+      "Intel Iris Xe 96EU",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/AAIA6hyXrW",
+    image:    "./LAPTOP 6 JUTA/Dell Latitude 7330 i7 6 Juta.webp"
+  },
+
+  // Tier B+: Kemahalan: ThinkPad P52 (5,39jt, S) prosesor dan GPU-nya lebih baru dan kencang tapi 1,4 juta lebih murah. Dulu P51 4,73jt aja dapet B+
+  {
+    id: 2026102316,
+    name: "ThinkPad P51 (TEKNIK)",
+    category: "bekas",
+    tier: "B+",
+    price: 6800000,
+    specs: [
+      "Intel Xeon E3-1505M v5",
+      "Nvidia Quadro M1200M 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/40hWl7JLDq",
+    image:    "./LAPTOP 6 JUTA/ThinkPad P51 (TEKNIK) 6 Juta.webp"
+  },
+
   {
     id: 2026102006,
     name: "HP Victus 15",
