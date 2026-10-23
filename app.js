@@ -5,7 +5,7 @@
  *
  * LABEL OTOMATIS DARI NAMA PRODUK:
  *   (GAMING)  → badge "Gaming" di foto, teks di nama disembunyikan
- *   Spek GPU RTX / GTX / RX → otomatis dapat badge "Gaming" juga
+ *   Spek GPU RTX / GTX / RX / MX → otomatis dapat badge "Gaming" juga
  *   (TEKNIK)  → badge "Teknik" di foto, teks di nama disembunyikan
  *   (TERLARIS), (JUARA 5 JUTA), (HARGA NAIK), dll
  *             → tampil sebagai label hijau di atas nama
@@ -74,8 +74,8 @@ function buildPriceMenu() {
 // ── Baca label dari nama produk ──────────────────────────────
 // Hasil: { name: nama bersih, usecase: ["gaming","teknik"], highlights: ["TERLARIS"] }
 const KEEP_IN_NAME = ["INTEL", "AMD"];
-// Contoh yang cocok: "RTX 3050", "GTX 1650Ti", "Radeon RX 6600M", "RX6500M"
-const GPU_GAMING = /\b(RTX|GTX|RX)\s?\d/i;
+// Contoh yang cocok: "RTX 3050", "GTX 1650Ti", "Radeon RX 6600M", "RX6500M", "MX450"
+const GPU_GAMING = /\b(RTX|GTX|RX|MX)\s?\d/i;
 
 function parseProduct(p) {
   const usecase    = new Set(Array.isArray(p.usecase) ? p.usecase.map(u => String(u).toLowerCase()) : []);
@@ -91,7 +91,7 @@ function parseProduct(p) {
     return "";
   }).replace(/\s{2,}/g, " ").trim();
 
-  // Pakai GPU dedicated (RTX / GTX / RX) → otomatis Gaming
+  // Pakai GPU dedicated (RTX / GTX / RX / MX) → otomatis Gaming
   if (p.specs.some(s => GPU_GAMING.test(s))) usecase.add("gaming");
 
   // Urutan badge selalu Gaming dulu, lalu Teknik

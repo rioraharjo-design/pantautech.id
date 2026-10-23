@@ -51,6 +51,24 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
+    {
+    id: 19,
+    name: "ThinkPad T14 Gen 2 MX450",
+    category: "bekas",
+    tier: "S",
+    sold_out: false,
+    price: 6000000,
+    specs: [
+      "Intel Core i5-1135G7",
+      "Nvidia MX450",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
+    shopUrl:  "https://s.shopee.co.id/9zyjv8qdQP",
+    image:    "./LAPTOP 6 JUTA/Thinkpad MX.webp"
+  },
+
   {
     id: 2026102001,
     name: "Advan Pixwar",
@@ -1720,10 +1738,10 @@ const PRODUCTS = [
   },
   {
     id: 1,
-    name: "Lenovo ThinkPad T480",
+    name: "Lenovo ThinkPad T480s",
     category: "bekas",
-    tier: "A",
-    price: 4140000,
+    tier: "A+",
+    price: 3950000,
     specs: [
       "Intel Core i5-8250U",
       "Intel UHD Graphics 620",
@@ -1731,7 +1749,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7646777812036160786?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/6L5RFqAnWq",
+    shopUrl:  "https://s.shopee.co.id/2Vsiz7WsQC",
     image:    "./LAPTOP 3 JUTA/ThinkPad T480s.webp"
   },
   {
@@ -2054,23 +2072,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/1BJuGE3wFq",
     image:    "./LAPTOP 6 JUTA/Infinix XBOOK 15.webp"
   },
-  {
-    id: 19,
-    name: "ThinkPad T14 Gen 2 MX450",
-    category: "bekas",
-    tier: "S",
-    sold_out: true,
-    price: 6696000,
-    specs: [
-      "Intel Core i7-1165G7",
-      "Nvidia MX450",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/5Aq3JZCit2",
-    image:    "./LAPTOP 6 JUTA/Thinkpad MX.webp"
-  },
+
   {
     id: 17,
     name: "HP Elitebook 835 G8",
