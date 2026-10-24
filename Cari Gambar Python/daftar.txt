@@ -1,15 +1,5 @@
 # Format: nama laptop | harga website
-HP ProBook 445 G8 | 5.566.000
-Dell Latitude 7430 | 6.100.000
-ThinkPad X13 Gen 2 | 4.692.000
-HP Elitebook 745 G6 | 3.772.000
-Dell Latitude 7410 | 3.910.000
-ThinkPad L14 Gen 1 Ryzen 7 | 5.060.000
-Macbook Pro Retina 15 (2015) | 3.818.000
-ThinkPad T470 | 3.486.000
-Dell Latitude 5490 i7 | 3.394.000
-Dell Latitude 5330 | 5.234.800
-HP Zbook 15U G6 (TEKNIK) | 5.694.000
-ThinkPad T14 Gen 3 (INTEL) | 7.590.000
-Dell Latitude 7330 i7 | 6.190.000
-ThinkPad P51 (TEKNIK) | 6.800.000
+Fujitsu Futro MU937 | 1.812.000
+ThinkPad T440s | 1.886.000
+HP Elitebook 640 G2 | 2.760.000
+ThinkPad T470s | 2.806.000

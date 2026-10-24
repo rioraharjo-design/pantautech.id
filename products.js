@@ -36,10 +36,10 @@ const PRODUCTS = [
 
         {
     id: 11,
-    name: "HP Elitebook 845 G8 (TERLARIS)",
+    name: "HP Elitebook 845 G8 (HARGA NAIK DRASTIS)",
     category: "bekas",
-    tier: "S",
-    price: 6000000,
+    tier: "A+",
+    price: 6550000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -162,6 +162,83 @@ const PRODUCTS = [
 // =====================================================================
 
   // Tier A+: Ryzen 7 5800U kenceng di 5,5 jutaan, tapi kelas ProBook (bodi & keyboard) di bawah ThinkPad L14 Gen 2 Ryzen 7 yang harganya hampir sama (5,61jt, Tier S)
+ // =====================================================================
+// LAPTOP BEKAS 1–2 JUTA (24 Okt 2026)
+// - price = harga di HP
+// =====================================================================
+
+  // Tier B: Paling murah, tapi Celeron 3865U cuma 2 core 2 thread, jauh di bawah i3 atau i5. Cuma cocok buat ngetik dan browsing ringan
+  {
+    id: 2026102401,
+    name: "Fujitsu Futro MU937",
+    category: "bekas",
+    tier: "B",
+    price: 1812000,
+    specs: [
+      "Intel Celeron 3865U",
+      "Intel HD Graphics 610",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3g4hQK1Zrf",
+    image:    "./LAPTOP 1 JUTA/Fujitsu Futro MU937 1 Juta.webp"
+  },
+
+  // Tier B+: Bodi dan keyboard ThinkPad, i5 gen 4 masih lebih kenceng dari Celeron, tapi RAM 4GB harus diupgrade dan umurnya udah tua banget
+  {
+    id: 2026102402,
+    name: "ThinkPad T440s",
+    category: "bekas",
+    tier: "B+",
+    price: 1886000,
+    specs: [
+      "Intel Core i5-4200U",
+      "Intel HD Graphics 4400",
+      "RAM 4GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3g4hRMoWHq",
+    image:    "./LAPTOP 1 JUTA/ThinkPad T440s 1 Juta.webp"
+  },
+
+  // Tier A: Speknya oke buat kerja kantor, tapi nanggung: nambah 46 ribu udah dapet ThinkPad T470s gen 7 yang lebih tipis
+  {
+    id: 2026102403,
+    name: "HP Elitebook 640 G2",
+    category: "bekas",
+    tier: "A",
+    price: 2760000,
+    specs: [
+      "Intel Core i5-6300U",
+      "Intel HD Graphics 520",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3B8QqFGqeN",
+    image:    "./LAPTOP 2 JUTA/HP Elitebook 640 G2 2 Juta.webp"
+  },
+
+  // Tier A+: Prosesor sama kayak Latitude 7290 (2,9jt, A) tapi lebih murah, layar lebih lega 14 inci dan bodi tipis. Pilihan terbaik di 2 jutaan
+  {
+    id: 2026102404,
+    name: "ThinkPad T470s",
+    category: "bekas",
+    tier: "A+",
+    price: 2806000,
+    specs: [
+      "Intel Core i5-7300U",
+      "Intel HD Graphics 620",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8pmnaA49eV",
+    image:    "./LAPTOP 2 JUTA/ThinkPad T470s 2 Juta.webp"
+  },
+ 
   {
     id: 2026102301,
     name: "HP ProBook 445 G8",
@@ -518,10 +595,10 @@ const PRODUCTS = [
 
     {
     id: 233213333,
-    name: "HP Elitebook 845 G7",
+    name: "HP Elitebook 845 G7 (HARGA NAIK DRASTIS)",
     category: "bekas",
-    tier: "S",
-    price: 5152000,
+    tier: "A+",
+    price: 6000000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
