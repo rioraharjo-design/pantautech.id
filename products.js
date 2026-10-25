@@ -2,7 +2,7 @@ const PRODUCTS = [
 
     {
     id: 10123232,
-    name: "ThinkPad X13 Gen 1",
+    name: "ThinkPad X13 Gen 1 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 4416000,
@@ -19,7 +19,7 @@ const PRODUCTS = [
 
           {
     id: 225,
-    name: "ThinkPad T14 Gen 2 Ryzen 5 (TERLARIS)",
+    name: "ThinkPad T14 Gen 2 Ryzen 5 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 5800000,
@@ -122,7 +122,7 @@ const PRODUCTS = [
 
   {
     id: 2026102004,
-    name: "Axioo Pongo 735",
+    name: "Axioo Pongo 735 (PILIHAN MIMIN)",
     category: "odm",
     tier: "S",
     price: 14471000,
@@ -139,7 +139,7 @@ const PRODUCTS = [
 
   {
     id: 2026102005,
-    name: "Lenovo IdeaPad Slim 5 OLED 14",
+    name: "Lenovo IdeaPad Slim 5 OLED 14 (PILIHAN MIMIN)",
     category: "global",
     tier: "A+",
     price: 16294000,
@@ -188,7 +188,7 @@ const PRODUCTS = [
   // Tier B+: Bodi dan keyboard ThinkPad, i5 gen 4 masih lebih kenceng dari Celeron, tapi RAM 4GB harus diupgrade dan umurnya udah tua banget
   {
     id: 2026102402,
-    name: "ThinkPad T440s",
+    name: "ThinkPad T440s (PILIHAN MIMIN)",
     category: "bekas",
     tier: "B+",
     price: 1886000,
@@ -224,7 +224,7 @@ const PRODUCTS = [
   // Tier A+: Prosesor sama kayak Latitude 7290 (2,9jt, A) tapi lebih murah, layar lebih lega 14 inci dan bodi tipis. Pilihan terbaik di 2 jutaan
   {
     id: 2026102404,
-    name: "ThinkPad T470s",
+    name: "ThinkPad T470s (PILIHAN MIMIN)",
     category: "bekas",
     tier: "A+",
     price: 2806000,
@@ -295,7 +295,7 @@ const PRODUCTS = [
   // Tier S: Prosesor sama kayak ThinkPad T495 (4,22jt, Tier S) tapi 450 ribu lebih murah, bonus layar sentuh. Dulu 4,44jt dapet A+
   {
     id: 2026102304,
-    name: "HP Elitebook 745 G6",
+    name: "HP Elitebook 745 G6 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 3772000,
@@ -385,7 +385,7 @@ const PRODUCTS = [
   // Tier S: Udah i7 gen 8 tapi masih lebih murah dari Latitude 5400 i5 (3,58jt, Tier S)
   {
     id: 2026102311,
-    name: "Dell Latitude 5490 i7",
+    name: "Dell Latitude 5490 i7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 3394000,
@@ -403,7 +403,7 @@ const PRODUCTS = [
   // Tier S: Prosesor sama kayak Latitude 5430 i5 (5,34jt, Tier S), 100 ribu lebih murah, lebih ringkas 13 inci dan layar sentuh
   {
     id: 2026102312,
-    name: "Dell Latitude 5330",
+    name: "Dell Latitude 5330 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 5234800,
@@ -543,7 +543,7 @@ const PRODUCTS = [
 
   {
     id: 2026102009,
-    name: "Acer Nitro V15 52-50FX",
+    name: "Acer Nitro V15 52-50FX (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 19013000, // PERKIRAAN (Windows Rp19.999.000 - selisih + 200rb). Cek harga varian RTX 5050 "Normal" di HP lalu +200rb
@@ -651,7 +651,7 @@ const PRODUCTS = [
 
     {
     id: 4,
-    name: "ThinkPad T14 Gen 1 Ryzen 5",
+    name: "ThinkPad T14 Gen 1 Ryzen 5 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 4738000,
@@ -668,7 +668,7 @@ const PRODUCTS = [
 
     {
     id: 6,
-    name: "Axioo Hype 5 AMD X5-2",
+    name: "Axioo Hype 5 AMD X5-2 (PILIHAN MIMIN)",
     category: "odm",
     tier: "A+",
     price: 6623000,
@@ -687,7 +687,7 @@ const PRODUCTS = [
 
     {
     id: 623523523532,
-    name: "Axioo Hype 5 AMD X5-2 RAM 16GB",
+    name: "Axioo Hype 5 AMD X5-2 RAM 16GB (PILIHAN MIMIN)",
     category: "odm",
     tier: "S",
     price: 7681000,
@@ -705,7 +705,7 @@ const PRODUCTS = [
 
   {
     id: 18,
-    name: "ThinkPad T14 Gen 2 Ryzen 7",
+    name: "ThinkPad T14 Gen 2 Ryzen 7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 6532000,
@@ -728,7 +728,7 @@ const PRODUCTS = [
 
   {
     id: 2026102101,
-    name: "Asus Zenbook 14 OLED UM3406KA",
+    name: "Asus Zenbook 14 OLED UM3406KA (PILIHAN MIMIN)",
     category: "global",
     tier: "A+",
     price: 19699000,
@@ -831,7 +831,7 @@ const PRODUCTS = [
 
   {
     id: 2026102108,
-    name: "HP OmniBook 7 OLED 14",
+    name: "HP OmniBook 7 OLED 14 (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 23489000,
@@ -848,7 +848,7 @@ const PRODUCTS = [
 
   {
     id: 2026102109,
-    name: "Acer Nitro V16S ANV16S-41",
+    name: "Acer Nitro V16S ANV16S-41 (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 23799000,
@@ -882,7 +882,7 @@ const PRODUCTS = [
 
   {
     id: 2026102111,
-    name: "Acer Swift Go 14 AI OLED",
+    name: "Acer Swift Go 14 AI OLED (PILIHAN MIMIN)",
     category: "global",
     tier: "A+",
     price: 25399000,
@@ -916,9 +916,9 @@ const PRODUCTS = [
 
   {
     id: 2026102113,
-    name: "Lenovo Legion 5A OLED",
+    name: "Lenovo Legion 5A OLED (PILIHAN MIMIN)",
     category: "global",
-    tier: "A+",
+    tier: "S",
     price: 28349000,
     specs: [
       "AMD Ryzen AI 7 250",
@@ -934,7 +934,7 @@ const PRODUCTS = [
 // ---- tambahan harga 29-30 juta ----
   {
     id: 2026102114,
-    name: "Asus Zenbook 14 OLED UX3405CA Ultra 9",
+    name: "Asus Zenbook 14 OLED UX3405CA Ultra 9 (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 29099000,
@@ -952,7 +952,7 @@ const PRODUCTS = [
     id: 2026102115,
     name: "Lenovo Legion 5i 15IRX10 OLED",
     category: "global",
-    tier: "A+",
+    tier: "S",
     price: 29099000,
     specs: [
       "Intel Core i7-13650HX",
@@ -966,7 +966,7 @@ const PRODUCTS = [
   },
   {
     id: 2026102116,
-    name: "Asus TUF F16 FX608JMR",
+    name: "Asus TUF F16 FX608JMR (PILIHAN MIMIN)",
     category: "global",
     tier: "A+",
     price: 29399000,
@@ -982,7 +982,7 @@ const PRODUCTS = [
   },
   {
     id: 2026102117,
-    name: "Acer Predator Helios Neo 16S AI OLED",
+    name: "Acer Predator Helios Neo 16S AI OLED (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 29499000,
@@ -998,7 +998,7 @@ const PRODUCTS = [
   },
   {
     id: 2026102118,
-    name: "Asus TUF A16 FA608UP",
+    name: "Asus TUF A16 FA608UP (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 29499000,
@@ -1014,7 +1014,7 @@ const PRODUCTS = [
   },
   {
     id: 2026102119,
-    name: "Apple MacBook Air 13 M5",
+    name: "Apple MacBook Air 13 M5 (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 29799000,
@@ -1103,7 +1103,7 @@ const PRODUCTS = [
 
 {
   id: 222352529,
-  name: "Acer Nitro V15",
+  name: "Acer Nitro V15 (PILIHAN MIMIN)",
   category: "global",
   tier: "S",
   sold_out: false,
@@ -1121,7 +1121,7 @@ const PRODUCTS = [
 
     {
     id: 207,
-    name: "Acer Aspire 7 Pro 3050 6GB",
+    name: "Acer Aspire 7 Pro 3050 6GB (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 14589000,
@@ -1193,7 +1193,7 @@ const PRODUCTS = [
 
 {
   id: 2323523,
-  name: "Axioo Pongo 725 V2 ",
+  name: "Axioo Pongo 725 V2 (PILIHAN MIMIN)",
   category: "odm",
   tier: "S",
   sold_out: false,
@@ -1229,7 +1229,7 @@ const PRODUCTS = [
 
   {
     id: 110,
-    name: "HP 14",
+    name: "HP 14 (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 11589000,
@@ -1246,7 +1246,7 @@ const PRODUCTS = [
 
   {
     id: 9,
-    name: "Advan Pixwar T",
+    name: "Advan Pixwar T (PILIHAN MIMIN)",
     category: "odm",
     tier: "S",
     price: 11652000,
@@ -1299,7 +1299,7 @@ const PRODUCTS = [
 
 {
   id: 2234320,
-  name: "Axioo Hype 5 AMD X6-11",
+  name: "Axioo Hype 5 AMD X6-11 (PILIHAN MIMIN)",
   category: "odm",
   tier: "S",
   price: 8509000,
@@ -1336,7 +1336,7 @@ const PRODUCTS = [
 
     {
     id: 3878074,
-    name: "Axioo Hype 7 AMD X8-1",
+    name: "Axioo Hype 7 AMD X8-1 (PILIHAN MIMIN)",
     category: "odm",
     tier: "S",
     price: 9663000,
@@ -1357,6 +1357,7 @@ const PRODUCTS = [
     name: "Dell Latitude 5430 i5 (JUARA 5 JUTA)",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 5336000,
     specs: [
       "Intel Core i5-1245U",
@@ -1390,7 +1391,7 @@ const PRODUCTS = [
   },
     {
     id: 34322420,
-    name: "ThinkPad T14 Gen 3 Ryzen 7",
+    name: "ThinkPad T14 Gen 3 Ryzen 7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 9200000,
@@ -1406,7 +1407,7 @@ const PRODUCTS = [
   },
   {
   id: 13249,
-  name: "ThinkPad T14 Gen 3 Ryzen 5",
+  name: "ThinkPad T14 Gen 3 Ryzen 5 (PILIHAN MIMIN)",
   category: "bekas",
   tier: "S",
   price: 8000000,
@@ -1508,7 +1509,7 @@ const PRODUCTS = [
 
 {
   id: 160000001,
-  name: "Acer Nitro V15 52-51TE ",
+  name: "Acer Nitro V15 52-51TE (PILIHAN MIMIN)",
   category: "global",
   tier: "S",
   price: 16752000,
@@ -1542,7 +1543,7 @@ const PRODUCTS = [
 
 {
   id: 170000001,
-  name: "Asus TUF A16 FA607NUG ",
+  name: "Asus TUF A16 FA607NUG (PILIHAN MIMIN)",
   category: "global",
   tier: "S",
   price: 18074000,
@@ -1559,7 +1560,7 @@ const PRODUCTS = [
 
 {
   id: 170000002,
-  name: "Asus Expertbook P5405CSA",
+  name: "Asus Expertbook P5405CSA (PILIHAN MIMIN)",
   category: "global",
   tier: "S",
   price: 17004000,
@@ -1594,7 +1595,7 @@ const PRODUCTS = [
 
 {
   id: 180000002,
-  name: "Asus Expertbook P5406CCA",
+  name: "Asus Expertbook P5406CCA (PILIHAN MIMIN)",
   category: "global",
   tier: "S",
   price: 20444000,
@@ -1611,7 +1612,7 @@ const PRODUCTS = [
 
 {
   id: 190000001,
-  name: "Acer Nitro V15 52-777R ",
+  name: "Acer Nitro V15 52-777R (PILIHAN MIMIN)",
   category: "global",
   tier: "S",
   price: 20011000,
@@ -1720,7 +1721,7 @@ const PRODUCTS = [
 
   {
     id: 140,
-    name: "Apple Macbook Neo",
+    name: "Apple Macbook Neo (PILIHAN MIMIN)",
     category: "global",
     tier: "A+",
     price: 14101000,
@@ -1755,7 +1756,7 @@ const PRODUCTS = [
 
   {
     id: 22211,
-    name: "Asus Expertbook P3 G1",
+    name: "Asus Expertbook P3 G1 (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 17614000,
@@ -1789,7 +1790,7 @@ const PRODUCTS = [
 
   {
     id: 2132422243434,
-    name: "HP Omnibook 3 14-HV0036AU",
+    name: "HP Omnibook 3 14-HV0036AU (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 15569000,
@@ -2042,7 +2043,7 @@ const PRODUCTS = [
   },
   {
     id: 224,
-    name: "Dell Latitude 5400 (TERLARIS)",
+    name: "Dell Latitude 5400",
     category: "bekas",
     tier: "S",
     price: 3580000,
@@ -2058,7 +2059,7 @@ const PRODUCTS = [
   },
   {
     id: 226,
-    name: "ThinkPad X390 (TERLARIS)",
+    name: "ThinkPad X390",
     category: "bekas",
     tier: "A+",
     price: 3956000,
@@ -2243,7 +2244,7 @@ const PRODUCTS = [
   },
   {
     id: 224245,
-    name: "ThinkPad L14 Gen 2",
+    name: "ThinkPad L14 Gen 2 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 5612000,
@@ -2560,9 +2561,9 @@ const PRODUCTS = [
   },
   {
     id: 28,
-    name: "Acer TravelMate P40",
+    name: "Acer TravelMate P40 (PILIHAN MIMIN)",
     category: "global",
-    tier: "A",
+    tier: "A+",
     price: 10211000,
     specs: [
       "Intel Core i5-1335U",
@@ -2576,7 +2577,7 @@ const PRODUCTS = [
   },
   {
     id: 29,
-    name: "Asus Expertbook P1 P1403CVA",
+    name: "Asus Expertbook P1 P1403CVA (PILIHAN MIMIN)",
     category: "global",
     tier: "A",
     price: 9128000,
@@ -2592,7 +2593,7 @@ const PRODUCTS = [
   },
   {
     id: 23,
-    name: "Acer Aspire Lite AL15",
+    name: "Acer Aspire Lite AL15 (PILIHAN MIMIN)",
     category: "global",
     tier: "A+",
     price: 8810000,
@@ -3147,7 +3148,7 @@ const PRODUCTS = [
   },
   {
     id: 221,
-    name: "HP Omnibook 3 Ai 14",
+    name: "HP Omnibook 3 Ai 14 (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
     price: 14724000,
