@@ -204,6 +204,8 @@ function applyFilters() {
         + (habis.length ? `<span class="count-muted">, ${habis.length} habis</span>` : "");
     }
   }
+
+  updateGuideNotice();
 }
 
 // ── Category tabs ────────────────────────────────────────────
@@ -337,7 +339,6 @@ function resetAll() {
   setPrice(0);
   setSort("default");
   setSearch("");
-  hideGuideNotice();
   applyFilters();
 }
 
@@ -379,9 +380,9 @@ function showStep(n) {
   guideStep2.hidden = n !== 2;
 }
 
+// Tombol "Bantu pilihin" di katalog langsung ke langkah pilih budget
 function openGuide() {
-  showStep(1);
-  hideGuideNotice();
+  showStep(2);
   document.body.classList.add("guide-open");
   guide.scrollIntoView({ behavior: "smooth", block: "start" });
 }
@@ -396,8 +397,25 @@ function closeGuide(scrollToProducts) {
   }
 }
 
-function hideGuideNotice() {
-  guideNotice.hidden = true;
+// Keterangan di atas hasil: tampil selama pencarian berisi "pilihan mimin",
+// dan isinya ikut berubah kalau pengunjung ganti kategori, harga, urutan, atau tier.
+const CATEGORY_TEXT = { global: "Global", bekas: "Bekas", odm: "ODM", habis: "stok habis" };
+const SORT_TEXT     = { asc: "urut dari termurah", desc: "urut dari termahal" };
+
+function updateGuideNotice() {
+  if (!guideNotice) return;
+  const aktif = searchQuery.toLowerCase().includes(PILIHAN_MIMIN);
+  guideNotice.hidden = !aktif;
+  if (!aktif) return;
+
+  const range  = PRICE_RANGES.find(r => r.min === activePriceMin && r.max === activePriceMax);
+  const budget = !range || range.max === Infinity ? "semua budget" : `budget ${range.short}`;
+  const bagian = [`<strong>${budget}</strong>`];
+  if (activeCategory !== "semua") bagian.push(`<strong>${CATEGORY_TEXT[activeCategory]}</strong>`);
+  if (activeTier !== "semua")     bagian.push(`<strong>Tier ${activeTier}</strong>`);
+  if (SORT_TEXT[activeSort])      bagian.push(SORT_TEXT[activeSort]);
+
+  document.getElementById("guideNoticeText").innerHTML = `Pilihan mimin untuk ${bagian.join(", ")}`;
 }
 
 document.getElementById("guideUdah").addEventListener("click", () => {
@@ -424,10 +442,6 @@ document.getElementById("guidePrices").addEventListener("click", e => {
   setSearch(PILIHAN_MIMIN);
   applyFilters();
 
-  const budget = index === 0 ? "semua budget" : `budget ${PRICE_RANGES[index].short}`;
-  document.getElementById("guideNoticeText").innerHTML = `Pilihan mimin untuk <strong>${budget}</strong>, urut dari termurah`;
-  guideNotice.hidden = false;
-
   trackGuide("pilih_harga", PRICE_RANGES[index].label);
   closeGuide(true);
 });
@@ -435,13 +449,6 @@ document.getElementById("guidePrices").addEventListener("click", e => {
 document.getElementById("guideNoticeReset").addEventListener("click", resetAll);
 document.getElementById("guideReopen").addEventListener("click", openGuide);
 
-// Kalau pengunjung ubah filter sendiri, keterangan bantu pilih disembunyikan
-searchInput.addEventListener("input", hideGuideNotice);
-["categoryTabs", "priceMenu", "sortMenu", "tierMenu"].forEach(id => {
-  document.getElementById(id).addEventListener("click", e => {
-    if (e.target.closest(".tab, .price-option")) hideGuideNotice();
-  });
-});
 
 function trackGuide(langkah, harga) {
   if (typeof gtag !== "function") return;
