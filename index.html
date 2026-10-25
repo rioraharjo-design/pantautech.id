@@ -37,7 +37,7 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="guide-open">
 
   <!-- ===== HEADER ===== -->
   <header class="site-header">
@@ -70,6 +70,32 @@
     </h1>
     <div class="hero-band"><span>Mulai 1 Jutaan</span></div>
     <p class="hero-sub">Rekomendasi laptop sesuai budget dan kebutuhan</p>
+    <!-- Ganti tanggal di bawah setiap selesai cek stok -->
+    <p class="stock-check"><span class="stock-dot" aria-hidden="true"></span>Stok terakhir dicek: <time datetime="2026-10-23">23 Oktober 2026</time></p>
+  </section>
+
+  <!-- ===== BANTU PILIH (muncul sebelum katalog) ===== -->
+  <section class="guide" id="guide" aria-live="polite">
+    <!-- Langkah 1 -->
+    <div class="guide-step" id="guideStep1">
+      <h2 class="guide-title">Udah tau mau pilih laptop apa?</h2>
+      <p class="guide-text">Kalau masih bingung, mimin tunjukin laptop pilihan mimin sesuai budget kamu.</p>
+      <div class="guide-actions">
+        <button class="guide-btn guide-btn-ghost" id="guideUdah" type="button">Udah</button>
+        <button class="guide-btn guide-btn-main" id="guideBelum" type="button">Belum min, bantu pilihin</button>
+      </div>
+    </div>
+
+    <!-- Langkah 2: pilih harga -->
+    <div class="guide-step" id="guideStep2" hidden>
+      <h2 class="guide-title">Budget kamu berapa?</h2>
+      <p class="guide-text">Nanti mimin urutin dari yang termurah.</p>
+      <div class="guide-prices" id="guidePrices"><!-- diisi app.js --></div>
+      <button class="guide-back" id="guideBack" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+        Kembali
+      </button>
+    </div>
   </section>
 
   <!-- ===== FILTER BAR ===== -->
@@ -131,7 +157,14 @@
 
   <!-- ===== PRODUCT GRID ===== -->
   <main class="products-section">
-    <p class="result-count" id="resultCount" aria-live="polite"></p>
+    <div class="guide-notice" id="guideNotice" hidden>
+      <p id="guideNoticeText"></p>
+      <button type="button" id="guideNoticeReset">Lihat semua laptop</button>
+    </div>
+    <div class="result-row">
+      <p class="result-count" id="resultCount" aria-live="polite"></p>
+      <button class="guide-reopen" id="guideReopen" type="button">Bantu pilihin</button>
+    </div>
     <div class="products-grid" id="productsGrid">
       <!-- Kartu dirender oleh app.js -->
     </div>

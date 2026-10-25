@@ -765,6 +765,239 @@ button { font-family: inherit; }
 }
 
 /* ============================================================
+   STOK DICEK (di hero)
+   ============================================================ */
+.stock-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  padding: 5px 11px;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, .55);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.stock-check time { color: var(--white); font-weight: 700; }
+
+.stock-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--neon);
+  box-shadow: 0 0 8px var(--neon);
+}
+
+/* ============================================================
+   BANTU PILIH
+   ============================================================ */
+.guide { display: none; }
+
+body.guide-open .guide { display: block; }
+body.guide-open .filter-section,
+body.guide-open .products-section { display: none; }
+
+.guide {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 8px 16px 48px;
+  scroll-margin-top: 70px;
+}
+
+.guide-step {
+  padding: 22px 18px 20px;
+  background: var(--surface);
+  border: 1px solid rgba(57, 255, 126, .35);
+  border-radius: 18px;
+  box-shadow: 0 0 40px rgba(57, 255, 126, .08);
+  text-align: center;
+  animation: guide-in .25s ease-out;
+}
+
+.guide-step[hidden] { display: none; }
+
+@keyframes guide-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.guide-title {
+  font-stretch: 125%;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.guide-text {
+  margin: 8px auto 0;
+  max-width: 36ch;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.guide-actions {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.guide-btn {
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .15s, border-color .15s, transform .1s;
+}
+
+.guide-btn:active { transform: scale(.98); }
+
+.guide-btn-ghost {
+  background: transparent;
+  border: 1px solid var(--line-2);
+  color: var(--white);
+}
+.guide-btn-ghost:hover { border-color: var(--white); }
+
+.guide-btn-main {
+  background: var(--neon);
+  border: 1px solid var(--neon);
+  color: var(--black);
+  box-shadow: 0 0 20px rgba(57, 255, 126, .3);
+}
+.guide-btn-main:hover { background: #6dffa0; }
+
+/* Pilihan harga */
+.guide-prices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.guide-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-height: 58px;
+  padding: 8px 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-2);
+  border-radius: 12px;
+  color: var(--white);
+  cursor: pointer;
+  transition: border-color .15s, background-color .15s, transform .1s;
+}
+
+@media (hover: hover) {
+  .guide-price:hover:not(:disabled) { border-color: var(--neon); background: var(--neon-soft); }
+}
+.guide-price:active:not(:disabled) { transform: scale(.97); }
+
+.guide-price-all { grid-column: 1 / -1; min-height: 50px; border-color: rgba(57, 255, 126, .5); }
+
+.guide-price-name {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.guide-price-count {
+  font-size: 11px;
+  color: var(--neon);
+}
+
+.guide-price:disabled { cursor: default; opacity: .4; }
+.guide-price:disabled .guide-price-count { color: var(--muted); }
+
+.guide-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 16px;
+  padding: 6px 10px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.guide-back:hover { color: var(--white); }
+
+/* Keterangan setelah bantu pilih */
+.guide-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 10px 10px 10px 14px;
+  background: var(--neon-soft);
+  border: 1px solid rgba(57, 255, 126, .4);
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.guide-notice[hidden] { display: none; }
+.guide-notice strong { color: var(--neon); }
+
+.guide-notice button {
+  flex-shrink: 0;
+  padding: 7px 11px;
+  background: var(--black);
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.guide-notice button:hover { border-color: var(--white); }
+
+/* Baris jumlah + tombol bantu pilihin */
+.result-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.result-row .result-count { margin-bottom: 0; }
+
+.guide-reopen {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid rgba(57, 255, 126, .5);
+  border-radius: 999px;
+  color: var(--neon);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.guide-reopen:hover { background: var(--neon-soft); }
+
+@media (min-width: 640px) {
+  .guide { padding-top: 12px; }
+  .guide-step { padding: 30px 28px 26px; }
+  .guide-title { font-size: 26px; }
+  .guide-actions { grid-template-columns: 1fr 1.6fr; }
+  .guide-prices { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .site-footer {

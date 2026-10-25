@@ -11,6 +11,8 @@
  *             → tampil sebagai label hijau di atas nama
  *   (INTEL), (AMD), (2015) → tetap jadi bagian nama
  *
+ *   (PILIHAN MIMIN) → label hijau + masuk fitur "Bantu pilihin"
+ *
  * Opsional: field usecase: ["gaming", "teknik"] di products.js
  * juga bisa dipakai, hasilnya sama.
  * ============================================================
@@ -302,19 +304,149 @@ searchInput.addEventListener("input", e => {
   applyFilters();
 });
 
-// ── Reset semua filter (tombol di empty state) ───────────────
-document.getElementById("resetFilters")?.addEventListener("click", () => {
-  activeCategory = "semua"; activePriceMin = 0; activePriceMax = Infinity;
-  activeTier = "semua"; activeSort = "default"; searchQuery = "";
-  searchInput.value = "";
+// ── Helper: atur filter dari kode (dipakai reset & bantu pilih) ──
+function setPrice(index) {
+  const range = PRICE_RANGES[index];
+  activePriceMin = range.min;
+  activePriceMax = range.max;
+  price.menu.querySelectorAll(".price-option").forEach((o, i) => o.classList.toggle("active", i === index));
+  priceLbl.textContent = range.short;
+  price.btn.classList.toggle("is-set", index !== 0);
+}
+
+function setSort(value) {
+  activeSort = value;
+  sort.menu.querySelectorAll(".price-option").forEach(o => o.classList.toggle("active", o.dataset.sort === value));
+  sortLbl.textContent = { default: "Urutkan", asc: "Termurah", desc: "Termahal" }[value];
+  sort.btn.classList.toggle("is-set", value !== "default");
+}
+
+function setSearch(text) {
+  searchQuery = text;
+  searchInput.value = text;
+}
+
+// ── Reset semua filter ───────────────────────────────────────
+function resetAll() {
+  activeCategory = "semua";
+  activeTier = "semua";
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.cat === "semua"));
-  [["priceMenu", 0], ["sortMenu", 0], ["tierMenu", 0]].forEach(([id, i]) => {
-    document.querySelectorAll(`#${id} .price-option`).forEach((o, idx) => o.classList.toggle("active", idx === i));
-  });
-  priceLbl.textContent = "Harga"; sortLbl.textContent = "Urutkan"; tierLbl.textContent = "Tier";
-  ["priceBtn", "sortBtn", "tierBtn"].forEach(id => document.getElementById(id).classList.remove("is-set"));
+  tierDd.menu.querySelectorAll(".price-option").forEach((o, i) => o.classList.toggle("active", i === 0));
+  tierLbl.textContent = "Tier";
+  tierDd.btn.classList.remove("is-set");
+  setPrice(0);
+  setSort("default");
+  setSearch("");
+  hideGuideNotice();
   applyFilters();
+}
+
+document.getElementById("resetFilters")?.addEventListener("click", resetAll);
+
+// ============================================================
+// BANTU PILIH
+// Sebelum katalog tampil, pengunjung ditanya dulu.
+// "Belum" → pilih harga → katalog otomatis cari "pilihan mimin",
+// sesuai harga yang dipilih, urut termurah.
+// Laptop pilihan mimin = nama di products.js yang ada (PILIHAN MIMIN).
+// ============================================================
+const PILIHAN_MIMIN = "pilihan mimin";
+const GUIDE_KEY     = "pt_bantu_pilih_selesai";
+
+const guide       = document.getElementById("guide");
+const guideStep1  = document.getElementById("guideStep1");
+const guideStep2  = document.getElementById("guideStep2");
+const guideNotice = document.getElementById("guideNotice");
+
+function isPilihanMimin(p) {
+  return p.name.toLowerCase().includes(PILIHAN_MIMIN);
+}
+
+function buildGuidePrices() {
+  document.getElementById("guidePrices").innerHTML = PRICE_RANGES.map((r, i) => {
+    const jumlah = PRODUCTS.filter(p => !p.sold_out && isPilihanMimin(p) && p.price >= r.min && p.price <= r.max).length;
+    const nama   = i === 0 ? "Semua Harga" : r.short;
+    return `
+      <button class="guide-price${i === 0 ? " guide-price-all" : ""}" type="button" data-index="${i}" ${jumlah ? "" : "disabled"}>
+        <span class="guide-price-name">${nama}</span>
+        <span class="guide-price-count">${jumlah ? `${jumlah} laptop` : "Belum ada"}</span>
+      </button>`;
+  }).join("");
+}
+
+function showStep(n) {
+  guideStep1.hidden = n !== 1;
+  guideStep2.hidden = n !== 2;
+}
+
+function openGuide() {
+  showStep(1);
+  hideGuideNotice();
+  document.body.classList.add("guide-open");
+  guide.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function closeGuide(scrollToProducts) {
+  document.body.classList.remove("guide-open");
+  try { sessionStorage.setItem(GUIDE_KEY, "1"); } catch (e) {}
+  if (scrollToProducts) {
+    const target = document.querySelector(".products-section");
+    const header = document.querySelector(".site-header").offsetHeight;
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - header - 8, behavior: "smooth" });
+  }
+}
+
+function hideGuideNotice() {
+  guideNotice.hidden = true;
+}
+
+document.getElementById("guideUdah").addEventListener("click", () => {
+  trackGuide("udah");
+  closeGuide(false);
 });
+
+document.getElementById("guideBelum").addEventListener("click", () => {
+  trackGuide("belum");
+  showStep(2);
+});
+
+document.getElementById("guideBack").addEventListener("click", () => showStep(1));
+
+document.getElementById("guidePrices").addEventListener("click", e => {
+  const btn = e.target.closest(".guide-price");
+  if (!btn || btn.disabled) return;
+  const index = parseInt(btn.dataset.index, 10);
+
+  // Mulai dari katalog bersih, lalu pasang filter bantu pilih
+  resetAll();
+  setPrice(index);
+  setSort("asc");
+  setSearch(PILIHAN_MIMIN);
+  applyFilters();
+
+  const budget = index === 0 ? "semua budget" : `budget ${PRICE_RANGES[index].short}`;
+  document.getElementById("guideNoticeText").innerHTML = `Pilihan mimin untuk <strong>${budget}</strong>, urut dari termurah`;
+  guideNotice.hidden = false;
+
+  trackGuide("pilih_harga", PRICE_RANGES[index].label);
+  closeGuide(true);
+});
+
+document.getElementById("guideNoticeReset").addEventListener("click", resetAll);
+document.getElementById("guideReopen").addEventListener("click", openGuide);
+
+// Kalau pengunjung ubah filter sendiri, keterangan bantu pilih disembunyikan
+searchInput.addEventListener("input", hideGuideNotice);
+["categoryTabs", "priceMenu", "sortMenu", "tierMenu"].forEach(id => {
+  document.getElementById(id).addEventListener("click", e => {
+    if (e.target.closest(".tab, .price-option")) hideGuideNotice();
+  });
+});
+
+function trackGuide(langkah, harga) {
+  if (typeof gtag !== "function") return;
+  gtag("event", "bantu_pilih", harga ? { langkah, harga } : { langkah });
+}
 
 // ── GA4 ──────────────────────────────────────────────────────
 function trackClick(tombol, namaLaptop, kategori, harga) {
@@ -326,4 +458,10 @@ function trackClick(tombol, namaLaptop, kategori, harga) {
 
 // ── Init ─────────────────────────────────────────────────────
 buildPriceMenu();
+buildGuidePrices();
 applyFilters();
+
+// Sudah pernah jawab di sesi ini (misal balik dari halaman Toko)? Langsung katalog.
+try {
+  if (sessionStorage.getItem(GUIDE_KEY)) document.body.classList.remove("guide-open");
+} catch (e) {}
