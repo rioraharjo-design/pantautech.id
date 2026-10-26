@@ -841,13 +841,18 @@ body.guide-open .products-section { display: none; }
 
 .guide-actions {
   display: grid;
-  gap: 8px;
+  gap: 10px;
   margin-top: 18px;
 }
 
 .guide-btn {
-  height: 48px;
-  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 56px;
+  padding: 10px 16px;
   border-radius: 12px;
   font-size: 15px;
   font-weight: 700;
@@ -856,6 +861,9 @@ body.guide-open .products-section { display: none; }
 }
 
 .guide-btn:active { transform: scale(.98); }
+
+.guide-btn-title { font-size: 16px; font-weight: 800; line-height: 1.2; }
+.guide-btn-sub   { font-size: 12.5px; font-weight: 500; line-height: 1.3; opacity: .8; }
 
 .guide-btn-ghost {
   background: transparent;
@@ -993,7 +1001,7 @@ body.guide-open .products-section { display: none; }
   .guide { padding-top: 12px; }
   .guide-step { padding: 30px 28px 26px; }
   .guide-title { font-size: 26px; }
-  .guide-actions { grid-template-columns: 1fr 1.6fr; }
+  .guide-actions { grid-template-columns: 1fr 1fr; }
   .guide-prices { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
