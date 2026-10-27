@@ -16,7 +16,8 @@
  * ALTERNATIF UNTUK LAPTOP HABIS (opsional, di products.js):
  *   alternatif: 2026102404,            → id laptop pengganti
  *   alternatif_alasan: "Lebih murah…", → alasan singkat (boleh dikosongkan)
- *   Kalau diisi, kartu yang habis dapat tombol "Lihat alternatifnya".
+ *   Kalau diisi, kartu yang habis dapat tombol "Lihat alternatifnya",
+ *   yang membuka perbandingan laptop habis vs penggantinya.
  *
  * Opsional: field usecase: ["gaming", "teknik"] di products.js
  * juga bisa dipakai, hasilnya sama.
@@ -151,7 +152,6 @@ function renderCard(p, isSoldOut = false) {
           ${isSoldOut && findAlternatif(p)
             ? `<button type="button" class="btn btn-alt" onclick="lihatAlternatif(${p.id})">
                 Lihat alternatifnya
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
               </button>`
             : ""
           }
@@ -469,8 +469,8 @@ function trackGuide(langkah, harga) {
 
 // ============================================================
 // ALTERNATIF UNTUK LAPTOP HABIS
-// Klik "Lihat alternatifnya" → halaman discroll ke kartu pengganti,
-// kartunya menyala sebentar dan diberi keterangan "Pengganti …".
+// Klik "Lihat alternatifnya" → muncul jendela perbandingan:
+// laptop yang habis (kiri) vs penggantinya (kanan), di layar yang sama.
 // ============================================================
 function findAlternatif(p) {
   if (p.alternatif == null) return null;
@@ -478,38 +478,116 @@ function findAlternatif(p) {
   return alt && !alt.sold_out ? alt : null;   // pengganti yang habis juga diabaikan
 }
 
+// Selisih harga: "+110rb", "lebih murah 520rb", "+1,1jt", "harga sama"
+function selisihHarga(dari, ke) {
+  const d = ke - dari;
+  if (Math.abs(d) < 10_000) return { teks: "Harga sama", cls: "same" };
+  const abs  = Math.abs(d);
+  const nilai = abs >= JT
+    ? (Math.round(abs / 100_000) / 10).toString().replace(".", ",") + "jt"
+    : Math.round(abs / 1000) + "rb";
+  return d > 0 ? { teks: `+${nilai}`, cls: "up" } : { teks: `Lebih murah ${nilai}`, cls: "down" };
+}
+
+function compareSide(p, isAlt) {
+  const meta = CATEGORY_META[p.category] || { label: p.category, cls: "" };
+  const tier = p.tier && TIER_META[p.tier] ? TIER_META[p.tier] : null;
+  const info = parseProduct(p);
+  return `
+    <div class="cmp-side${isAlt ? " cmp-side-alt" : " cmp-side-habis"}">
+      <p class="cmp-label">${isAlt ? "Alternatifnya" : "Stok habis"}</p>
+      <div class="cmp-img">
+        <img src="${p.image}" alt="${info.name}" />
+        ${tier ? `<span class="tier-badge ${tier.cls}">${tier.label}</span>` : ""}
+        <span class="badge ${meta.cls}">${meta.label}</span>
+      </div>
+      <h3 class="cmp-name">${info.name}</h3>
+      <p class="cmp-price">${formatRupiah(p.price)}</p>
+    </div>`;
+}
+
+function ensureCompareModal() {
+  let el = document.getElementById("cmpOverlay");
+  if (el) return el;
+  document.body.insertAdjacentHTML("beforeend", `
+    <div class="cmp-overlay" id="cmpOverlay" aria-hidden="true">
+      <div class="cmp-box" role="dialog" aria-modal="true" aria-labelledby="cmpTitle">
+        <div class="cmp-head">
+          <h2 class="cmp-title" id="cmpTitle">Bandingin dulu</h2>
+          <button class="cmp-close" type="button" aria-label="Tutup">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="18" height="18" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="cmp-body" id="cmpBody"></div>
+      </div>
+    </div>`);
+  el = document.getElementById("cmpOverlay");
+  el.addEventListener("click", e => {
+    if (e.target === el || e.target.closest(".cmp-close")) closeCompare();
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeCompare(); });
+  return el;
+}
+
 function lihatAlternatif(idHabis) {
   const habis = PRODUCTS.find(x => String(x.id) === String(idHabis));
   const alt   = habis && findAlternatif(habis);
   if (!alt) return;
 
-  // Kalau kartu pengganti lagi tersembunyi oleh filter, tampilkan semua laptop dulu
-  let card = document.getElementById("produk-" + alt.id);
-  if (!card) {
-    resetAll();
-    card = document.getElementById("produk-" + alt.id);
-    if (!card) return;
+  const overlay = ensureCompareModal();
+  const selisih = selisihHarga(habis.price, alt.price);
+  const altName = alt.name.replace(/'/g, "\\'");
+
+  // Spek dibandingkan baris per baris; yang beda ditebalkan di sisi alternatif
+  const rows = Math.max(habis.specs.length, alt.specs.length);
+  let specRows = "";
+  for (let i = 0; i < rows; i++) {
+    const a = habis.specs[i] || "", b = alt.specs[i] || "";
+    const beda = a.trim().toLowerCase() !== b.trim().toLowerCase();
+    specRows += `
+      <div class="cmp-row${beda ? " cmp-row-diff" : ""}">
+        <span>${a}</span><span>${b}</span>
+      </div>`;
   }
 
-  // Bersihkan sorotan sebelumnya
-  document.querySelectorAll(".card-alt-target").forEach(c => c.classList.remove("card-alt-target"));
-  document.querySelectorAll(".alt-note").forEach(n => n.remove());
+  document.getElementById("cmpBody").innerHTML = `
+    <div class="cmp-grid">
+      ${compareSide(habis, false)}
+      ${compareSide(alt, true)}
+    </div>
+    <p class="cmp-diff cmp-diff-${selisih.cls}">${selisih.teks}</p>
+    <div class="cmp-specs">${specRows}</div>
+    ${habis.alternatif_alasan ? `
+      <div class="cmp-reason">
+        <strong>Kenapa ini?</strong>
+        <span>${habis.alternatif_alasan}</span>
+      </div>` : ""}
+    <div class="cmp-actions">
+      <a href="${alt.videoUrl}" target="_blank" rel="noopener" class="btn btn-video"
+        onclick="trackClick('video', '${altName}', '${alt.category}', ${alt.price})">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+        Video
+      </a>
+      <a href="${alt.shopUrl}" target="_blank" rel="noopener" class="btn btn-shop"
+        onclick="trackClick('shopee', '${altName}', '${alt.category}', ${alt.price})">Beli di Shopee</a>
+    </div>`;
 
-  const namaHabis = parseProduct(habis).name;
-  const alasan    = habis.alternatif_alasan ? `<span>${habis.alternatif_alasan}</span>` : "";
-  card.querySelector(".card-body").insertAdjacentHTML("afterbegin",
-    `<p class="alt-note"><strong>Pengganti ${namaHabis}</strong>${alasan}</p>`);
-
-  const header = document.querySelector(".site-header").offsetHeight;
-  window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - header - 16, behavior: "smooth" });
-
-  // restart animasi kalau diklik berkali-kali
-  void card.offsetWidth;
-  card.classList.add("card-alt-target");
+  overlay.classList.add("open");
+  overlay.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  overlay.querySelector(".cmp-box").scrollTop = 0;
 
   if (typeof gtag === "function") {
     gtag("event", "klik_alternatif", { dari: habis.name, ke: alt.name });
   }
+}
+
+function closeCompare() {
+  const overlay = document.getElementById("cmpOverlay");
+  if (!overlay || !overlay.classList.contains("open")) return;
+  overlay.classList.remove("open");
+  overlay.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
 }
 
 // ── GA4 ──────────────────────────────────────────────────────

@@ -731,30 +731,195 @@ button { font-family: inherit; }
 }
 .btn-alt:hover { background: rgba(57, 255, 126, .2); }
 
-/* Kartu pengganti yang disorot */
-.card-alt-target {
-  border-color: var(--neon);
-  animation: alt-glow 2.4s ease-out;
+/* ── Jendela perbandingan: habis vs alternatif ──────────── */
+.cmp-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, .8);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
 }
 
-@keyframes alt-glow {
-  0%, 30% { box-shadow: 0 0 0 3px var(--neon), 0 0 32px rgba(57, 255, 126, .6); }
-  100%    { box-shadow: 0 0 0 1px var(--neon), 0 0 0 rgba(57, 255, 126, 0); }
+.cmp-overlay.open { opacity: 1; pointer-events: auto; }
+
+.cmp-box {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid rgba(57, 255, 126, .3);
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .8), 0 0 40px rgba(57, 255, 126, .1);
+  transform: translateY(10px);
+  transition: transform .22s cubic-bezier(.2, .8, .2, 1);
 }
 
-.alt-note {
+.cmp-overlay.open .cmp-box { transform: translateY(0); }
+
+.cmp-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 14px 12px 18px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.cmp-title {
+  font-stretch: 125%;
+  font-weight: 900;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.cmp-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  background: var(--surface-2);
+  border: 1px solid var(--line-2);
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+}
+.cmp-close:hover { border-color: var(--white); }
+
+.cmp-body { padding: 14px 14px 18px; }
+
+.cmp-grid {
   display: grid;
-  gap: 2px;
-  margin: -2px 0 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cmp-side { min-width: 0; }
+
+.cmp-label {
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--muted);
+}
+.cmp-side-alt .cmp-label { color: var(--neon); }
+
+.cmp-img {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line-2);
+}
+.cmp-img img { width: 100%; height: 100%; object-fit: cover; }
+.cmp-img .tier-badge { top: 6px; left: 6px; font-size: 9.5px; padding: 3px 6px; }
+.cmp-img .badge      { top: 6px; right: 6px; font-size: 9.5px; padding: 3px 7px; }
+
+.cmp-side-alt .cmp-img { border-color: var(--neon); box-shadow: 0 0 18px rgba(57, 255, 126, .25); }
+.cmp-side-habis .cmp-img img { filter: grayscale(1); opacity: .6; }
+
+.cmp-name {
+  margin-top: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--white);
+}
+
+.cmp-price {
+  margin-top: 4px;
+  font-stretch: 118%;
+  font-weight: 900;
+  font-size: 15px;
+  color: var(--neon);
+}
+.cmp-side-habis .cmp-price { color: var(--muted); text-decoration: line-through; }
+
+/* Selisih harga, tepat di bawah kolom kanan */
+.cmp-diff {
+  width: fit-content;
+  margin: 8px 0 0 auto;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.cmp-diff-down { background: var(--neon-soft); color: var(--neon); border: 1px solid rgba(57, 255, 126, .5); }
+.cmp-diff-up   { background: rgba(255, 140, 66, .12); color: var(--bekas); border: 1px solid rgba(255, 140, 66, .5); }
+.cmp-diff-same { background: var(--surface-2); color: var(--text); border: 1px solid var(--line-2); }
+
+/* Spek baris per baris */
+.cmp-specs {
+  margin-top: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cmp-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   padding: 8px 10px;
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: var(--muted);
+}
+.cmp-row + .cmp-row { border-top: 1px solid var(--line); }
+.cmp-row span { min-width: 0; overflow-wrap: anywhere; }
+.cmp-row-diff span:last-child { color: var(--white); font-weight: 700; }
+
+.cmp-reason {
+  display: grid;
+  gap: 3px;
+  margin-top: 12px;
+  padding: 10px 12px;
   background: var(--neon-soft);
   border: 1px solid rgba(57, 255, 126, .4);
-  border-radius: 9px;
-  font-size: 11.5px;
-  line-height: 1.35;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.4;
   color: var(--text);
 }
-.alt-note strong { color: var(--neon); font-size: 12px; }
+.cmp-reason strong { color: var(--neon); font-size: 12px; }
+
+.cmp-actions {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 8px;
+  margin-top: 14px;
+}
+.cmp-actions .btn { height: 42px; font-size: 14px; }
+
+@media (max-width: 560px) {
+  /* Di HP muncul dari bawah */
+  .cmp-overlay { align-items: flex-end; padding: 0; }
+  .cmp-box {
+    max-width: none;
+    max-height: 92vh;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+    transform: translateY(100%);
+  }
+  .cmp-body { padding-bottom: calc(18px + env(safe-area-inset-bottom)); }
+}
 .card-sold-out .card-img { filter: grayscale(1); }
 .card-sold-out .card-price { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 1.5px; }
 
