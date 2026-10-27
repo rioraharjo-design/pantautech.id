@@ -662,7 +662,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/7KxYPerWvD",
+    shopUrl:  "https://s.shopee.co.id/7KxyhV6tpI",
     image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
   },
 
@@ -1358,6 +1358,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
+    alternatif: 2026102312,
+    alternatif_alasan: "Prosesor sama (i5-1245U), lebih murah 100rb",
     price: 5336000,
     specs: [
       "Intel Core i5-1245U",
@@ -1460,6 +1462,8 @@ const PRODUCTS = [
   category: "bekas",
   tier: "S",
   sold_out: true,
+  alternatif: 2132423235235,
+  alternatif_alasan: "GPU lebih kenceng (3050 Ti), RAM 16GB, +860rb",
   price: 9400000,
   specs: [
     "Intel Core i5-12450H",
@@ -1477,6 +1481,8 @@ const PRODUCTS = [
   category: "bekas",
   tier: "S",
   sold_out: true,
+  alternatif: 2325323527,
+  alternatif_alasan: "GPU setara (1660 Ti), lebih murah 100rb",
   price: 8700000,
   specs: [
     "Intel Core i5-11400H",
@@ -1494,6 +1500,8 @@ const PRODUCTS = [
   category: "bekas",
   tier: "S",
   sold_out: true,
+  alternatif: 23252338,
+  alternatif_alasan: "Harga hampir sama, GPU setara",
   price: 7252000,
   specs: [
     "AMD Ryzen 5 5600H",
@@ -1581,6 +1589,8 @@ const PRODUCTS = [
   category: "global",
   tier: "S",
   sold_out: true,
+  alternatif: 2026102009,
+  alternatif_alasan: "Model sama, versi yang masih ada",
   price: 18619000,
   specs: [
     "Intel Core 5-210H",
@@ -1633,6 +1643,8 @@ const PRODUCTS = [
   category: "global",
   tier: "S",
   sold_out: true,
+  alternatif: 2026102101,
+  alternatif_alasan: "Harga hampir sama, layar OLED",
   price: 19300000,
   specs: [
     "Intel Ultra 7 258V",
@@ -1651,6 +1663,8 @@ const PRODUCTS = [
   category: "global",
   tier: "S",
   sold_out: true,
+  alternatif: 190000001,
+  alternatif_alasan: "Harga sama, GPU sama (RTX 5050)",
   price: 20139000,
   specs: [
     "AMD Ryzen 5 240",
@@ -1669,6 +1683,8 @@ const PRODUCTS = [
   category: "global",
   tier: "S",
   sold_out: true,
+  alternatif: 180000002,
+  alternatif_alasan: "Harga sama, seri Expertbook yang lebih baru",
   price: 20399000,
   specs: [
     "Intel Core Ultra 7 258V",
@@ -1688,6 +1704,8 @@ const PRODUCTS = [
     category: "global",
     tier: "A+",
     sold_out: true,
+    alternatif: 23235250,
+    alternatif_alasan: "Model sama, versi yang masih ada",
     price: 12499000,
     specs: [
       "Intel Core 5-210H",
@@ -1706,6 +1724,8 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
+    alternatif: 221,
+    alternatif_alasan: "Harga dekat, iGPU setara",
     price: 13300000,
     specs: [
       "AMD Ryzen 7 170",
@@ -1742,6 +1762,8 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
+    alternatif: 222352529,
+    alternatif_alasan: "Model dan spek sama",
     price: 14800000,
     specs: [
       "Intel Core 5-210H",
@@ -1811,6 +1833,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A",
     sold_out: true,
+    alternatif: 213242321235240,
+    alternatif_alasan: "Harga sama, GPU setara, udah SSD",
     price: 5520000,
     specs: [
       "Intel Core i7-7700HQ",
@@ -1828,6 +1852,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A+",
     sold_out: true,
+    alternatif: 2132423235239,
+    alternatif_alasan: "Harga hampir sama, CPU lebih kenceng, GPU sama",
     price: 6250000,
     specs: [
       "Intel Core i7-7700HQ",
@@ -1845,6 +1871,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A+",
     sold_out: true,
+    alternatif: 23252338,
+    alternatif_alasan: "Harga hampir sama, CPU lebih baru",
     price: 7200000,
     specs: [
       "Intel Core i7-8750H",
@@ -1862,6 +1890,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
+    alternatif: 2325323527,
+    alternatif_alasan: "GPU lebih kenceng (1660 Ti), lebih murah 40rb",
     price: 8640000,
     specs: [
       "Intel Core i7-12650H",
@@ -1879,6 +1909,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
+    alternatif: 2132423235235,
+    alternatif_alasan: "GPU lebih kenceng (3050 Ti), RAM 16GB, +1jt",
     price: 9216000,
     specs: [
       "Intel Core i5-12500H",
@@ -1896,6 +1928,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
+    alternatif: 2132423235235,
+    alternatif_alasan: "GPU sama (3050 Ti), +370rb",
     price: 9888000,
     specs: [
       "Intel Core i7-11800H",
@@ -1964,6 +1998,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A+",
     sold_out: true,
+    alternatif: 2026102404,
+    alternatif_alasan: "Sama-sama dual core, layar lebih lega 14 inci, cuma +110rb",
     price: 2700000,
     specs: [
       "Intel Core i3 Gen 8",
@@ -1997,6 +2033,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A",
     sold_out: true,
+    alternatif: 2026102404,
+    alternatif_alasan: "Lebih murah 90rb, RAM 8GB dan SSD 256GB",
     price: 2900000,
     specs: [
       "AMD Ryzen 5 Pro 2500U",
@@ -2111,6 +2149,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A",
     sold_out: true,
+    alternatif: 2026102311,
+    alternatif_alasan: "Lebih murah 570rb tapi udah i7 gen 8",
     price: 3960000,
     specs: [
       "Intel Core i5-8250U",
@@ -2128,6 +2168,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A",
     sold_out: true,
+    alternatif: 2026102311,
+    alternatif_alasan: "Lebih murah 520rb tapi udah i7 gen 8",
     price: 3910000,
     specs: [
       "Intel Core i5-8250U",
@@ -2145,6 +2187,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A+",
     sold_out: true,
+    alternatif: 2026102304,
+    alternatif_alasan: "Model sama, versi baru lebih murah",
     price: 4436000,
     specs: [
       "AMD Ryzen 5 3500U",
@@ -2162,6 +2206,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A",
     sold_out: true,
+    alternatif: 2026102305,
+    alternatif_alasan: "Model sama, versi baru lebih murah",
     price: 4235000,
     specs: [
       "Intel Core i5-10310U",
@@ -2181,6 +2227,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "B+",
     sold_out: true,
+    alternatif: 5,
+    alternatif_alasan: "P52 lebih baru dan lebih kenceng, +660rb",
     price: 4726000,
     specs: [
       "i7-7700HQ",
@@ -2264,6 +2312,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "B+",
     sold_out: true,
+    alternatif: 213242321235240,
+    alternatif_alasan: "Lebih murah 190rb, GPU setingkat di bawah",
     price: 5712000,
     specs: [
       "Intel Core i7-8750H",
@@ -2364,6 +2414,8 @@ const PRODUCTS = [
     category: "odm",
     tier: "A+",
     sold_out: true,
+    alternatif: 6,
+    alternatif_alasan: "Harga sama, sama-sama Ryzen 5",
     price: 6620000,
     specs: [
       "AMD Ryzen 5 6600H",
@@ -2381,6 +2433,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A+",
     sold_out: true,
+    alternatif: 23252338,
+    alternatif_alasan: "GPU lebih kenceng (1650 Ti), +1,1jt",
     price: 6305000,
     specs: [
       "Intel Core i5-9300H",
@@ -2416,6 +2470,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
+    alternatif: 18,
+    alternatif_alasan: "Prosesor sama (Ryzen 7 5850U), lebih murah 360rb, RAM 16GB",
     price: 6887000,
     specs: [
       "AMD Ryzen 7 Pro 5850U",
@@ -2433,6 +2489,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
+    alternatif: 36,
+    alternatif_alasan: "GPU jauh lebih kenceng (P4000), +870rb",
     price: 6935000,
     specs: [
       "i7-9850H",
@@ -2450,6 +2508,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A+",
     sold_out: true,
+    alternatif: 23252338,
+    alternatif_alasan: "GPU sama (1650 Ti), +250rb",
     price: 7152000,
     specs: [
       "Intel Core i7-9750H",
@@ -2499,6 +2559,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
+    alternatif: 2234231,
+    alternatif_alasan: "Lebih murah 910rb, tetap i7 + RAM 32GB",
     price: 7500000,
     specs: [
       "Intel Core i7-1270P",
@@ -2613,6 +2675,8 @@ const PRODUCTS = [
     category: "odm",
     tier: "A+",
     sold_out: true,
+    alternatif: 2234320,
+    alternatif_alasan: "Sama-sama ODM, RAM 16GB, +300rb",
     price: 8207000,
     specs: [
       "Intel Ultra 5 125H",
@@ -2646,6 +2710,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A+",
     sold_out: true,
+    alternatif: 2325323527,
+    alternatif_alasan: "GPU lebih kenceng (1660 Ti), +150rb",
     price: 8448000,
     specs: [
       "AMD Ryzen 5 5500H",
@@ -2663,6 +2729,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
+    alternatif: 170,
+    alternatif_alasan: "GPU lebih kenceng (T2000), +460rb",
     price: 8544000,
     specs: [
       "i7-10850H",
@@ -2680,6 +2748,8 @@ const PRODUCTS = [
     category: "global",
     tier: "A+",
     sold_out: true,
+    alternatif: 28,
+    alternatif_alasan: "RAM 16GB, prosesor lebih kenceng, +770rb",
     price: 9438000,
     specs: [
       "Ryzen 5 150",
@@ -2780,6 +2850,8 @@ const PRODUCTS = [
     category: "odm",
     tier: "S",
     sold_out: true,
+    alternatif: 3878074,
+    alternatif_alasan: "Sama-sama Axioo Hype 7, lebih murah 470rb",
     price: 10128000,
     specs: [
       "AMD Ryzen 7 8745HS",
@@ -2798,6 +2870,8 @@ const PRODUCTS = [
     category: "global",
     tier: "A+",
     sold_out: true,
+    alternatif: 28,
+    alternatif_alasan: "Harga sama, RAM 16GB, layar lebih bagus",
     price: 10224000,
     specs: [
       "Intel Core i7-13620H",
@@ -2831,6 +2905,8 @@ const PRODUCTS = [
     category: "bekas",
     tier: "A",
     sold_out: true,
+    alternatif: 25235234,
+    alternatif_alasan: "GPU setara (3050 6GB), +450rb",
     price: 10224000,
     specs: [
       "AMD Ryzen 5 4600H",
@@ -2849,6 +2925,8 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
+    alternatif: 110,
+    alternatif_alasan: "Prosesor Intel (aplikasi lebih aman), +1,1jt",
     price: 10463000,
     specs: [
       "Snapdragon X Plus",
@@ -2882,6 +2960,8 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
+    alternatif: 110,
+    alternatif_alasan: "Harga dekat, RAM 16GB",
     price: 10880000,
     specs: [
       "AMD Ryzen AI 5 340",
@@ -2933,6 +3013,8 @@ const PRODUCTS = [
     category: "global",
     tier: "A",
     sold_out: true,
+    alternatif: 110,
+    alternatif_alasan: "Harga sama, RAM 16GB, iGPU Arc jauh lebih kenceng",
     price: 11553000,
     specs: [
       "Intel Core i7-13620H",
@@ -3050,6 +3132,8 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
+    alternatif: 221,
+    alternatif_alasan: "Ultra 5 generasi lebih baru, +1,7jt",
     price: 13014000,
     specs: [
       "Intel Ultra 5 225H",
@@ -3067,6 +3151,8 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
+    alternatif: 221,
+    alternatif_alasan: "Harga dekat, prosesor lebih baru",
     price: 13994000,
     specs: [
       "AMD Ryzen 7-7840U",
@@ -3084,6 +3170,8 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
+    alternatif: 2026102007,
+    alternatif_alasan: "GPU sama (RTX 4050), +1,7jt",
     price: 14439000,
     specs: [
       "Intel Core i5-13420H",
@@ -3118,6 +3206,8 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
+    alternatif: 221,
+    alternatif_alasan: "Harga hampir sama, prosesor lebih baru",
     price: 14274000,
     specs: [
       "AMD Ryzen 7 8840HS",
@@ -3135,6 +3225,8 @@ const PRODUCTS = [
     category: "global",
     tier: "A+",
     sold_out: true,
+    alternatif: 221,
+    alternatif_alasan: "Harga hampir sama",
     price: 14446000,
     specs: [
       "Intel Core 9 270H",

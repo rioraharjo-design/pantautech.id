@@ -13,6 +13,11 @@
  *
  *   (PILIHAN MIMIN) → label hijau + masuk fitur "Bantu pilihin"
  *
+ * ALTERNATIF UNTUK LAPTOP HABIS (opsional, di products.js):
+ *   alternatif: 2026102404,            → id laptop pengganti
+ *   alternatif_alasan: "Lebih murah…", → alasan singkat (boleh dikosongkan)
+ *   Kalau diisi, kartu yang habis dapat tombol "Lihat alternatifnya".
+ *
  * Opsional: field usecase: ["gaming", "teknik"] di products.js
  * juga bisa dipakai, hasilnya sama.
  * ============================================================
@@ -119,7 +124,7 @@ function renderCard(p, isSoldOut = false) {
     ? `<p class="card-highlight">${info.highlights.join(" / ")}</p>` : "";
 
   return `
-    <article class="card${isSoldOut ? " card-sold-out" : ""}">
+    <article class="card${isSoldOut ? " card-sold-out" : ""}" id="produk-${p.id}">
       <div class="card-img-wrap">
         <img src="${p.image}" alt="${info.name}" class="card-img" loading="lazy" />
         ${tier ? `<span class="tier-badge ${tier.cls}">${tier.label}</span>` : ""}
@@ -142,6 +147,13 @@ function renderCard(p, isSoldOut = false) {
             ? `<span class="btn btn-habis">Stok Habis</span>`
             : `<a href="${p.shopUrl}" target="_blank" rel="noopener" class="btn btn-shop"
                 onclick="trackClick('shopee', '${safeName}', '${p.category}', ${p.price})">Shopee</a>`
+          }
+          ${isSoldOut && findAlternatif(p)
+            ? `<button type="button" class="btn btn-alt" onclick="lihatAlternatif(${p.id})">
+                Lihat alternatifnya
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>`
+            : ""
           }
         </div>
       </div>
@@ -453,6 +465,51 @@ document.getElementById("guideReopen").addEventListener("click", openGuide);
 function trackGuide(langkah, harga) {
   if (typeof gtag !== "function") return;
   gtag("event", "bantu_pilih", harga ? { langkah, harga } : { langkah });
+}
+
+// ============================================================
+// ALTERNATIF UNTUK LAPTOP HABIS
+// Klik "Lihat alternatifnya" → halaman discroll ke kartu pengganti,
+// kartunya menyala sebentar dan diberi keterangan "Pengganti …".
+// ============================================================
+function findAlternatif(p) {
+  if (p.alternatif == null) return null;
+  const alt = PRODUCTS.find(x => String(x.id) === String(p.alternatif));
+  return alt && !alt.sold_out ? alt : null;   // pengganti yang habis juga diabaikan
+}
+
+function lihatAlternatif(idHabis) {
+  const habis = PRODUCTS.find(x => String(x.id) === String(idHabis));
+  const alt   = habis && findAlternatif(habis);
+  if (!alt) return;
+
+  // Kalau kartu pengganti lagi tersembunyi oleh filter, tampilkan semua laptop dulu
+  let card = document.getElementById("produk-" + alt.id);
+  if (!card) {
+    resetAll();
+    card = document.getElementById("produk-" + alt.id);
+    if (!card) return;
+  }
+
+  // Bersihkan sorotan sebelumnya
+  document.querySelectorAll(".card-alt-target").forEach(c => c.classList.remove("card-alt-target"));
+  document.querySelectorAll(".alt-note").forEach(n => n.remove());
+
+  const namaHabis = parseProduct(habis).name;
+  const alasan    = habis.alternatif_alasan ? `<span>${habis.alternatif_alasan}</span>` : "";
+  card.querySelector(".card-body").insertAdjacentHTML("afterbegin",
+    `<p class="alt-note"><strong>Pengganti ${namaHabis}</strong>${alasan}</p>`);
+
+  const header = document.querySelector(".site-header").offsetHeight;
+  window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - header - 16, behavior: "smooth" });
+
+  // restart animasi kalau diklik berkali-kali
+  void card.offsetWidth;
+  card.classList.add("card-alt-target");
+
+  if (typeof gtag === "function") {
+    gtag("event", "klik_alternatif", { dari: habis.name, ke: alt.name });
+  }
 }
 
 // ── GA4 ──────────────────────────────────────────────────────
