@@ -457,7 +457,7 @@ const PRODUCTS = [
   // Tier S: i7 gen 12 + bodi premium seri 7, 400 ribu lebih murah dari Latitude 5430 i7 (6,59jt, S) walau RAM-nya 16GB bukan 32GB
   {
     id: 2026102315,
-    name: "Dell Latitude 7330 i7",
+    name: "Dell Latitude 7330 i7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 6790000,
