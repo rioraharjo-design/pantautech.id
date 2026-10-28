@@ -264,7 +264,7 @@ const PRODUCTS = [
     tier: "A+",
     price: 6100000,
     specs: [
-      "Intel Core i5-1235U/1245U",
+      "Intel Core i5-1245U",
       "Intel Iris Xe 80EU",
       "RAM 16GB",
       "SSD 256GB"
@@ -460,11 +460,11 @@ const PRODUCTS = [
     name: "Dell Latitude 7330 i7",
     category: "bekas",
     tier: "S",
-    price: 6190000,
+    price: 6790000,
     specs: [
       "Intel Core i7-1265U",
       "Intel Iris Xe 96EU",
-      "RAM 16GB",
+      "RAM 32GB",
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
@@ -1429,6 +1429,7 @@ const PRODUCTS = [
   name: "Dell Latitude 5430 i7",
   category: "bekas",
   tier: "S",
+  sold_out: true,
   price: 6590000,
   specs: [
     "Intel Core i7-1255U",
