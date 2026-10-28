@@ -36,10 +36,10 @@ const PRODUCTS = [
 
         {
     id: 11,
-    name: "HP Elitebook 845 G8 (HARGA NAIK DRASTIS)",
+    name: "HP Elitebook 845 G8",
     category: "bekas",
-    tier: "A+",
-    price: 6550000,
+    tier: "S",
+    price: 5800000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -47,7 +47,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/BURbWiu1o",
+    shopUrl:  "https://s.shopee.co.id/3qOEFQz0ds",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
