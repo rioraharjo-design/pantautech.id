@@ -938,6 +938,41 @@ button { font-family: inherit; }
   letter-spacing: .02em;
 }
 
+/* Judul bagian di mode pilihan mimin (selebar grid) */
+.section-head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line-2);
+}
+
+.section-head h2 {
+  font-stretch: 125%;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.section-head span { font-size: 13px; color: var(--muted); }
+
+.section-head-mimin { margin-top: 0; padding-top: 0; border-top: none; }
+.section-head-mimin h2 { color: var(--neon); text-shadow: 0 0 14px rgba(57, 255, 126, .35); }
+
+.section-empty {
+  grid-column: 1 / -1;
+  padding: 14px;
+  border: 1px dashed var(--line-2);
+  border-radius: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 /* Kosong */
 .empty-state {
   text-align: center;

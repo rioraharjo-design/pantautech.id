@@ -31,6 +31,7 @@ let activePriceMax = Infinity;
 let activeTier     = "semua";
 let activeSort     = "default";
 let searchQuery    = "";
+let guideMode      = false;   // true setelah pengunjung pakai "Lihat Pilihan Mimin"
 
 // ── Format harga ─────────────────────────────────────────────
 function formatRupiah(angka) {
@@ -181,6 +182,14 @@ function sortProducts(arr) {
   return arr; // default: urutan di products.js
 }
 
+function sectionHead(judul, info, isMimin) {
+  return `
+    <div class="section-head${isMimin ? " section-head-mimin" : ""}">
+      <h2>${judul}</h2>
+      <span>${info}</span>
+    </div>`;
+}
+
 function applyFilters() {
   const grid  = document.getElementById("productsGrid");
   const empty = document.getElementById("emptyState");
@@ -203,6 +212,36 @@ function applyFilters() {
   }
 
   const all = [...aktif.map(p => renderCard(p, false)), ...habis.map(p => renderCard(p, true))];
+
+  // Mode pilihan mimin: semua laptop di budget itu tetap tampil,
+  // tapi dipisah jadi "Pilihan Mimin" di atas dan "Laptop lain" di bawah.
+  if (guideMode && activeCategory !== "habis" && all.length) {
+    const mimin = aktif.filter(isPilihanMimin);
+    const lain  = aktif.filter(p => !isPilihanMimin(p));
+    const budget = budgetText();
+
+    let html = sectionHead("Pilihan Mimin", `${mimin.length} laptop`, true);
+    html += mimin.length
+      ? mimin.map(p => renderCard(p, false)).join("")
+      : `<p class="section-empty">Belum ada pilihan mimin untuk filter ini.</p>`;
+
+    if (lain.length || habis.length) {
+      html += sectionHead(`Laptop lain di ${budget}`,
+        `${lain.length} laptop${habis.length ? `, ${habis.length} habis` : ""}`, false);
+      html += lain.map(p => renderCard(p, false)).join("");
+      html += habis.map(p => renderCard(p, true)).join("");
+    }
+
+    grid.innerHTML = html;
+    empty.style.display = "none";
+    if (count) {
+      count.innerHTML = `<strong>${mimin.length}</strong> pilihan mimin`
+        + `<span class="count-muted">, ${lain.length} laptop lain</span>`;
+    }
+    updateGuideNotice();
+    return;
+  }
+
   grid.innerHTML = all.join("");
   empty.style.display = all.length ? "none" : "block";
 
@@ -351,6 +390,7 @@ function resetAll() {
   setPrice(0);
   setSort("default");
   setSearch("");
+  guideMode = false;
   applyFilters();
 }
 
@@ -359,8 +399,8 @@ document.getElementById("resetFilters")?.addEventListener("click", resetAll);
 // ============================================================
 // BANTU PILIH
 // Sebelum katalog tampil, pengunjung ditanya dulu.
-// "Belum" → pilih harga → katalog otomatis cari "pilihan mimin",
-// sesuai harga yang dipilih, urut termurah.
+// "Belum" → pilih harga → katalog menampilkan semua laptop di budget itu,
+// urut termurah: pilihan mimin di atas, laptop lain di bawahnya.
 // Laptop pilihan mimin = nama di products.js yang ada (PILIHAN MIMIN).
 // ============================================================
 const PILIHAN_MIMIN = "pilihan mimin";
@@ -409,20 +449,22 @@ function closeGuide(scrollToProducts) {
   }
 }
 
-// Keterangan di atas hasil: tampil selama pencarian berisi "pilihan mimin",
+// Keterangan di atas hasil: tampil selama mode pilihan mimin aktif,
 // dan isinya ikut berubah kalau pengunjung ganti kategori, harga, urutan, atau tier.
 const CATEGORY_TEXT = { global: "Global", bekas: "Bekas", odm: "ODM", habis: "stok habis" };
 const SORT_TEXT     = { asc: "urut dari termurah", desc: "urut dari termahal" };
 
+function budgetText() {
+  const range = PRICE_RANGES.find(r => r.min === activePriceMin && r.max === activePriceMax);
+  return !range || range.max === Infinity ? "semua budget" : `budget ${range.short}`;
+}
+
 function updateGuideNotice() {
   if (!guideNotice) return;
-  const aktif = searchQuery.toLowerCase().includes(PILIHAN_MIMIN);
-  guideNotice.hidden = !aktif;
-  if (!aktif) return;
+  guideNotice.hidden = !guideMode;
+  if (!guideMode) return;
 
-  const range  = PRICE_RANGES.find(r => r.min === activePriceMin && r.max === activePriceMax);
-  const budget = !range || range.max === Infinity ? "semua budget" : `budget ${range.short}`;
-  const bagian = [`<strong>${budget}</strong>`];
+  const bagian = [`<strong>${budgetText()}</strong>`];
   if (activeCategory !== "semua") bagian.push(`<strong>${CATEGORY_TEXT[activeCategory]}</strong>`);
   if (activeTier !== "semua")     bagian.push(`<strong>Tier ${activeTier}</strong>`);
   if (SORT_TEXT[activeSort])      bagian.push(SORT_TEXT[activeSort]);
@@ -451,7 +493,7 @@ document.getElementById("guidePrices").addEventListener("click", e => {
   resetAll();
   setPrice(index);
   setSort("asc");
-  setSearch(PILIHAN_MIMIN);
+  guideMode = true;
   applyFilters();
 
   trackGuide("pilih_harga", PRICE_RANGES[index].label);
