@@ -5,7 +5,7 @@ const PRODUCTS = [
     name: "ThinkPad X13 Gen 1 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 4416000,
+    price: 4600000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -13,7 +13,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/2gBsIej9rn",
+    shopUrl:  "https://s.shopee.co.id/2LZTc9A5JS",
     image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
   },
 
@@ -30,13 +30,13 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
-    shopUrl:  "https://s.shopee.co.id/7KxyhV6tpI",
+    shopUrl:  "https://s.shopee.co.id/W7pa7lMsl",
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
 
         {
     id: 11,
-    name: "HP Elitebook 845 G8",
+    name: "HP Elitebook 845 G8 (STOK LANGKA)",
     category: "bekas",
     tier: "S",
     price: 5800000,
@@ -47,7 +47,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/3qOEFQz0ds",
+    shopUrl:  "https://s.shopee.co.id/9KjE5sCWPJ",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
@@ -595,10 +595,10 @@ const PRODUCTS = [
 
     {
     id: 233213333,
-    name: "HP Elitebook 845 G7 (HARGA NAIK DRASTIS)",
+    name: "HP Elitebook 845 G7 (PILIHAN MIMIN)",
     category: "bekas",
-    tier: "A+",
-    price: 6000000,
+    tier: "S",
+    price: 5060000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -606,7 +606,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/BURbWiu1o",
+    shopUrl:  "https://s.shopee.co.id/5Atf8mENp0",
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
@@ -3260,6 +3260,7 @@ const PRODUCTS = [
     name: "ThinkPad P52 (TEKNIK)",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 5390000,
     specs: [
       "Intel Core i7-8750H",
