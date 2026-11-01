@@ -244,6 +244,7 @@ const PRODUCTS = [
     name: "HP ProBook 445 G8",
     category: "bekas",
     tier: "A+",
+    sold_out: true,
     price: 5566000,
     specs: [
       "AMD Ryzen 7 5800U",
@@ -466,6 +467,23 @@ const PRODUCTS = [
       "Intel Iris Xe 96EU",
       "RAM 32GB",
       "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/AAIA6hyXrW",
+    image:    "./LAPTOP 6 JUTA/Dell Latitude 7330 i7 6 Juta.webp"
+  },
+
+    {
+    id: 2026102315,
+    name: "Dell Latitude 7330 i7 SSD 512GB (PILIHAN MIMIN)",
+    category: "bekas",
+    tier: "S",
+    price: 7140000,
+    specs: [
+      "Intel Core i7-1265U",
+      "Intel Iris Xe 96EU",
+      "RAM 32GB",
+      "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/AAIA6hyXrW",
@@ -714,6 +732,23 @@ const PRODUCTS = [
       "Radeon Vega 8",
       "RAM 16GB",
       "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
+    shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
+    image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
+  },
+
+    {
+    id: 18,
+    name: "ThinkPad T14 Gen 2 Ryzen 7 SSD 512GB (PILIHAN MIMIN)",
+    category: "bekas",
+    tier: "S",
+    price: 7300000,
+    specs: [
+      "AMD Ryzen 7 Pro 5850U",
+      "Radeon Vega 8",
+      "RAM 16GB",
+      "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
     shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
