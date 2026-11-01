@@ -654,7 +654,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 1 Ryzen 5 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 4738000,
+    price: 5060000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -662,7 +662,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/7KxyhV6tpI",
+    shopUrl:  "https://s.shopee.co.id/W7pa7lMsl",
     image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
   },
 
