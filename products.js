@@ -1337,7 +1337,7 @@ const PRODUCTS = [
   name: "Axioo Hype 5 AMD X6-11 (PILIHAN MIMIN)",
   category: "odm",
   tier: "S",
-  price: 8509000,
+  price: 8684000,
   specs: [
     "AMD Ryzen 5 6600H",
     "Radeon 660M",
@@ -1348,6 +1348,24 @@ const PRODUCTS = [
   shopUrl:  "https://s.shopee.co.id/7KxLjlM6u5",
   image:    "./LAPTOP 8 JUTA/axioo8jt.webp"
 },
+
+  // Tier A+: Generasi lebih baru dan SSD 512GB, tapi iGPU Radeon 740M jauh di bawah Radeon 680M punya T14 Gen 3 Ryzen 7 (9,2jt, S) yang 300 ribu lebih murah
+  {
+    id: 2026110301,
+    name: "ThinkPad T14 Gen 4 Ryzen 5",
+    category: "bekas",
+    tier: "A+",
+    price: 9500000,
+    specs: [
+      "AMD Ryzen 5 Pro 7540U",
+      "Radeon 740M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/40ho2wEzXV",
+    image:    "./LAPTOP 9 JUTA/ThinkPad T14 Gen 4 Ryzen 5 9 Juta.webp"
+  },
 
 {
   id: 2325323527,
@@ -1447,12 +1465,12 @@ const PRODUCTS = [
   name: "ThinkPad T14 Gen 3 Ryzen 5 (PILIHAN MIMIN)",
   category: "bekas",
   tier: "S",
-  price: 8000000,
+  price: 8500000,
   specs: [
     "AMD Ryzen 5 Pro 6650U",
     "Radeon 660M",
     "RAM 16GB",
-    "SSD 256GB"
+    "SSD 512GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
   shopUrl:  "https://s.shopee.co.id/BUB7rYvvq",
@@ -2661,7 +2679,7 @@ const PRODUCTS = [
     id: 28,
     name: "Acer TravelMate P40 (PILIHAN MIMIN)",
     category: "global",
-    tier: "A+",
+    tier: "S",
     price: 10211000,
     specs: [
       "Intel Core i5-1335U",
