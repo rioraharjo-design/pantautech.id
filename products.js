@@ -1540,7 +1540,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/7KyHIRYdNp",
+    shopUrl:  "https://s.shopee.co.id/3qOP7ujE5U",
     image:    "./LAPTOP 10 JUTA/Polytron Luxia Pro Ultra 5 10 Juta.webp"
   },
 
@@ -1558,7 +1558,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/3qOP7ujE5U",
+    shopUrl:  "https://s.shopee.co.id/7KyHIRYdNp",
     image:    "./LAPTOP 10 JUTA/Axioo Hype 7 AMD X8-21 10 Juta.webp"
   },
 
@@ -1636,7 +1636,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/1BgPA8qH7",
+    shopUrl:  "https://s.shopee.co.id/3B8iB7EJfc",
     image:    "./LAPTOP 10 JUTA/Dell Latitude 5450 10 Juta.webp"
   },
 
@@ -1672,7 +1672,7 @@ const PRODUCTS = [
       "SSD 1TB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/3B8iB7EJfc",
+    shopUrl:  "https://s.shopee.co.id/906V86CJri",
     image:    "./LAPTOP 10 JUTA/HP Elitebook x360 830 G10 10 Juta.webp"
   },
 
@@ -1690,7 +1690,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/AKbsibf1VY",
+    shopUrl:  "https://s.shopee.co.id/1BgPA8qH7",
     image:    "./LAPTOP 10 JUTA/Acer Swift Go 14 SFG14-73 10 Juta.webp"
   },
 
@@ -1708,7 +1708,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/9zz2K0bh8G",
+    shopUrl:  "https://s.shopee.co.id/LoWnxJlbm",
     image:    "./LAPTOP 10 JUTA/ThinkPad X1 Carbon Gen 11 10 Juta.webp"
   },
 
@@ -1726,7 +1726,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/3VlYaAarEG",
+    shopUrl:  "https://s.shopee.co.id/8KqoKgx1kI",
     image:    "./LAPTOP 10 JUTA/ThinkPad X1 Carbon Gen 10 10 Juta.webp"
   },
 
@@ -1744,7 +1744,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/8fTej3RvrO",
+    shopUrl:  "https://s.shopee.co.id/9zz2K0bh8G",
     image:    "./LAPTOP 10 JUTA/ThinkPad P15v Gen 3 10 Juta.webp"
   },
 
@@ -1762,7 +1762,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/5LDClNvMMv",
+    shopUrl:  "https://s.shopee.co.id/AKbsibf1VY",
     image:    "./LAPTOP 11 JUTA/HP Zbook Fury G8 11 Juta.webp"
   },
 
@@ -1780,7 +1780,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/4LKfZ3lA5L",
+    shopUrl:  "https://s.shopee.co.id/3VlYaAarEG",
     image:    "./LAPTOP 11 JUTA/MSI Katana GF76 12UC 11 Juta.webp"
   },
 
@@ -1798,7 +1798,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/906V86CJri",
+    shopUrl:  "https://s.shopee.co.id/8fTej3RvrO",
     image:    "./LAPTOP 10 JUTA/Infinix Inbook Air Pro Plus OLED 10 Juta.webp"
   },
 
@@ -1816,7 +1816,7 @@ const PRODUCTS = [
       "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/8KqoKgx1kI",
+    shopUrl:  "https://s.shopee.co.id/4LKfZ3lA5L",
     image:    "./LAPTOP 12 JUTA/HP Pavilion Gaming 15-ec2010AX 12 Juta.webp"
   },
 

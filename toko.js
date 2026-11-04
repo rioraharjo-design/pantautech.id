@@ -200,17 +200,7 @@ tersedia toko offline di Mangga Dua Jakarta`
     catatan: `pilihan dari berbagai harga cukup lengkap, bahkan seringkali ngasih harga murah dibanding toko lain`
   },  
 
-  {
-    id: 8,
-    nama: "Dr.com komputer (GAMING)",
-    logo: "./Toko/Logo Dr.com komputer.webp",
-    rating: 4.8,
-    ulasan: "602",
-    pengikut: "2,5rb",
-    shopUrl: "https://s.shopee.co.id/5fp9lFnkKj",
-    top5: false,
-    catatan: `Ngejual laptop gaming di banyak pilihan harga tapi seringkali harganya lebih tinggi dibanding yang lain`
-  },  
+
 
   {
     id: 9,
