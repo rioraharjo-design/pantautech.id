@@ -1521,6 +1521,305 @@ const PRODUCTS = [
   shopUrl: "https://s.shopee.co.id/9zxqx6Auf4",
   image: "./LAPTOP 10 JUTA/tuf10jt.webp"
 },
+
+// =====================================================================
+// LAPTOP BARU 10–13 JUTA (riset 4 Nov 2026, harga HP + 200rb)
+// =====================================================================
+
+  // Tier S: Prosesor dan iGPU sama kayak HP 14 Ultra 5 125H (11,80jt, S) tapi 850 ribu lebih murah, layar 16:10 sRGB 100% dan bodi magnesium 1kg. HP 14 tetap S karena aftersales merek global jauh lebih kuat
+  {
+    id: 2026110421,
+    name: "Polytron Luxia Pro Ultra 5",
+    category: "odm",
+    tier: "S",
+    price: 10943260,
+    specs: [
+      "Intel Core Ultra 5 125H",
+      "Intel Arc",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7KyHIRYdNp",
+    image:    "./LAPTOP 10 JUTA/Polytron Luxia Pro Ultra 5 10 Juta.webp"
+  },
+
+  // Tier A+: Prosesor 8 core dan Radeon 680M, layar 16:10. Tapi Axioo Hype 7 AMD X8-1 (9,74jt, S) performanya hampir sama dan 700 ribu lebih murah
+  {
+    id: 2026110422,
+    name: "Axioo Hype 7 AMD X8-21",
+    category: "odm",
+    tier: "A+",
+    price: 10457080,
+    specs: [
+      "AMD Ryzen 7 7735HS",
+      "Radeon 680M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3qOP7ujE5U",
+    image:    "./LAPTOP 10 JUTA/Axioo Hype 7 AMD X8-21 10 Juta.webp"
+  },
+
+  // Tier A+: Prosesor sama kayak Infinix Xbook B14 R7 (10,50jt, A+) dan sedikit lebih murah. Tapi Axioo Hype 7 AMD X8-1 (9,74jt, S) performanya hampir sama dan lebih murah lagi
+  {
+    id: 2026110423,
+    name: "Tecno Megabook K14SFA",
+    category: "odm",
+    tier: "A+",
+    price: 10319080,
+    specs: [
+      "AMD Ryzen 7 7735HS",
+      "Radeon 680M",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1W0ULlSPFA",
+    image:    "./LAPTOP 10 JUTA/Tecno Megabook K14SFA 10 Juta.webp"
+  },
+
+  // Tier A+: Layar 2K OLED dan baterai awet banget. Tapi chipnya ARM (Snapdragon), jadi sebagian aplikasi teknik dan game gak bisa jalan
+  {
+    id: 2026110424,
+    name: "Asus Vivobook S14 S3407QA OLED",
+    category: "global",
+    tier: "A+",
+    price: 12499000,
+    specs: [
+      "Snapdragon X X1-26-100",
+      "Qualcomm Adreno",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/qknYc2jUi",
+    image:    "./LAPTOP 12 JUTA/Asus Vivobook S14 S3407QA OLED 12 Juta.webp"
+  },
+
+  // Tier A+: RTX 3050 dan layar 144Hz dari merek global. Tapi RAM baru 8GB, dan HP Pavilion Gaming 15 dengan GPU sama 1,4 juta lebih murah
+  {
+    id: 2026110425,
+    name: "MSI Thin 15 B13UC",
+    category: "global",
+    tier: "A+",
+    price: 13562240,
+    specs: [
+      "Intel Core i5-13420H",
+      "Nvidia GeForce RTX 3050 4GB",
+      "RAM 8GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3g4yvnMS5V",
+    image:    "./LAPTOP 13 JUTA/MSI Thin 15 B13UC 13 Juta.webp"
+  },
+
+// =====================================================================
+// LAPTOP 10–12 JUTA BARU (riset 4 Nov 2026, harga HP)
+// - bekas & baru <10jt = harga HP, baru >=10jt = harga HP + 200rb
+// - image belum ada
+// =====================================================================
+
+  // Tier S: Core Ultra 5 135H + Intel Arc di 10 juta pas, 1,8 juta lebih murah dari HP 14 Ultra 5 125H (11,8jt, S). Build bisnis seri 5000
+  {
+    id: 2026110410,
+    name: "Dell Latitude 5450",
+    category: "bekas",
+    tier: "S",
+    price: 10000000,
+    specs: [
+      "Intel Core Ultra 5 135H",
+      "Intel Arc",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1BgPA8qH7",
+    image:    "./LAPTOP 10 JUTA/Dell Latitude 5450 10 Juta.webp"
+  },
+
+  // Tier A+: Bodi aluminium premium dan prosesor sama kayak Acer TravelMate P40 (10,41jt, S), tapi di harga yang sama ada Latitude 5450 yang jauh lebih kenceng
+  {
+    id: 2026110411,
+    name: "HP Elitebook 840 G10",
+    category: "bekas",
+    tier: "A+",
+    price: 10000000,
+    specs: [
+      "Intel Core i5-1345U",
+      "Intel Iris Xe",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/qknP2Mcet",
+    image:    "./LAPTOP 10 JUTA/HP Elitebook 840 G10 10 Juta.webp"
+  },
+
+  // Tier A+: Bisa dilipat 2 in 1, bodi premium, SSD udah 1TB. Tapi prosesornya kalah kenceng dari Latitude 5450 yang harganya hampir sama
+  {
+    id: 2026110412,
+    name: "HP Elitebook x360 830 G10",
+    category: "bekas",
+    tier: "A+",
+    price: 10058000,
+    specs: [
+      "Intel Core i5-1345U",
+      "Intel Iris Xe",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3B8iB7EJfc",
+    image:    "./LAPTOP 10 JUTA/HP Elitebook x360 830 G10 10 Juta.webp"
+  },
+
+  // Tier A+: Prosesor sama kayak HP 14 (11,8jt, S) tapi 1,7 juta lebih murah, masih garansi resmi. Tapi Latitude 5450 lebih murah dan prosesornya setingkat di atas
+  {
+    id: 2026110413,
+    name: "Acer Swift Go 14 SFG14-73",
+    category: "bekas",
+    tier: "A+",
+    price: 10105000,
+    specs: [
+      "Intel Core Ultra 5 125H",
+      "Intel Arc",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/AKbsibf1VY",
+    image:    "./LAPTOP 10 JUTA/Acer Swift Go 14 SFG14-73 10 Juta.webp"
+  },
+
+  // Tier A+: Seri ThinkPad paling premium, bobot sekitar 1,1kg. Tapi prosesornya sama kayak Elitebook 840 G10 yang 340 ribu lebih murah
+  {
+    id: 2026110414,
+    name: "ThinkPad X1 Carbon Gen 11",
+    category: "bekas",
+    tier: "A+",
+    price: 10340000,
+    specs: [
+      "Intel Core i5-1345U",
+      "Intel Iris Xe",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9zz2K0bh8G",
+    image:    "./LAPTOP 10 JUTA/ThinkPad X1 Carbon Gen 11 10 Juta.webp"
+  },
+
+  // Tier A+: Prosesor 12 core dan bodi premium X1 Carbon, cuma beda 190 ribu dari Gen 11. Tapi Latitude 5450 lebih murah dan iGPU Arc-nya lebih kenceng
+  {
+    id: 2026110415,
+    name: "ThinkPad X1 Carbon Gen 10",
+    category: "bekas",
+    tier: "A+",
+    price: 10528000,
+    specs: [
+      "Intel Core i7-1260P",
+      "Intel Iris Xe",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3VlYaAarEG",
+    image:    "./LAPTOP 10 JUTA/ThinkPad X1 Carbon Gen 10 10 Juta.webp"
+  },
+
+  // Tier A+: Prosesor H 14 core dan GPU workstation T1200, cocok buat CAD dan render. Tapi tambah 660 ribu udah dapet ZBook Fury G8 yang GPU-nya jauh lebih kenceng
+  {
+    id: 2026110416,
+    name: "ThinkPad P15v Gen 3 (TEKNIK)",
+    category: "bekas",
+    tier: "A+",
+    price: 10424600,
+    specs: [
+      "Intel Core i7-12700H",
+      "Nvidia T1200 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8fTej3RvrO",
+    image:    "./LAPTOP 10 JUTA/ThinkPad P15v Gen 3 10 Juta.webp"
+  },
+
+  // Tier S: GPU RTX A2000 kelas RTX 3050 Ti, harganya sama kayak Asus TUF Dash F15 (11,09jt) tapi build dan pendinginan kelas workstation
+  {
+    id: 2026110417,
+    name: "HP Zbook Fury G8 (TEKNIK)",
+    category: "bekas",
+    tier: "S",
+    price: 11082600,
+    specs: [
+      "Intel Core i7-11850H",
+      "Nvidia RTX A2000 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/5LDClNvMMv",
+    image:    "./LAPTOP 11 JUTA/HP Zbook Fury G8 11 Juta.webp"
+  },
+
+  // Tier A+: Prosesor i7-12700H dan layar 17 inci. Tapi bodinya plastik, dan Asus TUF Dash F15 (11,09jt) yang lebih murah GPU-nya RTX 3050 Ti
+  {
+    id: 2026110418,
+    name: "MSI Katana GF76 12UC",
+    category: "bekas",
+    tier: "A+",
+    price: 11844000,
+    specs: [
+      "Intel Core i7-12700H",
+      "Nvidia GeForce RTX 3050 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4LKfZ3lA5L",
+    image:    "./LAPTOP 11 JUTA/MSI Katana GF76 12UC 11 Juta.webp"
+  },
+
+  // Tier A+: Layar 2.8K OLED 120Hz, bobot 1kg, garansi resmi. Prosesornya kelas i5 hemat daya, sedikit di bawah Acer TravelMate P40 (10,41jt, S)
+  {
+    id: 2026110419,
+    name: "Infinix Inbook Air Pro+ OLED",
+    category: "odm",
+    tier: "A+",
+    price: 10779080,
+    specs: [
+      "Intel Core i5-1334U",
+      "Intel Iris Xe",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/906V86CJri",
+    image:    "./LAPTOP 10 JUTA/Infinix Inbook Air Pro+ OLED 10 Juta.webp"
+  },
+
+  // Tier S: Satu-satunya laptop baru RTX 3050 di bawah 12,5 juta, GPU-nya jauh di atas RTX 2050 punya Axioo Pongo 725 V2 (12,70jt). Kekurangannya model lama (2021)
+  {
+    id: 2026110420,
+    name: "HP Pavilion Gaming 15-ec2010AX",
+    category: "global",
+    tier: "S",
+    price: 12137060,
+    specs: [
+      "AMD Ryzen 5 5600H",
+      "Nvidia GeForce RTX 3050 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8KqoKgx1kI",
+    image:    "./LAPTOP 12 JUTA/HP Pavilion Gaming 15-ec2010AX 12 Juta.webp"
+  },
+
 {
   id: 2132423235236,
   name: "MSI Thin GF63 12UC",

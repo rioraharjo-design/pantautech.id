@@ -1,5 +1,6 @@
 # Format: nama laptop | harga website
-Fujitsu Futro MU937 | 1.812.000
-ThinkPad T440s | 1.886.000
-HP Elitebook 640 G2 | 2.760.000
-ThinkPad T470s | 2.806.000
+Polytron Luxia Pro Ultra 5 | 10.943.260
+Axioo Hype 7 AMD X8-21 | 10.457.080
+Tecno Megabook K14SFA | 10.319.080
+Asus Vivobook S14 S3407QA OLED | 12.499.000
+MSI Thin 15 B13UC | 13.562.240
