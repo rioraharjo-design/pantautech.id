@@ -1799,7 +1799,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/906V86CJri",
-    image:    "./LAPTOP 10 JUTA/Infinix Inbook Air Pro+ OLED 10 Juta.webp"
+    image:    "./LAPTOP 10 JUTA/Infinix Inbook Air Pro Plus OLED 10 Juta.webp"
   },
 
   // Tier S: Satu-satunya laptop baru RTX 3050 di bawah 12,5 juta, GPU-nya jauh di atas RTX 2050 punya Axioo Pongo 725 V2 (12,70jt). Kekurangannya model lama (2021)
