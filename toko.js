@@ -23,7 +23,7 @@ const TOKO = [
 
   // ── TOP 5 ───────────────────────────────────────────────────
   {
-    id: 1,
+    id: 1324234,
     nama: "Gugel Laptop",
     logo: "./Toko/Logo Gugel Laptop.webp",
     rating: 4.9,
@@ -38,7 +38,7 @@ const TOKO = [
 
   // ── TOKO LAINNYA ────────────────────────────────────────────
   {
-    id: 2,
+    id: 2324242,
     nama: "Jajanan Laptop",
     logo: "./Toko/Logo Jajanan Laptop.webp",
     rating: 4.9,
@@ -50,7 +50,7 @@ const TOKO = [
   },
 
     {
-    id: 1293810,
+    id: 1293843210,
     nama: "GudangLaptopBTM",
     logo: "./Toko/Logo GudangLaptopBTM.webp",
     rating: 4.8,
@@ -62,7 +62,7 @@ const TOKO = [
   },
 
     {
-    id: 22342,
+    id: 22343242,
     nama: "GUDANGLAPTOPBTM_JKT",
     logo: "./Toko/Logo GUDANGLAPTOPBTM_JKT.webp",
     rating: 4.8,
@@ -74,7 +74,7 @@ const TOKO = [
   },
 
   {
-    id: 4,
+    id: 4432432,
     nama: "Electro Com",
     logo: "./Toko/Logo Electro Com.webp",
     rating: 4.8,
@@ -86,7 +86,7 @@ const TOKO = [
   },
 
   {
-    id: 22332442,
+    id: 22332131232442,
     nama: "MBM Tech store",
     logo: "./Toko/Logo MBM Tech store.webp",
     rating: 4.9,
@@ -98,7 +98,7 @@ const TOKO = [
   },
 
   {
-    id: 5,
+    id: 52131,
     nama: "Glory Computerr",
     logo: "./Toko/Logo Glory Computerr.webp",
     rating: 4.9,
@@ -110,7 +110,7 @@ const TOKO = [
   },
 
   {
-      id: 2225235342,
+      id: 22252312135342,
     nama: "RevoComp",
     logo: "./Toko/Logo RevoComp.webp",
     rating: 4.9,
@@ -122,7 +122,7 @@ const TOKO = [
   },
 
     {
-    id: 3,
+    id: 33232423123,
     nama: "WD.COMPUTER",
     logo: "./Toko/Logo WD.COMPUTER.webp",
     rating: 4.8,
@@ -136,7 +136,7 @@ tersedia toko offline di Mangga Dua Jakarta`
   },
 
   {
-    id: 2223532342,
+    id: 222324323532342,
     nama: "Lap-Top",
     logo: "./Toko/Logo Lap-Top.webp",
     rating: 4.9,
@@ -160,7 +160,7 @@ tersedia toko offline di Mangga Dua Jakarta`
   },
 
     {
-    id: 22234242342,
+    id: 22234242324342,
     nama: "LOCKSTORE",
     logo: "./Toko/Logo LOCKSTORE.webp",
     rating: 4.9,
@@ -174,13 +174,13 @@ tersedia toko offline di Mangga Dua Jakarta`
 
 
   {
-    id: 6,
+    id: 6342,
     nama: "Ari speed comp",
     logo: "./Toko/Logo Ari speed comp.webp",
     rating: 4.8,
     ulasan: "1,3rb",
     pengikut: "15rb",
-    shopUrl: "https://s.shopee.co.id/5foNwWWYI0",
+    shopUrl: "https://s.shopee.co.id/6VPBy93DdY",
     top5: false,
     catatan: `Toko dengan pengikut terbanyak, kenapa? karena tokonya seringkali munculin 
     produk laptop hidden gem yang speknya sangat bagus tapi dijual dengan harga 
@@ -189,13 +189,13 @@ tersedia toko offline di Mangga Dua Jakarta`
   },
 
   {
-    id: 7,
+    id: 7432234,
     nama: "REOG KOMPUTER (GAMING)",
     logo: "./Toko/Logo REOG KOMPUTER.webp",
     rating: 4.8,
     ulasan: "466",
     pengikut: "2,9rb",
-    shopUrl: "https://s.shopee.co.id/1qd27uPGWl",
+    shopUrl: "https://s.shopee.co.id/LoYcm28Tz",
     top5: false,
     catatan: `pilihan dari berbagai harga cukup lengkap, bahkan seringkali ngasih harga murah dibanding toko lain`
   },  
@@ -203,7 +203,7 @@ tersedia toko offline di Mangga Dua Jakarta`
 
 
   {
-    id: 9,
+    id: 9432423,
     nama: "Story Laptop Bandung (GAMING)",
     logo: "./Toko/Logo Story Laptop Bandung.webp",
     rating: 4.9,
@@ -214,8 +214,20 @@ tersedia toko offline di Mangga Dua Jakarta`
     catatan: `Kenapa jadi peringkat 1?, Pilihan laptop gaming sangat banyak diberbagai harga, kalau ragu beli online ada store offlinenya dibandung`
   },  
 
+    {
+    id: 9432674746423,
+    nama: "Dr.com Komputer (GAMING)",
+    logo: "./Toko/Logo Dr.com Komputer.webp",
+    rating: 4.7,
+    ulasan: "639",
+    pengikut: "2,5rb",
+    shopUrl: "https://s.shopee.co.id/qkpE5p29b",
+    top5: false,
+    catatan: `Ngejual laptop gaming di banyak pilihan harga tapi beberapa produk harganya lebih tinggi dibanding yang lain`
+  }, 
+
   {
-    id: 10,
+    id: 132420,
     nama: "Dissant'sStore (GAMING)",
     logo: "./Toko/Logo Dissant'sStore.webp",
     rating: 4.9,
@@ -227,13 +239,13 @@ tersedia toko offline di Mangga Dua Jakarta`
   },  
 
     {
-    id: 11,
+    id: 11432432,
     nama: "RELOAD COMS 4 (GAMING)",
     logo: "./Toko/Logo RELOAD COMS 4.webp",
     rating: 5,
     ulasan: "2",
     pengikut: "44",
-    shopUrl: "https://s.shopee.co.id/2BFHa7ni8v",
+    shopUrl: "https://s.shopee.co.id/9zz48bT1Hx",
     top5: false,
     catatan: `pengikut dan ulasan dikit kenapa direkomendasiin?, toko ini ngejual laptop gaming bekas yang sangat berkualitas bahkan berani ngasih review yang transparan di channel youtubenya, minusnya pilihan produknya masih sangat sedikit, tapi bisa jadi pilihan terbaik kalau budget kalian mumpuni
 
