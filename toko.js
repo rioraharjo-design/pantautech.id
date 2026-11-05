@@ -27,9 +27,9 @@ const TOKO = [
     nama: "Gugel Laptop",
     logo: "./Toko/Logo Gugel Laptop.webp",
     rating: 4.9,
-    ulasan: "3,7rb",
-    pengikut: "6,3rb",
-    shopUrl: "https://s.shopee.co.id/9ANv8UE4zn",
+    ulasan: "4,3rb",
+    pengikut: "9,4rb",
+    shopUrl: "https://s.shopee.co.id/8VAGMxY0o6",
     top5: true,
     catatan: `Kenapa jadi peringkat 1? karena mereka toko yang paling sering direkomendasikan 
     oleh komunitas laptop bekas terutama ThinkPad, apapun kebutuhan kamu bakal 
@@ -42,9 +42,9 @@ const TOKO = [
     nama: "Jajanan Laptop",
     logo: "./Toko/Logo Jajanan Laptop.webp",
     rating: 4.9,
-    ulasan: "2,8rb",
-    pengikut: "3,9rb",
-    shopUrl: "https://s.shopee.co.id/9UzvGX1rti",
+    ulasan: "3,2rb",
+    pengikut: "5,6rb",
+    shopUrl: "https://s.shopee.co.id/2LZd1eGOZ6",
     top5: true,
     catatan: `Gudangnya sama dengan gugel laptop, jadi catatan bisa cek yang gugel laptop`
   },
@@ -54,9 +54,9 @@ const TOKO = [
     nama: "GudangLaptopBTM",
     logo: "./Toko/Logo GudangLaptopBTM.webp",
     rating: 4.8,
-    ulasan: "5rb",
-    pengikut: "25,4rb",
-    shopUrl: "https://s.shopee.co.id/8fSm4QV2vy",
+    ulasan: "5,3rb",
+    pengikut: "26,4rb",
+    shopUrl: "https://s.shopee.co.id/W7yqIaEqy",
     top5: true,
     catatan: `Produknya banyak, sangat bervariasi, speknya bagus dengan harganya yang murah, tersedia toko offline di Jakarta dan di Batam`
   },
@@ -67,8 +67,8 @@ const TOKO = [
     logo: "./Toko/Logo GUDANGLAPTOPBTM_JKT.webp",
     rating: 4.8,
     ulasan: "1,5rb",
-    pengikut: "6rb",
-    shopUrl: "https://s.shopee.co.id/50ZThs7dn1",
+    pengikut: "6,2rb",
+    shopUrl: "https://s.shopee.co.id/7KyIysS2Qq",
     top5: true,
     catatan: `catatan bisa cek yang GudangLaptopBTM`
   },
@@ -78,9 +78,9 @@ const TOKO = [
     nama: "Electro Com",
     logo: "./Toko/Logo Electro Com.webp",
     rating: 4.8,
-    ulasan: "3,8rb",
-    pengikut: "9,2rb",
-    shopUrl: "https://s.shopee.co.id/gPhzS5BNd",
+    ulasan: "4,5rb",
+    pengikut: "11,5rb",
+    shopUrl: "https://s.shopee.co.id/2BGCpOxboH",
     top5: true,
     catatan: `Produknya sangat bervariasi, mau macbook? laptop workstation?, laptop bisnis? laptop chromebook?, semuanya ada dan harganya masih bisa diterima dengan sangat baik`
   },
@@ -90,9 +90,9 @@ const TOKO = [
     nama: "MBM Tech store",
     logo: "./Toko/Logo MBM Tech store.webp",
     rating: 4.9,
-    ulasan: "596",
-    pengikut: "1,1rb",
-    shopUrl: "https://s.shopee.co.id/4VdD79Hl67",
+    ulasan: "777",
+    pengikut: "1,3rb",
+    shopUrl: "https://s.shopee.co.id/3VlaPsHlss",
     top5: true,
     catatan: `Toko Underated, sama seperti RevoComp, dan Glory Computerr padahal produknya banyak yang speknya bagus dengan harganya yang tergolong murah`
   },
@@ -102,9 +102,9 @@ const TOKO = [
     nama: "Glory Computerr",
     logo: "./Toko/Logo Glory Computerr.webp",
     rating: 4.9,
-    ulasan: "858",
-    pengikut: "1,1rb",
-    shopUrl: "https://s.shopee.co.id/9pdHdqpjaO",
+    ulasan: "994",
+    pengikut: "1,5rb",
+    shopUrl: "https://s.shopee.co.id/AKbuYSJTD4",
     top5: true,
     catatan: `Rating 4.9 dan menjamin bahwa semua barang diuji dengan baik, harga seringkali lebih murah dibanding yang lain, toko baru tapi sangat berkualitas`
   },
@@ -114,21 +114,21 @@ const TOKO = [
     nama: "RevoComp",
     logo: "./Toko/Logo RevoComp.webp",
     rating: 4.9,
-    ulasan: "269",
+    ulasan: "273",
     pengikut: "1,6rb",
-    shopUrl: "https://s.shopee.co.id/Lne9eDYzy",
+    shopUrl: "https://s.shopee.co.id/4Ve7bkreDP",
     top5: true,
     catatan: `Toko underated padahal ada beberapa produk laptop yang jarang ditemui di toko lain, dan berani ngasih harga murah`
   },
 
     {
     id: 33232423123,
-    nama: "WD.COMPUTER",
+    nama: "WDCOMPUTER.ID",
     logo: "./Toko/Logo WD.COMPUTER.webp",
     rating: 4.8,
-    ulasan: "5rb",
-    pengikut: "11,3rb",
-    shopUrl: "https://s.shopee.co.id/1W0BjO271O",
+    ulasan: "5,5rb",
+    pengikut: "12,7rb",
+    shopUrl: "https://s.shopee.co.id/5AtoP4YrsC",
     top5: true,
     catatan: `tiap produk dikasih varian spesifikasi yang sangat lengkap, bisa tanpa SSD, SSD 128GB, SSD SATA maupun SSD NVME, dan juga RAM dari 4GB sampai 32GB, jadi bisa lebih menyesuaikan dengan kebutuhan
 
@@ -141,8 +141,8 @@ tersedia toko offline di Mangga Dua Jakarta`
     logo: "./Toko/Logo Lap-Top.webp",
     rating: 4.9,
     ulasan: "1,1rb",
-    pengikut: "7rb",
-    shopUrl: "https://s.shopee.co.id/5AstuyZTLH",
+    pengikut: "7,1rb",
+    shopUrl: "https://s.shopee.co.id/5AtoP5hGOT",
     top5: true,
     catatan: `satu satunya toko yang berani ngasih GARANSI 3 BULAN, ada toko offline di Bandung Trade Mall, tapi sangat disayangkan produknya kurang bervariasi`
   },
@@ -152,9 +152,9 @@ tersedia toko offline di Mangga Dua Jakarta`
     nama: "LAPTOPIN.ID ( OFFICIAL STORE )",
     logo: "./Toko/Logo LAPTOPIN.ID ( OFFICIAL STORE ).webp",
     rating: 4.9,
-    ulasan: "1,9",
-    pengikut: "5,6rb",
-    shopUrl: "https://s.shopee.co.id/AAIA3MuElM",
+    ulasan: "1,9rb",
+    pengikut: "5,7rb",
+    shopUrl: "https://s.shopee.co.id/2gCTQWmws6",
     top5: true,
     catatan: `tokonya bisa ngejaga harga biar sesuai sama standar pasar, gak kemahalan gak kemurahan`
   },
@@ -164,9 +164,9 @@ tersedia toko offline di Mangga Dua Jakarta`
     nama: "LOCKSTORE",
     logo: "./Toko/Logo LOCKSTORE.webp",
     rating: 4.9,
-    ulasan: "845",
-    pengikut: "3,3rb",
-    shopUrl: "https://s.shopee.co.id/8KqVs2jVNx",
+    ulasan: "892",
+    pengikut: "3,5rb",
+    shopUrl: "https://s.shopee.co.id/BV8RxLuSp",
     top5: true,
     catatan: `ada toko offline di Mangga dua jakarta yang udah berdiri sejak 2006 sampai sekarang, tapi harga laptopnya beberapa sedikit lebih tinggi dibanding yang lain`
   },
@@ -178,9 +178,9 @@ tersedia toko offline di Mangga Dua Jakarta`
     nama: "Ari speed comp",
     logo: "./Toko/Logo Ari speed comp.webp",
     rating: 4.8,
-    ulasan: "1,3rb",
-    pengikut: "15rb",
-    shopUrl: "https://s.shopee.co.id/6VPBy93DdY",
+    ulasan: "1,5rb",
+    pengikut: "16,1rb",
+    shopUrl: "https://s.shopee.co.id/5q9VCOmC0K",
     top5: false,
     catatan: `Toko dengan pengikut terbanyak, kenapa? karena tokonya seringkali munculin 
     produk laptop hidden gem yang speknya sangat bagus tapi dijual dengan harga 
@@ -193,9 +193,9 @@ tersedia toko offline di Mangga Dua Jakarta`
     nama: "REOG KOMPUTER (GAMING)",
     logo: "./Toko/Logo REOG KOMPUTER.webp",
     rating: 4.8,
-    ulasan: "466",
-    pengikut: "2,9rb",
-    shopUrl: "https://s.shopee.co.id/LoYcm28Tz",
+    ulasan: "507",
+    pengikut: "3,3rb",
+    shopUrl: "https://s.shopee.co.id/2Vt3DKZhyF",
     top5: false,
     catatan: `pilihan dari berbagai harga cukup lengkap, bahkan seringkali ngasih harga murah dibanding toko lain`
   },  
@@ -207,21 +207,21 @@ tersedia toko offline di Mangga Dua Jakarta`
     nama: "Story Laptop Bandung (GAMING)",
     logo: "./Toko/Logo Story Laptop Bandung.webp",
     rating: 4.9,
-    ulasan: "78",
-    pengikut: "1,5rb",
-    shopUrl: "https://s.shopee.co.id/2LY379Um7e",
+    ulasan: "79",
+    pengikut: "2,1rb",
+    shopUrl: "https://s.shopee.co.id/114FRXmFr9",
     top5: false,
     catatan: `Kenapa jadi peringkat 1?, Pilihan laptop gaming sangat banyak diberbagai harga, kalau ragu beli online ada store offlinenya dibandung`
   },  
 
     {
     id: 9432674746423,
-    nama: "Dr.com Komputer (GAMING)",
-    logo: "./Toko/Logo Dr.com Komputer.webp",
+    nama: "Dr.com komputer (GAMING)",
+    logo: "./Toko/Logo Dr.com komputer.webp",
     rating: 4.7,
     ulasan: "639",
     pengikut: "2,5rb",
-    shopUrl: "https://s.shopee.co.id/qkpE5p29b",
+    shopUrl: "https://s.shopee.co.id/114FQXCfLN",
     top5: false,
     catatan: `Ngejual laptop gaming di banyak pilihan harga tapi beberapa produk harganya lebih tinggi dibanding yang lain`
   }, 
@@ -231,26 +231,12 @@ tersedia toko offline di Mangga Dua Jakarta`
     nama: "Dissant'sStore (GAMING)",
     logo: "./Toko/Logo Dissant'sStore.webp",
     rating: 4.9,
-    ulasan: "795",
-    pengikut: "2,2rb",
-    shopUrl: "https://s.shopee.co.id/7AdIrwOprV",
+    ulasan: "806",
+    pengikut: "2,4rb",
+    shopUrl: "https://s.shopee.co.id/9V2nZBIrRP",
     top5: false,
     catatan: `Rating dan ulasan terbaik, pilihan laptop gaming diharga tinggi cukup banyak tapi sangat disayangkan dibudget 10 juta kebawah pilihannya sedikit`
-  },  
-
-    {
-    id: 11432432,
-    nama: "RELOAD COMS 4 (GAMING)",
-    logo: "./Toko/Logo RELOAD COMS 4.webp",
-    rating: 5,
-    ulasan: "2",
-    pengikut: "44",
-    shopUrl: "https://s.shopee.co.id/9zz48bT1Hx",
-    top5: false,
-    catatan: `pengikut dan ulasan dikit kenapa direkomendasiin?, toko ini ngejual laptop gaming bekas yang sangat berkualitas bahkan berani ngasih review yang transparan di channel youtubenya, minusnya pilihan produknya masih sangat sedikit, tapi bisa jadi pilihan terbaik kalau budget kalian mumpuni
-
-YT : Reload COMS | IG : @r3loadcoms`
-  },  
+  },
 
 ];
 
