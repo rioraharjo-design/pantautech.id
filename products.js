@@ -157,6 +157,154 @@ const PRODUCTS = [
   },
 
   // =====================================================================
+// LAPTOP GAMING BEKAS 7–10 JUTA (riset 5 Nov 2026, harga HP)
+// =====================================================================
+
+  // Tier A+: Model beda dari Acer Nitro 5 AN515-55 (7,43jt, A+) dan RAM udah 16GB. GPU GTX 1650 sedikit di bawah GTX 1650 Ti punya Nitro 5
+  {
+    id: 2026110501,
+    name: "HP Pavilion Gaming 15-dk0",
+    category: "bekas",
+    tier: "A+",
+    price: 7536000,
+    specs: [
+      "Intel Core i7-9750H",
+      "Nvidia GeForce GTX 1650 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8pn6osF2Ip",
+    image:    "./LAPTOP 7 JUTA/HP Pavilion Gaming 15-dk0 7 Juta.webp"
+  },
+
+  // Tier A+: Ryzen 7 5800H 8 core, RAM 16GB, layar 144Hz, dan 680 ribu lebih murah dari HP Pavilion Gaming 15-ec1076AX. GPU RX 5500M masih di bawah GTX 1660 Ti
+  {
+    id: 2026110502,
+    name: "MSI Bravo 15 B5DD",
+    category: "bekas",
+    tier: "S",
+    price: 8064000,
+    specs: [
+      "AMD Ryzen 7 5800H",
+      "AMD Radeon RX 5500M 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7KyJ28KgbI",
+    image:    "./LAPTOP 8 JUTA/MSI Bravo 15 B5DD 8 Juta.webp"
+  },
+
+  // Tier A+: Build dan pendinginan Legion paling bagus di kelasnya, layar 120Hz, RAM 16GB. Tapi GPU GTX 1650, dan MSI Bravo 15 yang lebih murah lebih kenceng
+  {
+    id: 2026110503,
+    name: "Lenovo Legion 5 15ARH05",
+    category: "bekas",
+    tier: "A+",
+    price: 8304000,
+    specs: [
+      "AMD Ryzen 5 4600H",
+      "Nvidia GeForce GTX 1650 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/4fxXrGGpZV",
+    image:    "./LAPTOP 8 JUTA/Lenovo Legion 5 15ARH05 8 Juta.webp"
+  },
+
+  // Tier S: GPU RTX 2060 6GB paling kenceng di 8 juta, lebih kuat dari GTX 1660 Ti punya HP Pavilion Gaming 15-ec1076AX dan 190 ribu lebih murah. RAM baru 8GB
+  {
+    id: 2026110504,
+    name: "HP Pavilion Gaming 15-dk1064TX",
+    category: "bekas",
+    tier: "S",
+    price: 8550000,
+    specs: [
+      "Intel Core i5-10300H",
+      "Nvidia GeForce RTX 2060 6GB",
+      "RAM 8GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3B8k4WUnbx",
+    image:    "./LAPTOP 8 JUTA/HP Pavilion Gaming 15-dk1064TX 8 Juta.webp"
+  },
+
+  // Tier A+: GPU GTX 1660 Ti 6GB dan layar 144Hz, bodi Nitro 7 lebih premium. Tapi RAM baru 8GB, dan HP Victus 15-fa0 (9,46jt) prosesornya jauh lebih baru dengan RAM 16GB
+  {
+    id: 2026110505,
+    name: "Acer Nitro 7 AN715-51",
+    category: "bekas",
+    tier: "A+",
+    price: 9215000,
+    specs: [
+      "Intel Core i7-9750H",
+      "Nvidia GeForce GTX 1660 Ti 6GB",
+      "RAM 8GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/8pn6oxyemm",
+    image:    "./LAPTOP 9 JUTA/Acer Nitro 7 AN715-51 9 Juta.webp"
+  },
+
+  // Tier S: RTX 3050 dan i5-12500H 12 core di bawah 9,5 juta, RAM udah 16GB dan layar 144Hz. Lebih murah dari Lenovo IdeaPad Gaming 3 (9,6jt) yang masih RTX 2050
+  {
+    id: 2026110506,
+    name: "HP Victus 15-fa0",
+    category: "bekas",
+    tier: "S",
+    price: 9456000,
+    specs: [
+      "Intel Core i5-12500H",
+      "Nvidia GeForce RTX 3050 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/qkpIFcJd5",
+    image:    "./LAPTOP 9 JUTA/HP Victus 15-fa0 9 Juta.webp"
+  },
+
+  // Tier S: Harganya sama persis kayak MSI Thin 15 B12UCX (10,22jt), tapi GPU-nya RTX 3050 (bukan RTX 2050) dan bodi TUF lebih tebal buat pendinginan
+  {
+    id: 2026110507,
+    name: "Asus TUF F15 FX506HC",
+    category: "bekas",
+    tier: "S",
+    price: 10224000,
+    specs: [
+      "Intel Core i5-11400H",
+      "Nvidia GeForce RTX 3050 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7KyJ2Emr1Q",
+    image:    "./LAPTOP 10 JUTA/Asus TUF F15 FX506HC 10 Juta.webp"
+  },
+
+  // Tier A+: Prosesor i5-12500H 12 core dan RTX 3050. Tapi RAM baru 8GB, dan Asus TUF F15 FX506HC dengan GPU sama 400 ribu lebih murah dengan RAM 16GB
+  {
+    id: 2026110508,
+    name: "Acer Nitro 5 AN515-58",
+    category: "bekas",
+    tier: "A+",
+    price: 10640000,
+    specs: [
+      "Intel Core i5-12500H",
+      "Nvidia GeForce RTX 3050 4GB",
+      "RAM 8GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1Lh5tE0QK0",
+    image:    "./LAPTOP 10 JUTA/Acer Nitro 5 AN515-58 10 Juta.webp"
+  },
+
+  // =====================================================================
 // LAPTOP BEKAS BARU (dari koleksi affiliate, 23 Okt 2026)
 // - price = harga di HP
 // - image = belum ada, cari pakai cari_gambar.py (daftar_bekas.txt)
@@ -1329,7 +1477,7 @@ const PRODUCTS = [
   id: 23253536,
   name: "Lenovo IdeaPad Gaming 3",
   category: "bekas",
-  tier: "S",
+  tier: "A+",
   sold_out: false,
   price: 9600000,
   specs: [
@@ -1382,7 +1530,7 @@ const PRODUCTS = [
   id: 2325323527,
   name: "HP Pavilion Gaming 15-ec1076AX",
   category: "bekas",
-  tier: "S",
+  tier: "A+",
   sold_out: false,
   price: 8742000,
   specs: [
