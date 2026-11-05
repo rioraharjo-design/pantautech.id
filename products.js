@@ -3091,8 +3091,8 @@ const PRODUCTS = [
     id: 21,
     name: "Axioo Hype 5 X6 AMD",
     category: "odm",
-    tier: "A",
-    price: 8095080,
+    tier: "A+",
+    price: 6883000,
     specs: [
       "AMD Ryzen 5 6600H",
       "Radeon 660M",
@@ -3100,7 +3100,7 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/6fer6naovA",
+    shopUrl:  "https://s.shopee.co.id/9KjNmgTlhV",
     image:    "./LAPTOP 7 JUTA/Axioo Hype 5 X6 AMD.webp"
   },
 
