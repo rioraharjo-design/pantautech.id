@@ -81,7 +81,7 @@
 }
 
 /* 3 teratas sedikit lebih menyala */
-.toko-list-top .toko-card:nth-child(-n+3) .toko-rank {
+.toko-rank-glow {
   font-size: 26px;
   text-shadow: 0 0 14px rgba(57, 255, 126, .55);
 }
@@ -161,6 +161,22 @@
   font-weight: 800;
   line-height: 1.1;
   color: var(--neon);
+}
+
+.toko-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  margin-top: 6px;
+}
+
+.toko-tags .toko-tag { margin-top: 0; }
+
+/* Label "Satu grup dengan ..." untuk toko kembaran */
+.toko-tag-grup {
+  border-color: var(--line-2);
+  color: var(--muted);
+  font-weight: 700;
 }
 
 /* ── Tombol ─────────────────────────────────────────────── */
@@ -299,7 +315,7 @@
   }
   .toko-logo-wrap { width: 44px; height: 44px; border-radius: 10px; }
   .toko-rank { font-size: 18px; }
-  .toko-list-top .toko-card:nth-child(-n+3) .toko-rank { font-size: 21px; }
+  .toko-rank-glow { font-size: 21px; }
   .toko-nama { font-size: 14px; white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
   .toko-meta { gap: 0 8px; font-size: 11.5px; }
   .toko-actions { flex-direction: column; gap: 5px; }
