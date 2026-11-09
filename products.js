@@ -1,5 +1,23 @@
 const PRODUCTS = [
 
+  // Tier S: Prosesor sama kayak ThinkPad T14 Gen 2 Ryzen 5 (5,80jt, S) tapi 460 ribu lebih murah, RAM 2 slot SODIMM jadi gampang diupgrade. Bodinya 130 gram lebih berat dari T14 Gen 2
+  {
+    id: 2026111001,
+    name: "ThinkPad L14 Gen 2 Ryzen 5 (PILIHAN MIMIN)",
+    category: "bekas",
+    tier: "S",
+    price: 5336000,
+    specs: [
+      "AMD Ryzen 5 Pro 5650U",
+      "Radeon Vega 7",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1qdTPZ18IV",
+    image:    "./LAPTOP 5 JUTA/ThinkPad L14 Gen 2 Ryzen 5 5 Juta.webp"
+  },
+
     {
     id: 10123232,
     name: "ThinkPad X13 Gen 1 (PILIHAN MIMIN)",

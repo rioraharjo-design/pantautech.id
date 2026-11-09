@@ -1,9 +1,2 @@
 # Format: nama laptop | harga website
-HP Pavilion Gaming 15-dk0 | 7.536.000
-MSI Bravo 15 B5DD | 8.064.000
-Lenovo Legion 5 15ARH05 | 8.304.000
-HP Pavilion Gaming 15-dk1064TX | 8.550.000
-Acer Nitro 7 AN715-51 | 9.215.000
-HP Victus 15-fa0 | 9.456.000
-Asus TUF F15 FX506HC | 10.224.000
-Acer Nitro 5 AN515-58 | 10.640.000
+ThinkPad L14 Gen 2 Ryzen 5 | 5.336.000
