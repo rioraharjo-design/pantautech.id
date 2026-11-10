@@ -2550,7 +2550,7 @@ const PRODUCTS = [
     price: 3008000,
     specs: [
       "Intel Core i5-7300U",
-      "Intel UHD Graphics 620",
+      "Intel HD Graphics 620",
       "RAM 8GB",
       "SSD 256GB"
     ],
