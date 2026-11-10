@@ -2913,7 +2913,7 @@ const PRODUCTS = [
     name: "Axioo Hype 1 (WAJIB NONTON VIDEO)",
     category: "odm",
     tier: "C",
-    price: 4139080,
+    price: 3689180,
     specs: [
       "Intel Celeron N4020",
       "Intel UHD Graphics 600",
@@ -2921,7 +2921,7 @@ const PRODUCTS = [
       "SSD 128GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7667920615688523015",
-    shopUrl:  "https://s.shopee.co.id/3qLt2ifM0r",
+    shopUrl:  "https://s.shopee.co.id/7VHrvb9amm",
     image:    "./LAPTOP 3 JUTA/Axioo Hype 1.webp"
   },
       {
@@ -3807,5 +3807,23 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
     shopUrl:  "https://s.shopee.co.id/1gIGK5QyL9",
     image:    "./LAPTOP 5 JUTA/ThinkPad P52.webp"
+  },
+
+  // Tier B+: Laptop baru termurah yang masih layak buat kerja ringan. Intel N100 4 core jauh di atas Celeron N4020 punya Axioo Hype 1 (3,69jt, C) dan 400 ribu lebih murah. Tapi SSD cuma 128GB dan RAM onboard
+  {
+    id: 2026111101,
+    name: "Advan T-Book",
+    category: "odm",
+    tier: "B+",
+    price: 3270980,
+    specs: [
+      "Intel N100",
+      "Intel UHD Graphics",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/BVHBvcACt",
+    image:    "./LAPTOP 3 JUTA/Advan T-Book 3 Juta.webp"
   },
 ];
