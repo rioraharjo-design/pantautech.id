@@ -214,11 +214,27 @@ Tapi banyak harganya di atas pasaran, jadi lebih cocok buat cari unit tertentu`
     nama: "REOG KOMPUTER (GAMING)",
     logo: "./Toko/Logo REOG KOMPUTER.webp",
     rating: 4.8,
-    ulasan: "507",
-    pengikut: "3,3rb",
+    ulasan: "511",
+    pengikut: "3,4rb",
     shopUrl: "https://s.shopee.co.id/2Vt3DKZhyF",
     rank: null,
-    catatan: `pilihan dari berbagai harga cukup lengkap, bahkan seringkali ngasih harga murah dibanding toko lain`
+    catatan: `Pilihan laptop gaming paling lengkap, dari GTX 1650 sampai RTX 2070 dan RTX 3060, dan harganya sering lebih murah dari toko lain. Minus layar kayak bleeding biasanya udah ditulis di deskripsi
+
+Tapi ada judul produk yang GPU-nya gak sesuai seri, jadi cocokin dulu spek di judul sama deskripsi, terus tanya garansinya sebelum checkout`
+  },
+
+  {
+    id: 132420,
+    nama: "Dissant'sStore (GAMING)",
+    logo: "./Toko/Logo Dissant'sStore.webp",
+    rating: 4.9,
+    ulasan: "808",
+    pengikut: "2,4rb",
+    shopUrl: "https://s.shopee.co.id/9V2nZBIrRP",
+    rank: null,
+    catatan: `Toko paling jujur soal kondisi unit. Minus kayak kesehatan baterai sampai persennya, whitespot, sampai tombol yang gak berfungsi ditulis jelas di deskripsi, dan banyak unit gaming-nya masih garansi resmi
+
+Pilihannya kebanyakan laptop gaming generasi baru di atas 10 juta, plus model unik kayak HP Envy GTX dan Surface Book. Harganya memang di atas toko lain, tapi kalian bayar buat kondisi yang jelas`
   },
 
   {
@@ -227,10 +243,12 @@ Tapi banyak harganya di atas pasaran, jadi lebih cocok buat cari unit tertentu`
     logo: "./Toko/Logo Story Laptop Bandung.webp",
     rating: 4.9,
     ulasan: "79",
-    pengikut: "2,1rb",
+    pengikut: "2,2rb",
     shopUrl: "https://s.shopee.co.id/114FRXmFr9",
     rank: null,
-    catatan: `Kenapa jadi peringkat 1?, Pilihan laptop gaming sangat banyak diberbagai harga, kalau ragu beli online ada store offlinenya dibandung`
+    catatan: `Etalasenya rapi dan pilihan laptop gaming-nya banyak, dari Nitro dan Pavilion Gaming sampai ROG dan LOQ, plus garansi toko 1 bulan
+
+Tapi tokonya lagi sepi, balas chat lambat, dan tingkat pembatalannya tinggi. Wajib chat buat konfirmasi stok dulu sebelum checkout`
   },
 
   {
@@ -238,23 +256,13 @@ Tapi banyak harganya di atas pasaran, jadi lebih cocok buat cari unit tertentu`
     nama: "Dr.com komputer (GAMING)",
     logo: "./Toko/Logo Dr.com komputer.webp",
     rating: 4.7,
-    ulasan: "639",
+    ulasan: "640",
     pengikut: "2,5rb",
     shopUrl: "https://s.shopee.co.id/114FQXCfLN",
     rank: null,
-    catatan: `Ngejual laptop gaming di banyak pilihan harga tapi beberapa produk harganya lebih tinggi dibanding yang lain`
-  },
+    catatan: `Toko yang lebih fokus ke laptop kantor dan laptop murah, laptop gaming-nya sedikit dan kebanyakan seri lama kayak Baby ROG dan TUF generasi awal. Harga gaming-nya cenderung di atas toko lain
 
-  {
-    id: 132420,
-    nama: "Dissant'sStore (GAMING)",
-    logo: "./Toko/Logo Dissant'sStore.webp",
-    rating: 4.9,
-    ulasan: "806",
-    pengikut: "2,4rb",
-    shopUrl: "https://s.shopee.co.id/9V2nZBIrRP",
-    rank: null,
-    catatan: `Rating dan ulasan terbaik, pilihan laptop gaming diharga tinggi cukup banyak tapi sangat disayangkan dibudget 10 juta kebawah pilihannya sedikit`
+GPU di judul kadang beda sama deskripsi, dan banyak listing gaming yang stoknya kosong. Kalau mau beli di sini, chat penjual buat konfirmasi spek dan stok dulu`
   },
 
 ];
