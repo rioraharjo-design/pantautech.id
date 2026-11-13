@@ -6,7 +6,7 @@ const PRODUCTS = [
     name: "ThinkPad L14 Gen 2 Ryzen 5 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 5336000,
+    price: 5510000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -23,7 +23,7 @@ const PRODUCTS = [
     name: "ThinkPad X13 Gen 1 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 4841000,
+    price: 4892500,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -40,7 +40,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 Ryzen 5 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 5796000,
+    price: 5859000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -57,7 +57,7 @@ const PRODUCTS = [
     name: "HP Elitebook 845 G8 (STOK LANGKA)",
     category: "bekas",
     tier: "S",
-    price: 5828000,
+    price: 5890000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -75,7 +75,7 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: false,
-    price: 6110000,
+    price: 6175000,
     specs: [
       "Intel Core i5-1135G7",
       "Nvidia MX450",
@@ -92,7 +92,7 @@ const PRODUCTS = [
     name: "Advan Pixwar",
     category: "odm",
     tier: "A+",
-    price: 11239080,
+    price: 11599050,
     specs: [
       "AMD Ryzen 7 6800H",
       "Radeon 680M",
@@ -143,6 +143,7 @@ const PRODUCTS = [
   {
     id: 2026102004,
     name: "Axioo Pongo 735 (PILIHAN MIMIN)",
+    sold_out: true,
     category: "odm",
     tier: "S",
     price: 14763650,
@@ -160,6 +161,7 @@ const PRODUCTS = [
   {
     id: 2026102005,
     name: "Lenovo IdeaPad Slim 5 OLED 14 (PILIHAN MIMIN)",
+    sold_out: true,
     category: "global",
     tier: "A+",
     price: 16294000,
@@ -182,6 +184,7 @@ const PRODUCTS = [
   {
     id: 2026110501,
     name: "HP Pavilion Gaming 15-dk0",
+    sold_out: true,
     category: "bekas",
     tier: "A+",
     price: 7536000,
@@ -200,6 +203,7 @@ const PRODUCTS = [
   {
     id: 2026110502,
     name: "MSI Bravo 15 B5DD",
+    sold_out: true,
     category: "bekas",
     tier: "S",
     price: 8064000,
@@ -218,6 +222,7 @@ const PRODUCTS = [
   {
     id: 2026110503,
     name: "Lenovo Legion 5 15ARH05",
+    sold_out: true,
     category: "bekas",
     tier: "A+",
     price: 8304000,
@@ -232,13 +237,13 @@ const PRODUCTS = [
     image:    "./LAPTOP 8 JUTA/Lenovo Legion 5 15ARH05 8 Juta.webp"
   },
 
-  // Tier S: GPU RTX 2060 6GB paling kenceng di 8 juta, lebih kuat dari GTX 1660 Ti punya HP Pavilion Gaming 15-ec1076AX dan 190 ribu lebih murah. RAM baru 8GB
+  // Tier A+: GPU RTX 2060 6GB paling kenceng di bawah 10 juta, tapi harganya naik jadi 9,69jt. HP Pavilion Gaming 15-ec1076AX (8,84jt) dengan GTX 1660 Ti cuma sekitar 13% lebih lambat, 855 ribu lebih murah, dan prosesornya lebih kuat
   {
     id: 2026110504,
     name: "HP Pavilion Gaming 15-dk1064TX",
     category: "bekas",
-    tier: "S",
-    price: 8550000,
+    tier: "A+",
+    price: 9690000,
     specs: [
       "Intel Core i5-10300H",
       "Nvidia GeForce RTX 2060 6GB",
@@ -272,6 +277,7 @@ const PRODUCTS = [
   {
     id: 2026110506,
     name: "HP Victus 15-fa0",
+    sold_out: true,
     category: "bekas",
     tier: "S",
     price: 9456000,
@@ -290,6 +296,7 @@ const PRODUCTS = [
   {
     id: 2026110507,
     name: "Asus TUF F15 FX506HC",
+    sold_out: true,
     category: "bekas",
     tier: "S",
     price: 10224000,
@@ -304,7 +311,7 @@ const PRODUCTS = [
     image:    "./LAPTOP 10 JUTA/Asus TUF F15 FX506HC 10 Juta.webp"
   },
 
-  // Tier A+: Prosesor i5-12500H 12 core dan RTX 3050. Tapi RAM baru 8GB, dan Asus TUF F15 FX506HC dengan GPU sama 400 ribu lebih murah dengan RAM 16GB
+  // Tier A+: Prosesor i5-12500H 12 core dan RTX 3050 4GB, tapi RAM cuma 8GB jadi perlu nambah RAM buat game berat
   {
     id: 2026110508,
     name: "Acer Nitro 5 AN515-58",
@@ -341,7 +348,7 @@ const PRODUCTS = [
     name: "Fujitsu Futro MU937",
     category: "bekas",
     tier: "B",
-    price: 1812400,
+    price: 1832100,
     specs: [
       "Intel Celeron 3865U",
       "Intel HD Graphics 610",
@@ -357,6 +364,7 @@ const PRODUCTS = [
   {
     id: 2026102402,
     name: "ThinkPad T440s (PILIHAN MIMIN)",
+    sold_out: true,
     category: "bekas",
     tier: "B+",
     price: 1886000,
@@ -377,7 +385,7 @@ const PRODUCTS = [
     name: "HP ProBook 640 G2",
     category: "bekas",
     tier: "A+",
-    price: 2820000,
+    price: 2850000,
     specs: [
       "Intel Core i5-6300U",
       "Intel HD Graphics 520",
@@ -426,13 +434,13 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/HP ProBook 445 G8 5 Juta.webp"
   },
 
-  // Tier A+: Bodi premium seri 7, tapi prosesornya sama kayak Latitude 5430 i5 (5,34jt). Nanggung: nambah 90 ribu udah dapet Latitude 7330 i7
+  // Tier A+: Bodi premium seri 7, tapi prosesornya sama kayak Latitude 5330 (5,7jt, S) yang 440 ribu lebih murah dan SSD-nya udah 512GB
   {
     id: 2026102302,
     name: "Dell Latitude 7430",
     category: "bekas",
     tier: "A+",
-    price: 6072000,
+    price: 6138000,
     specs: [
       "Intel Core i5-1245U",
       "Intel Iris Xe 80EU",
@@ -450,7 +458,7 @@ const PRODUCTS = [
     name: "ThinkPad X13 Gen 2",
     category: "bekas",
     tier: "A+",
-    price: 5520000,
+    price: 5580000,
     specs: [
       "Intel Core i5-1145G7",
       "Intel Iris Xe 80EU",
@@ -487,7 +495,7 @@ const PRODUCTS = [
     name: "Dell Latitude 7410",
     category: "bekas",
     tier: "A+",
-    price: 4186000,
+    price: 4231500,
     specs: [
       "Intel Core i5-10210U",
       "Intel UHD Graphics 620",
@@ -505,7 +513,7 @@ const PRODUCTS = [
     name: "ThinkPad L14 Gen 1 Ryzen 7",
     category: "bekas",
     tier: "S",
-    price: 5170000,
+    price: 5225000,
     specs: [
       "AMD Ryzen 7 Pro 4750U",
       "Radeon Vega 7",
@@ -523,7 +531,7 @@ const PRODUCTS = [
     name: "Macbook Pro Retina 15 (2015)",
     category: "bekas",
     tier: "A",
-    price: 3901000,
+    price: 4085000,
     specs: [
       "Intel Core i7-4770HQ",
       "Intel Iris Pro 5200",
@@ -541,7 +549,7 @@ const PRODUCTS = [
     name: "ThinkPad T470",
     category: "bekas",
     tier: "A",
-    price: 3562600,
+    price: 3553000,
     specs: [
       "Intel Core i5-7300U",
       "Intel HD Graphics 620",
@@ -559,7 +567,7 @@ const PRODUCTS = [
     name: "Dell Latitude 5490 i7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "A+",
-    price: 4408600,
+    price: 4370000,
     specs: [
       "Intel Core i7-8650U",
       "Intel UHD Graphics 620",
@@ -571,13 +579,13 @@ const PRODUCTS = [
     image:    "./LAPTOP 3 JUTA/Dell Latitude 5490 i7 3 Juta.webp"
   },
 
-  // Tier A+: Varian non-touch 256GB habis, sisa SSD 512GB jadi 6,10jt. Prosesornya sama kayak Latitude 7430 (6,07jt, A+) yang bodinya seri 7000 dan sedikit lebih murah
+  // Tier S: Prosesor i5-1245U 10 core, bodi 13 inci ringkas, dan SSD udah 512GB di 5,7jt. Lebih murah dari Latitude 7430 (6,14jt) yang prosesornya sama tapi SSD-nya 256GB
   {
     id: 2026102312,
     name: "Dell Latitude 5330 (PILIHAN MIMIN)",
     category: "bekas",
-    tier: "A+",
-    price: 6100600,
+    tier: "S",
+    price: 5700000,
     specs: [
       "Intel Core i5-1245U",
       "Intel Iris Xe 80EU",
@@ -595,7 +603,7 @@ const PRODUCTS = [
     name: "HP Zbook 15U G6 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 5818600,
+    price: 5795000,
     specs: [
       "Intel Core i7-8665U",
       "Radeon Pro WX3200 4GB",
@@ -613,7 +621,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 3 (INTEL)",
     category: "bekas",
     tier: "A",
-    price: 7604600,
+    price: 7543000,
     specs: [
       "Intel Core i5-1245U",
       "Intel Iris Xe 80EU",
@@ -631,7 +639,7 @@ const PRODUCTS = [
     name: "Dell Latitude 7330 i7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 6706800,
+    price: 6840000,
     specs: [
       "Intel Core i7-1265U",
       "Intel Iris Xe 96EU",
@@ -648,7 +656,7 @@ const PRODUCTS = [
     name: "Dell Latitude 7330 i7 SSD 512GB (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 7258800,
+    price: 7353000,
     specs: [
       "Intel Core i7-1265U",
       "Intel Iris Xe 96EU",
@@ -666,7 +674,7 @@ const PRODUCTS = [
     name: "ThinkPad P51 (TEKNIK)",
     category: "bekas",
     tier: "B+",
-    price: 6862000,
+    price: 6935000,
     specs: [
       "Intel Xeon E3-1505M v5",
       "Nvidia Quadro M1200M 4GB",
@@ -683,7 +691,7 @@ const PRODUCTS = [
     name: "HP Victus 15",
     category: "global",
     tier: "A",
-    price: 15749000,
+    price: 15921550,
     specs: [
       "Intel Core i5-13420H",
       "Nvidia GeForce RTX 3050 6GB",
@@ -718,7 +726,7 @@ const PRODUCTS = [
     name: "Acer Nitro V15 ANV15-42",
     category: "global",
     tier: "S",
-    price: 17449000,
+    price: 17726550,
     specs: [
       "AMD Ryzen 7 7445HS",
       "Nvidia GeForce RTX 4050 6GB",
@@ -735,7 +743,7 @@ const PRODUCTS = [
     name: "Acer Nitro V15 52-50FX (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
-    price: 19176999, // PERKIRAAN (Windows Rp19.999.000 - selisih + 200rb). Cek harga varian RTX 5050 "Normal" di HP lalu +200rb
+    price: 19199050, // PERKIRAAN (Windows Rp19.999.000 - selisih + 200rb). Cek harga varian RTX 5050 "Normal" di HP lalu +200rb
     specs: [
       "Intel Core 5-210H",
       "Nvidia GeForce RTX 5050 8GB",
@@ -752,7 +760,7 @@ const PRODUCTS = [
   name: "Asus Baby ROG X550VXK",
   category: "bekas",
   tier: "A",
-  price: 4794000,
+  price: 4845000,
   specs: [
     "Intel Core i7-6700HQ",
     "GTX 950M 2GB",
@@ -770,7 +778,7 @@ const PRODUCTS = [
     name: "Advan Workmate",
     category: "odm",
     tier: "A",
-    price: 5886160,
+    price: 5950140,
     specs: [
       "AMD Ryzen 5 3500U",
       "Radeon Vega 8",
@@ -782,18 +790,18 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/Advan Workmate.webp"
   },
 
-    // Tier S: SSD udah 512GB dan stoknya selalu ada, beda sama HP Elitebook 845 G8 yang stoknya susah banget dicari
+    // Tier S: Stoknya selalu ada, beda sama HP Elitebook 845 G8 yang stoknya susah dicari. Varian 512GB lebih mahal, jadi sekarang pakai SSD 256GB di 5,12jt
     {
     id: 233213333,
     name: "HP Elitebook 845 G7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 5980000,
+    price: 5115000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
       "RAM 16GB",
-      "SSD 512GB"
+      "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/5Atf8mENp0",
@@ -801,12 +809,13 @@ const PRODUCTS = [
   },
 
 
+  // Tier A: Harganya naik jadi 6,65jt. Asus TUF FX504GD (6,46jt, A+) lebih murah, prosesornya i7-8750H lebih kenceng, dan SSD-nya udah 512GB
   {
   id: 213242321235240,
   name: "Asus TUF FX505DY ",
   category: "bekas",
-  tier: "A+",
-  price: 5640000,
+  tier: "A",
+  price: 6650000,
   specs: [
     "AMD Ryzen 5 3550H",
     "AMD Radeon RX 560X 4GB",
@@ -823,7 +832,7 @@ const PRODUCTS = [
     name: "Advan Soulmate X2",
     category: "odm",
     tier: "B",
-    price: 4415080,
+    price: 4463070,
     specs: [
       "AMD Athlon 3020e",
       "Radeon Vega 3",
@@ -844,7 +853,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 1 Ryzen 5 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 5060000,
+    price: 5115000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -861,7 +870,7 @@ const PRODUCTS = [
     name: "Axioo Hype 5 AMD X5-2 (PILIHAN MIMIN)",
     category: "odm",
     tier: "A+",
-    price: 6851660,
+    price: 6924550,
     specs: [
       "AMD Ryzen 5 7430U",
       "Radeon Vega 7",
@@ -878,6 +887,7 @@ const PRODUCTS = [
     {
     id: 623523523532,
     name: "Axioo Hype 5 AMD X5-2 RAM 16GB (PILIHAN MIMIN)",
+    sold_out: true,
     category: "odm",
     tier: "S",
     price: 7932660,
@@ -898,7 +908,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 Ryzen 7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 6674000,
+    price: 6745000,
     specs: [
       "AMD Ryzen 7 Pro 5850U",
       "Radeon Vega 8",
@@ -915,7 +925,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 Ryzen 7 SSD 512GB (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 7332000,
+    price: 7410000,
     specs: [
       "AMD Ryzen 7 Pro 5850U",
       "Radeon Vega 8",
@@ -956,7 +966,7 @@ const PRODUCTS = [
     name: "Axioo Pongo 765",
     category: "odm",
     tier: "S",
-    price: 20989000,
+    price: 20999000,
     specs: [
       "AMD Ryzen 7 255",
       "Nvidia GeForce RTX 5060 8GB",
@@ -989,6 +999,7 @@ const PRODUCTS = [
   {
     id: 2026102105,
     name: "MSI Cyborg 15 B2RWFKG",
+    sold_out: true,
     category: "global",
     tier: "A+",
     price: 21049000,
@@ -1008,7 +1019,7 @@ const PRODUCTS = [
     name: "Lenovo Yoga 7i 2in1 OLED",
     category: "global",
     tier: "A+",
-    price: 22189000,
+    price: 21349000,
     specs: [
       "Intel Ultra 7 256V",
       "Intel Arc 140V",
@@ -1040,6 +1051,7 @@ const PRODUCTS = [
   {
     id: 2026102108,
     name: "HP OmniBook 7 OLED 14 (PILIHAN MIMIN)",
+    sold_out: true,
     category: "global",
     tier: "S",
     price: 23469000,
@@ -1059,7 +1071,7 @@ const PRODUCTS = [
     name: "Acer Nitro V16S ANV16S-41 (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
-    price: 24199000,
+    price: 24198000,
     specs: [
       "AMD Ryzen 7 260",
       "Nvidia GeForce RTX 5060 8GB",
@@ -1110,7 +1122,7 @@ const PRODUCTS = [
     name: "MSI Crosshair 16 HX",
     category: "global",
     tier: "A+",
-    price: 27994000,
+    price: 27930985,
     specs: [
       "Intel Core i7-14650HX",
       "Nvidia GeForce RTX 5060 8GB",
@@ -1127,7 +1139,7 @@ const PRODUCTS = [
     name: "Lenovo Legion 5A OLED (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
-    price: 28049000,
+    price: 27999000,
     specs: [
       "AMD Ryzen AI 7 250",
       "Nvidia GeForce RTX 5050 8GB",
@@ -1175,6 +1187,7 @@ const PRODUCTS = [
   {
     id: 2026102116,
     name: "Asus TUF F16 FX608JMR (PILIHAN MIMIN)",
+    sold_out: true,
     category: "global",
     tier: "A+",
     price: 28601000,
@@ -1243,7 +1256,7 @@ const PRODUCTS = [
     name: "Acer Aspire Lite 14",
     category: "global",
     tier: "A",
-    price: 7429230,
+    price: 7841030,
     specs: [
       "AMD Ryzen 3 5400U",
       "Radeon Vega 6",
@@ -1260,7 +1273,7 @@ const PRODUCTS = [
     name: "Acer Aspire Lite 14-36P",
     category: "global",
     tier: "C",
-    price: 7083080,
+    price: 7099000,
     specs: [
       "Intel Celeron N4500",
       "Intel UHD 16Eu",
@@ -1279,7 +1292,7 @@ const PRODUCTS = [
   category: "bekas",
   tier: "A+",
   sold_out: false,
-  price: 7426000,
+  price: 7505000,
   specs: [
     "Intel Core i5-10300H",
     "Nvidia GeForce GTX 1650 Ti 4GB",
@@ -1298,7 +1311,7 @@ const PRODUCTS = [
   name: "Asus TUF FX504GD ",
   category: "bekas",
   tier: "A+",
-  price: 6392000,
+  price: 6460000,
   specs: [
     "Intel Core i7-8750H",
     "Nvidia GTX 1050 4GB",
@@ -1331,6 +1344,7 @@ const PRODUCTS = [
     {
     id: 207,
     name: "Acer Aspire 7 Pro 3050 6GB (PILIHAN MIMIN)",
+    sold_out: true,
     category: "global",
     tier: "S",
     price: 15074000,
@@ -1353,7 +1367,7 @@ const PRODUCTS = [
   category: "global",
   tier: "A",
   sold_out: false,
-  price: 15018384,
+  price: 14799677,
   specs: [
     "Intel Core i5-210H",
     "Nvidia GeForce RTX 3050 4GB",
@@ -1389,7 +1403,7 @@ const PRODUCTS = [
   name: "Lenovo LOQ 15IAX9 ",
   category: "bekas",
   tier: "A+",
-  sold_out: false,
+  sold_out: true,
   price: 13630000,
   specs: [
     "Intel Core i5-12450HX",
@@ -1407,7 +1421,7 @@ const PRODUCTS = [
   name: "Axioo Pongo 725 V2 (PILIHAN MIMIN)",
   category: "odm",
   tier: "S",
-  sold_out: false,
+  sold_out: true,
   price: 12699000,
   specs: [
     "Intel Core i7-13620H",
@@ -1420,14 +1434,14 @@ const PRODUCTS = [
   image: "./LAPTOP 8 JUTA/pongo 725.webp"
 },
 
-// Tier A+: Harganya naik jadi 12,13jt. Hampir sama kayak Axioo Pongo 725 V2 baru (12,70jt) dan Advan Pixwar T baru (12,15jt) yang masih garansi resmi
+// Tier A+: RTX 3050 6GB dan RAM 16GB, tapi harganya 12,26jt. Hampir sama kayak Advan Pixwar T baru (12,15jt) yang masih garansi resmi
 {
   id: 25235234,
   name: "MSI Cyborg 15 A12U",
   category: "bekas",
   tier: "A+",
   sold_out: false,
-  price: 12126000,
+  price: 12255000,
   specs: [
     "Intel Core i5-12450H",
     "Nvidia GeForce RTX 3050 6GB",
@@ -1442,6 +1456,7 @@ const PRODUCTS = [
   {
     id: 110,
     name: "HP 14 (PILIHAN MIMIN)",
+    sold_out: true,
     category: "global",
     tier: "S",
     price: 11798000,
@@ -1478,7 +1493,7 @@ const PRODUCTS = [
   name: "MSI Thin 15 B12UCX",
   category: "bekas",
   tier: "S",
-  sold_out: false,
+  sold_out: true,
   price: 10224000,
   specs: [
     "Intel Core i7-12650H",
@@ -1514,7 +1529,7 @@ const PRODUCTS = [
   name: "Axioo Hype 5 AMD X6-11 (PILIHAN MIMIN)",
   category: "odm",
   tier: "S",
-  price: 8499880,
+  price: 8739000,
   specs: [
     "AMD Ryzen 5 6600H",
     "Radeon 660M",
@@ -1526,13 +1541,13 @@ const PRODUCTS = [
   image:    "./LAPTOP 8 JUTA/axioo8jt.webp"
 },
 
-  // Tier A+: Generasi lebih baru dan SSD 512GB, tapi iGPU Radeon 740M jauh di bawah Radeon 680M punya ThinkPad T14s Gen 3 Ryzen 7 (9,4jt, S) yang 470 ribu lebih murah
+  // Tier A+: Generasi lebih baru dan SSD 512GB, tapi iGPU Radeon 740M jauh di bawah Radeon 680M punya ThinkPad T14s Gen 3 Ryzen 7 (9,5jt, S) yang 475 ribu lebih murah
   {
     id: 2026110301,
     name: "ThinkPad T14 Gen 4 Ryzen 5",
     category: "bekas",
     tier: "A+",
-    price: 9870000,
+    price: 9975000,
     specs: [
       "AMD Ryzen 5 Pro 7540U",
       "Radeon 740M",
@@ -1550,7 +1565,7 @@ const PRODUCTS = [
   category: "bekas",
   tier: "A+",
   sold_out: false,
-  price: 8742000,
+  price: 8835000,
   specs: [
     "AMD Ryzen 7 4800H",
     "Nvidia GeForce GTX 1660 Ti 6GB",
@@ -1569,7 +1584,7 @@ const PRODUCTS = [
     name: "Axioo Hype 7 AMD X8-1 (PILIHAN MIMIN)",
     category: "odm",
     tier: "S",
-    price: 9741880,
+    price: 10268100,
     specs: [
       "AMD Ryzen 7 6800H",
       "Radeon 680M",
@@ -1608,6 +1623,7 @@ const PRODUCTS = [
       {
     id: 3342420,
     name: "Asus ROG Strix G16 (Laptop Spiderman)",
+    sold_out: true,
     category: "global",
     tier: "S",
     price: 59293000,
@@ -1626,7 +1642,7 @@ const PRODUCTS = [
     name: "ThinkPad T14s Gen 3 Ryzen 7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 9400000,
+    price: 9500000,
     specs: [
       "Ryzen 7 Pro 6850U",
       "Radeon 680M",
@@ -1642,7 +1658,7 @@ const PRODUCTS = [
   name: "ThinkPad T14 Gen 3 Ryzen 5 (PILIHAN MIMIN)",
   category: "bekas",
   tier: "S",
-  price: 8930000,
+  price: 9025000,
   specs: [
     "AMD Ryzen 5 Pro 6650U",
     "Radeon 660M",
@@ -1676,7 +1692,7 @@ const PRODUCTS = [
   name: "Asus TUF Dash F15 FX516PE",
   category: "bekas",
   tier: "S",
-  price: 11092000,
+  price: 11210000,
   specs: [
     "Intel Core i7-11370H",
     "Nvidia RTX 3050 Ti 4GB",
@@ -1698,7 +1714,7 @@ const PRODUCTS = [
     name: "Polytron Luxia Pro Ultra 5",
     category: "odm",
     tier: "S",
-    price: 10943260,
+    price: 11124050,
     specs: [
       "Intel Core Ultra 5 125H",
       "Intel Arc",
@@ -1716,7 +1732,7 @@ const PRODUCTS = [
     name: "Axioo Hype 7 AMD X8-21",
     category: "odm",
     tier: "A+",
-    price: 10457080,
+    price: 10791550,
     specs: [
       "AMD Ryzen 7 7735HS",
       "Radeon 680M",
@@ -1734,7 +1750,7 @@ const PRODUCTS = [
     name: "Tecno Megabook K14SFA",
     category: "odm",
     tier: "A+",
-    price: 10319080,
+    price: 10648100,
     specs: [
       "AMD Ryzen 7 7735HS",
       "Radeon 680M",
@@ -1752,7 +1768,7 @@ const PRODUCTS = [
     name: "Asus Vivobook S14 S3407QA OLED",
     category: "global",
     tier: "A+",
-    price: 12499000,
+    price: 12832150,
     specs: [
       "Snapdragon X X1-26-100",
       "Qualcomm Adreno",
@@ -1768,6 +1784,7 @@ const PRODUCTS = [
   {
     id: 2026110425,
     name: "MSI Thin 15 B13UC",
+    sold_out: true,
     category: "global",
     tier: "A+",
     price: 13562240,
@@ -1792,6 +1809,7 @@ const PRODUCTS = [
   {
     id: 2026110410,
     name: "Dell Latitude 5450",
+    sold_out: true,
     category: "bekas",
     tier: "S",
     price: 10000000,
@@ -1806,13 +1824,13 @@ const PRODUCTS = [
     image:    "./LAPTOP 10 JUTA/Dell Latitude 5450 10 Juta.webp"
   },
 
-  // Tier A+: Bodi aluminium premium dan prosesor sama kayak Acer TravelMate P40 (10,41jt, S), tapi di harga yang sama ada Latitude 5450 yang jauh lebih kenceng
+  // Tier A+: Bodi aluminium premium, tapi HP Elitebook x360 830 G10 (8,84jt, S) dengan prosesor sama 930 ribu lebih murah dan bisa dilipat 2 in 1
   {
     id: 2026110411,
     name: "HP Elitebook 840 G10",
     category: "bekas",
     tier: "A+",
-    price: 10000000,
+    price: 9765050,
     specs: [
       "Intel Core i5-1345U",
       "Intel Iris Xe",
@@ -1824,18 +1842,18 @@ const PRODUCTS = [
     image:    "./LAPTOP 10 JUTA/HP Elitebook 840 G10 10 Juta.webp"
   },
 
-  // Tier A+: Bisa dilipat 2 in 1, bodi premium, SSD udah 1TB. Tapi prosesornya kalah kenceng dari Latitude 5450 yang harganya hampir sama
+  // Tier S: Bisa dilipat 2 in 1 dan bodi premium. Prosesornya sama kayak HP Elitebook 840 G10, tapi 930 ribu lebih murah
   {
     id: 2026110412,
     name: "HP Elitebook x360 830 G10",
     category: "bekas",
-    tier: "A+",
-    price: 10058000,
+    tier: "S",
+    price: 8835000,
     specs: [
       "Intel Core i5-1345U",
       "Intel Iris Xe",
       "RAM 16GB",
-      "SSD 1TB"
+      "SSD 512GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/906V86CJri",
@@ -1848,7 +1866,7 @@ const PRODUCTS = [
     name: "Acer Swift Go 14 SFG14-73",
     category: "bekas",
     tier: "A+",
-    price: 10105000,
+    price: 10212500,
     specs: [
       "Intel Core Ultra 5 125H",
       "Intel Arc",
@@ -1866,7 +1884,7 @@ const PRODUCTS = [
     name: "ThinkPad X1 Carbon Gen 11",
     category: "bekas",
     tier: "A+",
-    price: 10340000,
+    price: 10450000,
     specs: [
       "Intel Core i5-1345U",
       "Intel Iris Xe",
@@ -1884,7 +1902,7 @@ const PRODUCTS = [
     name: "ThinkPad X1 Carbon Gen 10",
     category: "bekas",
     tier: "A+",
-    price: 10528000,
+    price: 10640000,
     specs: [
       "Intel Core i7-1260P",
       "Intel Iris Xe",
@@ -1902,7 +1920,7 @@ const PRODUCTS = [
     name: "ThinkPad P15v Gen 3 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 10424600,
+    price: 10335050,
     specs: [
       "Intel Core i7-12700H",
       "Nvidia T1200 4GB",
@@ -1920,7 +1938,7 @@ const PRODUCTS = [
     name: "HP Zbook Fury G8 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    price: 11082600,
+    price: 11000050,
     specs: [
       "Intel Core i7-11850H",
       "Nvidia RTX A2000 4GB",
@@ -1938,7 +1956,7 @@ const PRODUCTS = [
     name: "MSI Katana GF76 12UC",
     category: "bekas",
     tier: "A+",
-    price: 11844000,
+    price: 11970000,
     specs: [
       "Intel Core i7-12700H",
       "Nvidia GeForce RTX 3050 4GB",
@@ -1956,7 +1974,7 @@ const PRODUCTS = [
     name: "Infinix Inbook Air Pro+ OLED",
     category: "odm",
     tier: "A+",
-    price: 10779080,
+    price: 11313100,
     specs: [
       "Intel Core i5-1334U",
       "Intel Iris Xe",
@@ -1974,7 +1992,7 @@ const PRODUCTS = [
     name: "HP Pavilion Gaming 15-ec2010AX",
     category: "global",
     tier: "S",
-    price: 12137060,
+    price: 12549050,
     specs: [
       "AMD Ryzen 5 5600H",
       "Nvidia GeForce RTX 3050 4GB",
@@ -2050,7 +2068,7 @@ const PRODUCTS = [
   name: "Acer Nitro V15 52-51TE (PILIHAN MIMIN)",
   category: "global",
   tier: "S",
-  price: 16978999,
+  price: 17299050,
   specs: [
     "Intel Core 5-210H",
     "Nvidia RTX 4050 6GB",
@@ -2085,7 +2103,7 @@ const PRODUCTS = [
   name: "Asus TUF A16 FA607NUG (PILIHAN MIMIN)",
   category: "global",
   tier: "S",
-  price: 19169000,
+  price: 19379000,
   specs: [
     "AMD Ryzen 7 7445HS",
     "Nvidia RTX 4050 6GB",
@@ -2102,7 +2120,7 @@ const PRODUCTS = [
   name: "Asus Expertbook P5405CSA (PILIHAN MIMIN)",
   category: "global",
   tier: "S",
-  price: 16878999,
+  price: 17014050,
   specs: [
     "Intel Ultra 5 226V",
     "Intel Arc 130V",
@@ -2275,7 +2293,7 @@ const PRODUCTS = [
     name: "Apple Macbook Neo (PILIHAN MIMIN)",
     category: "global",
     tier: "A+",
-    price: 13622930,
+    price: 13717483,
     specs: [
       "Apple A18 Pro",
       "GPU Apple A18 Pro",
@@ -2312,7 +2330,7 @@ const PRODUCTS = [
     name: "Asus Expertbook P3 G1 (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
-    price: 16839000,
+    price: 17189800,
     specs: [
       "Intel Ultra 7 225H",
       "Intel Arc 140T",
@@ -2327,6 +2345,7 @@ const PRODUCTS = [
   {
     id: 213242434343,
     name: "Acer Nitro Lite 16 ",
+    sold_out: true,
     category: "global",
     tier: "S",
     price: 16678999,
@@ -2346,7 +2365,7 @@ const PRODUCTS = [
     name: "HP Omnibook 3 14-HV0036AU (PILIHAN MIMIN)",
     category: "global",
     tier: "S",
-    price: 16099000,
+    price: 16254050,
     specs: [
       "AMD Ryzen AI 7 445",
       "Radeon 840M",
@@ -2547,11 +2566,11 @@ const PRODUCTS = [
     name: "Dell Latitude 7290",
     category: "bekas",
     tier: "A",
-    price: 3008000,
+    price: 3705000,
     specs: [
       "Intel Core i5-7300U",
       "Intel HD Graphics 620",
-      "RAM 8GB",
+      "RAM 16GB",
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7653819332434070802",
@@ -2616,7 +2635,7 @@ const PRODUCTS = [
     name: "Dell Latitude 5400",
     category: "bekas",
     tier: "S",
-    price: 3901000,
+    price: 3942500,
     specs: [
       "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
@@ -2632,7 +2651,7 @@ const PRODUCTS = [
     name: "ThinkPad X390",
     category: "bekas",
     tier: "A+",
-    price: 4042000,
+    price: 4085000,
     specs: [
       "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
@@ -2648,7 +2667,7 @@ const PRODUCTS = [
     name: "Lenovo ThinkPad T480s",
     category: "bekas",
     tier: "A+",
-    price: 4032600,
+    price: 4028000,
     specs: [
       "Intel Core i5-8250U",
       "Intel UHD Graphics 620",
@@ -2664,7 +2683,7 @@ const PRODUCTS = [
     name: "ThinkPad T495",
     category: "bekas",
     tier: "S",
-    price: 4311780,
+    price: 4357650,
     specs: [
       "AMD Ryzen 5 3500U",
       "Radeon Vega 8",
@@ -2778,7 +2797,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 (INTEL)",
     category: "bekas",
     tier: "S",
-    price: 5640000,
+    price: 5700000,
     specs: [
       "Intel Core i5-1135G7",
       "Intel Iris Xe",
@@ -2794,7 +2813,7 @@ const PRODUCTS = [
     name: "Advan 2 in 1 Go Touchscreen",
     category: "odm",
     tier: "B",
-    price: 5968040,
+    price: 5992920,
     specs: [
       "AMD Ryzen 3 3200U",
       "Radeon Vega 3",
@@ -2811,7 +2830,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 1 Ryzen 7",
     category: "bekas",
     tier: "S",
-    price: 5922000,
+    price: 5985000,
     specs: [
       "AMD Ryzen 7 Pro 4750U",
       "Radeon Vega 7",
@@ -2827,7 +2846,7 @@ const PRODUCTS = [
     name: "ThinkPad L14 Gen 2 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 6204000,
+    price: 6270000,
     specs: [
       "AMD Ryzen 7 5850U",
       "Radeon Vega 8",
@@ -2863,7 +2882,7 @@ const PRODUCTS = [
     name: "Axioo Hype 3 G11",
     category: "odm",
     tier: "B+",
-    price: 6439080,
+    price: 6509070,
     specs: [
       "Intel Core i3-1125G4",
       "Intel UHD Graphics 11th Gen",
@@ -2913,7 +2932,7 @@ const PRODUCTS = [
     name: "Axioo Hype 1 (WAJIB NONTON VIDEO)",
     category: "odm",
     tier: "C",
-    price: 3689180,
+    price: 3905070,
     specs: [
       "Intel Celeron N4020",
       "Intel UHD Graphics 600",
@@ -2929,7 +2948,7 @@ const PRODUCTS = [
     name: "HP Zbook 15U G5 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 5733060,
+    price: 5794050,
     specs: [
       "Intel Core i7-8565U",
       "Radeon Pro WX3200",
@@ -2985,7 +3004,7 @@ const PRODUCTS = [
     name: "Infinix XBOOK 15",
     category: "odm",
     tier: "B+",
-    price: 6806160,
+    price: 6898000,
     specs: [
       "AMD Ryzen 5 5500U",
       "Radeon Vega 7",
@@ -3059,7 +3078,7 @@ const PRODUCTS = [
     name: "Advan Workplus Heritage",
     category: "odm",
     tier: "A+",
-    price: 7727080,
+    price: 7899000,
     specs: [
       "AMD Ryzen 5 7535HS",
       "Radeon 660M",
@@ -3075,7 +3094,7 @@ const PRODUCTS = [
     name: "Infinix Xbook B14",
     category: "odm",
     tier: "A",
-    price: 8268040,
+    price: 8494000,
     specs: [
       "AMD Ryzen 5 7535HS",
       "Radeon 660M",
@@ -3108,6 +3127,7 @@ const PRODUCTS = [
   {
     id: 21,
     name: "Axioo Hype 5 X6 AMD",
+    sold_out: true,
     category: "odm",
     tier: "A+",
     price: 6883000,
@@ -3127,7 +3147,7 @@ const PRODUCTS = [
     name: "Advan Workmate Ultra",
     category: "odm",
     tier: "A",
-    price: 7802000,
+    price: 7623959,
     specs: [
       "Intel Ultra 5 115U",
       "Intel Arc",
@@ -3143,7 +3163,7 @@ const PRODUCTS = [
     name: "Asus Vivobook 14 A1404VA",
     category: "global",
     tier: "A",
-    price: 8780480,
+    price: 8852240,
     specs: [
       "Intel Core i3-1315U",
       "Intel UHD Graphics 13th Gen",
@@ -3157,6 +3177,7 @@ const PRODUCTS = [
   {
     id: 28,
     name: "Acer TravelMate P40 (PILIHAN MIMIN)",
+    sold_out: true,
     category: "global",
     tier: "S",
     price: 10411080,
@@ -3175,7 +3196,7 @@ const PRODUCTS = [
     name: "Asus Expertbook P1 P1403CVA (PILIHAN MIMIN)",
     category: "global",
     tier: "A",
-    price: 9300280,
+    price: 9603550,
     specs: [
       "Intel Core 3 100U",
       "Intel® Graphics",
@@ -3189,6 +3210,7 @@ const PRODUCTS = [
   {
     id: 23,
     name: "Acer Aspire Lite 14 AL14-44P (PILIHAN MIMIN)",
+    sold_out: true,
     category: "global",
     tier: "A+",
     price: 8739080,
@@ -3226,7 +3248,7 @@ const PRODUCTS = [
     name: "Infinix Xbook B14 R7",
     category: "odm",
     tier: "A+",
-    price: 10503080,
+    price: 10838100,
     specs: [
       "Ryzen 7 7735HS",
       "Radeon 680M",
@@ -3298,6 +3320,7 @@ const PRODUCTS = [
   {
     id: 33,
     name: "Acer Aspire Lite 15",
+    sold_out: true,
     category: "global",
     tier: "A",
     price: 10256455,
@@ -3311,13 +3334,13 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/3VhpO64fzT",
     image:    "./LAPTOP 9 JUTA/Acer Aspire Lite 15.webp"
   },
-  // Tier B+: Kemahalan: Acer TravelMate P40 (10,41jt, S) lebih murah dan RAM-nya udah 16GB, sedangkan ini masih 8GB
+  // Tier B+: Kemahalan: RAM cuma 8GB dan iGPU-nya UHD. Di harga segini Tecno Megabook K14SFA (10,65jt, A+) udah RAM 16GB dengan iGPU Radeon 680M yang jauh lebih kenceng
   {
     id: 32,
     name: "Lenovo Ideapad Slim 3 14",
     category: "global",
     tier: "B+",
-    price: 10498480,
+    price: 10519878,
     specs: [
       "Intel Core i5-13420H",
       "Intel UHD Graphics 13th Gen",
@@ -3333,7 +3356,7 @@ const PRODUCTS = [
     name: "ThinkPad P71 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    price: 7802000,
+    price: 7885000,
     specs: [
       "Intel Xeon E3-1535M",
       "Nvidia Quadro P4000 8GB",
@@ -3367,7 +3390,7 @@ const PRODUCTS = [
     name: "Advan Workplus Ai",
     category: "odm",
     tier: "A+",
-    price: 8831300,
+    price: 9260600,
     specs: [
       "AMD Ryzen 7 255",
       "Radeon 780M",
@@ -3422,7 +3445,7 @@ const PRODUCTS = [
     name: "Tecno Megabook T1 14",
     category: "odm",
     tier: "A+",
-    price: 11239080,
+    price: 11598100,
     specs: [
       "Intel Core i9-13900HK",
       "Intel Iris Xe",
@@ -3477,7 +3500,7 @@ const PRODUCTS = [
     name: "ThinkPad P1 Gen 2 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    price: 8930000,
+    price: 9025000,
     specs: [
       "Intel Core i7-9850H",
       "Nvidia Quadro T2000 4GB",
@@ -3634,7 +3657,7 @@ const PRODUCTS = [
     name: "Acer Swift Lite 14",
     category: "global",
     tier: "A",
-    price: 12982730,
+    price: 13284378,
     specs: [
       "AMD Ryzen 7 260",
       "Radeon 780M",
@@ -3809,13 +3832,13 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/ThinkPad P52.webp"
   },
 
-  // Tier B+: Laptop baru termurah yang masih layak buat kerja ringan. Intel N100 4 core jauh di atas Celeron N4020 punya Axioo Hype 1 (3,69jt, C) dan 400 ribu lebih murah. Tapi SSD cuma 128GB dan RAM onboard
+  // Tier B+: Laptop baru termurah yang masih layak buat kerja ringan. Intel N100 4 core jauh di atas Celeron N4020 punya Axioo Hype 1 (3,91jt, C) dan 186 ribu lebih murah. Tapi SSD cuma 128GB dan RAM onboard
   {
     id: 2026111101,
     name: "Advan T-Book",
     category: "odm",
     tier: "B+",
-    price: 3270980,
+    price: 3719070,
     specs: [
       "Intel N100",
       "Intel UHD Graphics",
