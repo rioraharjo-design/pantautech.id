@@ -18,6 +18,8 @@
  *               null = masuk "Toko Lainnya"
  *   grup      – (opsional) nama toko induknya, muncul label
  *               "Satu grup dengan ..." di kartu
+ *   pembatalan– (opsional) tingkat pembatalan dari header toko,
+ *               contoh: "20%". Belum ditampilkan di kartu
  *   catatan   – teks panjang bebas. Satu Enter = lanjut kalimat,
  *               dua Enter = paragraf baru
  * ============================================================
@@ -49,6 +51,7 @@ Listingnya jelas, satu produk satu model dengan spek ditulis di judul. Harga keb
     pengikut: "6,2rb",
     shopUrl: "https://s.shopee.co.id/7KyIysS2Qq",
     rank: 1,
+    pembatalan: "13%",
     grup: "GudangLaptopBTM",
     catatan: `Cabang Jakarta dari GudangLaptopBTM, jadi gaya jualan dan garansinya sama. Pilihannya lebih sedikit, kebanyakan ThinkPad dan Dell Latitude, tapi kadang ada unit yang gak ada di toko pusat dengan harga yang cukup murah
 
@@ -206,7 +209,149 @@ Tapi banyak harganya di atas pasaran, jadi lebih cocok buat cari unit tertentu`
     pengikut: "16,1rb",
     shopUrl: "https://s.shopee.co.id/5q9VCOmC0K",
     rank: null,
-    catatan: `Toko dengan pengikut terbanyak, kenapa? karena tokonya seringkali munculin  produk laptop hidden gem yang speknya sangat bagus tapi dijual dengan harga  murah, terutama buat kalian anak teknik pantau terus toko ini karena sering update  laptop workstation`
+    catatan: `tokonya seringkali munculin  produk laptop hidden gem yang speknya sangat bagus tapi dijual dengan harga  murah, terutama buat kalian anak teknik pantau terus toko ini karena sering update  laptop workstation`
+  },
+
+  {
+    id: 5501,
+    nama: "Laptop WA Surabaya",
+    logo: "./Toko/Logo Laptop WA Surabaya.webp",
+    rating: 4.9,
+    ulasan: "3,4rb",
+    pengikut: "5,9rb",
+    shopUrl: "https://s.shopee.co.id/114TCyga17",
+    rank: null,
+    catatan: `Kuat di HP EliteBook dan ThinkPad kelas atas, dari EliteBook 845 G7 dan G8, X1 Carbon, sampai workstation kayak ZBook Firefly dan ThinkPad P1. Kondisi tiap unit ditulis jelas dalam persen, dan harga EliteBook 845-nya termasuk bersaing
+
+Cukup banyak varian yang kosong, jadi cek dulu stok varian yang kalian mau`
+  },
+
+  {
+    id: 5502,
+    nama: "Kings Computerr",
+    logo: "./Toko/Logo Kings Computerr.webp",
+    rating: 4.9,
+    ulasan: "796",
+    pengikut: "3,9rb",
+    shopUrl: "https://s.shopee.co.id/5q9ixg25VD",
+    rank: null,
+    pembatalan: "20%",
+    catatan: `Harga ThinkPad dan Dell Latitude-nya bersaing, banyak yang di bawah toko lain kayak ThinkPad X390, T495, dan T14 Gen 2. Kondisi unit ditulis jelas, dari grade sampai daya tahan baterai
+
+Ada juga pilihan unik kayak tablet Fujitsu, NEC Versapro, dan Dynabook. Beberapa seri lama kayak ThinkPad T470 sering kosong`
+  },
+
+  {
+    id: 5503,
+    nama: "jaya computerr",
+    logo: "./Toko/Logo jaya computerr.webp",
+    rating: 5.0,
+    ulasan: "204",
+    pengikut: "237",
+    shopUrl: "https://s.shopee.co.id/7VHwwogjJY",
+    rank: null,
+    catatan: `Isinya banyak laptop bisnis premium dan unik, dari Dell Latitude 9420 2 in 1, HP EliteBook Dragonfly, sampai Fujitsu lipat dan Sony Vaio. Kondisi unit ditulis jelas dan ulasan pembelinya bersih
+
+Harga beberapa seri ThinkPad sedikit di atas toko lain dan cukup banyak varian yang kosong`
+  },
+
+  {
+    id: 5504,
+    nama: "M6 Store",
+    logo: "./Toko/Logo M6 Store.webp",
+    rating: 4.9,
+    ulasan: "163",
+    pengikut: "2,3rb",
+    shopUrl: "https://s.shopee.co.id/8fTuKnCYqn",
+    rank: null,
+    pembatalan: "33%",
+    catatan: `Toko kecil dengan harga ThinkPad yang bersaing, ThinkPad X390 dan T14 Gen 2 Intel-nya di bawah toko lain. Ada juga laptop Jepang yang jarang ada kayak NEC Versapro, Fujitsu, dan Dynabook
+
+Tokonya masih baru dan deskripsi kondisinya masih umum, jadi tanya kondisi unit dulu sebelum checkout`
+  },
+
+  {
+    id: 5505,
+    nama: "ajkomputer",
+    logo: "./Toko/Logo ajkomputer.webp",
+    rating: 4.8,
+    ulasan: "1,9rb",
+    pengikut: "6,3rb",
+    shopUrl: "https://s.shopee.co.id/60T99ve7fz",
+    rank: null,
+    catatan: `Salah satu toko paling laris dan chat-nya dibalas dalam hitungan menit. Isinya campuran ThinkPad, Dell Latitude, sampai Sony Vaio, kebanyakan di harga 2 sampai 5 juta
+
+Harga beberapa seri ThinkPad T di atas toko lain dan banyak varian yang kosong, jadi cek varian dan stoknya dulu`
+  },
+
+  {
+    id: 5506,
+    nama: "Jakarta laptop",
+    logo: "./Toko/Logo Jakarta laptop.webp",
+    rating: 4.9,
+    ulasan: "3rb",
+    pengikut: "40,7rb",
+    shopUrl: "https://s.shopee.co.id/5Au2ANdIcF",
+    rank: null,
+    catatan: `Toko lama yang kuat di laptop premium, kayak ThinkPad X1 Carbon, X1 Yoga, HP EliteBook x360, sampai Dell Latitude 7440 2 in 1
+
+Harganya cenderung di atas toko lain dan banyak varian yang kosong, jadi lebih cocok buat yang cari unit premium tertentu`
+  },
+
+  {
+    id: 5507,
+    nama: "Redstar Electronic",
+    logo: "./Toko/Logo Redstar Electronic.webp",
+    rating: 4.9,
+    ulasan: "435",
+    pengikut: "525",
+    shopUrl: "https://s.shopee.co.id/5LDSMsItq3",
+    rank: null,
+    catatan: `Banyak pilihan ThinkPad dan Dell Latitude versi touchscreen, dan beberapa harganya cukup murah kayak ThinkPad T14s Gen 2 Ryzen 7
+
+Deskripsinya lebih ke spek pabrik daripada kondisi unit, jadi tanya kondisi dan pastikan fitur kayak touchscreen sebelum checkout`
+  },
+
+  {
+    id: 5508,
+    nama: "LETOPGARS",
+    logo: "./Toko/Logo LETOPGARS.webp",
+    rating: 4.8,
+    ulasan: "412",
+    pengikut: "3,5rb",
+    shopUrl: "https://s.shopee.co.id/8pnKX9ikBK",
+    rank: null,
+    catatan: `Punya beberapa seri bagus yang jarang ada di toko lain, kayak ThinkPad P1 Gen 4, X1 Carbon, dan Dell Latitude 7440, dan penjualnya responsif
+
+Harga antar variannya kadang gak urut, jadi bandingin dulu beberapa varian sebelum milih`
+  },
+
+  {
+    id: 5509,
+    nama: "ALMA COMPUTER",
+    logo: "./Toko/Logo ALMA COMPUTER.webp",
+    rating: 4.8,
+    ulasan: "1,3rb",
+    pengikut: "1,8rb",
+    shopUrl: "https://s.shopee.co.id/3LSNzEmWri",
+    rank: null,
+    catatan: `Toko ThinkPad yang udah 10 tahun, pilihannya dari ThinkPad lawas sampai L14, T14s, dan X13, dan beberapa harganya di bawah toko lain
+
+Harga di judul sering bukan harga unit yang ready dan deskripsi kondisinya kosong, jadi klik variannya dulu buat tau harga aslinya dan tanya kondisi ke penjual`
+  },
+
+  {
+    id: 5510,
+    nama: "Atio Macbook Bandung (MACBOOK)",
+    logo: "./Toko/Logo Atio Macbook Bandung.webp",
+    rating: 4.9,
+    ulasan: "2,2rb",
+    pengikut: "24,8rb",
+    shopUrl: "https://s.shopee.co.id/1Bw15riW8",
+    rank: null,
+    catatan: `Toko MacBook bekas dengan pilihan paling lengkap, dari MacBook Air M1 dan M2 sampai MacBook Pro M-series, plus iPad dan iMac. Grade dan minus kayak penyok ditandai jelas di variannya
+
+Cycle count baterai dan status iCloud belum ditulis di deskripsi, jadi tanyain dulu ke penjual sebelum checkout`
   },
 
   {
@@ -238,6 +383,20 @@ Pilihannya kebanyakan laptop gaming generasi baru di atas 10 juta, plus model un
   },
 
   {
+    id: 5511,
+    nama: "Sri Laptop BDG (GAMING)",
+    logo: "./Toko/Logo Sri Laptop BDG.webp",
+    rating: 4.9,
+    ulasan: "99",
+    pengikut: "2,1rb",
+    shopUrl: "https://s.shopee.co.id/3LSNzB2Enn",
+    rank: null,
+    catatan: `Toko laptop gaming di Bandung dengan pilihan Asus TUF, ROG lawas, MSI GF63, Pavilion Gaming, sampai ROG Zephyrus G14. Listingnya rapi dan admin-nya responsif
+
+Harganya cenderung di atas toko lain dan kondisi tiap unit kayak layar belum ditulis detail, jadi minta video unit dulu sebelum beli`
+  },
+
+  {
     id: 9432423,
     nama: "Story Laptop Bandung (GAMING)",
     logo: "./Toko/Logo Story Laptop Bandung.webp",
@@ -246,6 +405,7 @@ Pilihannya kebanyakan laptop gaming generasi baru di atas 10 juta, plus model un
     pengikut: "2,2rb",
     shopUrl: "https://s.shopee.co.id/114FRXmFr9",
     rank: null,
+    pembatalan: "100%",
     catatan: `Etalasenya rapi dan pilihan laptop gaming-nya banyak, dari Nitro dan Pavilion Gaming sampai ROG dan LOQ, plus garansi toko 1 bulan
 
 Tapi tokonya lagi sepi, balas chat lambat, dan tingkat pembatalannya tinggi. Wajib chat buat konfirmasi stok dulu sebelum checkout`
@@ -260,6 +420,7 @@ Tapi tokonya lagi sepi, balas chat lambat, dan tingkat pembatalannya tinggi. Waj
     pengikut: "2,5rb",
     shopUrl: "https://s.shopee.co.id/114FQXCfLN",
     rank: null,
+    pembatalan: "31%",
     catatan: `Toko yang lebih fokus ke laptop kantor dan laptop murah, laptop gaming-nya sedikit dan kebanyakan seri lama kayak Baby ROG dan TUF generasi awal. Harga gaming-nya cenderung di atas toko lain
 
 GPU di judul kadang beda sama deskripsi, dan banyak listing gaming yang stoknya kosong. Kalau mau beli di sini, chat penjual buat konfirmasi spek dan stok dulu`
@@ -269,13 +430,15 @@ GPU di judul kadang beda sama deskripsi, dan banyak listing gaming yang stoknya 
 
 // ============================================================
 // RENDER — tidak perlu diubah
-// Nama toko yang mengandung "(GAMING)" otomatis dapat label Gaming.
+// Nama toko yang mengandung "(GAMING)" atau "(MACBOOK)" otomatis
+// dapat label Gaming atau MacBook.
 // ============================================================
 
 function parseToko(t) {
-  const isGaming = /\(GAMING\)/i.test(t.nama);
-  const nama = t.nama.replace(/\(GAMING\)/ig, "").replace(/\s{2,}/g, " ").trim();
-  return { nama, isGaming };
+  const isGaming  = /\(GAMING\)/i.test(t.nama);
+  const isMacbook = /\(MACBOOK\)/i.test(t.nama);
+  const nama = t.nama.replace(/\((GAMING|MACBOOK)\)/ig, "").replace(/\s{2,}/g, " ").trim();
+  return { nama, isGaming, isMacbook };
 }
 
 function inisial(nama) {
@@ -306,9 +469,10 @@ function renderTokoCard(t) {
           <span class="toko-ulasan">${t.ulasan} ulasan</span>
           <span class="toko-pengikut">${t.pengikut} pengikut</span>
         </div>
-        ${info.isGaming || t.grup ? `<div class="toko-tags">
+        ${info.isGaming || info.isMacbook || t.grup ? `<div class="toko-tags">
           ${t.grup ? `<span class="toko-tag toko-tag-grup">Satu grup dengan ${t.grup}</span>` : ""}
           ${info.isGaming ? `<span class="toko-tag">Gaming</span>` : ""}
+          ${info.isMacbook ? `<span class="toko-tag">MacBook</span>` : ""}
         </div>` : ""}
       </div>
       <div class="toko-actions">
