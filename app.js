@@ -33,7 +33,7 @@
  *   (paling atas) diberi warna hijau.
  *   Kalau diisi, tombol Shopee dapat panah dropdown. Dipencet → muncul
  *   pilihan "Pilihan utama" (shopUrl) dan link-link di atas, lengkap
- *   dengan harganya. Harga di kartu tetap pakai price (pilihan utama).
+ *   dengan harganya. Harga di kartu otomatis pakai yang termurah.
  *   Link yang habis tinggal dihapus dari daftar. Field toko: "..." boleh
  *   diisi buat catatan dan GA4, tidak tampil di website.
  * ============================================================
@@ -47,6 +47,18 @@ let activeTier     = "semua";
 let activeSort     = "default";
 let searchQuery    = "";
 let guideMode      = false;   // true setelah pengunjung pakai "Lihat Pilihan Mimin"
+
+// ── Harga termurah ───────────────────────────────────────────
+// Laptop yang punya linkLain: harga di kartu, filter harga, urutan,
+// dan Bantu pilihin pakai harga termurah dari semua link.
+// Harga link utama (price asli di products.js) disimpan di hargaUtama.
+PRODUCTS.forEach(p => {
+  p.hargaUtama = p.price;
+  if (!Array.isArray(p.linkLain)) return;
+  p.linkLain.forEach(l => {
+    if (l && l.url && l.harga && l.harga < p.price) p.price = l.harga;
+  });
+});
 
 // ── Format harga ─────────────────────────────────────────────
 function formatRupiah(angka) {
@@ -188,8 +200,8 @@ function shopDropdown(p, safeName) {
   const esc   = s => String(s || "").replace(/'/g, "\\'");
   // Urut dari yang termurah; yang paling atas (termurah) diberi warna hijau
   const semua = [
-    { url: p.shopUrl, harga: p.price, label: p.labelUtama || "Pilihan utama", toko: p.toko, utama: true },
-    ...linkLainAktif(p).map(l => ({ ...l, harga: l.harga || p.price }))
+    { url: p.shopUrl, harga: p.hargaUtama, label: p.labelUtama || "Pilihan utama", toko: p.toko, utama: true },
+    ...linkLainAktif(p).map(l => ({ ...l, harga: l.harga || p.hargaUtama }))
   ].sort((x, y) => x.harga - y.harga);
   const items = semua.map((l, i) => `
     <a href="${l.url}" target="_blank" rel="noopener" class="shop-opt${i === 0 ? " shop-opt-utama" : ""}"
