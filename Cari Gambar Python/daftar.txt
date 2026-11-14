@@ -1,2 +1,6 @@
-# Format: nama laptop | harga website
-Advan T-Book | 3.270.980
+ThinkPad X13 Gen 3 Ryzen 7 | 7.000.000
+Dell Latitude 7340 | 6.000.000
+Dell Latitude 9420 2 in 1 | 5.000.000
+Dell Latitude 7420 | 4.000.000
+HP ZBook Studio G4 | 4.000.000
+ThinkPad X395 Ryzen 7 | 4.000.000

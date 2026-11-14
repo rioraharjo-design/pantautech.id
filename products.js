@@ -1,5 +1,7 @@
 const PRODUCTS = [
 
+
+
   // Tier S: Prosesor sama kayak ThinkPad T14 Gen 2 Ryzen 5 (5,80jt, S) tapi 460 ribu lebih murah, RAM 2 slot SODIMM jadi gampang diupgrade. Bodinya 130 gram lebih berat dari T14 Gen 2
   {
     id: 2026111001,
@@ -23,7 +25,7 @@ const PRODUCTS = [
     name: "ThinkPad X13 Gen 1 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 4892500,
+    price: 4589550,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -31,7 +33,11 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-    shopUrl:  "https://s.shopee.co.id/2LZTc9A5JS",
+    shopUrl:  "https://s.shopee.co.id/AKc8Wy3Nzv",
+    toko: "WDCOMPUTER.ID",
+    linkLain: [
+      { url: "https://s.shopee.co.id/2LZTc9A5JS", harga: 4892500, label: "Toko lain" }
+    ],
     image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
   },
 
@@ -54,7 +60,7 @@ const PRODUCTS = [
 
         {
     id: 11,
-    name: "HP Elitebook 845 G8 (STOK LANGKA)",
+    name: "HP Elitebook 845 G8 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
     price: 5890000,
@@ -66,6 +72,9 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/9KjE5sCWPJ",
+    linkLain: [
+      { url: "https://s.shopee.co.id/5LDSdU7bk1", harga: 5785500, label: "Toko lain", toko: "Laptop WA Surabaya" }
+    ],
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
@@ -138,6 +147,120 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/7VHJxUHzOo",
     image:    "./LAPTOP 14 JUTA/Acer Aspire Go 14 AI 14 Juta.webp"
+  },
+
+    // Tier S: Prosesor dan iGPU Radeon 680M sama kayak ThinkPad T14s Gen 3 Ryzen 7 (9,5jt, S), tapi 1,67jt lebih murah dengan bodi 13 inci yang lebih ringkas
+  {
+    id: 2026111401,
+    name: "ThinkPad X13 Gen 3 Ryzen 7",
+    category: "bekas",
+    tier: "S",
+    price: 7828000,
+    specs: [
+      "AMD Ryzen 7 Pro 6850U",
+      "AMD Radeon 680M",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9AQB8yTlVj",
+    toko: "GudangLaptopBTM",
+    image:    "./LAPTOP 7 JUTA/ThinkPad X13 Gen 3 Ryzen 7 7 Juta.webp"
+  },
+
+  // Tier S: Prosesor sama kayak HP Elitebook 840 G10 (9,77jt) di bodi Latitude seri 7000 13 inci, tapi 2,8jt lebih murah
+  {
+    id: 2026111402,
+    name: "Dell Latitude 7340",
+    category: "bekas",
+    tier: "S",
+    price: 6950000,
+    specs: [
+      "Intel Core i5-1345U",
+      "Intel Iris Xe",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3g5Eawdbpn",
+    toko: "LETOPGARS",
+    image:    "./LAPTOP 6 JUTA/Dell Latitude 7340 6 Juta.webp"
+  },
+
+  // Tier S: Seri 2 in 1 paling atas punya Dell dengan layar sentuh 14 inci, 3,3jt lebih murah dari HP Elitebook x360 830 G10. Prosesornya 2 generasi lebih lama
+  {
+    id: 2026111403,
+    name: "Dell Latitude 9420 2 in 1",
+    category: "bekas",
+    tier: "S",
+    price: 5510000,
+    specs: [
+      "Intel Core i5-1145G7",
+      "Intel Iris Xe 80EU",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/ql3DzVYfX",
+    toko: "jaya computer",
+    image:    "./LAPTOP 5 JUTA/Dell Latitude 9420 2 in 1 5 Juta.webp"
+  },
+
+  // Tier S: Bodi Latitude seri 7000 dengan prosesor sekelas ThinkPad T14 Gen 2 Intel (5,7jt), tapi 760 ribu lebih murah
+  {
+    id: 2026111404,
+    name: "Dell Latitude 7420",
+    category: "bekas",
+    tier: "S",
+    price: 4940000,
+    specs: [
+      "Intel Core i5-1145G7",
+      "Intel Iris Xe 80EU",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6VPPyFN6FA",
+    toko: "jaya computer",
+    image:    "./LAPTOP 4 JUTA/Dell Latitude 7420 4 Juta.webp"
+  },
+
+  // Tier S: CPU dan GPU sama kayak ThinkPad P51 (6,94jt), tapi 2 juta lebih murah dan bodinya jauh lebih tipis
+  {
+    id: 2026111405,
+    name: "HP ZBook Studio G4 (TEKNIK)",
+    category: "bekas",
+    tier: "S",
+    price: 4940000,
+    specs: [
+      "Intel Xeon E3-1505M v5",
+      "Nvidia Quadro M1200 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9fMRk12Huj",
+    toko: "GudangLaptopBTM",
+    image:    "./LAPTOP 4 JUTA/HP ZBook Studio G4 4 Juta.webp"
+  },
+
+  // Tier S: Harganya sama kayak ThinkPad T495 (4,36jt), tapi prosesornya Ryzen 7 dan bodinya 13 inci yang lebih ringan
+  {
+    id: 2026111406,
+    name: "ThinkPad X395 Ryzen 7",
+    category: "bekas",
+    tier: "S",
+    price: 4370000,
+    specs: [
+      "AMD Ryzen 7 Pro 3700U",
+      "AMD Radeon Vega 10",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/9zzI8oEJRT",
+    toko: "Gugel Laptop",
+    image:    "./LAPTOP 4 JUTA/ThinkPad X395 Ryzen 7 4 Juta.webp"
   },
 
   {
@@ -621,7 +744,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 3 (INTEL)",
     category: "bekas",
     tier: "A",
-    price: 7543000,
+    price: 7000000,
     specs: [
       "Intel Core i5-1245U",
       "Intel Iris Xe 80EU",
@@ -629,7 +752,11 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/9fLtVye0DH",
+    shopUrl:  "https://s.shopee.co.id/2LZr0N8wk9",
+    toko: "LAPTOPIN.ID",
+    linkLain: [
+      { url: "https://s.shopee.co.id/9fLtVye0DH", harga: 7543000, label: "Toko lain" }
+    ],
     image:    "./LAPTOP 7 JUTA/ThinkPad T14 Gen 3 (INTEL) 7 Juta.webp"
   },
 
@@ -805,6 +932,9 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/5Atf8mENp0",
+    linkLain: [
+      { url: "https://s.shopee.co.id/5LDSdU7bk1", harga: 5215500, label: "Toko lain", toko: "Laptop WA Surabaya" }
+    ],
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
@@ -862,6 +992,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/W7pa7lMsl",
+    labelUtama: "T14",
+    linkLain: [
+      { url: "https://s.shopee.co.id/gRd1cqIis", harga: 4650000, label: "T14s (Seri S Lebih Tipis)", toko: "LAPTOPIN.ID" }
+    ],
     image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
   },
 
@@ -917,6 +1051,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
     shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
+    labelUtama: "T14",
+    linkLain: [
+      { url: "https://s.shopee.co.id/70LgZX1wAD", harga: 6555000, label: "T14s (Seri S Lebih Tipis)", toko: "Redstar" }
+    ],
     image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
   },
 
@@ -1653,20 +1791,25 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/5q8XsW3reZ",
     image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
   },
+  // Tier S: iGPU Radeon 660M dan prosesor 6 core generasi Zen 3+. Varian SSD 256GB di LOCKSTORE 1,2jt lebih murah dari varian 512GB
   {
   id: 13249,
   name: "ThinkPad T14 Gen 3 Ryzen 5 (PILIHAN MIMIN)",
   category: "bekas",
   tier: "S",
-  price: 9025000,
+  price: 7837500,
   specs: [
     "AMD Ryzen 5 Pro 6650U",
     "Radeon 660M",
     "RAM 16GB",
-    "SSD 512GB"
+    "SSD 256GB"
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
-  shopUrl:  "https://s.shopee.co.id/BUB7rYvvq",
+  shopUrl:  "https://s.shopee.co.id/5VWsmgWCuf",
+  toko: "LOCKSTORE",
+  linkLain: [
+    { url: "https://s.shopee.co.id/BUB7rYvvq", harga: 9025000, label: "SSD 512GB" }
+  ],
   image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
 },
 
@@ -2651,7 +2794,7 @@ const PRODUCTS = [
     name: "ThinkPad X390",
     category: "bekas",
     tier: "A+",
-    price: 4085000,
+    price: 3705000,
     specs: [
       "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
@@ -2659,7 +2802,11 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
-    shopUrl:  "https://s.shopee.co.id/4AxvbMQSix",
+    shopUrl:  "https://s.shopee.co.id/6fiqA6x8vH",
+    toko: "Kings Computerr",
+    linkLain: [
+      { url: "https://s.shopee.co.id/4AxvbMQSix", harga: 4085000, label: "Toko lain" }
+    ],
     image:    "./LAPTOP 3 JUTA/thinkpad x.webp"
   },
   {

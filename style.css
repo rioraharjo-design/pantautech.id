@@ -701,6 +701,66 @@ button { font-family: inherit; }
 }
 .btn-shop:hover { background: #6dffa0; }
 
+/* Tombol Shopee dengan pilihan link (kalau ada linkLain) */
+.card-actions { position: relative; }
+
+.btn-shop-dd { font-family: inherit; }
+.btn-shop-dd .chevron { transition: transform .2s; }
+.btn-shop-dd.open .chevron { transform: rotate(180deg); }
+
+.shop-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(100% + 6px);
+  z-index: 20;
+  padding: 6px;
+  background: rgba(0, 0, 0, .92);
+  border: 1px solid var(--line-2);
+  border-radius: 12px;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, .7);
+}
+.shop-menu.open { display: grid; gap: 6px; animation: menu-in .14s ease-out; }
+
+/* Tiap pilihan = tombol sendiri */
+.shop-opt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 8px 9px 8px 11px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-2);
+  border-radius: 9px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color .15s, background-color .15s, transform .1s;
+}
+.shop-opt:hover { border-color: var(--neon); background: var(--neon-soft); }
+.shop-opt:active { transform: scale(.97); }
+
+.shop-opt-utama { border-color: rgba(57, 255, 126, .6); background: var(--neon-soft); }
+
+.shop-opt-text { display: grid; gap: 1px; min-width: 0; }
+
+.shop-opt-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--muted);
+}
+.shop-opt-utama .shop-opt-label { color: var(--neon); }
+
+.shop-opt-price {
+  font-stretch: 118%;
+  font-weight: 900;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.shop-opt-go { flex-shrink: 0; color: var(--neon); }
+
 .btn-habis {
   background: rgba(255, 77, 77, .1);
   border: 1px solid rgba(255, 77, 77, .35);

@@ -21,6 +21,21 @@
  *
  * Opsional: field usecase: ["gaming", "teknik"] di products.js
  * juga bisa dipakai, hasilnya sama.
+ *
+ * LINK LAIN (opsional, di products.js):
+ *   linkLain: [
+ *     { url: "https://s.shopee.co.id/...", harga: 5785500, label: "Toko lain" },
+ *     { url: "...", harga: 4650000, label: "T14s (Seri S Lebih Tipis)" }
+ *   ],
+ *   labelUtama: "T14",   → (opsional) nama pilihan untuk shopUrl,
+ *                          kalau kosong tulisannya "Pilihan utama"
+ *   Pilihan selalu diurutkan dari yang termurah, dan yang termurah
+ *   (paling atas) diberi warna hijau.
+ *   Kalau diisi, tombol Shopee dapat panah dropdown. Dipencet → muncul
+ *   pilihan "Pilihan utama" (shopUrl) dan link-link di atas, lengkap
+ *   dengan harganya. Harga di kartu tetap pakai price (pilihan utama).
+ *   Link yang habis tinggal dihapus dari daftar. Field toko: "..." boleh
+ *   diisi buat catatan dan GA4, tidak tampil di website.
  * ============================================================
  */
 
@@ -147,7 +162,9 @@ function renderCard(p, isSoldOut = false) {
           </a>
           ${isSoldOut
             ? `<span class="btn btn-habis">Stok Habis</span>`
-            : `<a href="${p.shopUrl}" target="_blank" rel="noopener" class="btn btn-shop"
+            : linkLainAktif(p).length
+              ? shopDropdown(p, safeName)
+              : `<a href="${p.shopUrl}" target="_blank" rel="noopener" class="btn btn-shop"
                 onclick="trackClick('shopee', '${safeName}', '${p.category}', ${p.price})">Shopee</a>`
           }
           ${isSoldOut && findAlternatif(p)
@@ -160,6 +177,56 @@ function renderCard(p, isSoldOut = false) {
       </div>
     </article>
   `;
+}
+
+// ── Tombol Shopee dengan pilihan link ────────────────────────
+function linkLainAktif(p) {
+  return Array.isArray(p.linkLain) ? p.linkLain.filter(l => l && l.url) : [];
+}
+
+function shopDropdown(p, safeName) {
+  const esc   = s => String(s || "").replace(/'/g, "\\'");
+  // Urut dari yang termurah; yang paling atas (termurah) diberi warna hijau
+  const semua = [
+    { url: p.shopUrl, harga: p.price, label: p.labelUtama || "Pilihan utama", toko: p.toko, utama: true },
+    ...linkLainAktif(p).map(l => ({ ...l, harga: l.harga || p.price }))
+  ].sort((x, y) => x.harga - y.harga);
+  const items = semua.map((l, i) => `
+    <a href="${l.url}" target="_blank" rel="noopener" class="shop-opt${i === 0 ? " shop-opt-utama" : ""}"
+      onclick="trackClick('${l.utama ? "shopee" : "shopee_lain"}', '${safeName}', '${p.category}', ${l.harga || p.price}, '${esc(l.toko)}')">
+      <span class="shop-opt-text">
+        <span class="shop-opt-label">${l.label || "Toko lain"}</span>
+        <span class="shop-opt-price">${formatRupiah(l.harga || p.price)}</span>
+      </span>
+      <svg class="shop-opt-go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" width="14" height="14" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+    </a>`).join("");
+  return `
+    <button type="button" class="btn btn-shop btn-shop-dd" aria-haspopup="true" aria-expanded="false"
+      onclick="toggleShopMenu(event, this)">
+      Shopee
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" width="13" height="13" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="shop-menu">${items}</div>`;
+}
+
+function closeShopMenus(except) {
+  document.querySelectorAll(".shop-menu.open").forEach(m => {
+    if (m === except) return;
+    m.classList.remove("open");
+    m.previousElementSibling?.classList.remove("open");
+    m.previousElementSibling?.setAttribute("aria-expanded", "false");
+  });
+}
+
+function toggleShopMenu(e, btn) {
+  e.stopPropagation();
+  const menu = btn.nextElementSibling;
+  const buka = !menu.classList.contains("open");
+  closeAllDropdowns();
+  closeShopMenus(menu);
+  menu.classList.toggle("open", buka);
+  btn.classList.toggle("open", buka);
+  btn.setAttribute("aria-expanded", String(buka));
 }
 
 // ── Filter & Render ──────────────────────────────────────────
@@ -271,6 +338,7 @@ document.getElementById("categoryTabs").addEventListener("click", e => {
 
 // ── Helper: tutup semua dropdown ────────────────────────────
 function closeAllDropdowns() {
+  closeShopMenus();
   ["priceMenu", "sortMenu", "tierMenu"].forEach(id => {
     document.getElementById(id)?.classList.remove("open");
   });
@@ -633,11 +701,11 @@ function closeCompare() {
 }
 
 // ── GA4 ──────────────────────────────────────────────────────
-function trackClick(tombol, namaLaptop, kategori, harga) {
+function trackClick(tombol, namaLaptop, kategori, harga, namaToko) {
   if (typeof gtag !== "function") return;
-  gtag("event", "klik_produk", {
-    tombol, nama_laptop: namaLaptop, kategori, harga
-  });
+  const data = { tombol, nama_laptop: namaLaptop, kategori, harga };
+  if (namaToko) data.nama_toko = namaToko;
+  gtag("event", "klik_produk", data);
 }
 
 // ── Init ─────────────────────────────────────────────────────
