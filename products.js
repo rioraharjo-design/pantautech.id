@@ -206,12 +206,12 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/Dell Latitude 9420 2 in 1 5 Juta.webp"
   },
 
-  // Tier S: Bodi Latitude seri 7000 dengan prosesor sekelas ThinkPad T14 Gen 2 Intel (5,7jt), tapi 760 ribu lebih murah
+  // Tier A+: iGPU Iris Xe cuma unggul tipis, tapi CPU 4 core kalah jauh dari X13 Gen 1 (4,59jt) yang 350 ribu lebih murah
   {
     id: 2026111404,
     name: "Dell Latitude 7420",
     category: "bekas",
-    tier: "S",
+    tier: "A+",
     price: 4940000,
     specs: [
       "Intel Core i5-1145G7",
