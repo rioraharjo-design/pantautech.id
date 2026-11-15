@@ -687,7 +687,7 @@ const PRODUCTS = [
   // Tier A+: Varian 256GB dan 512GB habis, sisa SSD 1TB jadi 4,41jt. Lebih mahal dari Latitude 5400 (3,90jt, S) dan ThinkPad T495 (4,31jt, S)
   {
     id: 2026102311,
-    name: "Dell Latitude 5490 i7 (PILIHAN MIMIN)",
+    name: "Dell Latitude 5490 i7",
     category: "bekas",
     tier: "A+",
     price: 4370000,
