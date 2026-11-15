@@ -173,7 +173,7 @@ const PRODUCTS = [
     id: 2026111402,
     name: "Dell Latitude 7340",
     category: "bekas",
-    tier: "S",
+    tier: "A+",
     price: 6950000,
     specs: [
       "Intel Core i5-1345U",
@@ -2943,7 +2943,7 @@ const PRODUCTS = [
     id: 13,
     name: "ThinkPad T14 Gen 2 (INTEL)",
     category: "bekas",
-    tier: "S",
+    tier: "A+",
     price: 5700000,
     specs: [
       "Intel Core i5-1135G7",
