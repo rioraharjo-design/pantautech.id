@@ -2,19 +2,27 @@
 """
 Cari gambar laptop otomatis untuk website Pantau Tech.
 
-Cara pakai (di folder yang sama dengan file ini):
-    1. pip install ddgs pillow requests
-    2. Isi daftar.txt: satu laptop per baris, format:  nama laptop | harga
-       contoh:  Advan Pixwar | 11239000   ->  file "Advan Pixwar 11 Juta.jpg"
-       (harga boleh ditulis 11239000, 11.239.000, Rp11.239.000, atau 11 juta; boleh juga dikosongkan)
-    3. python cari_gambar.py
+Cara pakai (di folder "Cari Gambar Python", di dalam folder website):
+    1. pip install ddgs pillow requests      (cukup sekali)
+    2. python cari_gambar.py
+
+Skrip baca products.js sendiri, nyari laptop AKTIF yang file gambarnya belum ada,
+lalu nyimpen gambar terbaik langsung sebagai .webp di path "image" laptop itu
+(contoh ./LAPTOP 1 JUTA/ThinkPad X240 1 Juta.webp). Gak perlu isi daftar.txt,
+gak perlu convert pakai XnConvert lagi.
+
+Setingan webp sama dengan XnConvert: quality 70, compression method 4,
+filter strength 60, sharpness 0.
+
+Pilihan lain:
+    python cari_gambar.py --cek      -> cuma nampilin laptop yang belum ada gambarnya, gak download apa-apa
+    python cari_gambar.py --daftar   -> cara lama: baca daftar.txt ("nama | harga"), hasil di folder hasil/
 
 Hasil:
-    hasil/<nama laptop> <X> Juta.jpg   -> gambar terbaik (siap di-convert ke webp)
-    hasil/_kandidat/<nama laptop>/     -> 3 kandidat cadangan, contoh "Acer Swift Lite 14 11 Juta 2_skor0.95.jpg"
-                                          (kalau dipakai, tinggal hapus " 2_skor0.95" di belakangnya)
-
-Semua hasil disimpan sebagai JPG dengan background putih/solid (tidak transparan).
+    gambar terbaik  -> langsung di folder LAPTOP X JUTA (sesuai products.js)
+    hasil/_kandidat/<nama laptop>/   -> 3 kandidat cadangan .webp, contoh "ThinkPad X240 1 Juta 2_skor0.95.webp"
+        Kalau gambar utama jelek: hapus gambar utama, pindahin kandidat ke folder LAPTOP X JUTA,
+        lalu hapus " 2_skor0.95" di belakang namanya.
 """
 
 import io
@@ -36,6 +44,9 @@ except ImportError:  # versi lama
 # PENGATURAN (boleh diubah)
 # ----------------------------------------------------------------------------
 FILE_DAFTAR = "daftar.txt"
+FILE_PRODUK = os.path.join("..", "products.js")   # products.js ada satu folder di atas skrip ini
+WEBP_QUALITY = 70          # sama dengan XnConvert
+WEBP_METHOD = 4            # "Compression method" di XnConvert
 FOLDER_HASIL = "hasil"
 MAKS_HASIL_CARI = 40        # berapa hasil pencarian yang dilihat per laptop
 MAKS_DOWNLOAD = 25          # berapa gambar yang dicoba download per laptop
@@ -359,7 +370,14 @@ def label_harga(rupiah):
     return f"{rupiah // 1_000_000} Juta"
 
 
-def proses(nama, harga=None):
+def simpan_webp(img, path):
+    """Simpan sebagai webp dengan setingan XnConvert (filter strength 60 dan sharpness 0 = bawaan webp)."""
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    img.save(path, "WEBP", quality=WEBP_QUALITY, method=WEBP_METHOD)
+
+
+def proses(nama, harga=None, tujuan=None):
+    """tujuan = path file .webp dari products.js. Kalau kosong, hasil masuk folder hasil/ (cara lama)."""
     print(f"\n> {nama}")
     pencarian = [
         (f"{nama} laptop", "id-id"),
@@ -418,40 +436,94 @@ def proses(nama, harga=None):
         return False
 
     kandidat.sort(key=lambda k: k[0], reverse=True)
-    nf = nama_file(nama + (" " + label_harga(harga) if harga else ""))
-    os.makedirs(FOLDER_HASIL, exist_ok=True)
-    kandidat[0][1].save(os.path.join(FOLDER_HASIL, nf + ".jpg"), "JPEG", quality=92)
+    if tujuan:
+        nf = os.path.splitext(os.path.basename(tujuan))[0]
+        utama = tujuan
+        simpan_webp(kandidat[0][1], utama)
+        ext, fmt = ".webp", "WEBP"
+    else:
+        nf = nama_file(nama + (" " + label_harga(harga) if harga else ""))
+        os.makedirs(FOLDER_HASIL, exist_ok=True)
+        utama = os.path.join(FOLDER_HASIL, nf + ".jpg")
+        kandidat[0][1].save(utama, "JPEG", quality=92)
+        ext, fmt = ".jpg", "JPEG"
 
     folder_k = os.path.join(FOLDER_HASIL, "_kandidat", nf)
     os.makedirs(folder_k, exist_ok=True)
     for i, (skor, img, url, _) in enumerate(kandidat[1:JUMLAH_KANDIDAT + 1], start=2):
-        img.save(os.path.join(folder_k, f"{nf} {i}_skor{skor:.2f}.jpg"), "JPEG", quality=90)
+        path_k = os.path.join(folder_k, f"{nf} {i}_skor{skor:.2f}{ext}")
+        if fmt == "WEBP":
+            simpan_webp(img, path_k)
+        else:
+            img.save(path_k, "JPEG", quality=90)
     catatan = "  <- skor rendah, cek manual ya" if kandidat[0][0] < 0.6 else ""
-    print(f"   v disimpan: {nf}.jpg (skor {kandidat[0][0]:.2f}){catatan}")
+    print(f"   v disimpan: {utama} (skor {kandidat[0][0]:.2f}){catatan}")
     return True
 
 
-def main():
-    if not os.path.exists(FILE_DAFTAR):
-        print(f"File {FILE_DAFTAR} tidak ada. Buat dulu, isi satu laptop per baris: nama | harga")
+def baca_produk():
+    """Ambil laptop aktif di products.js yang file gambarnya belum ada. Hasil: [(nama untuk dicari, path gambar)]"""
+    if not os.path.exists(FILE_PRODUK):
+        print(f"products.js gak ketemu di {os.path.abspath(FILE_PRODUK)}")
+        print("Pastikan folder 'Cari Gambar Python' ada di dalam folder website.")
         sys.exit(1)
-    with open(FILE_DAFTAR, encoding="utf-8") as f:
-        daftar = [b.strip() for b in f if b.strip() and not b.strip().startswith("#")]
+    with open(FILE_PRODUK, encoding="utf-8") as f:
+        isi = f.read()
+    folder_web = os.path.dirname(os.path.abspath(FILE_PRODUK))
+    hasil = []
+    for m in re.finditer(r"\{\s*id:\s*\d+,(.*?)\n\s*\}", isi, re.S):
+        blok = m.group(1)
+        nama = re.search(r'name:\s*"([^"]*)"', blok)
+        gambar = re.search(r'image:\s*"([^"]*)"', blok)
+        if not nama or not gambar or re.search(r"sold_out:\s*true", blok):
+            continue
+        path = os.path.normpath(os.path.join(folder_web, gambar.group(1)))
+        if os.path.exists(path):
+            continue
+        # buang label seperti (PILIHAN MIMIN), tapi (INTEL), (AMD), (2015) tetap ikut dicari
+        bersih = re.sub(r"\((?!INTEL\)|AMD\)|\d{4}\))[^)]*\)", "", nama.group(1), flags=re.I)
+        hasil.append((re.sub(r"\s{2,}", " ", bersih).strip(), path))
+    return hasil
+
+
+def main():
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))   # biar jalan dari folder mana pun
+    if "--daftar" in sys.argv:
+        if not os.path.exists(FILE_DAFTAR):
+            print(f"File {FILE_DAFTAR} tidak ada. Isi satu laptop per baris: nama | harga")
+            sys.exit(1)
+        with open(FILE_DAFTAR, encoding="utf-8") as f:
+            baris_daftar = [b.strip() for b in f if b.strip() and not b.strip().startswith("#")]
+        tugas = []
+        for baris in baris_daftar:
+            nama, _, teks_harga = baris.partition("|")
+            harga = baca_harga(teks_harga)
+            if teks_harga.strip() and harga is None:
+                print(f"! harga '{teks_harga.strip()}' untuk {nama.strip()} tidak terbaca, nama file tanpa harga")
+            tugas.append((nama.strip(), harga, None))
+    else:
+        belum = baca_produk()
+        if not belum:
+            print("Semua laptop aktif di products.js udah punya gambar.")
+            return
+        print(f"{len(belum)} laptop belum ada gambarnya:")
+        for nama, path in belum:
+            print(f"  - {nama}  ->  {os.path.relpath(path, os.path.dirname(os.path.abspath(FILE_PRODUK)))}")
+        if "--cek" in sys.argv:
+            return
+        tugas = [(nama, None, path) for nama, path in belum]
 
     sukses = gagal = 0
-    for i, baris in enumerate(daftar):
-        nama, _, teks_harga = baris.partition("|")
-        nama = nama.strip()
-        harga = baca_harga(teks_harga)
-        if teks_harga.strip() and harga is None:
-            print(f"\n! harga '{teks_harga.strip()}' untuk {nama} tidak terbaca, nama file tanpa harga")
-        if proses(nama, harga):
+    for i, (nama, harga, tujuan) in enumerate(tugas):
+        if proses(nama, harga, tujuan):
             sukses += 1
         else:
             gagal += 1
-        if i < len(daftar) - 1:
+        if i < len(tugas) - 1:
             time.sleep(JEDA_ANTAR_LAPTOP)
-    print(f"\nSelesai: {sukses} berhasil, {gagal} gagal. Cek folder '{FOLDER_HASIL}'.")
+    print(f"\nSelesai: {sukses} berhasil, {gagal} gagal.")
+    if not "--daftar" in sys.argv:
+        print("Cek gambarnya di folder LAPTOP X JUTA. Kandidat cadangan ada di hasil/_kandidat.")
 
 
 if __name__ == "__main__":

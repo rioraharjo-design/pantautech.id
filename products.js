@@ -483,6 +483,63 @@ const PRODUCTS = [
     image:    "./LAPTOP 1 JUTA/Fujitsu Futro MU937 1 Juta.webp"
   },
 
+  // Tier B+: i5-4300U 2 core 4 thread jauh lebih kenceng dari Celeron di Futro MU937, bodi 12,5 inci ringan. Kekurangannya layar HD dan RAM cuma 1 slot SODIMM (maks 8GB)
+  {
+    id: 2026111601,
+    name: "ThinkPad X240",
+    category: "bekas",
+    tier: "B+",
+    price: 1859000,
+    specs: [
+      "Intel Core i5-4300U",
+      "Intel HD Graphics 4400",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1BzipfWM4",
+    toko: "Ari speed comp",
+    image:    "./LAPTOP 1 JUTA/ThinkPad X240 1 Juta.webp"
+  },
+
+  // Tier B: Prosesor setara X240 dan RAM 2 slot SODIMM, tapi platform 2012, bodi 14 inci sekitar 2 kg lebih berat. Tipe prosesor (i5-3320M) belum dikonfirmasi penjual
+  {
+    id: 2026111602,
+    name: "Dell Latitude E6430",
+    category: "bekas",
+    tier: "B",
+    price: 1914000,
+    specs: [
+      "Intel Core i5-3320M",
+      "Intel HD Graphics 4000",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/3LSRh2qWRU",
+    toko: "Electro Com",
+    image:    "./LAPTOP 1 JUTA/Dell Latitude E6430 1 Juta.webp"
+  },
+
+  // Tier B+: ThinkPad 14 inci termurah di website, prosesor 1 generasi di atas X240. Kekurangannya bodi lebih tebal dari T440s dan layar HD. Tipe prosesor (i5-5300U) belum dikonfirmasi penjual
+  {
+    id: 2026111603,
+    name: "ThinkPad T450",
+    category: "bekas",
+    tier: "B+",
+    price: 2024000,
+    specs: [
+      "Intel Core i5-5300U",
+      "Intel HD Graphics 5500",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/80EHG5aF1S",
+    toko: "Redstar Electronic",
+    image:    "./LAPTOP 2 JUTA/ThinkPad T450 2 Juta.webp"
+  },
+
   // Tier B+: Bodi dan keyboard ThinkPad, i5 gen 4 masih lebih kenceng dari Celeron, tapi RAM 4GB harus diupgrade dan umurnya udah tua banget
   {
     id: 2026102402,
