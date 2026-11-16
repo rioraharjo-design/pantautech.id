@@ -2,32 +2,36 @@
 """
 Cari gambar laptop otomatis untuk website Pantau Tech.
 
-Cara pakai (di folder "Cari Gambar Python", di dalam folder website):
-    1. pip install ddgs pillow requests      (cukup sekali)
-    2. python cari_gambar.py
+Cara pakai: klik dua kali "Cari Gambar.bat" (atau: python cari_gambar.py)
+Sekali install di awal:  pip install ddgs pillow requests "rembg[cpu]"
 
-Skrip baca products.js sendiri, nyari laptop AKTIF yang file gambarnya belum ada,
-lalu nyimpen gambar terbaik langsung sebagai .webp di path "image" laptop itu
-(contoh ./LAPTOP 1 JUTA/ThinkPad X240 1 Juta.webp). Gak perlu isi daftar.txt,
-gak perlu convert pakai XnConvert lagi.
-
-Setingan webp sama dengan XnConvert: quality 70, compression method 4,
-filter strength 60, sharpness 0.
+Alurnya:
+  1. Skrip baca products.js, nyari laptop AKTIF yang file gambarnya belum ada.
+  2. Tiap laptop dicariin sampai 4 kandidat gambar.
+  3. Muncul jendela pilih gambar: klik gambar yang paling bagus (atau pencet angka 1 sampai 4).
+     Kandidat nomor 1 = pilihan otomatis skrip (skor paling tinggi).
+  4. Gambar yang diklik langsung disimpan dua versi:
+       - .webp  ke path "image" di products.js  (contoh LAPTOP 1 JUTA/ThinkPad X240 1 Juta.webp)
+                setingan sama dengan XnConvert: quality 70, compression method 4
+       - .png tanpa background ke LAPTOP NO BACKGROUND/LAPTOP X JUTA/ dengan nama yang sama
+  5. Laptop yang gambarnya udah ada tapi versi tanpa background-nya belum ada:
+     PNG-nya langsung dibikin dari gambar yang udah ada, tanpa nyari dan tanpa milih.
+  Gak perlu daftar.txt, gak perlu XnConvert, gak perlu rename.
 
 Pilihan lain:
-    python cari_gambar.py --cek      -> cuma nampilin laptop yang belum ada gambarnya, gak download apa-apa
-    python cari_gambar.py --daftar   -> cara lama: baca daftar.txt ("nama | harga"), hasil di folder hasil/
+    python cari_gambar.py --cek       -> cuma nampilin laptop yang belum ada gambarnya
+    python cari_gambar.py --otomatis  -> tanpa jendela pilih, langsung pakai kandidat nomor 1
+    python cari_gambar.py --daftar    -> cara lama: baca daftar.txt ("nama | harga"), hasil .jpg di folder hasil/
 
-Hasil:
-    gambar terbaik  -> langsung di folder LAPTOP X JUTA (sesuai products.js)
-    hasil/_kandidat/<nama laptop>/   -> 3 kandidat cadangan .webp, contoh "ThinkPad X240 1 Juta 2_skor0.95.webp"
-        Kalau gambar utama jelek: hapus gambar utama, pindahin kandidat ke folder LAPTOP X JUTA,
-        lalu hapus " 2_skor0.95" di belakang namanya.
+Catatan: model penghapus background (isnet-general-use, sekitar 170MB) taruh di
+  C:\\Users\\<nama>\\.rembg\\models\\isnet-general-use\\isnet-general-use.onnx
+Kalau rembg belum diinstall, versi PNG tetap dibikin dengan cara sederhana (buang latar putih).
 """
 
 import io
 import os
 import re
+import shutil
 import sys
 import time
 from urllib.parse import urlparse
@@ -47,6 +51,10 @@ FILE_DAFTAR = "daftar.txt"
 FILE_PRODUK = os.path.join("..", "products.js")   # products.js ada satu folder di atas skrip ini
 WEBP_QUALITY = 70          # sama dengan XnConvert
 WEBP_METHOD = 4            # "Compression method" di XnConvert
+FOLDER_NOBG = "LAPTOP NO BACKGROUND"
+FOLDER_PILIH = os.path.join("hasil", "_pilih")   # tempat kandidat sementara, otomatis dihapus setelah dipilih
+JUMLAH_PILIHAN = 4
+FOLDER_CEK_NOBG = os.path.join("hasil", "cek no background")   # salinan PNG buat dicek, dikosongin tiap run
 FOLDER_HASIL = "hasil"
 MAKS_HASIL_CARI = 40        # berapa hasil pencarian yang dilihat per laptop
 MAKS_DOWNLOAD = 25          # berapa gambar yang dicoba download per laptop
@@ -437,28 +445,214 @@ def proses(nama, harga=None, tujuan=None):
 
     kandidat.sort(key=lambda k: k[0], reverse=True)
     if tujuan:
+        # simpan kandidat sementara (PNG biar gak turun kualitas), nanti dipilih di jendela
         nf = os.path.splitext(os.path.basename(tujuan))[0]
-        utama = tujuan
-        simpan_webp(kandidat[0][1], utama)
-        ext, fmt = ".webp", "WEBP"
-    else:
-        nf = nama_file(nama + (" " + label_harga(harga) if harga else ""))
-        os.makedirs(FOLDER_HASIL, exist_ok=True)
-        utama = os.path.join(FOLDER_HASIL, nf + ".jpg")
-        kandidat[0][1].save(utama, "JPEG", quality=92)
-        ext, fmt = ".jpg", "JPEG"
+        folder_p = os.path.join(FOLDER_PILIH, nf)
+        if os.path.isdir(folder_p):
+            shutil.rmtree(folder_p)
+        os.makedirs(folder_p, exist_ok=True)
+        hasil_k = []
+        for i, (skor, img, url, _) in enumerate(kandidat[:JUMLAH_PILIHAN], start=1):
+            pk = os.path.join(folder_p, f"{i}_skor{skor:.2f}.png")
+            img.save(pk, "PNG")
+            hasil_k.append((skor, pk))
+        catatan = "  <- skor rendah, cek manual ya" if kandidat[0][0] < 0.6 else ""
+        print(f"   v {len(hasil_k)} kandidat siap dipilih (skor terbaik {kandidat[0][0]:.2f}){catatan}")
+        return hasil_k
 
+    nf = nama_file(nama + (" " + label_harga(harga) if harga else ""))
+    os.makedirs(FOLDER_HASIL, exist_ok=True)
+    kandidat[0][1].save(os.path.join(FOLDER_HASIL, nf + ".jpg"), "JPEG", quality=92)
     folder_k = os.path.join(FOLDER_HASIL, "_kandidat", nf)
     os.makedirs(folder_k, exist_ok=True)
     for i, (skor, img, url, _) in enumerate(kandidat[1:JUMLAH_KANDIDAT + 1], start=2):
-        path_k = os.path.join(folder_k, f"{nf} {i}_skor{skor:.2f}{ext}")
-        if fmt == "WEBP":
-            simpan_webp(img, path_k)
-        else:
-            img.save(path_k, "JPEG", quality=90)
+        img.save(os.path.join(folder_k, f"{nf} {i}_skor{skor:.2f}.jpg"), "JPEG", quality=90)
     catatan = "  <- skor rendah, cek manual ya" if kandidat[0][0] < 0.6 else ""
-    print(f"   v disimpan: {utama} (skor {kandidat[0][0]:.2f}){catatan}")
+    print(f"   v disimpan: {nf}.jpg (skor {kandidat[0][0]:.2f}){catatan}")
     return True
+
+
+_SESI_REMBG = None
+_REMBG_GAGAL = False
+NAMA_MODEL = "isnet-general-use"   # lebih rapi dari u2net, pantulan di bawah laptop ikut kebuang
+MODEL_REMBG = os.path.join(os.path.expanduser("~"), ".rembg", "models", NAMA_MODEL, NAMA_MODEL + ".onnx")
+
+
+def hapus_background(img):
+    """Hasil: gambar RGBA tanpa background. Pakai rembg kalau bisa, kalau gak bisa buang latar putih."""
+    global _SESI_REMBG, _REMBG_GAGAL
+    if not _REMBG_GAGAL:
+        try:
+            from rembg import new_session, remove
+            if _SESI_REMBG is None:
+                print("   (menyiapkan penghapus background, pertama kali agak lama...)")
+                _SESI_REMBG = new_session(NAMA_MODEL)
+            try:
+                # alpha matting = pinggiran lebih tajam
+                return remove(img.convert("RGB"), session=_SESI_REMBG, alpha_matting=True,
+                              alpha_matting_foreground_threshold=240,
+                              alpha_matting_background_threshold=10,
+                              alpha_matting_erode_size=10).convert("RGBA")
+            except Exception:  # noqa: BLE001
+                return remove(img.convert("RGB"), session=_SESI_REMBG).convert("RGBA")
+        except ImportError:
+            _REMBG_GAGAL = True
+        except Exception as e:  # noqa: BLE001
+            _REMBG_GAGAL = True
+            print(f"   ! penghapus background rembg gagal ({e.__class__.__name__}).")
+            print("     Kalau gagal download model, download manual lewat browser:")
+            print("     https://github.com/danielgatis/rembg/releases/download/v0.0.0/" + NAMA_MODEL + ".onnx")
+            print(f"     lalu taruh di: {MODEL_REMBG}")
+            print("     Sementara ini PNG dibikin pakai cara cadangan (buang latar putih).")
+    return buang_latar_putih(img)
+
+
+def buang_latar_putih(img, toleransi=18):
+    """Cadangan tanpa rembg: area putih yang nyambung ke pinggir gambar dijadiin transparan."""
+    from collections import deque
+    rgb = img.convert("RGB")
+    w, h = rgb.size
+    px = rgb.load()
+    transparan = bytearray(w * h)
+    antri = deque()
+    for x in range(w):
+        antri.extend([(x, 0), (x, h - 1)])
+    for y in range(h):
+        antri.extend([(0, y), (w - 1, y)])
+    while antri:
+        x, y = antri.popleft()
+        i = y * w + x
+        if transparan[i]:
+            continue
+        r, g, b = px[x, y]
+        if min(r, g, b) < 255 - toleransi:
+            continue
+        transparan[i] = 1
+        if x > 0: antri.append((x - 1, y))
+        if x < w - 1: antri.append((x + 1, y))
+        if y > 0: antri.append((x, y - 1))
+        if y < h - 1: antri.append((x, y + 1))
+    alpha = Image.frombytes("L", (w, h), bytes(0 if t else 255 for t in transparan))
+    hasil = rgb.convert("RGBA")
+    hasil.putalpha(alpha)
+    return hasil
+
+
+def simpan_nobg(img, nobg):
+    """Simpan PNG tanpa background ke folder LAPTOP NO BACKGROUND, plus salinannya ke folder cek."""
+    os.makedirs(os.path.dirname(nobg), exist_ok=True)
+    hasil = hapus_background(img)
+    hasil.save(nobg, "PNG")
+    os.makedirs(FOLDER_CEK_NOBG, exist_ok=True)
+    hasil.save(os.path.join(FOLDER_CEK_NOBG, os.path.basename(nobg)), "PNG")
+
+
+def path_nobg(path_webp):
+    """LAPTOP 1 JUTA/ThinkPad X240 1 Juta.webp -> LAPTOP NO BACKGROUND/LAPTOP 1 JUTA/ThinkPad X240 1 Juta.png"""
+    folder_harga = os.path.dirname(path_webp)
+    folder_web = os.path.dirname(folder_harga)
+    nama = os.path.splitext(os.path.basename(path_webp))[0] + ".png"
+    return os.path.join(folder_web, FOLDER_NOBG, os.path.basename(folder_harga), nama)
+
+
+def simpan_final(path_kandidat, tujuan):
+    img = Image.open(path_kandidat).convert("RGB")
+    simpan_webp(img, tujuan)
+    simpan_nobg(img, path_nobg(tujuan))
+    shutil.rmtree(os.path.dirname(path_kandidat), ignore_errors=True)
+    print(f"   v {os.path.basename(tujuan)} + versi tanpa background disimpan")
+
+
+def jendela_pilih(antrean):
+    """antrean = [(nama, tujuan, [(skor, path_kandidat), ...])]. Klik gambar = simpan."""
+    import tkinter as tk
+    from PIL import ImageTk
+
+    root = tk.Tk()
+    root.title("Pilih gambar - Pantau Tech")
+    root.configure(bg="#111")
+    judul = tk.Label(root, fg="white", bg="#111", font=("Segoe UI", 14, "bold"))
+    judul.pack(pady=(12, 0))
+    info = tk.Label(root, fg="#9a9", bg="#111", font=("Segoe UI", 10))
+    info.pack()
+    grid = tk.Frame(root, bg="#111")
+    grid.pack(padx=12, pady=12)
+    bawah = tk.Frame(root, bg="#111")
+    bawah.pack(pady=(0, 12))
+    status = tk.Label(bawah, fg="#ff8c42", bg="#111", font=("Segoe UI", 10))
+    status.pack(side="left", padx=10)
+    keadaan = {"i": 0, "foto": []}
+
+    def tampil():
+        for c in grid.winfo_children():
+            c.destroy()
+        keadaan["foto"] = []
+        if keadaan["i"] >= len(antrean):
+            root.destroy()
+            return
+        nama, tujuan, kandidat = antrean[keadaan["i"]]
+        judul.config(text=f"{nama}   ({keadaan['i'] + 1} dari {len(antrean)})")
+        info.config(text="Klik gambar yang paling bagus, atau pencet angka 1-" + str(len(kandidat))
+                    + ". Nomor 1 = pilihan otomatis skrip.")
+        status.config(text="")
+        for n, (skor, path) in enumerate(kandidat):
+            thumb = Image.open(path).convert("RGB")
+            thumb.thumbnail((380, 260))
+            foto = ImageTk.PhotoImage(thumb)
+            keadaan["foto"].append(foto)
+            kotak = tk.Frame(grid, bg="#39ff7e" if n == 0 else "#333", padx=3, pady=3)
+            kotak.grid(row=n // 2, column=n % 2, padx=8, pady=8)
+            gambar = tk.Label(kotak, image=foto, bg="white", cursor="hand2")
+            gambar.pack()
+            teks = f"{n + 1}   skor {skor:.2f}" + ("   (otomatis)" if n == 0 else "")
+            tk.Label(kotak, text=teks, fg="black" if n == 0 else "white",
+                     bg="#39ff7e" if n == 0 else "#333", font=("Segoe UI", 10, "bold")).pack(fill="x")
+            gambar.bind("<Button-1>", lambda e, p=path: pilih(p))
+
+    def pilih(path):
+        nama, tujuan, _ = antrean[keadaan["i"]]
+        status.config(text="Menyimpan dan menghapus background...")
+        root.update()
+        simpan_final(path, tujuan)
+        keadaan["i"] += 1
+        tampil()
+
+    def lewati():
+        print(f"   - {antrean[keadaan['i']][0]} dilewati")
+        keadaan["i"] += 1
+        tampil()
+
+    def tombol(e):
+        k = e.char if (e.char or "").isdigit() else e.keysym
+        if k.isdigit():
+            n = int(k) - 1
+            kandidat = antrean[keadaan["i"]][2]
+            if 0 <= n < len(kandidat):
+                pilih(kandidat[n][1])
+
+    tk.Button(bawah, text="Lewati laptop ini", command=lewati).pack(side="left", padx=10)
+    root.bind("<Key>", tombol)
+    tampil()
+    root.mainloop()
+
+
+BELUM_NOBG = []   # gambar webp udah ada, tapi versi tanpa background belum
+
+
+def ada_nobg(path_webp):
+    """Cek versi PNG tanpa background udah ada (huruf besar kecil gak dibedain, kayak di Windows)."""
+    target = path_nobg(path_webp)
+    folder = os.path.dirname(target)
+    if not os.path.isdir(folder):
+        return False
+    return os.path.basename(target).lower() in (f.lower() for f in os.listdir(folder))
+
+
+def bikin_nobg_saja():
+    for path in BELUM_NOBG:
+        nobg = path_nobg(path)
+        simpan_nobg(Image.open(path), nobg)
+        print(f"   v {os.path.basename(nobg)} dibikin dari gambar yang udah ada")
 
 
 def baca_produk():
@@ -479,6 +673,8 @@ def baca_produk():
             continue
         path = os.path.normpath(os.path.join(folder_web, gambar.group(1)))
         if os.path.exists(path):
+            if not ada_nobg(path):
+                BELUM_NOBG.append(path)
             continue
         # buang label seperti (PILIHAN MIMIN), tapi (INTEL), (AMD), (2015) tetap ikut dicari
         bersih = re.sub(r"\((?!INTEL\)|AMD\)|\d{4}\))[^)]*\)", "", nama.group(1), flags=re.I)
@@ -503,27 +699,57 @@ def main():
             tugas.append((nama.strip(), harga, None))
     else:
         belum = baca_produk()
-        if not belum:
+        web = os.path.dirname(os.path.abspath(FILE_PRODUK))
+        if belum:
+            print(f"{len(belum)} laptop belum ada gambarnya:")
+            for nama, path in belum:
+                print(f"  - {nama}  ->  {os.path.relpath(path, web)}")
+        else:
             print("Semua laptop aktif di products.js udah punya gambar.")
-            return
-        print(f"{len(belum)} laptop belum ada gambarnya:")
-        for nama, path in belum:
-            print(f"  - {nama}  ->  {os.path.relpath(path, os.path.dirname(os.path.abspath(FILE_PRODUK)))}")
+        if BELUM_NOBG:
+            print(f"\n{len(BELUM_NOBG)} gambar udah ada tapi versi tanpa background belum:")
+            for path in BELUM_NOBG:
+                print(f"  - {os.path.relpath(path, web)}")
         if "--cek" in sys.argv:
+            return
+        shutil.rmtree(FOLDER_CEK_NOBG, ignore_errors=True)   # folder cek cuma isi hasil run ini
+        if BELUM_NOBG:
+            print("\nBikin versi tanpa background...")
+            bikin_nobg_saja()
+        if not belum:
+            if BELUM_NOBG:
+                print(f"\nSalinan PNG tanpa background buat dicek ada di: {os.path.abspath(FOLDER_CEK_NOBG)}")
             return
         tugas = [(nama, None, path) for nama, path in belum]
 
     sukses = gagal = 0
+    antrean = []
     for i, (nama, harga, tujuan) in enumerate(tugas):
-        if proses(nama, harga, tujuan):
+        hasil = proses(nama, harga, tujuan)
+        if hasil:
             sukses += 1
+            if tujuan:
+                antrean.append((nama, tujuan, hasil))
         else:
             gagal += 1
         if i < len(tugas) - 1:
             time.sleep(JEDA_ANTAR_LAPTOP)
-    print(f"\nSelesai: {sukses} berhasil, {gagal} gagal.")
-    if not "--daftar" in sys.argv:
-        print("Cek gambarnya di folder LAPTOP X JUTA. Kandidat cadangan ada di hasil/_kandidat.")
+    print(f"\nPencarian selesai: {sukses} dapat gambar, {gagal} gagal.")
+
+    if antrean:
+        pakai_jendela = "--otomatis" not in sys.argv
+        if pakai_jendela:
+            try:
+                print("Buka jendela pilih gambar...")
+                jendela_pilih(antrean)
+            except Exception as e:  # noqa: BLE001
+                print(f"! jendela gak bisa dibuka ({e.__class__.__name__}), pakai kandidat nomor 1")
+                pakai_jendela = False
+        if not pakai_jendela:
+            for nama, tujuan, kandidat in antrean:
+                simpan_final(kandidat[0][1], tujuan)
+        print("Selesai. Cek gambarnya di folder LAPTOP X JUTA dan LAPTOP NO BACKGROUND.")
+        print(f"Salinan PNG tanpa background buat dicek ada di: {os.path.abspath(FOLDER_CEK_NOBG)}")
 
 
 if __name__ == "__main__":
