@@ -499,7 +499,7 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/1BzipfWM4",
     toko: "Ari speed comp",
-    image:    "./LAPTOP 1 JUTA/ThinkPad X240 1 Juta.webp"
+    image:    "./LAPTOP 1 JUTA/thinkpad x240 1 juta.webp"
   },
 
   // Tier B: Prosesor setara X240 dan RAM 2 slot SODIMM, tapi platform 2012, bodi 14 inci sekitar 2 kg lebih berat. Tipe prosesor (i5-3320M) belum dikonfirmasi penjual
@@ -518,7 +518,7 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/3LSRh2qWRU",
     toko: "Electro Com",
-    image:    "./LAPTOP 1 JUTA/Dell Latitude E6430 1 Juta.webp"
+    image:    "./LAPTOP 1 JUTA/Dell Latitude E6430 1 juta.webp"
   },
 
   // Tier B+: ThinkPad 14 inci termurah di website, prosesor 1 generasi di atas X240. Kekurangannya bodi lebih tebal dari T440s dan layar HD. Tipe prosesor (i5-5300U) belum dikonfirmasi penjual
@@ -537,7 +537,7 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/80EHG5aF1S",
     toko: "Redstar Electronic",
-    image:    "./LAPTOP 2 JUTA/ThinkPad T450 2 Juta.webp"
+    image:    "./LAPTOP 2 JUTA/thinkpad t450 2 juta.webp"
   },
 
   // Tier B+: Bodi dan keyboard ThinkPad, i5 gen 4 masih lebih kenceng dari Celeron, tapi RAM 4GB harus diupgrade dan umurnya udah tua banget
