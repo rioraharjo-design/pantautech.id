@@ -300,6 +300,334 @@ const PRODUCTS = [
   },
 
   // =====================================================================
+// WORKSTATION DAN LAPTOP BISNIS DENGAN dGPU (riset 20 Nov 2026, harga HP)
+// Tipe prosesor yang gak ditulis penjual diisi tipe yang paling umum di model itu
+// =====================================================================
+
+  // Tier B+: Laptop dGPU termurah di website, tapi RAM 8GB dan SSD 128GB, dan MX250 kelas paling bawah. ThinkPad T495 (4,36jt, S) RAM-nya udah 16GB
+  {
+    id: 2026112001,
+    name: "ThinkPad T490 MX250",
+    category: "bekas",
+    tier: "B+",
+    price: 4095000,
+    specs: [
+      "Intel Core i5-8265U",
+      "Nvidia MX250 2GB",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7VI7F0MXkt",
+    toko: "Electro Com",
+    image:    "./LAPTOP 4 JUTA/ThinkPad T490 MX250 4 Juta.webp"
+  },
+
+  // Tier A+: Workstation dGPU 4GB termurah, 140 ribu lebih murah dari ZBook Studio G4 (4,94jt, S). Tapi prosesor gen 6 dan bodi tebal
+  {
+    id: 2026112002,
+    name: "ThinkPad P50 M2000M (TEKNIK)",
+    category: "bekas",
+    tier: "A+",
+    price: 4798800,
+    specs: [
+      "Intel Xeon E3-1535M v5",
+      "Nvidia Quadro M2000M 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/80ENq1mwgh",
+    toko: "Ari speed comp",
+    image:    "./LAPTOP 4 JUTA/ThinkPad P50 M2000M 4 Juta.webp"
+  },
+
+  // Tier A: Bodi T14 dengan MX330 buat game ringan, tapi prosesor dan dGPU-nya kalah dari T14 Gen 1 Ryzen 5 (4,65jt, S) yang 860 ribu lebih murah
+  {
+    id: 2026112003,
+    name: "ThinkPad T14 Gen 1 MX330",
+    category: "bekas",
+    tier: "A",
+    price: 5510000,
+    specs: [
+      "Intel Core i5-10210U",
+      "Nvidia MX330 2GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6fj0FjWB1e",
+    toko: "Gugel Laptop",
+    image:    "./LAPTOP 5 JUTA/ThinkPad T14 Gen 1 MX330 5 Juta.webp"
+  },
+
+  // Tier A+: GPU M2200 lebih kuat dari M1200 punya ThinkPad P51 lama (6,94jt, B+), tapi hampir 1 juta lebih murah
+  {
+    id: 2026112004,
+    name: "ThinkPad P51 M2200 (TEKNIK)",
+    category: "bekas",
+    tier: "A+",
+    price: 5975500,
+    specs: [
+      "Intel Core i7-7700HQ",
+      "Nvidia Quadro M2200 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/2qWHgis0Ob",
+    toko: "GudangLaptopBTM",
+    image:    "./LAPTOP 5 JUTA/ThinkPad P51 M2200 5 Juta.webp"
+  },
+
+  // Tier A: Workstation tipis layar sentuh, tapi Quadro P520 2GB lemah dan prosesornya seri U. ThinkPad P51 M2200 (5,98jt) GPU-nya lebih kuat di harga hampir sama
+  {
+    id: 2026112005,
+    name: "ThinkPad P53s (TEKNIK)",
+    category: "bekas",
+    tier: "A",
+    price: 5998500,
+    specs: [
+      "Intel Core i7-8665U",
+      "Nvidia Quadro P520 2GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/AUviorT2Q9",
+    toko: "Ari speed comp",
+    image:    "./LAPTOP 5 JUTA/ThinkPad P53s 5 Juta.webp"
+  },
+
+  // Tier B+: Kemahalan: GPU-nya sama kayak ThinkPad P53s (6,00jt) tapi 1,3 juta lebih mahal
+  {
+    id: 2026112006,
+    name: "ThinkPad P15s Gen 1 (TEKNIK)",
+    category: "bekas",
+    tier: "B+",
+    price: 7300000,
+    specs: [
+      "Intel Core i7-10510U",
+      "Nvidia Quadro P520 2GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6AmjewmW4i",
+    toko: "Electro Com",
+    image:    "./LAPTOP 7 JUTA/ThinkPad P15s Gen 1 7 Juta.webp"
+  },
+
+  // Tier A+: Quadro P1000 4GB (setara GTX 1050) dan prosesor 6 core, SSD 512GB. Masih di bawah ThinkPad P52 P3200 (8,27jt) yang GPU-nya 2 kelas di atas
+  {
+    id: 2026112007,
+    name: "ThinkPad P52 P1000 (TEKNIK)",
+    category: "bekas",
+    tier: "A+",
+    price: 7780500,
+    specs: [
+      "Intel Core i7-8850H",
+      "Nvidia Quadro P1000 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/30phtA2IiW",
+    toko: "GudangLaptopBTM",
+    image:    "./LAPTOP 7 JUTA/ThinkPad P52 P1000 7 Juta.webp"
+  },
+
+  // Tier A: Workstation 14 inci tipis dan ringan, tapi Nvidia T500 lemah. Di harga ini ThinkPad P52 P1000 (7,78jt) GPU-nya lebih kuat
+  {
+    id: 2026112008,
+    name: "HP ZBook Firefly 14 G8 (TEKNIK)",
+    category: "bekas",
+    tier: "A",
+    price: 7875500,
+    specs: [
+      "Intel Core i7-1165G7",
+      "Nvidia T500 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7VI7FTJUUo",
+    toko: "Laptop WA Surabaya",
+    image:    "./LAPTOP 7 JUTA/HP ZBook Firefly 14 G8 7 Juta.webp"
+  },
+
+  // Tier S: Quadro P2000 di bodi tipis sekitar 1,8 kg, SSD 512GB. Lebih ringkas dari P52 dengan GPU satu kelas di atas P1000
+  {
+    id: 2026112009,
+    name: "ThinkPad P1 Gen 1 (TEKNIK)",
+    category: "bekas",
+    tier: "S",
+    price: 8075000,
+    specs: [
+      "Intel Core i7-8850H",
+      "Nvidia Quadro P2000 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/W8Mufe3Te",
+    toko: "Gugel Laptop",
+    image:    "./LAPTOP 8 JUTA/ThinkPad P1 Gen 1 8 Juta.webp"
+  },
+
+  // Tier A+: Quadro T1000 (setara GTX 1650) dan prosesor gen 9, tapi ThinkPad P52 P3200 (8,27jt) GPU-nya lebih kuat dengan harga hampir sama
+  {
+    id: 2026112010,
+    name: "ThinkPad P53 T1000 (TEKNIK)",
+    category: "bekas",
+    tier: "A+",
+    price: 8255500,
+    specs: [
+      "Intel Core i7-9750H",
+      "Nvidia Quadro T1000 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/2BGatlwGla",
+    toko: "GudangLaptopBTM",
+    image:    "./LAPTOP 8 JUTA/ThinkPad P53 T1000 8 Juta.webp"
+  },
+
+  // Tier S: Quadro P3200 6GB (mendekati GTX 1060) di 8 jutaan, GPU terkuat per rupiah di riset workstation. Laptop gaming bekas di harga ini rata-rata GTX 1650
+  {
+    id: 2026112011,
+    name: "ThinkPad P52 P3200 (TEKNIK)",
+    category: "bekas",
+    tier: "S",
+    price: 8265000,
+    specs: [
+      "Intel Core i7-8850H",
+      "Nvidia Quadro P3200 6GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/AKcIcqytnd",
+    toko: "Gugel Laptop",
+    image:    "./LAPTOP 8 JUTA/ThinkPad P52 P3200 8 Juta.webp"
+  },
+
+  // Tier A: SSD 1TB, tapi GPU-nya sama kayak ThinkPad P52 P1000 (7,78jt) yang 570 ribu lebih murah
+  {
+    id: 2026112012,
+    name: "HP ZBook 15 G5 (TEKNIK)",
+    category: "bekas",
+    tier: "A",
+    price: 8350500,
+    specs: [
+      "Intel Core i7-8750H",
+      "Nvidia Quadro P1000 4GB",
+      "RAM 16GB",
+      "SSD 1TB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1BO3i2pLKI",
+    toko: "GudangLaptopBTM",
+    image:    "./LAPTOP 8 JUTA/HP ZBook 15 G5 8 Juta.webp"
+  },
+
+  // Tier B+: Kemahalan: Nvidia T500 2GB lemah, dan ThinkPad P53 T1000 (8,26jt) GPU-nya jauh lebih kuat tapi 500 ribu lebih murah
+  {
+    id: 2026112013,
+    name: "Dell Precision 3560 (TEKNIK)",
+    category: "bekas",
+    tier: "B+",
+    price: 8755001,
+    specs: [
+      "Intel Core i7-1165G7",
+      "Nvidia T500 2GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/2BGatw5QgD",
+    toko: "WDCOMPUTER.ID",
+    image:    "./LAPTOP 8 JUTA/Dell Precision 3560 8 Juta.webp"
+  },
+
+  // Tier A: Prosesor paling baru (gen 12) di riset workstation, tapi Nvidia T550 masih kelas bawah. Buat GPU, ThinkPad P52 P3200 (8,27jt) jauh lebih kuat
+  {
+    id: 2026112014,
+    name: "Dell Precision 3470 (TEKNIK)",
+    category: "bekas",
+    tier: "A",
+    price: 8977500,
+    specs: [
+      "Intel Core i7-1255U",
+      "Nvidia T550 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/5AuCTUtl93",
+    toko: "RevoComp",
+    image:    "./LAPTOP 8 JUTA/Dell Precision 3470 8 Juta.webp"
+  },
+
+  // Tier S: Quadro T2000 di bodi tipis Precision seri 5000, harganya sama kayak ThinkPad P1 Gen 2 (9,03jt, S) dan 285 ribu lebih murah dari P53 T2000
+  {
+    id: 2026112015,
+    name: "Dell Precision 5540 (TEKNIK)",
+    category: "bekas",
+    tier: "S",
+    price: 9025000,
+    specs: [
+      "Intel Core i7-9850H",
+      "Nvidia Quadro T2000 4GB",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/6fj0GJvVVf",
+    toko: "LOCKSTORE",
+    image:    "./LAPTOP 9 JUTA/Dell Precision 5540 9 Juta.webp"
+  },
+
+  // Tier A+: Quadro T2000 dan SSD 512GB, tapi Dell Precision 5540 (9,03jt) GPU-nya sama, bodinya lebih tipis, dan 285 ribu lebih murah
+  {
+    id: 2026112016,
+    name: "ThinkPad P53 T2000 (TEKNIK)",
+    category: "bekas",
+    tier: "A+",
+    price: 9310000,
+    specs: [
+      "Intel Core i7-9750H",
+      "Nvidia Quadro T2000 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/7puxeW6LwY",
+    toko: "Gugel Laptop",
+    image:    "./LAPTOP 9 JUTA/ThinkPad P53 T2000 9 Juta.webp"
+  },
+
+  // Tier A+: Prosesor 8 core gen 11 paling kuat di riset workstation, Quadro T1200 (setara GTX 1650 Ti). Tapi udah di atas 10 juta
+  {
+    id: 2026112017,
+    name: "ThinkPad P15 Gen 2 (TEKNIK)",
+    category: "bekas",
+    tier: "A+",
+    price: 10440500,
+    specs: [
+      "Intel Core i7-11800H",
+      "Nvidia Quadro T1200 4GB",
+      "RAM 16GB",
+      "SSD 512GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1qdkVXANql",
+    toko: "GudangLaptopBTM",
+    image:    "./LAPTOP 10 JUTA/ThinkPad P15 Gen 2 10 Juta.webp"
+  },
+
+  // =====================================================================
 // LAPTOP GAMING BEKAS 7–10 JUTA (riset 5 Nov 2026, harga HP)
 // =====================================================================
 
@@ -858,6 +1186,9 @@ const PRODUCTS = [
     name: "ThinkPad P51 (TEKNIK)",
     category: "bekas",
     tier: "B+",
+    sold_out: true,
+    alternatif: 2026112004,
+    alternatif_alasan: "GPU lebih kuat (Quadro M2200), lebih murah 960rb",
     price: 6935000,
     specs: [
       "Intel Xeon E3-1505M v5",

@@ -6,7 +6,7 @@
  * LABEL OTOMATIS DARI NAMA PRODUK:
  *   (GAMING)  → badge "Gaming" di foto, teks di nama disembunyikan
  *   Spek GPU RTX / GTX / RX / MX → otomatis dapat badge "Gaming" juga
- *   (TEKNIK)  → badge "Teknik" di foto, teks di nama disembunyikan
+ *   (TEKNIK)  → badge "Workstation" di foto, teks di nama disembunyikan
  *   (TERLARIS), (JUARA 5 JUTA), (HARGA NAIK), dll
  *             → tampil sebagai label hijau di atas nama
  *   (INTEL), (AMD), (2015) → tetap jadi bagian nama
@@ -130,7 +130,7 @@ function parseProduct(p) {
   // Pakai GPU dedicated (RTX / GTX / RX / MX) → otomatis Gaming
   if (p.specs.some(s => GPU_GAMING.test(s))) usecase.add("gaming");
 
-  // Urutan badge selalu Gaming dulu, lalu Teknik
+  // Urutan badge selalu Gaming dulu, lalu Workstation (tag di products.js tetap (TEKNIK))
   const order = ["gaming", "teknik"];
   const sorted = [...usecase].sort((x, y) => order.indexOf(x) - order.indexOf(y));
   return { name, usecase: sorted, highlights };
@@ -146,7 +146,7 @@ function renderCard(p, isSoldOut = false) {
 
   const usecaseBadges = info.usecase.map(u =>
     u === "gaming" ? `<span class="badge-use">Gaming</span>` :
-    u === "teknik" ? `<span class="badge-use">Teknik</span>` : ""
+    u === "teknik" ? `<span class="badge-use">Workstation</span>` : ""
   ).join("");
 
   const highlight = info.highlights.length
@@ -252,7 +252,8 @@ function matchesFilters(p) {
   const info = parseProduct(p);
   return p.name.toLowerCase().includes(q)
     || p.specs.some(s => s.toLowerCase().includes(q))
-    || info.usecase.some(u => u.includes(q));
+    || info.usecase.some(u => u.includes(q))
+    || (info.usecase.includes("teknik") && "workstation".includes(q));
 }
 
 function sortProducts(arr) {
