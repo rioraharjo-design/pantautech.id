@@ -23,19 +23,36 @@
  * juga bisa dipakai, hasilnya sama.
  *
  * LINK LAIN (opsional, di products.js):
+ *   toko: "Gugel Laptop",        → nama toko link utama (shopUrl)
+ *   varianUtama: "T14",          → (opsional) varian link utama
  *   linkLain: [
- *     { url: "https://s.shopee.co.id/...", harga: 5785500, label: "Toko lain" },
- *     { url: "...", harga: 4650000, label: "T14s (Seri S Lebih Tipis)" }
+ *     { url: "https://s.shopee.co.id/...", harga: 5785500, toko: "MBM Tech Store" },
+ *     { url: "...", harga: 4650000, toko: "Redstar Electronic", varian: "T14s (Lebih Tipis)" }
  *   ],
- *   labelUtama: "T14",   → (opsional) nama pilihan untuk shopUrl,
- *                          kalau kosong tulisannya "Pilihan utama"
- *   Pilihan selalu diurutkan dari yang termurah, dan yang termurah
- *   (paling atas) diberi warna hijau.
- *   Kalau diisi, tombol Shopee dapat panah dropdown. Dipencet → muncul
- *   pilihan "Pilihan utama" (shopUrl) dan link-link di atas, lengkap
- *   dengan harganya. Harga di kartu otomatis pakai yang termurah.
- *   Link yang habis tinggal dihapus dari daftar. Field toko: "..." boleh
- *   diisi buat catatan dan GA4, tidak tampil di website.
+ *   Tulisan tiap pilihan = nama toko + varian (kalau ada).
+ *   Pilihan diurutkan dari yang termurah. Yang paling atas warnanya hijau,
+ *   dan kalau gak punya varian dapat tambahan "(Pilihan Utama)".
+ *   Contoh: "Gugel Laptop (Pilihan Utama)", "MBM Tech Store",
+ *           "Redstar Electronic T14s (Lebih Tipis)", "Gugel Laptop T14".
+ *   Harga di kartu otomatis pakai yang termurah.
+ *   Link yang habis tinggal dihapus dari daftar. Nama toko juga dikirim ke GA4.
+ *
+ * LOGO TOKO (data toko di toko-data.js):
+ *   Laptop bekas: logo toko dari semua link tampil di pojok kanan bawah foto
+ *   (urut termurah). Laptop baru (global / odm): label "Mall".
+ *   Klik logo → jendela info toko (rating, catatan, tombol "Lihat toko").
+ *   Nama toko di products.js gak harus sama persis dengan toko-data.js,
+ *   huruf besar kecil, spasi, titik, dan "( OFFICIAL STORE )" diabaikan.
+ *   Toko yang belum ada di toko-data.js gak dapat logo.
+ *
+ * KATEGORI:
+ *   Di kartu cuma ada dua badge: BEKAS dan BARU (global + odm = BARU).
+ *   Kata "global", "odm", "lokal", "merek lokal", "mall" tetap bisa dicari.
+ *
+ * FILTER TOKO:
+ *   index.html?toko=Gugel%20Laptop → cuma laptop yang punya link dari toko itu
+ *   (link utama atau link lain). Dipakai link "Lihat laptop" di halaman toko.
+ *   Ngetik nama toko di pencarian juga bisa.
  * ============================================================
  */
 
@@ -46,6 +63,7 @@ let activePriceMax = Infinity;
 let activeTier     = "semua";
 let activeSort     = "default";
 let searchQuery    = "";
+let activeToko     = null;    // data toko dari toko-data.js kalau filter toko aktif
 let guideMode      = false;   // true setelah pengunjung pakai "Lihat Pilihan Mimin"
 
 // ── Harga termurah ───────────────────────────────────────────
@@ -66,11 +84,13 @@ function formatRupiah(angka) {
 }
 
 // ── Badge kategori ───────────────────────────────────────────
+// Global dan ODM sama-sama tampil sebagai "Baru"
 const CATEGORY_META = {
-  global: { label: "Global", cls: "badge-global" },
-  bekas:  { label: "Bekas",  cls: "badge-bekas"  },
-  odm:    { label: "ODM",    cls: "badge-odm"    }
+  global: { label: "Baru",  cls: "badge-baru"  },
+  bekas:  { label: "Bekas", cls: "badge-bekas" },
+  odm:    { label: "Baru",  cls: "badge-baru"  }
 };
+const isBaru = p => p.category !== "bekas";
 
 // ── Tier config ──────────────────────────────────────────────
 const TIER_META = {
@@ -100,7 +120,9 @@ for (let jt = 1; jt <= 9; jt++) {
 // ── Build price menu ─────────────────────────────────────────
 function buildPriceMenu() {
   const menu = document.getElementById("priceMenu");
-  menu.innerHTML = PRICE_RANGES.map((r, i) => `
+  // Rentang harga yang gak ada laptopnya sama sekali gak ditampilkan
+  const ada = r => PRODUCTS.some(p => p.price >= r.min && p.price <= r.max);
+  menu.innerHTML = PRICE_RANGES.map((r, i) => (i > 0 && !ada(r)) ? "" : `
     <li>
       <button class="price-option ${i === 0 ? "active" : ""}" data-index="${i}">${r.label}</button>
     </li>
@@ -159,7 +181,7 @@ function renderCard(p, isSoldOut = false) {
         ${tier ? `<span class="tier-badge ${tier.cls}">${tier.label}</span>` : ""}
         <span class="badge ${meta.cls}">${meta.label}</span>
         ${usecaseBadges ? `<div class="badge-use-row">${usecaseBadges}</div>` : ""}
-        ${isSoldOut ? `<span class="badge-habis">Habis</span>` : ""}
+        ${isSoldOut ? `<span class="badge-habis">Habis</span>` : logoStack(p)}
       </div>
       <div class="card-body">
         ${highlight}
@@ -191,6 +213,45 @@ function renderCard(p, isSoldOut = false) {
   `;
 }
 
+// ── Toko per laptop ──────────────────────────────────────────
+// Semua link laptop (utama + linkLain), urut termurah, lengkap dengan data tokonya
+function semuaLink(p) {
+  return [
+    { url: p.shopUrl, harga: p.hargaUtama, varian: p.varianUtama, toko: p.toko, utama: true },
+    ...linkLainAktif(p).map(l => ({ ...l, harga: l.harga || p.hargaUtama }))
+  ].sort((x, y) => x.harga - y.harga)
+   .map(l => ({ ...l, data: typeof cariToko === "function" ? cariToko(l.toko) : null }));
+}
+
+// Toko unik yang ada di toko-data.js (satu toko bisa punya 2 link, misal beda varian)
+function tokoLaptop(p) {
+  const seen = new Set();
+  return semuaLink(p).filter(l => {
+    if (!l.data || seen.has(l.data.id)) return false;
+    seen.add(l.data.id);
+    return true;
+  });
+}
+
+function punyaToko(p, toko) {
+  if (!toko || typeof tokoKey !== "function") return false;
+  const k = tokoKey(toko.nama);
+  return [p.toko, ...linkLainAktif(p).map(l => l.toko)].some(n => n && tokoKey(n) === k);
+}
+
+function logoStack(p) {
+  if (isBaru(p)) {
+    return `<button type="button" class="card-toko card-toko-mall" onclick="bukaToko(event, ${p.id})"
+      aria-label="Dijual di Shopee Mall">Mall</button>`;
+  }
+  const list = tokoLaptop(p);
+  if (!list.length) return "";
+  const label = list.length === 1 ? "Info toko" : `Info ${list.length} toko`;
+  return `<button type="button" class="card-toko" onclick="bukaToko(event, ${p.id})" aria-label="${label}">
+    ${list.map(l => `<img src="${l.data.logo}" alt="" loading="lazy">`).join("")}
+  </button>`;
+}
+
 // ── Tombol Shopee dengan pilihan link ────────────────────────
 function linkLainAktif(p) {
   return Array.isArray(p.linkLain) ? p.linkLain.filter(l => l && l.url) : [];
@@ -199,15 +260,17 @@ function linkLainAktif(p) {
 function shopDropdown(p, safeName) {
   const esc   = s => String(s || "").replace(/'/g, "\\'");
   // Urut dari yang termurah; yang paling atas (termurah) diberi warna hijau
-  const semua = [
-    { url: p.shopUrl, harga: p.hargaUtama, label: p.labelUtama || "Pilihan utama", toko: p.toko, utama: true },
-    ...linkLainAktif(p).map(l => ({ ...l, harga: l.harga || p.hargaUtama }))
-  ].sort((x, y) => x.harga - y.harga);
+  const semua = semuaLink(p);
+  const labelOpsi = (l, i) => {
+    const nama = [l.toko || "Toko lain", l.varian].filter(Boolean).join(" ");
+    return i === 0 && !l.varian ? `${nama} (Pilihan Utama)` : nama;
+  };
   const items = semua.map((l, i) => `
     <a href="${l.url}" target="_blank" rel="noopener" class="shop-opt${i === 0 ? " shop-opt-utama" : ""}"
       onclick="trackClick('${l.utama ? "shopee" : "shopee_lain"}', '${safeName}', '${p.category}', ${l.harga || p.price}, '${esc(l.toko)}')">
+      ${l.data ? `<img class="shop-opt-logo" src="${l.data.logo}" alt="" loading="lazy">` : ""}
       <span class="shop-opt-text">
-        <span class="shop-opt-label">${l.label || "Toko lain"}</span>
+        <span class="shop-opt-label">${labelOpsi(l, i)}</span>
         <span class="shop-opt-price">${formatRupiah(l.harga || p.price)}</span>
       </span>
       <svg class="shop-opt-go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" width="14" height="14" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
@@ -242,18 +305,34 @@ function toggleShopMenu(e, btn) {
 }
 
 // ── Filter & Render ──────────────────────────────────────────
+// Kata kunci tersembunyi buat pencarian (gak tampil di kartu)
+function kataKunci(p) {
+  const kata = isBaru(p) ? ["baru", "mall", "original", "ori"] : ["bekas", "second"];
+  if (p.category === "odm")    kata.push("odm", "lokal", "merek lokal", "merk lokal");
+  if (p.category === "global") kata.push("global");
+  [p.toko, ...linkLainAktif(p).map(l => l.toko)].forEach(n => {
+    if (!n) return;
+    kata.push(n.toLowerCase());
+    const t = typeof cariToko === "function" ? cariToko(n) : null;
+    if (t) kata.push(parseToko(t).nama.toLowerCase());
+  });
+  return kata;
+}
+
 function matchesFilters(p) {
   const q = searchQuery.toLowerCase().trim();
   const matchPrice = p.price >= activePriceMin && p.price <= activePriceMax;
   const matchTier  = activeTier === "semua" || p.tier === activeTier;
   if (!matchPrice || !matchTier) return false;
+  if (activeToko && !punyaToko(p, activeToko)) return false;
   if (q === "") return true;
 
   const info = parseProduct(p);
   return p.name.toLowerCase().includes(q)
     || p.specs.some(s => s.toLowerCase().includes(q))
     || info.usecase.some(u => u.includes(q))
-    || (info.usecase.includes("teknik") && "workstation".includes(q));
+    || (info.usecase.includes("teknik") && "workstation".includes(q))
+    || kataKunci(p).some(k => k.includes(q));
 }
 
 function sortProducts(arr) {
@@ -284,7 +363,8 @@ function applyFilters() {
   } else {
     aktif = PRODUCTS.filter(p => {
       if (p.sold_out) return false;
-      const matchCat = activeCategory === "semua" || p.category === activeCategory;
+      const matchCat = activeCategory === "semua"
+        || (activeCategory === "baru" ? isBaru(p) : p.category === activeCategory);
       return matchCat && matchesFilters(p);
     });
     aktif = sortProducts(aktif);
@@ -314,6 +394,7 @@ function applyFilters() {
 
     grid.innerHTML = html;
     empty.style.display = "none";
+    updateTokoBanner(aktif.length);
     if (count) {
       count.innerHTML = `<strong>${mimin.length}</strong> pilihan mimin`
         + `<span class="count-muted">, ${lain.length} laptop lain</span>`;
@@ -324,6 +405,7 @@ function applyFilters() {
 
   grid.innerHTML = all.join("");
   empty.style.display = all.length ? "none" : "block";
+  updateTokoBanner(aktif.length);
 
   if (count) {
     if (!all.length) {
@@ -472,6 +554,7 @@ function resetAll() {
   setSort("default");
   setSearch("");
   guideMode = false;
+  setTokoFilter(null);
   applyFilters();
 }
 
@@ -532,7 +615,7 @@ function closeGuide(scrollToProducts) {
 
 // Keterangan di atas hasil: tampil selama mode pilihan mimin aktif,
 // dan isinya ikut berubah kalau pengunjung ganti kategori, harga, urutan, atau tier.
-const CATEGORY_TEXT = { global: "Global", bekas: "Bekas", odm: "ODM", habis: "stok habis" };
+const CATEGORY_TEXT = { baru: "Baru", bekas: "Bekas", habis: "stok habis" };
 const SORT_TEXT     = { asc: "urut dari termurah", desc: "urut dari termahal" };
 
 function budgetText() {
@@ -660,6 +743,8 @@ function lihatAlternatif(idHabis) {
   const overlay = ensureCompareModal();
   const selisih = selisihHarga(habis.price, alt.price);
   const altName = alt.name.replace(/'/g, "\\'");
+  // Link termurah, sama dengan harga yang tampil
+  const altLink = semuaLink(alt)[0];
 
   // Spek dibandingkan baris per baris; yang beda ditebalkan di sisi alternatif
   const rows = Math.max(habis.specs.length, alt.specs.length);
@@ -691,8 +776,10 @@ function lihatAlternatif(idHabis) {
         <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
         Video
       </a>
-      <a href="${alt.shopUrl}" target="_blank" rel="noopener" class="btn btn-shop"
-        onclick="trackClick('shopee', '${altName}', '${alt.category}', ${alt.price})">Beli di Shopee</a>
+      ${linkLainAktif(alt).length
+        ? shopDropdown(alt, altName)
+        : `<a href="${altLink.url}" target="_blank" rel="noopener" class="btn btn-shop"
+            onclick="trackClick('shopee', '${altName}', '${alt.category}', ${alt.price})">Beli di Shopee</a>`}
     </div>`;
 
   overlay.classList.add("open");
@@ -713,6 +800,188 @@ function closeCompare() {
   document.body.style.overflow = "";
 }
 
+// ============================================================
+// INFO TOKO (klik logo di foto)
+// Laptop bekas: rating, ulasan, catatan, dan tombol "Lihat toko" (link
+// affiliate ke halaman toko). Laptop baru: keterangan Shopee Mall.
+// ============================================================
+function ensureTokoModal() {
+  let el = document.getElementById("tokoOverlay");
+  if (el) return el;
+  document.body.insertAdjacentHTML("beforeend", `
+    <div class="cmp-overlay" id="tokoOverlay" aria-hidden="true">
+      <div class="cmp-box tk-box" role="dialog" aria-modal="true" aria-labelledby="tokoTitle">
+        <div class="cmp-head">
+          <h2 class="cmp-title" id="tokoTitle">Info toko</h2>
+          <button class="cmp-close" type="button" aria-label="Tutup">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="18" height="18" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="cmp-body" id="tokoBody"></div>
+      </div>
+    </div>`);
+  el = document.getElementById("tokoOverlay");
+  el.addEventListener("click", e => {
+    if (e.target === el || e.target.closest(".cmp-close")) closeTokoModal();
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeTokoModal(); });
+  return el;
+}
+
+const STAR = `<svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`;
+
+// Satu toko: tampil lengkap. Beberapa toko: yang termurah terbuka lengkap,
+// toko lain cuma kelihatan rating dan harga, klik buat buka (yang lain otomatis ketutup).
+function tokoBlok(l, i, sendiri, namaLaptop) {
+  const t = l.data;
+  // Nama ditulis sama kayak di dropdown (nama dari products.js), logo dan data dari toko-data.js
+  const nama = l.toko || parseToko(t).nama;
+  const safeToko = parseToko(t).nama.replace(/'/g, "\\'");
+  const harga = `${formatRupiah(l.harga)}${l.varian ? ` <span class="tk-varian">${l.varian}</span>` : ""}`;
+  const buka = sendiri || i === 0;
+  const head = `
+      <div class="tk-top">
+        <img class="tk-logo" src="${t.logo}" alt="">
+        <div class="tk-info">
+          <h3 class="tk-nama">${nama}${!sendiri && i === 0 ? `<span class="tk-murah">Termurah</span>` : ""}</h3>
+          <div class="tk-meta">
+            <span class="tk-rating">${STAR} ${t.rating}</span>
+            <span>${t.ulasan} ulasan</span>
+            ${sendiri ? `<span>${t.pengikut} pengikut</span>` : ""}
+          </div>
+          <p class="tk-harga">${harga}</p>
+        </div>
+        ${sendiri ? "" : `<svg class="tk-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" width="16" height="16" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>`}
+      </div>`;
+  const body = `
+      <div class="tk-body">
+        ${t.grup ? `<span class="tk-grup">Satu grup dengan ${t.grup}</span>` : ""}
+        ${t.catatan ? `<div class="tk-catatan">${formatCatatan(t.catatan)}</div>` : ""}
+        <a href="${t.shopUrl}" target="_blank" rel="noopener" class="btn btn-shop tk-btn"
+          onclick="trackTokoKatalog('${safeToko}', '${namaLaptop}')">Lihat toko</a>
+      </div>`;
+  if (sendiri) return `<div class="tk-item open">${head}${body}</div>`;
+  return `
+    <div class="tk-item tk-acc${buka ? " open" : ""}">
+      <button type="button" class="tk-head" onclick="bukaTutupToko(this)" aria-expanded="${buka}">${head}</button>
+      ${body}
+    </div>`;
+}
+
+function bukaTutupToko(btn) {
+  const item = btn.closest(".tk-item");
+  const buka = !item.classList.contains("open");
+  item.parentElement.querySelectorAll(".tk-acc.open").forEach(x => {
+    x.classList.remove("open");
+    x.querySelector(".tk-head").setAttribute("aria-expanded", "false");
+  });
+  if (buka) {
+    item.classList.add("open");
+    btn.setAttribute("aria-expanded", "true");
+  }
+}
+
+function bukaToko(e, id) {
+  e.stopPropagation();
+  closeAllDropdowns();
+  const p = PRODUCTS.find(x => String(x.id) === String(id));
+  if (!p) return;
+  const overlay = ensureTokoModal();
+  const namaLaptop = parseProduct(p).name;
+  const safeName = p.name.replace(/'/g, "\\'");
+  let judul, isi;
+
+  if (isBaru(p)) {
+    judul = "Shopee Mall";
+    isi = `
+      <div class="tk-item">
+        <div class="tk-top">
+          <span class="card-toko-mall tk-mall">Mall</span>
+          <div class="tk-info"><h3 class="tk-nama">Dijual di Shopee Mall</h3></div>
+        </div>
+        <div class="tk-catatan">
+          <p>Laptop baru di Pantau Tech selalu diambil dari toko Shopee Mall, yaitu toko resmi merek atau distributor yang sudah diverifikasi Shopee.</p>
+          <p>Barangnya baru dan original, jadi kamu gak perlu khawatir dapat barang palsu atau rekondisi.</p>
+        </div>
+      </div>`;
+  } else {
+    const list = tokoLaptop(p);
+    if (!list.length) return;
+    const sendiri = list.length === 1;
+    judul = sendiri ? "Info toko" : `Tersedia di ${list.length} toko`;
+    isi = `<p class="tk-laptop">${namaLaptop}</p><div class="tk-list">`
+      + list.map((l, i) => tokoBlok(l, i, sendiri, safeName)).join("") + `</div>`;
+  }
+
+  document.getElementById("tokoTitle").textContent = judul;
+  document.getElementById("tokoBody").innerHTML = isi;
+  overlay.classList.add("open");
+  overlay.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  overlay.querySelector(".cmp-box").scrollTop = 0;
+
+  if (typeof gtag === "function") gtag("event", "klik_logo_toko", { nama_laptop: p.name, kategori: p.category });
+}
+
+function closeTokoModal() {
+  const overlay = document.getElementById("tokoOverlay");
+  if (!overlay || !overlay.classList.contains("open")) return;
+  overlay.classList.remove("open");
+  overlay.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function trackTokoKatalog(namaToko, namaLaptop) {
+  if (typeof gtag !== "function") return;
+  gtag("event", "klik_toko", { nama_toko: namaToko, sumber: "katalog", nama_laptop: namaLaptop });
+}
+
+// ============================================================
+// FILTER TOKO (index.html?toko=...)
+// ============================================================
+function setTokoFilter(toko) {
+  activeToko = toko || null;
+  if (!activeToko) {
+    try {
+      const url = new URL(location.href);
+      if (url.searchParams.has("toko")) {
+        url.searchParams.delete("toko");
+        history.replaceState(null, "", url.pathname + url.search + url.hash);
+      }
+    } catch (e) {}
+  }
+}
+
+function updateTokoBanner(jumlah) {
+  let bn = document.getElementById("tokoBanner");
+  if (!activeToko) { if (bn) bn.hidden = true; return; }
+  if (!bn) {
+    const grid = document.getElementById("productsGrid");
+    grid.insertAdjacentHTML("beforebegin", `<div class="toko-banner" id="tokoBanner"></div>`);
+    bn = document.getElementById("tokoBanner");
+  }
+  const nama = parseToko(activeToko).nama;
+  bn.hidden = false;
+  bn.innerHTML = `
+    <img src="${activeToko.logo}" alt="">
+    <div class="toko-banner-text">
+      <strong>Rekomendasi dari ${nama}</strong>
+    </div>
+    <button type="button" class="toko-banner-close" onclick="hapusTokoFilter()">Hapus</button>`;
+}
+
+function hapusTokoFilter() {
+  setTokoFilter(null);
+  applyFilters();
+}
+
+function tokoDariUrl() {
+  try {
+    const nama = new URL(location.href).searchParams.get("toko");
+    return nama && typeof cariToko === "function" ? cariToko(nama) : null;
+  } catch (e) { return null; }
+}
+
 // ── GA4 ──────────────────────────────────────────────────────
 function trackClick(tombol, namaLaptop, kategori, harga, namaToko) {
   if (typeof gtag !== "function") return;
@@ -724,7 +993,18 @@ function trackClick(tombol, namaLaptop, kategori, harga, namaToko) {
 // ── Init ─────────────────────────────────────────────────────
 buildPriceMenu();
 buildGuidePrices();
+activeToko = tokoDariUrl();
 applyFilters();
+if (activeToko) {
+  // Datang dari halaman toko: lewati pertanyaan bantu pilih, langsung ke hasil
+  document.body.classList.remove("guide-open");
+  try { sessionStorage.setItem(GUIDE_KEY, "1"); } catch (e) {}
+  requestAnimationFrame(() => {
+    const target = document.getElementById("tokoBanner") || document.querySelector(".products-section");
+    const header = document.querySelector(".site-header").offsetHeight;
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - header - 12 });
+  });
+}
 
 // Sudah pernah jawab di sesi ini (misal balik dari halaman Toko)? Langsung katalog.
 try {

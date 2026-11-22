@@ -1,14 +1,13 @@
 const PRODUCTS = [
 
 
-
   // Tier S: Prosesor sama kayak ThinkPad T14 Gen 2 Ryzen 5 (5,80jt, S) tapi 460 ribu lebih murah, RAM 2 slot SODIMM jadi gampang diupgrade. Bodinya 130 gram lebih berat dari T14 Gen 2
   {
     id: 2026111001,
     name: "ThinkPad L14 Gen 2 Ryzen 5 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 5510000,
+    price: 5856000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -17,6 +16,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/1qdTPZ18IV",
+    toko:     "Gugel Laptop",
+    linkLain: [
+      { url: "https://s.shopee.co.id/6VPd6PpajX", harga: 5684000, toko: "ALMA Computer" }
+    ],
     image:    "./LAPTOP 5 JUTA/ThinkPad L14 Gen 2 Ryzen 5 5 Juta.webp"
   },
 
@@ -34,9 +37,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/AKc8Wy3Nzv",
-    toko: "WDCOMPUTER.ID",
+    toko: "WDComputer.id",
     linkLain: [
-      { url: "https://s.shopee.co.id/2LZTc9A5JS", harga: 4892500, label: "Toko lain" }
+      { url: "https://s.shopee.co.id/2LZTc9A5JS", harga: 4944000, toko: "LockStore" },
+      { url: "https://s.shopee.co.id/4B1iK92bk4", harga: 4464000, toko: "MBM Tech Store" }
     ],
     image:    "./LAPTOP 4 JUTA/thinkpad x13.webp"
   },
@@ -55,6 +59,11 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
     shopUrl:  "https://s.shopee.co.id/W7pa7lMsl",
+    toko:     "MBM Tech Store",
+    linkLain: [
+      { url: "https://s.shopee.co.id/2La48hEyWM", harga: 5580000, toko: "Laptopin.id" },
+      { url: "https://s.shopee.co.id/2BGdwOFbrJ", harga: 6100000, varian: "SSD 512GB", toko: "M6 Store" }
+    ],
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
 
@@ -63,7 +72,7 @@ const PRODUCTS = [
     name: "HP Elitebook 845 G8 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 5890000,
+    price: 5952000,
     specs: [
       "AMD Ryzen 5 Pro 5650U",
       "Radeon Vega 7",
@@ -72,8 +81,9 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/9KjE5sCWPJ",
+    toko:     "Gugel Laptop",
     linkLain: [
-      { url: "https://s.shopee.co.id/5LDSdU7bk1", harga: 5785500, label: "Toko lain", toko: "Laptop WA Surabaya" }
+      { url: "https://s.shopee.co.id/60TMVUrUkO", harga: 6066200, toko: "GudangLaptopBTM" }
     ],
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
@@ -84,7 +94,7 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: false,
-    price: 6175000,
+    price: 6045000,
     specs: [
       "Intel Core i5-1135G7",
       "Nvidia MX450",
@@ -93,6 +103,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/9zyjv8qdQP",
+    toko:     "Electro Com",
     image:    "./LAPTOP 6 JUTA/Thinkpad MX.webp"
   },
 
@@ -113,41 +124,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 11 JUTA/Advan Pixwar 11 Juta.webp"
   },
 
-  {
-    id: 2026102002,
-    name: "Acer Swift Lite 14",
-    sold_out: true,
-    category: "global",
-    tier: "A+",
-    price: 11894000,
-    specs: [
-      "AMD Ryzen 5 240",          
-      "Radeon 760M",              
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/8fTHLV7yqL",
-    image:    "./LAPTOP 11 JUTA/Acer Swift Lite 14 11 Juta.webp"
-  },
-
-  {
-    id: 2026102003,
-    name: "Acer Aspire Go 14 AI",
-    sold_out: true,
-    category: "global",
-    tier: "A",
-    price: 14299000,
-    specs: [
-      "Intel Ultra 7 155H",
-      "Intel Arc",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/7VHJxUHzOo",
-    image:    "./LAPTOP 14 JUTA/Acer Aspire Go 14 AI 14 Juta.webp"
-  },
 
     // Tier S: Prosesor dan iGPU Radeon 680M sama kayak ThinkPad T14s Gen 3 Ryzen 7 (9,5jt, S), tapi 1,67jt lebih murah dengan bodi 13 inci yang lebih ringkas
   {
@@ -155,7 +131,7 @@ const PRODUCTS = [
     name: "ThinkPad X13 Gen 3 Ryzen 7",
     category: "bekas",
     tier: "S",
-    price: 7828000,
+    price: 8054400,
     specs: [
       "AMD Ryzen 7 Pro 6850U",
       "AMD Radeon 680M",
@@ -168,7 +144,7 @@ const PRODUCTS = [
     image:    "./LAPTOP 7 JUTA/ThinkPad X13 Gen 3 Ryzen 7 7 Juta.webp"
   },
 
-  // Tier S: Prosesor sama kayak HP Elitebook 840 G10 (9,77jt) di bodi Latitude seri 7000 13 inci, tapi 2,8jt lebih murah
+  // Tier A+: Prosesor i5-1345U generasi 13 di bodi Latitude seri 7000 13 inci. Tapi Dell Latitude 7330 i7 (7,0jt, S) harganya hampir sama dengan RAM 32GB dan prosesor i7
   {
     id: 2026111402,
     name: "Dell Latitude 7340",
@@ -183,7 +159,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/3g5Eawdbpn",
-    toko: "LETOPGARS",
+    toko: "Letopgars",
     image:    "./LAPTOP 6 JUTA/Dell Latitude 7340 6 Juta.webp"
   },
 
@@ -193,6 +169,7 @@ const PRODUCTS = [
     name: "Dell Latitude 9420 2 in 1",
     category: "bekas",
     tier: "S",
+    sold_out: true,
     price: 5510000,
     specs: [
       "Intel Core i5-1145G7",
@@ -202,7 +179,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/ql3DzVYfX",
-    toko: "jaya computer",
+    toko: "Jaya Computer",
     image:    "./LAPTOP 5 JUTA/Dell Latitude 9420 2 in 1 5 Juta.webp"
   },
 
@@ -212,7 +189,7 @@ const PRODUCTS = [
     name: "Dell Latitude 7420",
     category: "bekas",
     tier: "A+",
-    price: 4940000,
+    price: 4992000,
     specs: [
       "Intel Core i5-1145G7",
       "Intel Iris Xe 80EU",
@@ -221,7 +198,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/6VPPyFN6FA",
-    toko: "jaya computer",
+    toko: "Jaya Computer",
+    linkLain: [
+      { url: "https://s.shopee.co.id/40iI836eX3", harga: 5165000, toko: "Glory Computer" }
+    ],
     image:    "./LAPTOP 4 JUTA/Dell Latitude 7420 4 Juta.webp"
   },
 
@@ -231,7 +211,7 @@ const PRODUCTS = [
     name: "HP ZBook Studio G4 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    price: 4940000,
+    price: 5078400,
     specs: [
       "Intel Xeon E3-1505M v5",
       "Nvidia Quadro M1200 4GB",
@@ -250,7 +230,7 @@ const PRODUCTS = [
     name: "ThinkPad X395 Ryzen 7",
     category: "bekas",
     tier: "S",
-    price: 4370000,
+    price: 4416000,
     specs: [
       "AMD Ryzen 7 Pro 3700U",
       "AMD Radeon Vega 10",
@@ -281,41 +261,24 @@ const PRODUCTS = [
     image:    "./LAPTOP 14 JUTA/Axioo Pongo 735 14 Juta.webp"
   },
 
-  {
-    id: 2026102005,
-    name: "Lenovo IdeaPad Slim 5 OLED 14 (PILIHAN MIMIN)",
-    sold_out: true,
-    category: "global",
-    tier: "A+",
-    price: 16294000,
-    specs: [
-      "Intel Ultra 5 135H",
-      "Intel Arc",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/6fiCxzuaCK",
-    image:    "./LAPTOP 16 JUTA/Lenovo IdeaPad Slim 5 OLED 14 16 Juta.webp"
-  },
 
   // =====================================================================
 // WORKSTATION DAN LAPTOP BISNIS DENGAN dGPU (riset 20 Nov 2026, harga HP)
 // Tipe prosesor yang gak ditulis penjual diisi tipe yang paling umum di model itu
 // =====================================================================
 
-  // Tier B+: Laptop dGPU termurah di website, tapi RAM 8GB dan SSD 128GB, dan MX250 kelas paling bawah. ThinkPad T495 (4,36jt, S) RAM-nya udah 16GB
+  // Tier B+: Varian 8GB/128GB di screenshot 22 Nov ganti ke 16GB/256GB (4,74jt). MX250 kelas paling bawah, dan ThinkPad T495 (4,40jt, S) lebih murah
   {
     id: 2026112001,
     name: "ThinkPad T490 MX250",
     category: "bekas",
     tier: "B+",
-    price: 4095000,
+    price: 4743000,
     specs: [
       "Intel Core i5-8265U",
       "Nvidia MX250 2GB",
-      "RAM 8GB",
-      "SSD 128GB"
+      "RAM 16GB",
+      "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/7VI7F0MXkt",
@@ -338,7 +301,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/80ENq1mwgh",
-    toko: "Ari speed comp",
+    toko: "Ari Speed Comp",
     image:    "./LAPTOP 4 JUTA/ThinkPad P50 M2000M 4 Juta.webp"
   },
 
@@ -348,7 +311,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 1 MX330",
     category: "bekas",
     tier: "A",
-    price: 5510000,
+    price: 5568000,
     specs: [
       "Intel Core i5-10210U",
       "Nvidia MX330 2GB",
@@ -358,6 +321,9 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/6fj0FjWB1e",
     toko: "Gugel Laptop",
+    linkLain: [
+      { url: "https://s.shopee.co.id/4VeYiy4kWA", harga: 5673000, toko: "Electro Com" }
+    ],
     image:    "./LAPTOP 5 JUTA/ThinkPad T14 Gen 1 MX330 5 Juta.webp"
   },
 
@@ -367,7 +333,7 @@ const PRODUCTS = [
     name: "ThinkPad P51 M2200 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 5975500,
+    price: 6038400,
     specs: [
       "Intel Core i7-7700HQ",
       "Nvidia Quadro M2200 4GB",
@@ -395,17 +361,17 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/AUviorT2Q9",
-    toko: "Ari speed comp",
+    toko: "Ari Speed Comp",
     image:    "./LAPTOP 5 JUTA/ThinkPad P53s 5 Juta.webp"
   },
 
-  // Tier B+: Kemahalan: GPU-nya sama kayak ThinkPad P53s (6,00jt) tapi 1,3 juta lebih mahal
+  // Tier B+: Varian P15s Gen 1 habis (22 Nov), diganti P14s Gen 1 dari listing yang sama. GPU-nya sama kayak ThinkPad P53s (6,00jt) tapi 700 ribu lebih mahal
   {
     id: 2026112006,
-    name: "ThinkPad P15s Gen 1 (TEKNIK)",
+    name: "ThinkPad P14s Gen 1 (TEKNIK)",
     category: "bekas",
     tier: "B+",
-    price: 7300000,
+    price: 6700000,
     specs: [
       "Intel Core i7-10510U",
       "Nvidia Quadro P520 2GB",
@@ -415,7 +381,7 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/6AmjewmW4i",
     toko: "Electro Com",
-    image:    "./LAPTOP 7 JUTA/ThinkPad P15s Gen 1 7 Juta.webp"
+    image:    "./LAPTOP 6 JUTA/ThinkPad P14s Gen 1 6 Juta.webp"
   },
 
   // Tier A+: Quadro P1000 4GB (setara GTX 1050) dan prosesor 6 core, SSD 512GB. Masih di bawah ThinkPad P52 P3200 (8,27jt) yang GPU-nya 2 kelas di atas
@@ -424,7 +390,7 @@ const PRODUCTS = [
     name: "ThinkPad P52 P1000 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 7780500,
+    price: 7862400,
     specs: [
       "Intel Core i7-8850H",
       "Nvidia Quadro P1000 4GB",
@@ -443,7 +409,7 @@ const PRODUCTS = [
     name: "HP ZBook Firefly 14 G8 (TEKNIK)",
     category: "bekas",
     tier: "A",
-    price: 7875500,
+    price: 7958400,
     specs: [
       "Intel Core i7-1165G7",
       "Nvidia T500 4GB",
@@ -462,7 +428,7 @@ const PRODUCTS = [
     name: "ThinkPad P1 Gen 1 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    price: 8075000,
+    price: 8160000,
     specs: [
       "Intel Core i7-8850H",
       "Nvidia Quadro P2000 4GB",
@@ -481,7 +447,7 @@ const PRODUCTS = [
     name: "ThinkPad P53 T1000 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 8255500,
+    price: 8342400,
     specs: [
       "Intel Core i7-9750H",
       "Nvidia Quadro T1000 4GB",
@@ -500,7 +466,7 @@ const PRODUCTS = [
     name: "ThinkPad P52 P3200 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    price: 8265000,
+    price: 8352000,
     specs: [
       "Intel Core i7-8850H",
       "Nvidia Quadro P3200 6GB",
@@ -519,7 +485,7 @@ const PRODUCTS = [
     name: "HP ZBook 15 G5 (TEKNIK)",
     category: "bekas",
     tier: "A",
-    price: 8350500,
+    price: 8438400,
     specs: [
       "Intel Core i7-8750H",
       "Nvidia Quadro P1000 4GB",
@@ -547,7 +513,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/2BGatw5QgD",
-    toko: "WDCOMPUTER.ID",
+    toko: "WDComputer.id",
     image:    "./LAPTOP 8 JUTA/Dell Precision 3560 8 Juta.webp"
   },
 
@@ -557,7 +523,7 @@ const PRODUCTS = [
     name: "Dell Precision 3470 (TEKNIK)",
     category: "bekas",
     tier: "A",
-    price: 8977500,
+    price: 9072000,
     specs: [
       "Intel Core i7-1255U",
       "Nvidia T550 4GB",
@@ -576,7 +542,7 @@ const PRODUCTS = [
     name: "Dell Precision 5540 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    price: 9025000,
+    price: 9120000,
     specs: [
       "Intel Core i7-9850H",
       "Nvidia Quadro T2000 4GB",
@@ -585,7 +551,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/6fj0GJvVVf",
-    toko: "LOCKSTORE",
+    toko: "LockStore",
     image:    "./LAPTOP 9 JUTA/Dell Precision 5540 9 Juta.webp"
   },
 
@@ -595,7 +561,7 @@ const PRODUCTS = [
     name: "ThinkPad P53 T2000 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 9310000,
+    price: 9408000,
     specs: [
       "Intel Core i7-9750H",
       "Nvidia Quadro T2000 4GB",
@@ -688,41 +654,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 8 JUTA/Lenovo Legion 5 15ARH05 8 Juta.webp"
   },
 
-  // Tier A+: GPU RTX 2060 6GB paling kenceng di bawah 10 juta, tapi harganya naik jadi 9,69jt. HP Pavilion Gaming 15-ec1076AX (8,84jt) dengan GTX 1660 Ti cuma sekitar 13% lebih lambat, 855 ribu lebih murah, dan prosesornya lebih kuat
-  {
-    id: 2026110504,
-    name: "HP Pavilion Gaming 15-dk1064TX",
-    category: "bekas",
-    tier: "A+",
-    price: 9690000,
-    specs: [
-      "Intel Core i5-10300H",
-      "Nvidia GeForce RTX 2060 6GB",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/3B8k4WUnbx",
-    image:    "./LAPTOP 8 JUTA/HP Pavilion Gaming 15-dk1064TX 8 Juta.webp"
-  },
-
-  // Tier A+: GPU GTX 1660 Ti 6GB dan layar 144Hz, bodi Nitro 7 lebih premium. Tapi RAM baru 8GB, dan HP Victus 15-fa0 (9,46jt) prosesornya jauh lebih baru dengan RAM 16GB
-  {
-    id: 2026110505,
-    name: "Acer Nitro 7 AN715-51",
-    category: "bekas",
-    tier: "A+",
-    price: 9215000,
-    specs: [
-      "Intel Core i7-9750H",
-      "Nvidia GeForce GTX 1660 Ti 6GB",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/8pn6oxyemm",
-    image:    "./LAPTOP 9 JUTA/Acer Nitro 7 AN715-51 9 Juta.webp"
-  },
 
   // Tier S: RTX 3050 dan i5-12500H 12 core di bawah 9,5 juta, RAM udah 16GB dan layar 144Hz. Lebih murah dari Lenovo IdeaPad Gaming 3 (9,6jt) yang masih RTX 2050
   {
@@ -762,23 +693,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 10 JUTA/Asus TUF F15 FX506HC 10 Juta.webp"
   },
 
-  // Tier A+: Prosesor i5-12500H 12 core dan RTX 3050 4GB, tapi RAM cuma 8GB jadi perlu nambah RAM buat game berat
-  {
-    id: 2026110508,
-    name: "Acer Nitro 5 AN515-58",
-    category: "bekas",
-    tier: "A+",
-    price: 10640000,
-    specs: [
-      "Intel Core i5-12500H",
-      "Nvidia GeForce RTX 3050 4GB",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/1Lh5tE0QK0",
-    image:    "./LAPTOP 10 JUTA/Acer Nitro 5 AN515-58 10 Juta.webp"
-  },
 
   // =====================================================================
 // LAPTOP BEKAS BARU (dari koleksi affiliate, 23 Okt 2026)
@@ -808,6 +722,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/3g4hQK1Zrf",
+    toko:     "Ari Speed Comp",
     image:    "./LAPTOP 1 JUTA/Fujitsu Futro MU937 1 Juta.webp"
   },
 
@@ -817,7 +732,7 @@ const PRODUCTS = [
     name: "ThinkPad X240",
     category: "bekas",
     tier: "B+",
-    price: 1859000,
+    price: 1964625,
     specs: [
       "Intel Core i5-4300U",
       "Intel HD Graphics 4400",
@@ -826,7 +741,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/1BzipfWM4",
-    toko: "Ari speed comp",
+    toko: "Ari Speed Comp",
     image:    "./LAPTOP 1 JUTA/thinkpad x240 1 juta.webp"
   },
 
@@ -836,7 +751,7 @@ const PRODUCTS = [
     name: "Dell Latitude E6430",
     category: "bekas",
     tier: "B",
-    price: 1914000,
+    price: 2046000,
     specs: [
       "Intel Core i5-3320M",
       "Intel HD Graphics 4000",
@@ -849,24 +764,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 1 JUTA/Dell Latitude E6430 1 juta.webp"
   },
 
-  // Tier B+: ThinkPad 14 inci termurah di website, prosesor 1 generasi di atas X240. Kekurangannya bodi lebih tebal dari T440s dan layar HD. Tipe prosesor (i5-5300U) belum dikonfirmasi penjual
-  {
-    id: 2026111603,
-    name: "ThinkPad T450",
-    category: "bekas",
-    tier: "B+",
-    price: 2024000,
-    specs: [
-      "Intel Core i5-5300U",
-      "Intel HD Graphics 5500",
-      "RAM 8GB",
-      "SSD 128GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/80EHG5aF1S",
-    toko: "Redstar Electronic",
-    image:    "./LAPTOP 2 JUTA/thinkpad t450 2 juta.webp"
-  },
 
   // Tier B+: Bodi dan keyboard ThinkPad, i5 gen 4 masih lebih kenceng dari Celeron, tapi RAM 4GB harus diupgrade dan umurnya udah tua banget
   {
@@ -893,7 +790,7 @@ const PRODUCTS = [
     name: "HP ProBook 640 G2",
     category: "bekas",
     tier: "A+",
-    price: 2850000,
+    price: 2790000,
     specs: [
       "Intel Core i5-6300U",
       "Intel HD Graphics 520",
@@ -902,45 +799,11 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/3B8QqFGqeN",
+    toko:     "Electro Com",
     image:    "./LAPTOP 2 JUTA/HP Elitebook 640 G2 2 Juta.webp"
   },
 
-  // Tier A+: Prosesor sama kayak Latitude 7290 (2,9jt, A) tapi lebih murah, layar lebih lega 14 inci dan bodi tipis. Pilihan terbaik di 2 jutaan
-  {
-    id: 2026102404,
-    name: "ThinkPad T470s (PILIHAN MIMIN)",
-    sold_out: true,
-    category: "bekas",
-    tier: "A+",
-    price: 2806000,
-    specs: [
-      "Intel Core i5-7300U",
-      "Intel HD Graphics 620",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/8pmnaA49eV",
-    image:    "./LAPTOP 2 JUTA/ThinkPad T470s 2 Juta.webp"
-  },
  
-  {
-    id: 2026102301,
-    name: "HP ProBook 445 G8",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    price: 5566000,
-    specs: [
-      "AMD Ryzen 7 5800U",
-      "Radeon Vega 8",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/gR4oJm83z",
-    image:    "./LAPTOP 5 JUTA/HP ProBook 445 G8 5 Juta.webp"
-  },
 
   // Tier A+: Bodi premium seri 7, tapi prosesornya sama kayak Latitude 5330 (5,7jt, S) yang 440 ribu lebih murah dan SSD-nya udah 512GB
   {
@@ -957,6 +820,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/1BO11ZiQM",
+    toko:     "MBM Tech Store",
+    linkLain: [
+      { url: "https://s.shopee.co.id/4LL8Wf5Nr9", harga: 6664000, toko: "Jaya Computer" }
+    ],
     image:    "./LAPTOP 6 JUTA/Dell Latitude 7430 6 Juta.webp"
   },
 
@@ -966,6 +833,9 @@ const PRODUCTS = [
     name: "ThinkPad X13 Gen 2",
     category: "bekas",
     tier: "A+",
+    sold_out: true,
+    alternatif: 10123232,
+    alternatif_alasan: "Prosesor 6 core, lebih murah 990rb",
     price: 5580000,
     specs: [
       "Intel Core i5-1145G7",
@@ -1012,6 +882,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/1BO0rtqCr",
+    toko:     "MBM Tech Store",
+    linkLain: [
+      { url: "https://s.shopee.co.id/6L6CuKxlnT", harga: 4460000, toko: "Letopgars" }
+    ],
     image:    "./LAPTOP 3 JUTA/Dell Latitude 7410 3 Juta.webp"
   },
 
@@ -1021,6 +895,9 @@ const PRODUCTS = [
     name: "ThinkPad L14 Gen 1 Ryzen 7",
     category: "bekas",
     tier: "S",
+    sold_out: true,
+    alternatif: 2026111001,
+    alternatif_alasan: "Ryzen 5 generasi lebih baru, +630rb",
     price: 5225000,
     specs: [
       "AMD Ryzen 7 Pro 4750U",
@@ -1039,7 +916,7 @@ const PRODUCTS = [
     name: "Macbook Pro Retina 15 (2015)",
     category: "bekas",
     tier: "A",
-    price: 4085000,
+    price: 3999000,
     specs: [
       "Intel Core i7-4770HQ",
       "Intel Iris Pro 5200",
@@ -1048,6 +925,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/qkV0A1P17",
+    toko:     "Electro Com",
     image:    "./LAPTOP 3 JUTA/Macbook Pro Retina 15 (2015) 3 Juta.webp"
   },
 
@@ -1057,6 +935,9 @@ const PRODUCTS = [
     name: "ThinkPad T470",
     category: "bekas",
     tier: "A",
+    sold_out: true,
+    alternatif: 210,
+    alternatif_alasan: "Prosesor sama-sama gen 7, RAM 16GB, +190rb",
     price: 3553000,
     specs: [
       "Intel Core i5-7300U",
@@ -1075,7 +956,7 @@ const PRODUCTS = [
     name: "Dell Latitude 5490 i7",
     category: "bekas",
     tier: "A+",
-    price: 4370000,
+    price: 4502400,
     specs: [
       "Intel Core i7-8650U",
       "Intel UHD Graphics 620",
@@ -1084,6 +965,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/4qGdlCpelc",
+    toko:     "GudangLaptopBTM JKT",
     image:    "./LAPTOP 3 JUTA/Dell Latitude 5490 i7 3 Juta.webp"
   },
 
@@ -1093,7 +975,7 @@ const PRODUCTS = [
     name: "Dell Latitude 5330 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 5700000,
+    price: 5846400,
     specs: [
       "Intel Core i5-1245U",
       "Intel Iris Xe 80EU",
@@ -1102,6 +984,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/gR4nVEhlN",
+    toko:     "GudangLaptopBTM",
     image:    "./LAPTOP 5 JUTA/Dell Latitude 5330 5 Juta.webp"
   },
 
@@ -1111,7 +994,7 @@ const PRODUCTS = [
     name: "HP Zbook 15U G6 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 5795000,
+    price: 5942400,
     specs: [
       "Intel Core i7-8665U",
       "Radeon Pro WX3200 4GB",
@@ -1120,6 +1003,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/906CimcZPM",
+    toko:     "GudangLaptopBTM",
     image:    "./LAPTOP 5 JUTA/HP Zbook 15U G6 (TEKNIK) 5 Juta.webp"
   },
 
@@ -1138,9 +1022,9 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/2LZr0N8wk9",
-    toko: "LAPTOPIN.ID",
+    toko: "Laptopin.id",
     linkLain: [
-      { url: "https://s.shopee.co.id/9fLtVye0DH", harga: 7543000, label: "Toko lain" }
+      { url: "https://s.shopee.co.id/9fLtVye0DH", harga: 7766400, toko: "GudangLaptopBTM" }
     ],
     image:    "./LAPTOP 7 JUTA/ThinkPad T14 Gen 3 (INTEL) 7 Juta.webp"
   },
@@ -1151,7 +1035,7 @@ const PRODUCTS = [
     name: "Dell Latitude 7330 i7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 6840000,
+    price: 6998400,
     specs: [
       "Intel Core i7-1265U",
       "Intel Iris Xe 96EU",
@@ -1160,6 +1044,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/AAIA6hyXrW",
+    toko:     "GudangLaptopBTM",
     image:    "./LAPTOP 6 JUTA/Dell Latitude 7330 i7 6 Juta.webp"
   },
 
@@ -1168,7 +1053,7 @@ const PRODUCTS = [
     name: "Dell Latitude 7330 i7 SSD 512GB (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 7353000,
+    price: 7495500,
     specs: [
       "Intel Core i7-1265U",
       "Intel Iris Xe 96EU",
@@ -1177,6 +1062,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/AAIA6hyXrW",
+    toko:     "GudangLaptopBTM",
     image:    "./LAPTOP 6 JUTA/Dell Latitude 7330 i7 6 Juta.webp"
   },
 
@@ -1275,7 +1161,7 @@ const PRODUCTS = [
   name: "Asus Baby ROG X550VXK",
   category: "bekas",
   tier: "A",
-  price: 4845000,
+  price: 4896000,
   specs: [
     "Intel Core i7-6700HQ",
     "GTX 950M 2GB",
@@ -1284,6 +1170,7 @@ const PRODUCTS = [
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/",
   shopUrl: "https://s.shopee.co.id/Lnu8Y9okb",
+  toko:     "DM Komputer",
   image: "./LAPTOP 4 JUTA/asusbaby.webp"
 },
 
@@ -1305,13 +1192,13 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/Advan Workmate.webp"
   },
 
-    // Tier S: Stoknya selalu ada, beda sama HP Elitebook 845 G8 yang stoknya susah dicari. Varian 512GB lebih mahal, jadi sekarang pakai SSD 256GB di 5,12jt
+    // Tier A+: Termurah 5,39jt di Gugel Laptop (16/256). MBM Tech Store varian 16/512 di 6,05jt. Prosesornya sama kayak ThinkPad T14 Gen 1 Ryzen 5 (4,85jt di Gugel Laptop, S) yang 540 ribu lebih murah
     {
     id: 233213333,
     name: "HP Elitebook 845 G7 (PILIHAN MIMIN)",
     category: "bekas",
-    tier: "S",
-    price: 5115000,
+    tier: "A+",
+    price: 6045000,
     specs: [
       "AMD Ryzen 5 Pro 4650U",
       "Radeon Vega 6",
@@ -1320,37 +1207,22 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/5Atf8mENp0",
+    toko:     "MBM Tech Store",
+    varianUtama: "SSD 512GB",
     linkLain: [
-      { url: "https://s.shopee.co.id/5LDSdU7bk1", harga: 5215500, label: "Toko lain", toko: "Laptop WA Surabaya" }
+      { url: "https://s.shopee.co.id/6AmmhnqrPR", harga: 5390000, toko: "Gugel Laptop" },
+      { url: "https://s.shopee.co.id/6L6Cu6qE4U", harga: 5576200, toko: "GudangLaptopBTM" }
     ],
     image:    "./LAPTOP 5 JUTA/HP Elitebook 845 G8.webp"
   },
 
-
-  // Tier A: Harganya naik jadi 6,65jt. Asus TUF FX504GD (6,46jt, A+) lebih murah, prosesornya i7-8750H lebih kenceng, dan SSD-nya udah 512GB
-  {
-  id: 213242321235240,
-  name: "Asus TUF FX505DY ",
-  category: "bekas",
-  tier: "A",
-  price: 6650000,
-  specs: [
-    "AMD Ryzen 5 3550H",
-    "AMD Radeon RX 560X 4GB",
-    "RAM 8GB",
-    "SSD 256GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-  shopUrl: "https://s.shopee.co.id/6VNypxQ2rm",
-  image: "./LAPTOP 5 JUTA/tuf5jt.webp"
-},
 
   {
     id: 9232231,
     name: "Advan Soulmate X2",
     category: "odm",
     tier: "B",
-    price: 4463070,
+    price: 4370070,
     specs: [
       "AMD Athlon 3020e",
       "Radeon Vega 3",
@@ -1361,9 +1233,6 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/5q8u5LRrEY",
     image:    "./LAPTOP 4 JUTA/soulmate.webp"
   },
-
-
-
 
 
     {
@@ -1380,9 +1249,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/W7pa7lMsl",
-    labelUtama: "T14",
+    toko:     "MBM Tech Store",
     linkLain: [
-      { url: "https://s.shopee.co.id/gRd1cqIis", harga: 4650000, label: "T14s (Seri S Lebih Tipis)", toko: "LAPTOPIN.ID" }
+      { url: "https://s.shopee.co.id/1qdnXmGsXD", harga: 4850000, toko: "Gugel Laptop" },
+      { url: "https://s.shopee.co.id/1gKNLTHVsA", harga: 5300000, toko: "M6 Store" }
     ],
     image:    "./LAPTOP 4 JUTA/ThinkPad T14 G1.webp"
   },
@@ -1392,7 +1262,7 @@ const PRODUCTS = [
     name: "Axioo Hype 5 AMD X5-2 (PILIHAN MIMIN)",
     category: "odm",
     tier: "A+",
-    price: 6924550,
+    price: 6997440,
     specs: [
       "AMD Ryzen 5 7430U",
       "Radeon Vega 7",
@@ -1430,7 +1300,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 Ryzen 7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 6745000,
+    price: 7104000,
     specs: [
       "AMD Ryzen 7 Pro 5850U",
       "Radeon Vega 8",
@@ -1439,9 +1309,11 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
     shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
-    labelUtama: "T14",
+    toko:     "Gugel Laptop",
+    varianUtama: "T14",
     linkLain: [
-      { url: "https://s.shopee.co.id/70LgZX1wAD", harga: 6555000, label: "T14s (Seri S Lebih Tipis)", toko: "Redstar" }
+      { url: "https://s.shopee.co.id/70LgZX1wAD", harga: 6624000, varian: "T14s (Lebih Tipis)", toko: "Redstar Electronic" },
+      { url: "https://s.shopee.co.id/2BGdwOFbrJ", harga: 6900000, varian: "T14", toko: "M6 Store" }
     ],
     image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
   },
@@ -1451,7 +1323,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 2 Ryzen 7 SSD 512GB (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 7410000,
+    price: 7776000,
     specs: [
       "AMD Ryzen 7 Pro 5850U",
       "Radeon Vega 8",
@@ -1460,6 +1332,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7688678696181419282",
     shopUrl:  "https://s.shopee.co.id/3VhpKL328P",
+    toko:     "Gugel Laptop",
+    linkLain: [
+      { url: "https://s.shopee.co.id/2BGdwOFbrJ", harga: 7600000, toko: "M6 Store" }
+    ],
     image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
   },
 
@@ -1504,58 +1380,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 20 JUTA/Axioo Pongo 765 20 Juta.webp"
   },
 
-  {
-    id: 2026102104,
-    name: "Asus Vivobook S14 OLED S3407CA",
-    sold_out: true,
-    category: "global",
-    tier: "A+",
-    price: 21349000,
-    specs: [
-      "Intel Ultra 7 255H",
-      "Intel Arc 140T",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/8AX23V3qiN",
-    image:    "./LAPTOP 21-30 JUTA/Asus Vivobook S14 OLED S3407CA 21 Juta.webp"
-  },
-
-  {
-    id: 2026102105,
-    name: "MSI Cyborg 15 B2RWFKG",
-    sold_out: true,
-    category: "global",
-    tier: "A+",
-    price: 21049000,
-    specs: [
-      "Intel Core 5-210H",
-      "Nvidia GeForce RTX 5060 8GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/60SXTX3AYs",
-    image:    "./LAPTOP 21-30 JUTA/MSI Cyborg 15 B2RWFKG 21 Juta.webp"
-  },
-
-  {
-    id: 2026102106,
-    name: "Lenovo Yoga 7i 2in1 OLED",
-    category: "global",
-    tier: "A+",
-    price: 21349000,
-    specs: [
-      "Intel Ultra 7 256V",
-      "Intel Arc 140V",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/70L4fOfa3j",
-    image:    "./LAPTOP 21-30 JUTA/Lenovo Yoga 7i 2in1 OLED 22 Juta.webp"
-  },
 
   {
     id: 2026102107,
@@ -1609,22 +1433,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 21-30 JUTA/Acer Nitro V16S ANV16S-41 23 Juta.webp"
   },
 
-  {
-    id: 2026102110,
-    name: "Axioo Pongo 775",
-    category: "odm",
-    tier: "S",
-    price: 24899000,
-    specs: [
-      "Intel Core i7-13620H",
-      "Nvidia GeForce RTX 5070 8GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/6fiEGu0E7Q",
-    image:    "./LAPTOP 21-30 JUTA/Axioo Pongo 775 24 Juta.webp"
-  },
 
   {
     id: 2026102111,
@@ -1643,22 +1451,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 21-30 JUTA/Acer Swift Go 14 AI OLED 25 Juta.webp"
   },
 
-  {
-    id: 2026102112,
-    name: "MSI Crosshair 16 HX",
-    category: "global",
-    tier: "A+",
-    price: 27930985,
-    specs: [
-      "Intel Core i7-14650HX",
-      "Nvidia GeForce RTX 5060 8GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/4B0tILzWho",
-    image:    "./LAPTOP 21-30 JUTA/MSI Crosshair 16 HX 27 Juta.webp"
-  },
 
   {
     id: 2026102113,
@@ -1693,39 +1485,6 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/9APZFZtulN",
     image:    "./LAPTOP 21-30 JUTA/Asus Zenbook 14 OLED UX3405CA Ultra 9 29 Juta.webp"
-  },
-  {
-    id: 2026102115,
-    name: "Lenovo Legion 5i 15IRX10 OLED",
-    category: "global",
-    tier: "S",
-    price: 29099000,
-    specs: [
-      "Intel Core i7-13650HX",
-      "Nvidia GeForce RTX 5050 8GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/6Alxg4mVWE",
-    image:    "./LAPTOP 21-30 JUTA/Lenovo Legion 5i 15IRX10 OLED 29 Juta.webp"
-  },
-  {
-    id: 2026102116,
-    name: "Asus TUF F16 FX608JMR (PILIHAN MIMIN)",
-    sold_out: true,
-    category: "global",
-    tier: "A+",
-    price: 28601000,
-    specs: [
-      "Intel Core i7-14650HX",
-      "Nvidia GeForce RTX 5060 8GB",
-      "RAM 16GB",
-      "SSD 1TB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/70L4fcVWeC",
-    image:    "./LAPTOP 21-30 JUTA/Asus TUF F16 FX608JMR 29 Juta.webp"
   },
   {
     id: 2026102117,
@@ -1811,43 +1570,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 6 JUTA/al146jt.webp"
   },
 
-
-{
-  id: 23252338,
-  name: "Acer Nitro 5 AN515-55",
-  category: "bekas",
-  tier: "A+",
-  sold_out: false,
-  price: 7505000,
-  specs: [
-    "Intel Core i5-10300H",
-    "Nvidia GeForce GTX 1650 Ti 4GB",
-    "RAM 8GB",
-    "SSD 512GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-  shopUrl: "https://s.shopee.co.id/6L51CjaD7n",
-  image: "./LAPTOP 7 JUTA/nitro7jt.webp"
-},
-
-
-
-{
-  id: 2132423235239,
-  name: "Asus TUF FX504GD ",
-  category: "bekas",
-  tier: "A+",
-  price: 6460000,
-  specs: [
-    "Intel Core i7-8750H",
-    "Nvidia GTX 1050 4GB",
-    "RAM 8GB",
-    "SSD 512GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-  shopUrl: "https://s.shopee.co.id/20vZTALSGP",
-  image: "./LAPTOP 6 JUTA/asus6jt.webp"
-},
 
 {
   id: 222352529,
@@ -1960,29 +1682,13 @@ const PRODUCTS = [
   image: "./LAPTOP 8 JUTA/pongo 725.webp"
 },
 
-// Tier A+: RTX 3050 6GB dan RAM 16GB, tapi harganya 12,26jt. Hampir sama kayak Advan Pixwar T baru (12,15jt) yang masih garansi resmi
-{
-  id: 25235234,
-  name: "MSI Cyborg 15 A12U",
-  category: "bekas",
-  tier: "A+",
-  sold_out: false,
-  price: 12255000,
-  specs: [
-    "Intel Core i5-12450H",
-    "Nvidia GeForce RTX 3050 6GB",
-    "RAM 16GB",
-    "SSD 512GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-  shopUrl: "https://s.shopee.co.id/1BMv2MY6ly",
-  image: "./LAPTOP 11 JUTA/cyborg11jt.webp"
-},
 
   {
     id: 110,
     name: "HP 14 (PILIHAN MIMIN)",
     sold_out: true,
+    alternatif: 2026110421,
+    alternatif_alasan: "Prosesor dan iGPU sama (Ultra 5 125H), RAM/SSD sama, lebih murah 670rb",
     category: "global",
     tier: "S",
     price: 11798000,
@@ -2047,6 +1753,7 @@ const PRODUCTS = [
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
   shopUrl: "https://s.shopee.co.id/50ZeySAN0r",
+  toko:     "Reog Komputer",
   image: "./LAPTOP 8 JUTA/lenovoig1.webp"
 },
 
@@ -2067,42 +1774,24 @@ const PRODUCTS = [
   image:    "./LAPTOP 8 JUTA/axioo8jt.webp"
 },
 
-  // Tier A+: Generasi lebih baru dan SSD 512GB, tapi iGPU Radeon 740M jauh di bawah Radeon 680M punya ThinkPad T14s Gen 3 Ryzen 7 (9,5jt, S) yang 475 ribu lebih murah
+  // Tier A: Varian yang ada di harga 9,41jt sekarang SSD 256GB. Prosesor generasi lebih baru, tapi ThinkPad T14 Gen 3 Ryzen 5 (7,92jt, S) 1,49jt lebih murah dengan RAM/SSD sama, dan T14s Gen 3 Ryzen 7 (9,6jt, S) cuma 192 ribu lebih mahal dengan iGPU Radeon 680M yang jauh lebih kenceng
   {
     id: 2026110301,
     name: "ThinkPad T14 Gen 4 Ryzen 5",
     category: "bekas",
-    tier: "A+",
-    price: 9975000,
+    tier: "A",
+    price: 9408000,
     specs: [
       "AMD Ryzen 5 Pro 7540U",
       "Radeon 740M",
       "RAM 16GB",
-      "SSD 512GB"
+      "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/40ho2wEzXV",
+    toko:     "Gugel Laptop",
     image:    "./LAPTOP 9 JUTA/ThinkPad T14 Gen 4 Ryzen 5 9 Juta.webp"
   },
-
-{
-  id: 2325323527,
-  name: "HP Pavilion Gaming 15-ec1076AX",
-  category: "bekas",
-  tier: "A+",
-  sold_out: false,
-  price: 8835000,
-  specs: [
-    "AMD Ryzen 7 4800H",
-    "Nvidia GeForce GTX 1660 Ti 6GB",
-    "RAM 8GB",
-    "SSD 512GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7694173225537817864",
-  shopUrl: "https://s.shopee.co.id/8fSw4fiojZ",
-  image: "./LAPTOP 8 JUTA/pavilion8jt.webp"
-},
-
 
 
     {
@@ -2110,7 +1799,7 @@ const PRODUCTS = [
     name: "Axioo Hype 7 AMD X8-1 (PILIHAN MIMIN)",
     category: "odm",
     tier: "S",
-    price: 10268100,
+    price: 10288000,
     specs: [
       "AMD Ryzen 7 6800H",
       "Radeon 680M",
@@ -2144,8 +1833,6 @@ const PRODUCTS = [
   },
 
 
-
-
       {
     id: 3342420,
     name: "Asus ROG Strix G16 (Laptop Spiderman)",
@@ -2168,7 +1855,7 @@ const PRODUCTS = [
     name: "ThinkPad T14s Gen 3 Ryzen 7 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 9500000,
+    price: 9600000,
     specs: [
       "Ryzen 7 Pro 6850U",
       "Radeon 680M",
@@ -2177,6 +1864,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/5q8XsW3reZ",
+    toko:     "Gugel Laptop",
     image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
   },
   // Tier S: iGPU Radeon 660M dan prosesor 6 core generasi Zen 3+. Varian SSD 256GB di LOCKSTORE 1,2jt lebih murah dari varian 512GB
@@ -2185,7 +1873,7 @@ const PRODUCTS = [
   name: "ThinkPad T14 Gen 3 Ryzen 5 (PILIHAN MIMIN)",
   category: "bekas",
   tier: "S",
-  price: 7837500,
+  price: 7920000,
   specs: [
     "AMD Ryzen 5 Pro 6650U",
     "Radeon 660M",
@@ -2194,9 +1882,9 @@ const PRODUCTS = [
   ],
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
   shopUrl:  "https://s.shopee.co.id/5VWsmgWCuf",
-  toko: "LOCKSTORE",
+  toko: "LockStore",
   linkLain: [
-    { url: "https://s.shopee.co.id/BUB7rYvvq", harga: 9025000, label: "SSD 512GB" }
+    { url: "https://s.shopee.co.id/BUB7rYvvq", harga: 9120000, varian: "SSD 512GB", toko: "Gugel Laptop" }
   ],
   image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
 },
@@ -2217,22 +1905,6 @@ const PRODUCTS = [
   videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
   shopUrl:  "https://s.shopee.co.id/8KpzFtiSdr",
   image:    "./LAPTOP 6 JUTA/dell6jt.webp"
-},
-{
-  id: 2132423235235,
-  name: "Asus TUF Dash F15 FX516PE",
-  category: "bekas",
-  tier: "S",
-  price: 11210000,
-  specs: [
-    "Intel Core i7-11370H",
-    "Nvidia RTX 3050 Ti 4GB",
-    "RAM 16GB",
-    "SSD 512GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7687156829813591304",
-  shopUrl: "https://s.shopee.co.id/9zxqx6Auf4",
-  image: "./LAPTOP 10 JUTA/tuf10jt.webp"
 },
 
 // =====================================================================
@@ -2257,7 +1929,7 @@ const PRODUCTS = [
     image:    "./LAPTOP 10 JUTA/Polytron Luxia Pro Ultra 5 10 Juta.webp"
   },
 
-  // Tier A+: Prosesor 8 core dan Radeon 680M, layar 16:10. Tapi Axioo Hype 7 AMD X8-1 (9,74jt, S) performanya hampir sama dan 700 ribu lebih murah
+  // Tier A+: Prosesor 8 core dan Radeon 680M, layar 16:10. Tapi Axioo Hype 7 AMD X8-1 (10,29jt, S) performanya hampir sama dan 500 ribu lebih murah
   {
     id: 2026110422,
     name: "Axioo Hype 7 AMD X8-21",
@@ -2275,23 +1947,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 10 JUTA/Axioo Hype 7 AMD X8-21 10 Juta.webp"
   },
 
-  // Tier A+: Prosesor sama kayak Infinix Xbook B14 R7 (10,50jt, A+) dan sedikit lebih murah. Tapi Axioo Hype 7 AMD X8-1 (9,74jt, S) performanya hampir sama dan lebih murah lagi
-  {
-    id: 2026110423,
-    name: "Tecno Megabook K14SFA",
-    category: "odm",
-    tier: "A+",
-    price: 10648100,
-    specs: [
-      "AMD Ryzen 7 7735HS",
-      "Radeon 680M",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/1W0ULlSPFA",
-    image:    "./LAPTOP 10 JUTA/Tecno Megabook K14SFA 10 Juta.webp"
-  },
 
   // Tier A+: Layar 2K OLED dan baterai awet banget. Tapi chipnya ARM (Snapdragon), jadi sebagian aplikasi teknik dan game gak bisa jalan
   {
@@ -2311,24 +1966,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 12 JUTA/Asus Vivobook S14 S3407QA OLED 12 Juta.webp"
   },
 
-  // Tier A+: RTX 3050 dan layar 144Hz dari merek global. Tapi RAM baru 8GB, dan HP Pavilion Gaming 15 dengan GPU sama 1,4 juta lebih murah
-  {
-    id: 2026110425,
-    name: "MSI Thin 15 B13UC",
-    sold_out: true,
-    category: "global",
-    tier: "A+",
-    price: 13562240,
-    specs: [
-      "Intel Core i5-13420H",
-      "Nvidia GeForce RTX 3050 4GB",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/3g4yvnMS5V",
-    image:    "./LAPTOP 13 JUTA/MSI Thin 15 B13UC 13 Juta.webp"
-  },
 
 // =====================================================================
 // LAPTOP 10–12 JUTA BARU (riset 4 Nov 2026, harga HP)
@@ -2355,77 +1992,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 10 JUTA/Dell Latitude 5450 10 Juta.webp"
   },
 
-  // Tier A+: Bodi aluminium premium, tapi HP Elitebook x360 830 G10 (8,84jt, S) dengan prosesor sama 930 ribu lebih murah dan bisa dilipat 2 in 1
-  {
-    id: 2026110411,
-    name: "HP Elitebook 840 G10",
-    category: "bekas",
-    tier: "A+",
-    price: 9765050,
-    specs: [
-      "Intel Core i5-1345U",
-      "Intel Iris Xe",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/qknP2Mcet",
-    image:    "./LAPTOP 10 JUTA/HP Elitebook 840 G10 10 Juta.webp"
-  },
-
-  // Tier S: Bisa dilipat 2 in 1 dan bodi premium. Prosesornya sama kayak HP Elitebook 840 G10, tapi 930 ribu lebih murah
-  {
-    id: 2026110412,
-    name: "HP Elitebook x360 830 G10",
-    category: "bekas",
-    tier: "S",
-    price: 8835000,
-    specs: [
-      "Intel Core i5-1345U",
-      "Intel Iris Xe",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/906V86CJri",
-    image:    "./LAPTOP 10 JUTA/HP Elitebook x360 830 G10 10 Juta.webp"
-  },
-
-  // Tier A+: Prosesor sama kayak HP 14 (11,8jt, S) tapi 1,7 juta lebih murah, masih garansi resmi. Tapi Latitude 5450 lebih murah dan prosesornya setingkat di atas
-  {
-    id: 2026110413,
-    name: "Acer Swift Go 14 SFG14-73",
-    category: "bekas",
-    tier: "A+",
-    price: 10212500,
-    specs: [
-      "Intel Core Ultra 5 125H",
-      "Intel Arc",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/1BgPA8qH7",
-    image:    "./LAPTOP 10 JUTA/Acer Swift Go 14 SFG14-73 10 Juta.webp"
-  },
-
-  // Tier A+: Seri ThinkPad paling premium, bobot sekitar 1,1kg. Tapi prosesornya sama kayak Elitebook 840 G10 yang 340 ribu lebih murah
-  {
-    id: 2026110414,
-    name: "ThinkPad X1 Carbon Gen 11",
-    category: "bekas",
-    tier: "A+",
-    price: 10450000,
-    specs: [
-      "Intel Core i5-1345U",
-      "Intel Iris Xe",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/LoWnxJlbm",
-    image:    "./LAPTOP 10 JUTA/ThinkPad X1 Carbon Gen 11 10 Juta.webp"
-  },
 
   // Tier A+: Prosesor 12 core dan bodi premium X1 Carbon, cuma beda 190 ribu dari Gen 11. Tapi Latitude 5450 lebih murah dan iGPU Arc-nya lebih kenceng
   {
@@ -2442,6 +2008,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/8KqoKgx1kI",
+    toko:     "Gugel Laptop",
     image:    "./LAPTOP 10 JUTA/ThinkPad X1 Carbon Gen 10 10 Juta.webp"
   },
 
@@ -2451,7 +2018,7 @@ const PRODUCTS = [
     name: "ThinkPad P15v Gen 3 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 10335050,
+    price: 10646400,
     specs: [
       "Intel Core i7-12700H",
       "Nvidia T1200 4GB",
@@ -2460,6 +2027,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/9zz2K0bh8G",
+    toko:     "GudangLaptopBTM",
     image:    "./LAPTOP 10 JUTA/ThinkPad P15v Gen 3 10 Juta.webp"
   },
 
@@ -2478,44 +2046,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/",
     shopUrl:  "https://s.shopee.co.id/AKbsibf1VY",
+    toko:     "GudangLaptopBTM",
     image:    "./LAPTOP 11 JUTA/HP Zbook Fury G8 11 Juta.webp"
   },
 
-  // Tier A+: Prosesor i7-12700H dan layar 17 inci. Tapi bodinya plastik, dan Asus TUF Dash F15 (11,09jt) yang lebih murah GPU-nya RTX 3050 Ti
-  {
-    id: 2026110418,
-    name: "MSI Katana GF76 12UC",
-    category: "bekas",
-    tier: "A+",
-    price: 11970000,
-    specs: [
-      "Intel Core i7-12700H",
-      "Nvidia GeForce RTX 3050 4GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/3VlYaAarEG",
-    image:    "./LAPTOP 11 JUTA/MSI Katana GF76 12UC 11 Juta.webp"
-  },
-
-  // Tier A+: Layar 2.8K OLED 120Hz, bobot 1kg, garansi resmi. Prosesornya kelas i5 hemat daya, sedikit di bawah Acer TravelMate P40 (10,41jt, S)
-  {
-    id: 2026110419,
-    name: "Infinix Inbook Air Pro+ OLED",
-    category: "odm",
-    tier: "A+",
-    price: 11313100,
-    specs: [
-      "Intel Core i5-1334U",
-      "Intel Iris Xe",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/",
-    shopUrl:  "https://s.shopee.co.id/8fTej3RvrO",
-    image:    "./LAPTOP 10 JUTA/Infinix Inbook Air Pro Plus OLED 10 Juta.webp"
-  },
 
   // Tier S: Satu-satunya laptop baru RTX 3050 di bawah 12,5 juta, GPU-nya jauh di atas RTX 2050 punya Axioo Pongo 725 V2 (12,70jt). Kekurangannya model lama (2021)
   {
@@ -2541,8 +2075,6 @@ const PRODUCTS = [
   category: "bekas",
   tier: "S",
   sold_out: true,
-  alternatif: 2132423235235,
-  alternatif_alasan: "GPU lebih kenceng (3050 Ti), RAM 16GB, +860rb",
   price: 9400000,
   specs: [
     "Intel Core i5-12450H",
@@ -2560,8 +2092,6 @@ const PRODUCTS = [
   category: "bekas",
   tier: "S",
   sold_out: true,
-  alternatif: 2325323527,
-  alternatif_alasan: "GPU setara (1660 Ti), lebih murah 100rb",
   price: 8700000,
   specs: [
     "Intel Core i5-11400H",
@@ -2579,8 +2109,6 @@ const PRODUCTS = [
   category: "bekas",
   tier: "S",
   sold_out: true,
-  alternatif: 23252338,
-  alternatif_alasan: "Harga hampir sama, GPU setara",
   price: 7252000,
   specs: [
     "AMD Ryzen 5 5600H",
@@ -2611,23 +2139,6 @@ const PRODUCTS = [
   image: "./LAPTOP 16 JUTA/acer210h.webp"
 },
 
-{
-  id: 160000002,
-  name: "HP OmniBook 7 Aero",
-  sold_out: true,
-  category: "global",
-  tier: "A+",
-  price: 16339000,
-  specs: [
-    "AMD Ryzen AI 7 350",
-    "Radeon 860M",
-    "RAM 16GB",
-    "SSD 512GB"
-  ],
-  videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7684241462149598471",
-  shopUrl: "https://s.shopee.co.id/4qGRaB7tA1",
-  image: "./LAPTOP 16 JUTA/hpaero.webp"
-},
 
 {
   id: 170000001,
@@ -2778,34 +2289,12 @@ const PRODUCTS = [
 },
 
 
-  {
-    id: 21324243434,
-    name: "Acer Aspire 7 Pro 3050 4GB",
-    category: "global",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 23235250,
-    alternatif_alasan: "Model sama, versi yang masih ada",
-    price: 12499000,
-    specs: [
-      "Intel Core 5-210H",
-      "Nvidia RTX 3050 4GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7683519139616394513",
-    shopUrl:  "https://s.shopee.co.id/50ZHlqsUkq",
-    image:    "./LAPTOP 12 JUTA/acer4gb.webp"
-  },
-
     {
     id: 212322,
     name: "Asus Expertbook PM1403CDA",
     category: "global",
     tier: "S",
     sold_out: true,
-    alternatif: 221,
-    alternatif_alasan: "Harga dekat, iGPU setara",
     price: 13300000,
     specs: [
       "AMD Ryzen 7 170",
@@ -2842,8 +2331,6 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
-    alternatif: 222352529,
-    alternatif_alasan: "Model dan spek sama",
     price: 14800000,
     specs: [
       "Intel Core 5-210H",
@@ -2908,71 +2395,12 @@ const PRODUCTS = [
     image:    "./LAPTOP 15 JUTA/hpomni.webp"
   },
 
-  {
-    id: 21324234,
-    name: "Asus ROG Strix GL553VD ",
-    category: "bekas",
-    tier: "A",
-    sold_out: true,
-    alternatif: 213242321235240,
-    alternatif_alasan: "Harga sama, GPU setara, udah SSD",
-    price: 5520000,
-    specs: [
-      "Intel Core i7-7700HQ",
-      "Nvidia GTX 1050 2GB",
-      "RAM 8GB",
-      "HDD 1TB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7679067640475979016",
-    shopUrl:  "https://s.shopee.co.id/AUtYnZCcC3",
-    image:    "./LAPTOP 5 JUTA/rog strix.webp"
-  },
-    {
-    id: 2132423532234,
-    name: "HP Pavilion 15-CB505TX",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 2132423235239,
-    alternatif_alasan: "Harga hampir sama, CPU lebih kenceng, GPU sama",
-    price: 6250000,
-    specs: [
-      "Intel Core i7-7700HQ",
-      "Nvidia GTX 1050 4GB",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7679067640475979016",
-    shopUrl:  "https://s.shopee.co.id/20v0g5AKlE",
-    image:    "./LAPTOP 6 JUTA/pavilion.webp"
-  },
-    {
-    id: 2253251324234,
-    name: "Acer Nitro 5 AN515-52 ",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 23252338,
-    alternatif_alasan: "Harga hampir sama, CPU lebih baru",
-    price: 7200000,
-    specs: [
-      "Intel Core i7-8750H",
-      "Nvidia GTX 1060 6GB",
-      "RAM 8GB",
-      "SSD 256GB, HDD 1TB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7679067640475979016",
-    shopUrl:  "https://s.shopee.co.id/2gAhTOFoUC",
-    image:    "./LAPTOP 7 JUTA/nitro 5.webp"
-  },
     {
     id: 21235235324234,
     name: "Axioo Pongo 725 ",
     category: "bekas",
     tier: "S",
     sold_out: true,
-    alternatif: 2325323527,
-    alternatif_alasan: "GPU lebih kenceng (1660 Ti), lebih murah 40rb",
     price: 8640000,
     specs: [
       "Intel Core i7-12650H",
@@ -2990,8 +2418,6 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
-    alternatif: 2132423235235,
-    alternatif_alasan: "GPU lebih kenceng (3050 Ti), RAM 16GB, +1jt",
     price: 9216000,
     specs: [
       "Intel Core i5-12500H",
@@ -3009,8 +2435,6 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
-    alternatif: 2132423235235,
-    alternatif_alasan: "GPU sama (3050 Ti), +370rb",
     price: 9888000,
     specs: [
       "Intel Core i7-11800H",
@@ -3023,81 +2447,11 @@ const PRODUCTS = [
     image:    "./LAPTOP 10 JUTA/m16.webp"
   },
   {
-    id: 214,
-    name: "HP Probook 430 G3",
-    category: "bekas",
-    tier: "A",
-    sold_out: true,
-    price: 1932000,
-    specs: [
-      "Intel Core i3-6100U",
-      "Intel HD Graphics 520",
-      "RAM 8GB",
-      "SSD 128GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654187844063333639",
-    shopUrl:  "https://s.shopee.co.id/5fmaCNUmww",
-    image:    "./LAPTOP 1 JUTA/HP.webp"
-  },
-  {
-    id: 215,
-    name: "ThinkPad T470",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    price: 1875000,
-    specs: [
-      "Intel Core i5 Gen 7",
-      "Intel UHD Graphics 620",
-      "RAM 8GB",
-      "SSD 128GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654187844063333639",
-    shopUrl:  "https://s.shopee.co.id/9AMSPFvWZ5",
-    image:    "./LAPTOP 1 JUTA/ThinkPad T.webp"
-  },
-  {
-    id: 213,
-    name: "Dell Latitude 7280",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    price: 1911000,
-    specs: [
-      "Intel Core i3 Gen 7",
-      "Intel UHD Graphics 620",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654187844063333639",
-    shopUrl:  "https://s.shopee.co.id/Ll3prHAYI",
-    image:    "./LAPTOP 1 JUTA/Dell.webp"
-  },
-  {
-    id: 212,
-    name: "ThinkPad X280",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 2026102404,
-    alternatif_alasan: "Sama-sama dual core, layar lebih lega 14 inci, cuma +110rb",
-    price: 2700000,
-    specs: [
-      "Intel Core i3 Gen 8",
-      "Intel UHD Graphics 620",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7653819332434070802",
-    shopUrl:  "https://s.shopee.co.id/8pjVczxSba",
-    image:    "./LAPTOP 2 JUTA/ThinkPad X.webp"
-  },
-  {
     id: 210,
     name: "Dell Latitude 7290",
     category: "bekas",
     tier: "A",
-    price: 3705000,
+    price: 3744000,
     specs: [
       "Intel Core i5-7300U",
       "Intel HD Graphics 620",
@@ -3106,67 +2460,18 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7653819332434070802",
     shopUrl:  "https://s.shopee.co.id/4LH6HHflF4",
+    toko:     "M6 Store",
+    linkLain: [
+      { url: "https://s.shopee.co.id/40iI7q3F53", harga: 3590000, toko: "GudangLaptopBTM JKT" }
+    ],
     image:    "./LAPTOP 2 JUTA/Dell.webp"
-  },
-  {
-    id: 211,
-    name: "ThinkPad A485",
-    category: "bekas",
-    tier: "A",
-    sold_out: true,
-    alternatif: 2026102404,
-    alternatif_alasan: "Lebih murah 90rb, RAM 8GB dan SSD 256GB",
-    price: 2900000,
-    specs: [
-      "AMD Ryzen 5 Pro 2500U",
-      "Radeon Vega 8",
-      "RAM 8GB",
-      "SSD 128GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7653819332434070802",
-    shopUrl:  "https://s.shopee.co.id/4Axg4ZK2vS",
-    image:    "./LAPTOP 2 JUTA/ThinkPad A.webp"
-  },
-  {
-    id: 80,
-    name: "ThinkPad P50 (TEKNIK)",
-    sold_out: true,
-    category: "bekas",
-    tier: "A+",
-    price: 4526000,
-    specs: [
-      "Intel Core i7-6820HQ",
-      "Nvidia Quadro M1000M 2GB",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
-    shopUrl:  "https://s.shopee.co.id/904r38ahfg",
-    image:    "./LAPTOP 3 JUTA/ThinkPad P50s.webp"
-  },
-    {
-    id: 8234320,
-    name: "ThinkPad W541 (TEKNIK)",
-    category: "bekas",
-    tier: "A",
-    sold_out: true,
-    price: 3446000,
-    specs: [
-      "Intel Core i7-4810MQ",
-      "Nvidia Quadro K1100M 2GB",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
-    shopUrl:  "https://s.shopee.co.id/gPj7dWvih",
-    image:    "./LAPTOP 3 JUTA/thinkpad w.webp"
   },
   {
     id: 224,
     name: "Dell Latitude 5400",
     category: "bekas",
     tier: "S",
-    price: 3942500,
+    price: 4176000,
     specs: [
       "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
@@ -3175,6 +2480,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7690951547634699528",
     shopUrl:  "https://s.shopee.co.id/9fIsAZatzM",
+    toko:     "Lion Mitech",
+    linkLain: [
+      { url: "https://s.shopee.co.id/60TMVVvd1U", harga: 4185000, toko: "Laptopin.id" }
+    ],
     image:    "./LAPTOP 3 JUTA/dell 5400.webp"
   },
   {
@@ -3182,7 +2491,7 @@ const PRODUCTS = [
     name: "ThinkPad X390",
     category: "bekas",
     tier: "A+",
-    price: 3705000,
+    price: 4128000,
     specs: [
       "Intel Core i5-8265U",
       "Intel UHD Graphics 620",
@@ -3190,10 +2499,10 @@ const PRODUCTS = [
       "SSD 256GB"
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
-    shopUrl:  "https://s.shopee.co.id/6fiqA6x8vH",
-    toko: "Kings Computerr",
+    shopUrl:  "https://s.shopee.co.id/4AxvbMQSix",
+    toko:     "Lion Mitech",
     linkLain: [
-      { url: "https://s.shopee.co.id/4AxvbMQSix", harga: 4085000, label: "Toko lain" }
+      { url: "https://s.shopee.co.id/4LL8WS1yP9", harga: 3900000, toko: "M6 Store" }
     ],
     image:    "./LAPTOP 3 JUTA/thinkpad x.webp"
   },
@@ -3202,7 +2511,7 @@ const PRODUCTS = [
     name: "Lenovo ThinkPad T480s",
     category: "bekas",
     tier: "A+",
-    price: 4028000,
+    price: 4118400,
     specs: [
       "Intel Core i5-8250U",
       "Intel UHD Graphics 620",
@@ -3211,6 +2520,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7646777812036160786?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/2Vsiz7WsQC",
+    toko:     "GudangLaptopBTM JKT",
+    linkLain: [
+      { url: "https://s.shopee.co.id/4VeYil1L4A", harga: 4500000, toko: "M6 Store" }
+    ],
     image:    "./LAPTOP 3 JUTA/ThinkPad T480s.webp"
   },
   {
@@ -3218,7 +2531,7 @@ const PRODUCTS = [
     name: "ThinkPad T495",
     category: "bekas",
     tier: "S",
-    price: 4357650,
+    price: 4403520,
     specs: [
       "AMD Ryzen 5 3500U",
       "Radeon Vega 8",
@@ -3227,6 +2540,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7673058681805720852",
     shopUrl:  "https://s.shopee.co.id/80C5tj9wDD",
+    toko:     "Planet Laptop PSI",
+    linkLain: [
+      { url: "https://s.shopee.co.id/4B1iKM61C4", harga: 4600000, toko: "M6 Store" }
+    ],
     image:    "./LAPTOP 3 JUTA/ThinkPad T495.webp"
   },
   {
@@ -3247,44 +2564,6 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7646777812036160786?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/6feqpe6eVd",
     image:    "./LAPTOP 3 JUTA/Dell Latitude 7400.webp"
-  },
-  {
-    id: 3,
-    name: "HP Elitebook 840 G5",
-    category: "bekas",
-    tier: "A",
-    sold_out: true,
-    alternatif: 2026102311,
-    alternatif_alasan: "Lebih murah 520rb tapi udah i7 gen 8",
-    price: 3910000,
-    specs: [
-      "Intel Core i5-8250U",
-      "Intel UHD Graphics 620",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7646777812036160786?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/8pjLPwLjVy",
-    image:    "./LAPTOP 3 JUTA/HP Elitebook 840 G5.webp"
-  },
-   {
-    id: 39999,
-    name: "HP Elitebook 745 G6",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 2026102304,
-    alternatif_alasan: "Model sama, versi baru lebih murah",
-    price: 4436000,
-    specs: [
-      "AMD Ryzen 5 3500U",
-      "Radeon Vega 8",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7664581349801528584",
-    shopUrl:  "https://s.shopee.co.id/8AUsBakgm0",
-    image:    "./LAPTOP 3 JUTA/HP Elitebook 745 G6.webp"
   },
   {
     id: 10,
@@ -3308,31 +2587,11 @@ const PRODUCTS = [
 
 
   {
-    id: 81,
-    name: "ThinkPad P51 (TEKNIK)",
-    category: "bekas",
-    tier: "B+",
-    sold_out: true,
-    alternatif: 5,
-    alternatif_alasan: "P52 lebih baru dan lebih kenceng, +660rb",
-    price: 4726000,
-    specs: [
-      "i7-7700HQ",
-      "Nvidia Quadro M1200",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7650113386813885704?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/70HhDMopNv",
-    image:    "./LAPTOP 4 JUTA/ThinkPad P51.webp"
-  },
-
-  {
     id: 13,
     name: "ThinkPad T14 Gen 2 (INTEL)",
     category: "bekas",
     tier: "A+",
-    price: 5700000,
+    price: 5856000,
     specs: [
       "Intel Core i5-1135G7",
       "Intel Iris Xe",
@@ -3341,6 +2600,11 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7647900471994125576?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/60QFanNvAP",
+    toko:     "Gugel Laptop",
+    linkLain: [
+      { url: "https://s.shopee.co.id/20xDk5GFCG", harga: 5487000, toko: "MBM Tech Store" },
+      { url: "https://s.shopee.co.id/2BGdwOFbrJ", harga: 5800000, toko: "M6 Store" }
+    ],
     image:    "./LAPTOP 5 JUTA/ThinkPad T14 G2.webp"
   },
   {
@@ -3348,7 +2612,7 @@ const PRODUCTS = [
     name: "Advan 2 in 1 Go Touchscreen",
     category: "odm",
     tier: "B",
-    price: 5992920,
+    price: 5997570,
     specs: [
       "AMD Ryzen 3 3200U",
       "Radeon Vega 3",
@@ -3365,7 +2629,7 @@ const PRODUCTS = [
     name: "ThinkPad T14 Gen 1 Ryzen 7",
     category: "bekas",
     tier: "S",
-    price: 5985000,
+    price: 6144000,
     specs: [
       "AMD Ryzen 7 Pro 4750U",
       "Radeon Vega 7",
@@ -3374,6 +2638,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7689440374204501255",
     shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
+    toko:     "Gugel Laptop",
+    linkLain: [
+      { url: "https://s.shopee.co.id/1gKNLTHVsA", harga: 5900000, varian: "T14s (Lebih Tipis)", toko: "M6 Store" }
+    ],
     image:    "./LAPTOP 5 JUTA/thinkpadr7.webp"
   },
   {
@@ -3381,7 +2649,7 @@ const PRODUCTS = [
     name: "ThinkPad L14 Gen 2 (PILIHAN MIMIN)",
     category: "bekas",
     tier: "S",
-    price: 6270000,
+    price: 6432000,
     specs: [
       "AMD Ryzen 7 5850U",
       "Radeon Vega 8",
@@ -3390,26 +2658,8 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656357978982894866",
     shopUrl:  "https://s.shopee.co.id/6L3euSMF4y",
+    toko:     "Gugel Laptop",
     image:    "./LAPTOP 5 JUTA/thinkpad l.webp"
-  },
-  {
-    id: 227,
-    name: "Asus TUF FX504GE",
-    category: "bekas",
-    tier: "B+",
-    sold_out: true,
-    alternatif: 213242321235240,
-    alternatif_alasan: "Lebih murah 190rb, GPU setingkat di bawah",
-    price: 5712000,
-    specs: [
-      "Intel Core i7-8750H",
-      "Nvidia GeForce GTX 1050Ti 4GB",
-      "RAM 8GB",
-      "SSD SSD 256GB,HDD 1TB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
-    shopUrl:  "https://s.shopee.co.id/7AbXWXHtnA",
-    image:    "./LAPTOP 5 JUTA/tuf 1.webp"
   },
 
   {
@@ -3446,28 +2696,11 @@ const PRODUCTS = [
     image:    "./LAPTOP 6 JUTA/Dell 7730.webp"
   },
     {
-    id: 233,
-    sold_out: true,
-    name: "Macbook Pro Retina 15 (2015)",
-    category: "bekas",
-    tier: "B+",
-    price: 5280000,
-    specs: [
-      "Intel i7 2.2Ghz",
-      "Intel Iris Pro 6100",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7665252964768042248",
-    shopUrl:  "https://s.shopee.co.id/3LPPh8aOrB",
-    image:    "./LAPTOP 5 JUTA/Macbook.webp"
-  },
-    {
     id: 234,
     name: "Axioo Hype 1 (WAJIB NONTON VIDEO)",
     category: "odm",
     tier: "C",
-    price: 3905070,
+    price: 4184070,
     specs: [
       "Intel Celeron N4020",
       "Intel UHD Graphics 600",
@@ -3483,7 +2716,7 @@ const PRODUCTS = [
     name: "HP Zbook 15U G5 (TEKNIK)",
     category: "bekas",
     tier: "A+",
-    price: 5794050,
+    price: 5672070,
     specs: [
       "Intel Core i7-8565U",
       "Radeon Pro WX3200",
@@ -3492,64 +2725,10 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7667920615688523015",
     shopUrl:  "https://s.shopee.co.id/9ANSf5XKTG",
+    toko:     "Electro Com",
     image:    "./LAPTOP 5 JUTA/zbook.webp"
   },
 
-  {
-    id: 14,
-    name: "Zyrex D-Tech Pro V2",
-    category: "odm",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 6,
-    alternatif_alasan: "Harga sama, sama-sama Ryzen 5",
-    price: 6620000,
-    specs: [
-      "AMD Ryzen 5 6600H",
-      "Radeon 660M",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/6feqo1rqPr",
-    image:    "./LAPTOP 6 JUTA/Zyrex D-Tech Pro V2.webp"
-  },
-  {
-    id: 228,
-    name: "Asus TUF FX505GT",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 23252338,
-    alternatif_alasan: "GPU lebih kenceng (1650 Ti), +1,1jt",
-    price: 6305000,
-    specs: [
-      "Intel Core i5-9300H",
-      "Nvidia GeForce GTX 1650 4GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
-    shopUrl:  "https://s.shopee.co.id/8fQLJUKXYW",
-    image:    "./LAPTOP 6 JUTA/tuf 2.webp"
-  },
-
-  {
-    id: 15,
-    name: "Infinix XBOOK 15",
-    category: "odm",
-    tier: "B+",
-    price: 6898000,
-    specs: [
-      "AMD Ryzen 5 5500U",
-      "Radeon Vega 7",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648254926623182098?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/1BJuGE3wFq",
-    image:    "./LAPTOP 6 JUTA/Infinix XBOOK 15.webp"
-  },
 
   {
     id: 17,
@@ -3590,25 +2769,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 6 JUTA/ThinkPad T15 G2.webp"
   },
   {
-    id: 229,
-    name: "MSI GF63 Thin 9SCSR",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 23252338,
-    alternatif_alasan: "GPU sama (1650 Ti), +250rb",
-    price: 7152000,
-    specs: [
-      "Intel Core i7-9750H",
-      "Nvidia GeForce GTX 1650Ti 4GB",
-      "RAM 16GB",
-      "SSD SSD 512GB,HDD 500GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
-    shopUrl:  "https://s.shopee.co.id/5q69wSojoS",
-    image:    "./LAPTOP 7 JUTA/msi.webp"
-  },
-  {
     id: 7,
     name: "Advan Workplus Heritage",
     category: "odm",
@@ -3629,7 +2789,7 @@ const PRODUCTS = [
     name: "Infinix Xbook B14",
     category: "odm",
     tier: "A",
-    price: 8494000,
+    price: 8499000,
     specs: [
       "AMD Ryzen 5 7535HS",
       "Radeon 660M",
@@ -3646,8 +2806,6 @@ const PRODUCTS = [
     category: "bekas",
     tier: "S",
     sold_out: true,
-    alternatif: 2234231,
-    alternatif_alasan: "Lebih murah 910rb, tetap i7 + RAM 32GB",
     price: 7500000,
     specs: [
       "Intel Core i7-1270P",
@@ -3659,30 +2817,13 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/1LdKlvIdib",
     image:    "./LAPTOP 7 JUTA/Dell Latitude 7430.webp"
   },
-  {
-    id: 21,
-    name: "Axioo Hype 5 X6 AMD",
-    sold_out: true,
-    category: "odm",
-    tier: "A+",
-    price: 6883000,
-    specs: [
-      "AMD Ryzen 5 6600H",
-      "Radeon 660M",
-      "RAM 8GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/9KjNmgTlhV",
-    image:    "./LAPTOP 7 JUTA/Axioo Hype 5 X6 AMD.webp"
-  },
 
   {
     id: 26,
     name: "Advan Workmate Ultra",
     category: "odm",
     tier: "A",
-    price: 7623959,
+    price: 7704211,
     specs: [
       "Intel Ultra 5 115U",
       "Intel Arc",
@@ -3698,7 +2839,7 @@ const PRODUCTS = [
     name: "Asus Vivobook 14 A1404VA",
     category: "global",
     tier: "A",
-    price: 8852240,
+    price: 8753785,
     specs: [
       "Intel Core i3-1315U",
       "Intel UHD Graphics 13th Gen",
@@ -3731,7 +2872,7 @@ const PRODUCTS = [
     name: "Asus Expertbook P1 P1403CVA (PILIHAN MIMIN)",
     category: "global",
     tier: "A",
-    price: 9603550,
+    price: 9609000,
     specs: [
       "Intel Core 3 100U",
       "Intel® Graphics",
@@ -3741,23 +2882,6 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
     shopUrl:  "https://s.shopee.co.id/LknbWZiWC",
     image:    "./LAPTOP 8 JUTA/Asus Expertbook.webp"
-  },
-  {
-    id: 23,
-    name: "Acer Aspire Lite 14 AL14-44P (PILIHAN MIMIN)",
-    sold_out: true,
-    category: "global",
-    tier: "A+",
-    price: 8739080,
-    specs: [
-      "AMD Ryzen 5 7430U",
-      "Radeon Vega 7",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648607001504730386?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/AUuoMHZFw7",
-    image:    "./LAPTOP 8 JUTA/Acer Aspire Lite AL15.webp"
   },
   {
     id: 8,
@@ -3779,41 +2903,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 8 JUTA/Axioo Hype Ai 5.webp"
   },
   {
-    id: 27,
-    name: "Infinix Xbook B14 R7",
-    category: "odm",
-    tier: "A+",
-    price: 10838100,
-    specs: [
-      "Ryzen 7 7735HS",
-      "Radeon 680M",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7648994950436228359?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/gNdz6m422",
-    image:    "./LAPTOP 8 JUTA/Infinix Xbook B14.webp"
-  },
-  {
-    id: 230,
-    name: "Lenovo Ideapad Gaming 3 2050",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 2325323527,
-    alternatif_alasan: "GPU lebih kenceng (1660 Ti), +150rb",
-    price: 8448000,
-    specs: [
-      "AMD Ryzen 5 5500H",
-      "Nvidia GeForce RTX 2050 4GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
-    shopUrl:  "https://s.shopee.co.id/6L2QXXGXaG",
-    image:    "./LAPTOP 8 JUTA/lenovoig1.webp"
-  },
-  {
     id: 100,
     name: "ThinkPad P15 Gen 1 (TEKNIK)",
     category: "bekas",
@@ -3832,43 +2921,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/902mDBFWzY",
     image:    "./LAPTOP 8 JUTA/ThinkPad T14 G3 AMD.webp"
   },
-  {
-    id: 34,
-    name: "Asus Expertbook P1PM1403",
-    category: "global",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 28,
-    alternatif_alasan: "RAM 16GB, prosesor lebih kenceng, +770rb",
-    price: 9438000,
-    specs: [
-      "Ryzen 5 150",
-      "Radeon 660M",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/80AEkX5MoZ",
-    image:    "./LAPTOP 9 JUTA/Asus Expertbook.webp"
-  },
 
-  {
-    id: 33,
-    name: "Acer Aspire Lite 15",
-    sold_out: true,
-    category: "global",
-    tier: "A",
-    price: 10256455,
-    specs: [
-      "Ryzen 5 8640HS",
-      "Radeon 760M",
-      "RAM 8GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7649347329555729682?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/3VhpO64fzT",
-    image:    "./LAPTOP 9 JUTA/Acer Aspire Lite 15.webp"
-  },
   // Tier B+: Kemahalan: RAM cuma 8GB dan iGPU-nya UHD. Di harga segini Tecno Megabook K14SFA (10,65jt, A+) udah RAM 16GB dengan iGPU Radeon 680M yang jauh lebih kenceng
   {
     id: 32,
@@ -3891,7 +2944,7 @@ const PRODUCTS = [
     name: "ThinkPad P71 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    price: 7885000,
+    price: 7968000,
     specs: [
       "Intel Xeon E3-1535M",
       "Nvidia Quadro P4000 8GB",
@@ -3900,24 +2953,8 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
     shopUrl:  "https://s.shopee.co.id/2qUDjaXQBj",
+    toko:     "Gugel Laptop",
     image:    "./LAPTOP 9 JUTA/ThinkPad P71.webp"
-  },
-  {
-    id: 231,
-    name: "Lenovo Ideapad Gaming 3 3060",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    price: 9552000,
-    specs: [
-      "AMD Ryzen 5 5600H",
-      "Nvidia GeForce RTX 3060 6GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656421329020685576",
-    shopUrl:  "https://s.shopee.co.id/7VENvvWMxk",
-    image:    "./LAPTOP 9 JUTA/lenovoig2.webp"
   },
 
   {
@@ -3925,7 +2962,7 @@ const PRODUCTS = [
     name: "Advan Workplus Ai",
     category: "odm",
     tier: "A+",
-    price: 9260600,
+    price: 9118080,
     specs: [
       "AMD Ryzen 7 255",
       "Radeon 780M",
@@ -3956,60 +2993,6 @@ const PRODUCTS = [
     image:    "./LAPTOP 10 JUTA/Axioo Hype 7 AMD X9.webp"
   },
 
-  {
-    id: 130,
-    name: "Lenovo V14 Gen 4",
-    category: "global",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 28,
-    alternatif_alasan: "Harga sama, RAM 16GB, layar lebih bagus",
-    price: 10224000,
-    specs: [
-      "Intel Core i7-13620H",
-      "Intel UHD Graphic 13th gen",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/2VpLdAh8e9",
-    image:    "./LAPTOP 10 JUTA/Lenovo V14.webp"
-  },
-  {
-    id: 150,
-    name: "Tecno Megabook T1 14",
-    category: "odm",
-    tier: "A+",
-    price: 11598100,
-    specs: [
-      "Intel Core i9-13900HK",
-      "Intel Iris Xe",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/7KubNr7ej6",
-    image:    "./LAPTOP 10 JUTA/Tecno Megabook T1.webp"
-  },
-  {
-    id: 180,
-    name: "Lenovo Legion 5 15ARH05H ",
-    category: "bekas",
-    tier: "A",
-    sold_out: true,
-    alternatif: 25235234,
-    alternatif_alasan: "GPU setara (3050 6GB), +450rb",
-    price: 10224000,
-    specs: [
-      "AMD Ryzen 5 4600H",
-      "RTX 2060 6GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651227474537270536?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/2g8lyOhZji",
-    image:    "./LAPTOP 10 JUTA/Lenovo Legion 5.webp"
-  },
 
   {
     id: 120,
@@ -4017,8 +3000,6 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
-    alternatif: 110,
-    alternatif_alasan: "Prosesor Intel (aplikasi lebih aman), +1,1jt",
     price: 10463000,
     specs: [
       "Snapdragon X Plus",
@@ -4035,7 +3016,7 @@ const PRODUCTS = [
     name: "ThinkPad P1 Gen 2 (TEKNIK)",
     category: "bekas",
     tier: "S",
-    price: 9025000,
+    price: 9120000,
     specs: [
       "Intel Core i7-9850H",
       "Nvidia Quadro T2000 4GB",
@@ -4044,6 +3025,7 @@ const PRODUCTS = [
     ],
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7680825353316633874",
     shopUrl:  "https://s.shopee.co.id/8fS0gSl2Sn",
+    toko:     "Gugel Laptop",
     image:    "./LAPTOP 10 JUTA/ThinkPad P1 G2.webp"
   },
   {
@@ -4052,8 +3034,6 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
-    alternatif: 110,
-    alternatif_alasan: "Harga dekat, RAM 16GB",
     price: 10880000,
     specs: [
       "AMD Ryzen AI 5 340",
@@ -4065,169 +3045,13 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/3B53omfidq",
     image:    "./LAPTOP 10 JUTA/HP Omnibook.webp"
   },
-  {
-    id: 190,
-    name: "Lenovo Ideapad 5 2in1",
-    category: "global",
-    tier: "A+",
-    sold_out: true,
-    price: 11138000,
-    specs: [
-      "Ryzen AI 7 350/Ryzen 7 8845HS",
-      "Radeon 860M/Radeon 780M",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/60PF8WUgGm",
-    image:    "./LAPTOP 11 JUTA/Lenovo 5.webp"
-  },
-  {
-    id: 202,
-    name: "MSI Thin 15 B12UC-3298 ",
-    category: "global",
-    tier: "A",
-    sold_out: true,
-    price: 11399000,
-    specs: [
-      "Intel Core i7-12650H",
-      "Nvidia GeForce RTX 3050 4GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/7pqtKeUycC",
-    image:    "./LAPTOP 11 JUTA/MSI Thin.webp"
-  },
-  {
-    id: 200,
-    name: "Asus Expertbook P1403CVA",
-    category: "global",
-    tier: "A",
-    sold_out: true,
-    alternatif: 110,
-    alternatif_alasan: "Harga sama, RAM 16GB, iGPU Arc jauh lebih kenceng",
-    price: 11553000,
-    specs: [
-      "Intel Core i7-13620H",
-      "Intel UHD Graphics 13th Gen",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/7KucmGly4N",
-    image:    "./LAPTOP 11 JUTA/Asus P1.webp"
-  },
-  {
-    id: 204,
-    name: "ThinkPad P53",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    price: 11564000,
-    specs: [
-      "Intel Core i7-9750H",
-      "Nvidia Quadro RTX 5000 16GB",
-      "RAM 16GB",
-      "SSD 256GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/6fevxeEiE2",
-    image:    "./LAPTOP 11 JUTA/ThinkPad P53.webp"
-  },
-  {
-    id: 205,
-    name: "HP Victus 16 ",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    price: 11956000,
-    specs: [
-      "Intel Core i7-12700H",
-      "Nvidia GeForce RTX 3060 6GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/50WhzlInBZ",
-    image:    "./LAPTOP 11 JUTA/HP Victus.webp"
-  },
-  {
-    id: 203,
-    name: "Lenovo LOQ 15ARP10E ",
-    sold_out: true,
-    category: "global",
-    tier: "A+",
-    price: 16574000,
-    specs: [
-      "AMD Ryzen 7 170",
-      "Nvidia GeForce RTX 3050 6GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651590893132107026?is_from_webapp=1&sender_device=pc",
-    shopUrl:  "https://s.shopee.co.id/6q0kTUdUGk",
-    image:    "./LAPTOP 12 JUTA/Lenovo LOQ.webp"
-  },
-  {
-    id: 209,
-    name: "Axioo Pongo 750 ",
-    category: "bekas",
-    tier: "A+",
-    sold_out: true,
-    price: 12054000,
-    specs: [
-      "Intel Core i7-13620H",
-      "Nvidia GeForce RTX 4050 6GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
-    shopUrl:  "https://s.shopee.co.id/4qDJeZD73c",
-    image:    "./LAPTOP 12 JUTA/Axioo Pongo.webp"
-  },
 
-  {
-    id: 206,
-    name: "Acer Swift Lite 14",
-    category: "global",
-    tier: "A",
-    price: 13284378,
-    specs: [
-      "AMD Ryzen 7 260",
-      "Radeon 780M",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7651963993615092999",
-    shopUrl:  "https://s.shopee.co.id/LkuHe7M31",
-    image:    "./LAPTOP 12 JUTA/Acer Swift.webp"
-  },
-  {
-    id: 217,
-    name: "Acer Nitro Lite 16",
-    sold_out: true,
-    category: "global",
-    tier: "A+",
-    price: 14999000,
-    specs: [
-      "Intel Core i5 210H",
-      "Nvidia GeForce RTX 3050 6GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7654537785574984978",
-    shopUrl:  "https://s.shopee.co.id/2LZ6dhBr30",
-    image:    "./LAPTOP 12 JUTA/Acer.webp"
-  },
   {
     id: 216,
     name: "Asus Vivobook S14",
     category: "global",
     tier: "S",
     sold_out: true,
-    alternatif: 221,
-    alternatif_alasan: "Ultra 5 generasi lebih baru, +1,7jt",
     price: 13014000,
     specs: [
       "Intel Ultra 5 225H",
@@ -4245,8 +3069,6 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
-    alternatif: 221,
-    alternatif_alasan: "Harga dekat, prosesor lebih baru",
     price: 13994000,
     specs: [
       "AMD Ryzen 7-7840U",
@@ -4264,8 +3086,6 @@ const PRODUCTS = [
     category: "global",
     tier: "S",
     sold_out: true,
-    alternatif: 2026102007,
-    alternatif_alasan: "GPU sama (RTX 4050), +1,7jt",
     price: 14439000,
     specs: [
       "Intel Core i5-13420H",
@@ -4278,30 +3098,11 @@ const PRODUCTS = [
     image:    "./LAPTOP 13 JUTA/MSIT.webp"
   },
   {
-    id: 220,
-    name: "Acer Nitro Lite 16 NL16 ",
-    category: "global",
-    tier: "A+",
-    sold_out: true,
-    price: 14149000,
-    specs: [
-      "Intel Core i5-13420H",
-      "Nvidia GeForce RTX 4050 6GB",
-      "RAM 16GB",
-      "SSD 512GB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656043970857913618",
-    shopUrl:  "https://s.shopee.co.id/60PYT4kR6g",
-    image:    "./LAPTOP 14 JUTA/Acer.webp"
-  },
-  {
     id: 223,
     name: "Asus Zenbook 14 OLED",
     category: "global",
     tier: "S",
     sold_out: true,
-    alternatif: 221,
-    alternatif_alasan: "Harga hampir sama, prosesor lebih baru",
     price: 14274000,
     specs: [
       "AMD Ryzen 7 8840HS",
@@ -4312,25 +3113,6 @@ const PRODUCTS = [
     videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656043970857913618",
     shopUrl:  "https://s.shopee.co.id/2LWG6YWjzk",
     image:    "./LAPTOP 14 JUTA/Asus.webp"
-  },
-  {
-    id: 222,
-    name: "MSI Modern 15 C2RMG",
-    category: "global",
-    tier: "A+",
-    sold_out: true,
-    alternatif: 221,
-    alternatif_alasan: "Harga hampir sama",
-    price: 14446000,
-    specs: [
-      "Intel Core 9 270H",
-      "Intel Iris Xe G7 96EU",
-      "RAM 16GB",
-      "SSD 1TB"
-    ],
-    videoUrl: "https://www.tiktok.com/@pantautech.id/photo/7656043970857913618",
-    shopUrl:  "https://s.shopee.co.id/9zvhEbMMhY",
-    image:    "./LAPTOP 14 JUTA/MSIM.webp"
   },
   {
     id: 221,
@@ -4367,7 +3149,7 @@ const PRODUCTS = [
     image:    "./LAPTOP 5 JUTA/ThinkPad P52.webp"
   },
 
-  // Tier B+: Laptop baru termurah yang masih layak buat kerja ringan. Intel N100 4 core jauh di atas Celeron N4020 punya Axioo Hype 1 (3,91jt, C) dan 186 ribu lebih murah. Tapi SSD cuma 128GB dan RAM onboard
+  // Tier B+: Laptop baru termurah yang masih layak buat kerja ringan. Intel N100 4 core jauh di atas Celeron N4020 punya Axioo Hype 1 (4,18jt, C) dan 465 ribu lebih murah. Tapi SSD cuma 128GB dan RAM onboard
   {
     id: 2026111101,
     name: "Advan T-Book",
