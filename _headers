@@ -1,0 +1,10 @@
+# Cloudflare Pages: browser selalu ngecek versi terbaru file kode
+# (kalau gak berubah, tetap pakai yang tersimpan, jadi gak bikin lambat)
+/*.js
+  Cache-Control: no-cache
+/*.css
+  Cache-Control: no-cache
+/*.html
+  Cache-Control: no-cache
+/
+  Cache-Control: no-cache
