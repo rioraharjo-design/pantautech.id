@@ -805,12 +805,66 @@ const PRODUCTS = [
     image:    "./LAPTOP 1 JUTA/ThinkPad T440s 1 Juta.webp"
   },
 
-  // Tier A+: ThinkPad T470s udah habis, jadi ini pilihan paling murah di 2 jutaan yang layarnya 14 inci. Masih di bawah Latitude 7290 (3,0jt, A) harganya
+  // Tier B+: Bodi ThinkPad X 12,5 inci yang ringkas, tapi Dell Latitude 5290 (2,5jt, S) cuma 204 ribu lebih mahal dengan prosesor Gen 8 empat core yang jauh lebih kenceng dari i5-6200U dua core ini
+  {
+    id: 2026112302,
+    name: "ThinkPad X270",
+    category: "bekas",
+    tier: "B+",
+    price: 2295000,
+    specs: [
+      "Intel Core i5-6200U",
+      "Intel HD Graphics 520",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1CBMteN6s",
+    toko:     "LockStore",
+    image:    "./LAPTOP 2 JUTA/ThinkPad X270 2 Juta.webp"
+  },
+  // Tier S: Prosesor Gen 8 empat core (i5-8350U) di 2,5jt, paling kencang di 2 jutaan. Lebih murah dari HP ProBook 640 G2 (2,79jt) yang masih Gen 6 dua core. Kekurangan: SSD 128GB dan layar 12,5 inci
+  {
+    id: 2026112303,
+    name: "Dell Latitude 5290",
+    category: "bekas",
+    tier: "S",
+    price: 2499375,
+    specs: [
+      "Intel Core i5-8350U",
+      "Intel UHD Graphics 620",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1gKPLluTO2",
+    toko:     "Ari Speed Comp",
+    image:    "./LAPTOP 2 JUTA/Dell Latitude 5290 2 Juta.webp"
+  },
+  // Tier S: Prosesor Gen 8 empat core (i5-8265U) dengan layar 14 inci di 2,58jt. Cuma 80 ribu lebih mahal dari Dell Latitude 5290 (2,5jt, S) yang layarnya 12,5 inci, dan 210 ribu lebih murah dari HP ProBook 640 G2 yang masih Gen 6
+  {
+    id: 2026112304,
+    name: "Dell Latitude 3400",
+    category: "bekas",
+    tier: "S",
+    price: 2579355,
+    specs: [
+      "Intel Core i5-8265U",
+      "Intel UHD Graphics 620",
+      "RAM 8GB",
+      "SSD 128GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1qdpY4tq35",
+    toko:     "Ari Speed Comp",
+    image:    "./LAPTOP 2 JUTA/Dell Latitude 3400 2 Juta.webp"
+  },
+  // Tier B+: SSD 256GB, tapi prosesornya masih Gen 6 dua core. Dell Latitude 3400 (2,58jt, S) dan Latitude 5290 (2,5jt, S) lebih murah dengan prosesor Gen 8 empat core
   {
     id: 2026102403,
     name: "HP ProBook 640 G2",
     category: "bekas",
-    tier: "A+",
+    tier: "B+",
     price: 2790000,
     specs: [
       "Intel Core i5-6300U",
