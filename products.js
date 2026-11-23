@@ -267,6 +267,27 @@ const PRODUCTS = [
 // Tipe prosesor yang gak ditulis penjual diisi tipe yang paling umum di model itu
 // =====================================================================
 
+  // Tier A: Prosesor sekelas ThinkPad T480s (4,12jt, A+) yang 200 ribu lebih murah, dan ThinkPad T495 (4,40jt, S) cuma 90 ribu lebih mahal dengan Ryzen 5 3500U dan iGPU Vega 8 yang jauh lebih kenceng. Tipe prosesor diasumsikan i5-8265U (listing cuma nulis i5 Gen 8). Laptop laris nomor 5 di laporan pesanan Okt-Nov
+  {
+    id: 2026112301,
+    name: "ThinkPad T490",
+    category: "bekas",
+    tier: "A",
+    price: 4314600,
+    specs: [
+      "Intel Core i5-8265U",
+      "Intel UHD 620",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1gKOvJndiv",
+    toko:     "GudangLaptopBTM JKT",
+    linkLain: [
+      { url: "https://s.shopee.co.id/5LDhI6lSiL", harga: 4465000, toko: "LockStore" }
+    ],
+    image:    "./LAPTOP 4 JUTA/ThinkPad T490 4 Juta.webp"
+  },
   // Tier B+: Varian 8GB/128GB di screenshot 22 Nov ganti ke 16GB/256GB (4,74jt). MX250 kelas paling bawah, dan ThinkPad T495 (4,40jt, S) lebih murah
   {
     id: 2026112001,
