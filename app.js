@@ -27,14 +27,17 @@
  *   varianUtama: "T14",          → (opsional) varian link utama
  *   linkLain: [
  *     { url: "https://s.shopee.co.id/...", harga: 5785500, toko: "MBM Tech Store" },
- *     { url: "...", harga: 4650000, toko: "Redstar Electronic", varian: "T14s (Lebih Tipis)" }
+ *     { url: "...", harga: 4650000, toko: "Redstar Electronic", varian: "T14s (RAM Gak Bisa Ditambah)", bawah: true }
  *   ],
  *   Tulisan tiap pilihan = nama toko + varian (kalau ada).
  *   Pilihan diurutkan dari yang termurah. Yang paling atas warnanya hijau,
  *   dan kalau gak punya varian dapat tambahan "(Pilihan Utama)".
  *   Contoh: "Gugel Laptop (Pilihan Utama)", "MBM Tech Store",
- *           "Redstar Electronic T14s (Lebih Tipis)", "Gugel Laptop T14".
+ *           "Redstar Electronic T14s (RAM Gak Bisa Ditambah)", "Gugel Laptop T14".
  *   Harga di kartu otomatis pakai yang termurah.
+ *   Tambah bawah: true di link yang harus selalu paling bawah (misal T14s
+ *   yang RAM nya gak bisa ditambah). Link itu gak dipakai buat harga kartu
+ *   dan gak pernah jadi pilihan hijau, walaupun harganya paling murah.
  *   Link yang habis tinggal dihapus dari daftar. Nama toko juga dikirim ke GA4.
  *
  * LOGO TOKO (data toko di toko-data.js):
@@ -74,7 +77,7 @@ PRODUCTS.forEach(p => {
   p.hargaUtama = p.price;
   if (!Array.isArray(p.linkLain)) return;
   p.linkLain.forEach(l => {
-    if (l && l.url && l.harga && l.harga < p.price) p.price = l.harga;
+    if (l && l.url && l.harga && !l.bawah && l.harga < p.price) p.price = l.harga;
   });
 });
 
@@ -214,13 +217,16 @@ function renderCard(p, isSoldOut = false) {
 }
 
 // ── Toko per laptop ──────────────────────────────────────────
-// Semua link laptop (utama + linkLain), urut termurah, lengkap dengan data tokonya
+// Semua link laptop (utama + linkLain), urut termurah, lengkap dengan data tokonya.
+// Link dengan bawah: true selalu ditaruh paling bawah.
 function semuaLink(p) {
-  return [
+  const semua = [
     { url: p.shopUrl, harga: p.hargaUtama, varian: p.varianUtama, toko: p.toko, utama: true },
     ...linkLainAktif(p).map(l => ({ ...l, harga: l.harga || p.hargaUtama }))
-  ].sort((x, y) => x.harga - y.harga)
-   .map(l => ({ ...l, data: typeof cariToko === "function" ? cariToko(l.toko) : null }));
+  ].sort((x, y) => (!!x.bawah - !!y.bawah) || (x.harga - y.harga));
+  const min = Math.min(...semua.map(l => l.harga));
+  return semua.map(l => ({ ...l, termurah: l.harga === min,
+    data: typeof cariToko === "function" ? cariToko(l.toko) : null }));
 }
 
 // Toko unik yang ada di toko-data.js (satu toko bisa punya 2 link, misal beda varian)
@@ -843,7 +849,7 @@ function tokoBlok(l, i, sendiri, namaLaptop) {
       <div class="tk-top">
         <img class="tk-logo" src="${t.logo}" alt="">
         <div class="tk-info">
-          <h3 class="tk-nama">${nama}${!sendiri && i === 0 ? `<span class="tk-murah">Termurah</span>` : ""}</h3>
+          <h3 class="tk-nama">${nama}${!sendiri && i === 0 ? `<span class="tk-murah">${l.termurah ? "Termurah" : "Pilihan Utama"}</span>` : ""}</h3>
           <div class="tk-meta">
             <span class="tk-rating">${STAR} ${t.rating}</span>
             <span>${t.ulasan} ulasan</span>

@@ -964,7 +964,7 @@ const PRODUCTS = [
     image:    "./LAPTOP 3 JUTA/Dell Latitude 7410 3 Juta.webp"
   },
 
-  // Tier S: Prosesor sama persis kayak ThinkPad T14 Gen 1 Ryzen 7 (5,80jt, Tier S) tapi 740 ribu lebih murah
+  // Tier S: Prosesor sama persis kayak ThinkPad T14 Gen 1 Ryzen 7 (6,14jt, Tier S) tapi 919 ribu lebih murah
   {
     id: 2026102307,
     name: "ThinkPad L14 Gen 1 Ryzen 7",
@@ -1387,7 +1387,7 @@ const PRODUCTS = [
     toko:     "Gugel Laptop",
     varianUtama: "T14",
     linkLain: [
-      { url: "https://s.shopee.co.id/70LgZX1wAD", harga: 6624000, varian: "T14s (Lebih Tipis)", toko: "Redstar Electronic" },
+      { url: "https://s.shopee.co.id/70LgZX1wAD", harga: 6624000, varian: "T14s (RAM Gak Bisa Ditambah)", toko: "Redstar Electronic", bawah: true },
       { url: "https://s.shopee.co.id/2BGdwOFbrJ", harga: 6900000, varian: "T14", toko: "M6 Store" }
     ],
     image:    "./LAPTOP 6 JUTA/ThinkPad T14 G2 AMD.webp"
@@ -2715,7 +2715,7 @@ const PRODUCTS = [
     shopUrl:  "https://s.shopee.co.id/9ANHSEyLIM",
     toko:     "Gugel Laptop",
     linkLain: [
-      { url: "https://s.shopee.co.id/1gKNLTHVsA", harga: 5900000, varian: "T14s (Lebih Tipis)", toko: "M6 Store" }
+      { url: "https://s.shopee.co.id/1gKNLTHVsA", harga: 5900000, varian: "T14s (RAM Gak Bisa Ditambah)", toko: "M6 Store", bawah: true }
     ],
     image:    "./LAPTOP 5 JUTA/thinkpadr7.webp"
   },
