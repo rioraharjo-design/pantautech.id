@@ -344,7 +344,14 @@ function matchesFilters(p) {
 function sortProducts(arr) {
   if (activeSort === "asc")  return [...arr].sort((a, b) => a.price - b.price);
   if (activeSort === "desc") return [...arr].sort((a, b) => b.price - a.price);
-  return arr; // default: urutan di products.js
+  // Default: urutan dari urutan.js (terlaris, lalu paling banyak diklik).
+  // Laptop yang belum ada di urutan.js (baru masuk) mulai di urutan 20,
+  // diselipin tiap 3 laptop, yang id nya paling baru duluan.
+  if (typeof URUTAN === "undefined" || !Array.isArray(URUTAN)) return arr;
+  const posisi = new Map(URUTAN.map((id, i) => [id, i]));
+  const baru = PRODUCTS.filter(p => !posisi.has(p.id)).sort((a, b) => b.id - a.id);
+  baru.forEach((p, k) => posisi.set(p.id, 18.5 + k * 3));
+  return [...arr].sort((a, b) => posisi.get(a.id) - posisi.get(b.id));
 }
 
 function sectionHead(judul, info, isMimin) {
