@@ -1607,3 +1607,22 @@ body.guide-open .products-section { display: none; }
   .shop-menu { left: -8px; right: -8px; padding: 5px; }
   .shop-opt-go { display: none; }
 }
+/* ── Pita "#1 TERLARIS" (dari urutan.js) ── */
+.pita-laris {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  z-index: 3;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffd447, #ff9f1c);
+  color: #1a1200;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .2px;
+  white-space: nowrap;
+  box-shadow: 0 2px 10px rgba(255, 170, 30, .4);
+}
+/* Label Gaming/Workstation naik sedikit kalau ada pita */
+.card-img-wrap:has(.pita-laris) .badge-use-row { bottom: 38px; }

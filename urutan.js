@@ -1,12 +1,11 @@
 /**
- * URUTAN DEFAULT KATALOG
+ * URUTAN DEFAULT KATALOG (dibuat otomatis oleh Urutan Terlaris/urutan.py, 24-11-2026)
  * Laptop paling laris di atas, lalu yang paling banyak diklik.
- * Dihitung dari pesanan affiliate Shopee (Des 2025 sampai 14 Nov 2026)
- * dan klik tombol Shopee di GA4. File ini cuma berisi id, tanpa angka.
+ * File ini cuma berisi id, tanpa angka penjualan.
  *
  * Laptop yang id nya gak ada di sini dianggap baru masuk: mulai urutan 20,
- * diselipin tiap 3 laptop, yang paling baru duluan. Jadi laptop yang baru
- * lu tambahin ke products.js otomatis kebagian tempat di atas.
+ * diselipin tiap 3 laptop, yang paling baru duluan.
+ * URUTAN_LARIS: berapa laptop teratas yang punya penjualan (batas pita TERLARIS).
  */
 const URUTAN = [
   11, 110, 225, 10123232, 19, 18, 4, 2026111001,
@@ -17,7 +16,7 @@ const URUTAN = [
   210, 36, 2026102302, 25, 2026102314, 2026110422, 31, 2026102304,
   2026112006, 2026102315, 2026102305, 10, 224, 2026112009, 2026112017, 100,
   2026110301, 2026110410, 26, 32, 17, 30324234, 2234231, 2026112008,
-  2026110506, 2026110507, 2026110502, 2026102402, 2026102308, 2026110503, 2132423235123123200, 232532532,
+  2026110506, 2026110507, 2026110502, 2026102402, 2026102308, 2026110503, 2132423235123123240, 232532532,
   2026110501, 2026102312, 2026102403, 28, 2026102004, 2132423235234, 2026110420, 2234320,
   2323523, 170, 2026102401, 2026110417, 2026102313, 9, 2026102008, 160000001,
   170000001, 2026102316, 2026102009, 2026110416, 180000001, 3342420, 2026110415, 23564,
@@ -30,3 +29,4 @@ const URUTAN = [
   232, 83, 8, 160, 120, 201, 216, 218,
   219, 223, 5
 ];
+const URUTAN_LARIS = 64;

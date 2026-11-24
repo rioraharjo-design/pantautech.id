@@ -1615,7 +1615,7 @@ const PRODUCTS = [
     id: 2232411,
     name: "Acer Aspire Lite 14",
     category: "global",
-    tier: "A",
+    tier: "B+",
     price: 7841030,
     specs: [
       "AMD Ryzen 3 5400U",

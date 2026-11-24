@@ -66,6 +66,7 @@ let activePriceMax = Infinity;
 let activeTier     = "semua";
 let activeSort     = "default";
 let searchQuery    = "";
+let pitaLaris      = new Map();  // id laptop → tulisan pita "#1 TERLARIS"
 let activeToko     = null;    // data toko dari toko-data.js kalau filter toko aktif
 let guideMode      = false;   // true setelah pengunjung pakai "Lihat Pilihan Mimin"
 
@@ -185,6 +186,7 @@ function renderCard(p, isSoldOut = false) {
         <span class="badge ${meta.cls}">${meta.label}</span>
         ${usecaseBadges ? `<div class="badge-use-row">${usecaseBadges}</div>` : ""}
         ${isSoldOut ? `<span class="badge-habis">Habis</span>` : logoStack(p)}
+        ${!isSoldOut && pitaLaris.has(p.id) ? `<span class="pita-laris">${pitaLaris.get(p.id)}</span>` : ""}
       </div>
       <div class="card-body">
         ${highlight}
@@ -341,6 +343,23 @@ function matchesFilters(p) {
     || kataKunci(p).some(k => k.includes(q));
 }
 
+// ── Pita "#1 TERLARIS" ───────────────────────────────────────
+// Cuma 3 laptop terlaris di seluruh katalog (yang masih tersedia) yang dapet pita,
+// diambil dari urutan.js (batas URUTAN_LARIS = laptop yang pernah laku).
+// Pita nempel terus di kartunya: di filter harga, tab, pencarian, tier, dan toko
+// tulisannya tetap "#1 TERLARIS". Di urutan default, laptop berpita paling atas.
+function hitungPita() {
+  pitaLaris = new Map();
+  if (typeof URUTAN === "undefined" || !Array.isArray(URUTAN)) return;
+  const batas = typeof URUTAN_LARIS === "number" ? URUTAN_LARIS : URUTAN.length;
+  URUTAN.slice(0, batas)
+    .map(id => PRODUCTS.find(p => p.id === id))
+    .filter(p => p && !p.sold_out)
+    .slice(0, 3)
+    .forEach((p, i) => pitaLaris.set(p.id, `#${i + 1} TERLARIS`));
+}
+hitungPita();
+
 function sortProducts(arr) {
   if (activeSort === "asc")  return [...arr].sort((a, b) => a.price - b.price);
   if (activeSort === "desc") return [...arr].sort((a, b) => b.price - a.price);
@@ -351,7 +370,11 @@ function sortProducts(arr) {
   const posisi = new Map(URUTAN.map((id, i) => [id, i]));
   const baru = PRODUCTS.filter(p => !posisi.has(p.id)).sort((a, b) => b.id - a.id);
   baru.forEach((p, k) => posisi.set(p.id, 18.5 + k * 3));
-  return [...arr].sort((a, b) => posisi.get(a.id) - posisi.get(b.id));
+  // Laptop berpita (#1, #2, #3) selalu paling atas, urut sesuai nomornya
+  const kunci = p => pitaLaris.has(p.id)
+    ? -100 + parseInt(pitaLaris.get(p.id).slice(1), 10)
+    : posisi.get(p.id);
+  return [...arr].sort((a, b) => kunci(a) - kunci(b));
 }
 
 function sectionHead(judul, info, isMimin) {
