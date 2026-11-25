@@ -17,7 +17,8 @@ Cara hitung:
   - Pesanan laptop (bukan CANCEL) dicocokkan ke laptop di products.js lewat nama model.
     Satu listing bisa isinya beberapa model ("T14 Gen 2 / Gen 1"), jadi pesanannya
     dibagi ke laptop yang cocok sesuai perbandingan klik.
-  - Urutan: perkiraan penjualan terbanyak, lalu klik terbanyak.
+  - Cuma pesanan HARI terakhir (default 30) yang dihitung.
+  - Urutan: PAKSA_ATAS dulu (pilihan manual), lalu perkiraan penjualan terbanyak, lalu klik terbanyak.
   - Laptop baru (id berawalan tanggal, umur <= 30 hari) yang belum ada penjualan
     dan klik gak dimasukin, biar app.js naruh dia di sekitar urutan 20.
   - URUTAN_LARIS = jumlah laptop yang punya penjualan. Pita "TERLARIS" cuma
@@ -25,6 +26,21 @@ Cara hitung:
 """
 import csv, datetime, glob, json, os, re, sys
 from collections import Counter, defaultdict
+
+# ── PENGATURAN ───────────────────────────────────────────────
+# Berapa hari terakhir pesanan yang dihitung, dihitung mundur dari tanggal
+# pesanan paling baru di CSV. 30 = "sebulan terakhir", sama kayak di video.
+HARI = 30
+
+# Laptop yang dipaksa ada di paling atas (id dari products.js, urut #1, #2, #3).
+# Ini pilihan manual Rio. Kosongin jadi [] kalau mau ngikut data murni.
+# Cek lagi tiap update bulanan, jangan sampai pilihan lama nempel terus.
+PAKSA_ATAS = [
+    225,         # ThinkPad T14 Gen 2 Ryzen 5   (pilihan Rio, 25 Nov 2026)
+    11,          # HP Elitebook 845 G8          (pilihan Rio, 25 Nov 2026)
+    2026111001,  # ThinkPad L14 Gen 2 Ryzen 5   (pilihan Rio, 25 Nov 2026)
+]
+# ──────────────────────────────────────────────────────────────
 
 FOLDER = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(FOLDER)
@@ -109,9 +125,20 @@ def main():
             klik_nama[base(r["nama_laptop"]).lower().strip()] += int(float(r["jumlah_klik"] or 0))
     klik = {p["id"]: klik_nama.get(base(p["name"]).lower().strip(), 0) for p in produk}
 
+    pesanan = baca_csv(cari_csv("pesanan"))
+    def tanggal(r):
+        try:
+            return datetime.datetime.strptime((r.get("waktu_pemesanan") or "")[:10], "%Y-%m-%d")
+        except ValueError:
+            return None
+    semua_tgl = [t for t in map(tanggal, pesanan) if t]
+    akhir = max(semua_tgl) if semua_tgl else datetime.datetime.now()
+    mulai = akhir - datetime.timedelta(days=HARI - 1)
+    pesanan = [r for r in pesanan if tanggal(r) and mulai <= tanggal(r) <= akhir]
+
     jual = defaultdict(float)
     gak_cocok = Counter()
-    for r in baca_csv(cari_csv("pesanan")):
+    for r in pesanan:
         if r.get("kategori_l2") != "Laptop" or r.get("status_pesanan") == "CANCEL":
             continue
         t = norm(r["nama_produk"])
@@ -136,6 +163,12 @@ def main():
             jual[i] += q * (klik[i] + 1) / bobot
 
     urut = sorted(produk, key=lambda p: (-round(jual[p["id"]], 2), -klik[p["id"]]))
+    ada = {p["id"]: p for p in produk}
+    paksa = [ada[i] for i in PAKSA_ATAS if i in ada]
+    for i in PAKSA_ATAS:
+        if i not in ada:
+            print(f"PERINGATAN: id {i} di PAKSA_ATAS gak ada di products.js")
+    urut = paksa + [p for p in urut if p["id"] not in PAKSA_ATAS]
     hari_ini = datetime.datetime.now()
 
     def baru(p):
@@ -149,12 +182,13 @@ def main():
         return (hari_ini - tgl).days <= 30 and jual[p["id"]] == 0 and klik[p["id"]] == 0
 
     ids = [p["id"] for p in urut if not baru(p)]
-    laris = sum(1 for p in urut if not baru(p) and round(jual[p["id"]], 2) > 0)
+    laris = sum(1 for p in urut if not baru(p) and (round(jual[p["id"]], 2) > 0 or p["id"] in PAKSA_ATAS))
 
     baris = [", ".join(map(str, ids[i:i + 8])) for i in range(0, len(ids), 8)]
     isi = f"""/**
  * URUTAN DEFAULT KATALOG (dibuat otomatis oleh Urutan Terlaris/urutan.py, {hari_ini:%d-%m-%Y})
- * Laptop paling laris di atas, lalu yang paling banyak diklik.
+ * Pesanan {mulai:%d-%m-%Y} sampai {akhir:%d-%m-%Y} ({HARI} hari). Laptop paling laris di atas,
+ * lalu yang paling banyak diklik. Beberapa teratas bisa dipilih manual (PAKSA_ATAS di urutan.py).
  * File ini cuma berisi id, tanpa angka penjualan.
  *
  * Laptop yang id nya gak ada di sini dianggap baru masuk: mulai urutan 20,
@@ -168,7 +202,10 @@ const URUTAN_LARIS = {laris};
 """
     open(os.path.join(ROOT, "urutan.js"), "w", encoding="utf-8").write(isi)
 
-    print("urutan.js selesai dibuat.\n\n10 teratas yang masih tersedia:")
+    print(f"urutan.js selesai dibuat. Pesanan dihitung: {mulai:%d-%m-%Y} sampai {akhir:%d-%m-%Y} ({HARI} hari)")
+    if paksa:
+        print("Dipaksa di atas (PAKSA_ATAS): " + ", ".join(base(p["name"]) for p in paksa))
+    print("\n10 teratas yang masih tersedia:")
     for p in [x for x in urut if not x["sold_out"] and not baru(x)][:10]:
         print(f"  {base(p['name'])}")
     print(f"\nLaptop yang punya penjualan: {laris}")
