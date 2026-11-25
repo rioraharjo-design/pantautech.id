@@ -62,7 +62,7 @@ const PRODUCTS = [
     toko:     "MBM Tech Store",
     linkLain: [
       { url: "https://s.shopee.co.id/2La48hEyWM", harga: 5580000, toko: "Laptopin.id" },
-      { url: "https://s.shopee.co.id/2BGdwOFbrJ", harga: 6100000, varian: "SSD 512GB", toko: "M6 Store" }
+      { url: "https://s.shopee.co.id/1qdnXmGsXD", harga: 5850000, toko: "Gugel Laptop" }
     ],
     image:    "./LAPTOP 5 JUTA/thinkpad t.webp"
   },
