@@ -66,7 +66,7 @@ Sebelum checkout, tanya stok dulu ke penjual biar pesanan gak dibatalin`
     logo: "./Toko/Logo Gugel Laptop.webp",
     rating: 4.9,
     ulasan: "4,5rb",
-    pengikut: "10,1rb",
+    pengikut: "10,4rb",
     shopUrl: "https://s.shopee.co.id/8VAGMxY0o6",
     rank: 2,
     catatan: `Toko yang paling sering direkomendasikan komunitas laptop bekas, terutama ThinkPad. Pilihannya lengkap dari T14, T14s, X13, L14 sampai X1 Carbon dan workstation seri P, dengan varian RAM dan SSD yang bisa dipilih
