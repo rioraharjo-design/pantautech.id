@@ -1,2 +1,7 @@
 # Data bisnis jangan masuk repo publik
 *.csv
+
+# File kerja cek harga (dibuat ulang tiap kali)
+Harga Web/hasil.txt
+Harga Web/daftar_cek.json
+Harga Web/Prompt Cek Harga *.txt

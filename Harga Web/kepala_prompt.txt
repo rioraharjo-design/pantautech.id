@@ -1,0 +1,24 @@
+Tolong catat HARGA DI SHOPEE WEB buat daftar laptop di bawah. Harganya dipakai buat update harga di website Pantau Tech.
+
+LANGKAH (per laptop)
+1. Buka linknya di tab baru. Link ini link affiliate yang otomatis diarahkan ke halaman produk Shopee.
+2. Cek dulu listingnya masih aktif. Kalau listingnya diarsipkan, dihapus, "produk tidak tersedia", atau semua variannya habis, tulis statusnya dan lanjut ke laptop berikutnya. Jangan cari listing pengganti.
+3. Pilih varian yang paling cocok sama kolom "Varian yang dipilih" (model/prosesor, RAM, SSD). Pilih bundling paling polos (Unit Only, Tanpa Paket, Tanpa Antigores, Normal, No Office). JANGAN pilih varian berlabel FLASHSALE, Campaign, atau Promo.
+4. Setelah varian dipilih, catat:
+   - Harga jual: harga besar yang tampil sesudah varian dipilih (bukan rentang harga). Kalau di dekat harga ada tulisan "Dengan Voucher", tulis "(Dengan Voucher)" di belakang harganya.
+   - Harga coret, voucher toko yang kelihatan (jangan diklaim), dan stok varian itu.
+5. Kalau varian yang cocok gak ada atau habis, status "Varian beda" dan tulis variannya di catatan (harganya tetap dicatat).
+
+ATURAN
+- Jangan klik Beli Sekarang, Masukkan Keranjang, Chat, atau Klaim voucher.
+- Jangan login atau isi apa pun. Kalau muncul captcha atau diminta login, berhenti dan kasih tahu aku di nomor berapa.
+- Harga ditulis lengkap pakai titik ribuan, contoh Rp5.850.000. Jangan ngira-ngira harga, kalau gak kebaca tulis "gak kebaca".
+- Nomor di kolom No WAJIB sama persis dengan daftar.
+
+FORMAT HASIL (satu tabel, kolom persis seperti ini)
+| No | Laptop | Toko | Varian yang dipilih | Harga jual web | Harga coret | Voucher toko | Stok | Status | Link halaman produk | Catatan |
+
+Status: Aktif / Diarsipkan / Habis / Varian beda.
+Di akhir, tulis hal yang mencurigakan kalau ada.
+
+DAFTAR LAPTOP
