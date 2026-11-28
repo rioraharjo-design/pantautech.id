@@ -842,6 +842,96 @@ const PRODUCTS = [
     toko:     "Ari Speed Comp",
     image:    "./LAPTOP 2 JUTA/Dell Latitude 5290 2 Juta.webp"
   },
+  // Tier S: Prosesor Gen 8 empat core, 2 slot SODIMM, baterai dua. 475 ribu lebih murah dari Lenovo ThinkPad T480s (4,18jt, A+) yang RAM-nya sebagian onboard. Listing cuma nulis i5 Gen 8, diisi i5-8250U (paling umum di T480)
+  {
+    id: 2026112801,
+    name: "ThinkPad T480",
+    category: "bekas",
+    tier: "S",
+    price: 3701000,
+    specs: [
+      "Intel Core i5-8250U",
+      "Intel UHD Graphics 620",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/W8ZFj4iNp",
+    toko:     "GudangLaptopBTM JKT",
+    image:    "./LAPTOP 3 JUTA/ThinkPad T480 3 Juta.webp"
+  },
+  // Tier A+: Gen 8 empat core 14 inci termurah di 3 jutaan, 2 slot SODIMM. Cuma 95 ribu di bawah ThinkPad T480 (3,70jt, S) yang bodinya lebih kokoh dan baterainya dua. Listing cuma nulis i5 Gen 8, diisi i5-8265U (paling umum di L490)
+  {
+    id: 2026112802,
+    name: "ThinkPad L490",
+    category: "bekas",
+    tier: "A+",
+    price: 3606000,
+    specs: [
+      "Intel Core i5-8265U",
+      "Intel UHD Graphics 620",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/1CIeo6cOk",
+    toko:     "GudangLaptopBTM",
+    image:    "./LAPTOP 3 JUTA/ThinkPad L490 3 Juta.webp"
+  },
+  // Tier A: Ryzen 5 Pro 3500U lebih kencang dari i5 Gen 8 dan iGPU Vega 8 lebih kuat dari UHD 620, tapi RAM 8GB onboard gak bisa ditambah dan layar 13,3 inci. 104 ribu lebih mahal dari ThinkPad T480 (3,70jt, S) yang RAM-nya bisa diupgrade
+  {
+    id: 2026112803,
+    name: "ThinkPad X395 Ryzen 5",
+    category: "bekas",
+    tier: "A",
+    price: 3805000,
+    specs: [
+      "AMD Ryzen 5 Pro 3500U",
+      "AMD Radeon Vega 8",
+      "RAM 8GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/BVir75z3n",
+    toko:     "Gugel Laptop",
+    image:    "./LAPTOP 3 JUTA/ThinkPad X395 Ryzen 5 3 Juta.webp"
+  },
+  // Tier A: RAM 16GB di 3,62jt, tapi onboard dan layar cuma 12,5 inci. Harganya hampir sama dengan ThinkPad L490 (3,61jt, A+) yang 14 inci dan RAM-nya bisa ditambah. Listing nulis i5-8th, diisi i5-8250U (paling umum di X280)
+  {
+    id: 2026112804,
+    name: "ThinkPad X280",
+    category: "bekas",
+    tier: "A",
+    price: 3615000,
+    specs: [
+      "Intel Core i5-8250U",
+      "Intel UHD Graphics 620",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/2LaDR5xjfE",
+    toko:     "Gugel Laptop",
+    image:    "./LAPTOP 3 JUTA/ThinkPad X280 3 Juta.webp"
+  },
+  // Tier A+: i7 Gen 8 plus RAM 16GB di 3,80jt, bodi 13,3 inci ringan. Harga hampir sama dengan ThinkPad X395 Ryzen 5 (3,81jt, A) yang RAM-nya cuma 8GB. Listing cuma nulis i7 Gen 8, diisi i7-8665U (paling umum di U939)
+  {
+    id: 2026112805,
+    name: "Fujitsu Lifebook U939",
+    category: "bekas",
+    tier: "A+",
+    price: 3796000,
+    specs: [
+      "Intel Core i7-8665U",
+      "Intel UHD Graphics 620",
+      "RAM 16GB",
+      "SSD 256GB"
+    ],
+    videoUrl: "https://www.tiktok.com/@pantautech.id/",
+    shopUrl:  "https://s.shopee.co.id/2VtddOx6KH",
+    toko:     "GudangLaptopBTM JKT",
+    image:    "./LAPTOP 3 JUTA/Fujitsu Lifebook U939 3 Juta.webp"
+  },
   // Tier S: Prosesor Gen 8 empat core (i5-8265U) dengan layar 14 inci di 2,68jt. 181 ribu lebih mahal dari Dell Latitude 5290 (2,5jt, S) yang layarnya 12,5 inci, dan 210 ribu lebih murah dari HP ProBook 640 G2 (2,89jt) yang masih Gen 6
   {
     id: 2026112304,
