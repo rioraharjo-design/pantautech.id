@@ -914,12 +914,12 @@ const PRODUCTS = [
     toko:     "Gugel Laptop",
     image:    "./LAPTOP 3 JUTA/ThinkPad X280 3 Juta.webp"
   },
-  // Tier A+: i7 Gen 8 plus RAM 16GB di 3,80jt, bodi 13,3 inci ringan. Harga hampir sama dengan ThinkPad X395 Ryzen 5 (3,81jt, A) yang RAM-nya cuma 8GB. Listing cuma nulis i7 Gen 8, diisi i7-8665U (paling umum di U939)
+  // Tier S: i7 Gen 8 plus RAM 16GB siap pakai di 3,80jt, 437 ribu lebih murah dari Dell Latitude 5400 (4,23jt, S) yang masih i5. Bodi 13,3 inci Full HD sekitar 900 gram. Kekurangan: RAM onboard gak bisa ditambah. Listing cuma nulis i7 Gen 8, diisi i7-8665U (paling umum di U939)
   {
     id: 2026112805,
     name: "Fujitsu Lifebook U939",
     category: "bekas",
-    tier: "A+",
+    tier: "S",
     price: 3796000,
     specs: [
       "Intel Core i7-8665U",
